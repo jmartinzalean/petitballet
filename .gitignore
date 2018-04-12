@@ -1,0 +1,6 @@
+.idea/*
+.DS_Store
+#Ignoramos all
+*
+!themes/theme1452
+!.gitignore
