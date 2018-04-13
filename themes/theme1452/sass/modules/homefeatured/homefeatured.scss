@@ -1,0 +1,52 @@
+@import "../../_theme_variables";
+
+.homefeatured-wrap {
+  margin-bottom: 30px;
+
+  @media (min-width: $screen-xs-min) {
+    margin-bottom: 50px;
+  }
+
+  @media (min-width: $screen-sm-min) {
+    margin-bottom: 0;
+  }
+
+  &.block p {
+    @media (min-width: $screen-sm-min) and (max-width: $screen-md-min - 1) {
+      margin-bottom: 20px;
+    }
+  }
+
+  .bx-wrapper {
+    .bx-controls-direction {
+      .bx-next, .bx-prev {
+        top: 100%;
+        transition: all .3s $custom-timing-function;
+
+        @media (min-width: $screen-xs-min) {
+          top: calc(100% + 16px);
+        }
+
+        @media (min-width: $screen-sm-min) {
+          top: 35%;
+          opacity: 0;
+          transform: translateX(-20px);
+        }
+      }
+      .bx-next {
+        @media (min-width: $screen-sm-min) {
+          transform: translateX(20px);
+        }
+      }
+    }
+
+    &:hover {
+      .bx-controls-direction {
+        .bx-next, .bx-prev {
+          opacity: 1;;
+          transform: translateX(0);
+        }
+      }
+    }
+  }
+}

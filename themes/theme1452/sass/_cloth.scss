@@ -1,0 +1,118 @@
+@font-face {
+  font-family: 'Cloth Regular';
+  src: url('../fonts/Cloth-Regular.eot?8757571');
+  src: url('../fonts/Cloth-Regular.eot?8757571#iefix') format('embedded-opentype'),
+       url('../fonts/Cloth-Regular.woff?8757571') format('woff'),
+       url('../fonts/Cloth-Regular.ttf?8757571') format('truetype'),
+       url('../fonts/Cloth-Regular.svg?8757571#cloth') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="cloth-icon-"]:before,
+[class*=" cloth-icon-"]:before,
+.cloth-ico{
+    font-family: "Cloth Regular";
+    font-weight: 400;
+    font-style: normal;
+    font-size: inherit;
+    text-transform: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+ 
+.cloth-icon-01:before {
+    content: '\e800';
+}
+
+.cloth-icon-21:before {
+    content: '\e801';
+}
+
+.cloth-icon-22:before {
+    content: '\e802';
+}
+
+.cloth-icon-02:before {
+    content: '\e803';
+}
+
+.cloth-icon-23:before {
+    content: '\e804';
+}
+
+.cloth-icon-03:before {
+    content: '\e805';
+}
+
+.cloth-icon-04:before {
+    content: '\e806';
+}
+
+.cloth-icon-24:before {
+    content: '\e807';
+}
+
+.cloth-icon-05:before {
+    content: '\e808';
+}
+
+.cloth-icon-07:before {
+    content: '\e809';
+}
+
+.cloth-icon-06:before {
+    content: '\e80a';
+}
+
+.cloth-icon-08:before {
+    content: '\e80b';
+}
+
+.cloth-icon-09:before {
+    content: '\e80c';
+}
+
+.cloth-icon-10:before {
+    content: '\e80d';
+}
+
+.cloth-icon-12:before {
+    content: '\e80e';
+}
+
+.cloth-icon-11:before {
+    content: '\e80f';
+}
+
+.cloth-icon-15:before {
+    content: '\e810';
+}
+
+.cloth-icon-14:before {
+    content: '\e811';
+}
+
+.cloth-icon-13:before {
+    content: '\e812';
+}
+
+.cloth-icon-16:before {
+    content: '\e813';
+}
+
+.cloth-icon-18:before {
+    content: '\e814';
+}
+
+.cloth-icon-17:before {
+    content: '\e815';
+}
+
+.cloth-icon-19:before {
+    content: '\e816';
+}
+
+.cloth-icon-20:before {
+    content: '\e817';
+}

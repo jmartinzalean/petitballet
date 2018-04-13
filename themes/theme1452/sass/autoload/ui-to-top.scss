@@ -1,0 +1,59 @@
+@import "../_theme_variables";
+
+.ui-to-top {
+  overflow: hidden;
+  position: fixed;
+  right: 10px;
+  bottom: 80px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: $color-black;
+  font-size: 20px;
+  line-height: 39px;
+  color: $light-text-color;
+  text-align: center;
+  text-decoration: none;
+  z-index: 999;
+  transition: $base-transition;
+  box-shadow: $base-box-shadow;
+  opacity: 0;
+
+  &:before {
+    line-height: 37px;
+  }
+
+  &:hover, &:active, &:focus, &:focus:hover, &:active:hover {
+    background: $link-hover-color;
+    text-decoration: none;
+    color: $light-text-color;
+  }
+
+  &.active {
+    opacity: 1;
+
+    &:hover {
+      color: $light-text-color;
+    }
+  }
+}
+
+.mobile .ui-to-top,
+.tablet .ui-to-top {
+  right: 15px;
+  bottom: 20px;
+}
+
+@media (min-width: $screen-xs-min) {
+  .ui-to-top {
+    right: 25px;
+    bottom: 70px;
+  }
+}
+
+.content_only {
+  .ui-to-top {
+    display: none !important;
+  }
+}
+

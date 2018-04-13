@@ -1,0 +1,1 @@
+<li id="idTab5" class="product-reviews-tab"><a data-toggle="tab" href="#product-reviews-tab-content">{l s='Reviews' mod='productcomments'}</a></li>

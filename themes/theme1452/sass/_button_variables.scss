@@ -1,0 +1,579 @@
+@import 'bootstrap_lib/_variables';
+
+// ------- MAIN BUTTON STYLES -------
+
+$font-button: $font;
+$button-text-color: $link-hover-color;
+
+// ------- Grid/List vars -------
+
+$GL-text-color: $base-body-color;
+$GL-icon-color: $base-body-color;
+$GL-icon-color-hover: $link-hover-color;
+
+/*
+* @subsection   Buttons
+*/
+
+$btn-xs-height: 46px;
+$btn-xs-size: 13px;
+
+$btn-sm-height: $btn-xs-height * 1.15; //
+$btn-sm-size: $btn-xs-size * 1.05; //
+
+$btn-md-height: $btn-sm-height * 1.2; //
+$btn-md-size: $btn-sm-size * 1.05;
+
+$btn-lg-height: $btn-xs-height * 1.2; //
+$btn-lg-size: $btn-md-size * 1.05;
+
+$btn-xl-height: $btn-lg-height * 1.125; //
+$btn-xl-size: $btn-lg-size * 1.1;
+
+// Button General Styles
+.btn {
+  z-index: 1;
+  position: relative;
+  display: inline-block;
+  max-width: 100%;
+  border-style: solid;
+  border-radius: $border-radius-base;
+  font-family: $font-custom;
+  font-weight: 700;
+  text-align: center;
+  line-height: (30/14);
+  letter-spacing: 0.12em;
+  text-overflow: ellipsis;
+  text-transform: uppercase;
+  cursor: pointer;
+  vertical-align: middle;
+  text-decoration: none;
+
+  @media (min-width: $screen-sm-min) and (max-width: $screen-md-min - 1) {
+   &:not(.ajax_add_to_cart_button) > span {
+      overflow: hidden;
+      display: inline-block;
+      width: 100%;
+      text-overflow: ellipsis;
+      line-height: 1;
+      vertical-align: middle;
+    }
+  }
+
+  &:hover {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  &.icon-right {
+    span {
+      padding-right: 25px;
+      position: relative;
+
+      &:after {
+        @include addIcon('\f178');
+        position: absolute;
+        top: 49%;
+        right: 0;
+        font-size: 12px;
+        @include transform (translate(0, -50%));
+      }
+    }
+  }
+
+  &.icon-left {
+    span {
+      padding-left: 25px;
+      position: relative;
+
+      &:before {
+        @include addIcon('\f177');
+        position: absolute;
+        top: 49%;
+        left: 0;
+        font-size: 12px;
+        @include transform (translate(0, -50%));
+      }
+    }
+  }
+  span {
+    i {
+      &.left {
+        vertical-align: 0;
+        margin: 0 5px 0 0;
+        display: inline-block;
+      }
+      &.right {
+        margin-right: 0;
+        margin-left: 5px;
+      }
+    }
+  }
+  &:hover,
+  &:active,
+  &:active:focus,
+  &:focus {
+    box-shadow: none;
+    outline: none;
+    color: inherit;
+    text-decoration: none;
+  }
+
+  i[class*="left"] {
+    margin-right: 10px;
+  }
+  i[class*="right"] {
+    margin-left: 10px;
+  }
+}
+
+// Button Layout Styles
+.btn-xs {
+  border-width: 1px;
+  padding: ceil(($btn-xs-height - ($btn-xs-size * 2) - 2) / 2) 10px;
+  font-size: ceil($btn-xs-size);
+}
+
+.btn-sm {
+  border-width: 1px;
+  padding: ceil(($btn-sm-height - ($btn-sm-size * 2) - 2) / 2) 18px;
+  font-size: ceil($btn-sm-size);
+}
+
+.btn-md {
+  border-width: 1px;
+  padding: ceil(($btn-xs-height - ($btn-xs-size * 2) - 2) / 2) 10px;
+  font-size: ceil($btn-xs-size);
+
+  @media (min-width: $screen-lg-min) {
+    padding: ceil(($btn-sm-height - ($btn-sm-size * 2) - 2) / 2) 25px;
+    font-size: ceil($btn-md-size);
+  }
+}
+
+.btn-lg {
+  border-width: 1px;
+  padding: ceil(($btn-lg-height - ($btn-lg-size * 1.2) - 2) / 2) 30px;
+  font-size: ceil($btn-lg-size);
+}
+
+.btn-xl {
+  border-width: 1px;
+  padding: ceil(($btn-xl-height - ($btn-xl-size * 1.2) - 2) / 2) 40px;
+  font-size: ceil($btn-xl-size);
+}
+
+// Button Appearance Styles
+.btn-default, .btn-primary, .btn-secondary-2, .btn-secondary {
+  position: relative;
+  background: none;
+  border: 2px solid $dark-border-color;
+  color: $light-text-color;
+  text-transform: uppercase;
+  transition: all .2s linear;
+
+  &::after {
+    content: '';
+    z-index: -1;
+    pointer-events: none;
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    background-color: $dark-background;
+    -webkit-backface-visibility: hidden;
+    transition: transform .4s cubic-bezier(.12, .88, .04, 1.02), background .3s linear;
+    transition-delay: .1s;
+  }
+
+  @media (min-width: $screen-sm-min) {
+    &:hover {
+      background: none;
+
+      &::after {
+        transform: scale3d(1, 0, 1);
+      }
+    }
+
+    &:active:focus, &:active, &:focus, #{'.active'} > &, &.disabled, &.btn[disabled], #{'.disabled'} > & {
+      @include animation(buttonFocusAnimation 0.3s linear);
+    }
+  }
+
+  @media only screen and (max-width: $screen-sm-min - 1) {
+    &:active:focus, &:active:hover, &:active, &:focus {
+      background: none;
+      @include animation(buttonFocusAnimation 0.3s linear);
+    }
+  }
+
+  &.textAnimation {
+    span {
+      position: relative;
+      display: inline-block;
+      @media (min-width: $screen-lg-min) {
+        animation: textAnimation .2s .3s linear;
+      }
+    }
+  }
+}
+
+.btn-default {
+  color: $dark-text-color;
+  border-color: $base-border-color;
+
+  &::after {
+    background-color: $base-border-color;
+    transform: scale3d(1, 0, 1);
+  }
+
+  @media (min-width: $screen-sm-min) {
+    &:hover {
+      border-color: $base-border-color;
+      color: $dark-text-color;
+
+      &::after {
+        transform: scale3d(1, 1, 1);
+      }
+    }
+
+    &:active:focus, &:active, &:focus, #{'.active'} > &, &.disabled, &.btn[disabled], #{'.disabled'} > & {
+      background: none;
+      border-color: darken($base-border-color, 10%);
+      color: $dark-text-color;
+
+      &::after {
+        background-color: darken($base-border-color, 10%);
+        transform: scale3d(1, 1, 1);
+      }
+    }
+  }
+
+  @media only screen and (max-width: $screen-sm-min - 1) {
+    &:active:focus, &:active, &:focus, &.hover, &:hover {
+    }
+  }
+}
+
+.btn-primary {
+  color: $light-text-color;
+  border-color: $primary-border-color;
+
+  &::after {
+    background-color: $primary-background;
+  }
+
+  @media (min-width: $screen-sm-min) {
+    &:hover {
+      border-color: $primary-border-color;
+      color: $primary-text-color;
+    }
+
+    &:active:focus, &:active:hover, &:active, &:focus, #{'.active'} > &, &.disabled, &.btn[disabled], #{'.disabled'} > & {
+      background: none;
+      border-color: darken($primary-border-color, 10%);
+      color: $light-text-color;
+
+      &::after {
+        background-color: darken($primary-border-color, 10%);
+        transform: scale3d(1, 1, 1);
+      }
+    }
+  }
+
+  @media only screen and (max-width: $screen-sm-min - 1) {
+    &:active:focus, &:active, &:focus, &.hover, &:hover {
+      background: none;
+      border-color: darken($primary-border-color, 10%);
+      color: $light-text-color;
+
+      &::after {
+        background-color: darken($primary-border-color, 10%);
+      }
+    }
+  }
+}
+
+.btn-secondary {
+  @media (min-width: $screen-sm-min) {
+    &:active:focus, &:active:hover, &:active, &:focus, #{'.active'} > &, &.disabled, &.btn[disabled], #{'.disabled'} > & {
+      background: none;
+      border-color: darken($dark-background, 10%);
+      color: $light-text-color;
+
+      &::after {
+        background-color: darken($dark-background, 10%);
+        transform: scale3d(1, 1, 1);
+      }
+    }
+  }
+
+  @media only screen and (max-width: $screen-sm-min - 1) {
+    &:active:focus, &:active, &:focus, &.hover, &:hover {
+      background: none;
+      border-color: darken($dark-background, 10%);
+      color: $light-text-color;
+
+      &::after {
+        background-color: darken($dark-background, 10%);
+        transform: scale3d(1, 1, 1);
+      }
+    }
+  }
+}
+
+.btn-secondary-2 {
+  color: $dark-text-color;
+  border-color: $light-border-color;
+
+  &::after {
+    background-color: $light-background;
+  }
+
+  @media (min-width: $screen-sm-min) {
+    &:hover {
+      border-color: $light-border-color;
+      color: $light-border-color;
+    }
+
+    &:active:focus, &:active:hover, &:active, &:focus, #{'.active'} > &, &.disabled, &.btn[disabled], #{'.disabled'} > & {
+      background: none;
+      border-color: darken($light-border-color, 10%);
+      color: $dark-text-color;
+
+      &::after {
+        background-color: darken($light-border-color, 10%);
+        transform: scale3d(1, 1, 1);
+      }
+    }
+  }
+
+  @media only screen and (max-width: $screen-sm-min - 1) {
+    &:active:focus, &:active, &:focus, &.hover, &:hover {
+      background: none;
+      border-color: darken($light-border-color, 10%);
+      color: $dark-text-color;
+
+      &::after {
+        background-color: darken($light-border-color, 10%);
+        transform: scale3d(1, 1, 1);
+      }
+    }
+  }
+}
+
+input[class*=btn-default] {
+  background-color: $dark-background;
+  border: 1px solid $dark-text-color;
+  transition: $base-transition;
+  color: $light-text-color;
+
+  &:hover {
+    border-color: CurrentColor;
+    color: $dark-text-color;
+  }
+}
+
+input[class*=btn-primary] {
+  background-color: $primary-background;
+  border: 1px solid $primary-background;
+  transition: $base-transition;
+  color: $light-text-color;
+
+  &:hover {
+    border-color: CurrentColor;
+    color: $primary-text-color;
+  }
+}
+
+.infiniteScrollMore {
+  @extend .btn-xs;
+  min-width: 200px;
+
+  + .showall {
+    margin-top: 15px;
+
+    .btn-secondary {
+      min-width: 200px;
+    }
+  }
+}
+
+.infiniteScrollMore.btn.btn-success {
+  border: 1px solid $dark-text-color;
+  color: $dark-text-color;
+  transition: $base-transition;
+  background-color: transparent;
+
+  &:hover, &:active:focus, &:active, &:focus, .active & {
+    background-color: $dark-text-color;
+    border-color: $dark-text-color;
+    color: $light-text-color;
+  }
+
+  &.disabled, &.btn[disabled], #{'.disabled'} > &, .disabled & {
+    background-color: transparent;
+    border-color: lighten($dark-text-color, 10%);
+    color: lighten($dark-text-color, 10%);
+    cursor: default;
+
+    &:hover {
+      background-color: transparent;
+      border-color: lighten($dark-text-color, 10%);
+      color: lighten($dark-text-color, 10%);
+      cursor: default;
+    }
+  }
+}
+
+.btn.ajax_add_to_cart_button {
+  &.disabled {
+    display: none;
+  }
+}
+
+.btn.button-plus,
+.btn.button-minus {
+  position: relative;
+  font-size: ceil($btn-md-size);
+  text-align: center;
+  padding-left: 0;
+  padding-right: 0;
+  height: $input-label-button-size;
+  width: $input-label-button-size;
+
+  > span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.link-button {
+  font-weight: bold;
+  i {
+    margin-right: 5px;
+    &.large {
+      font-size: 26px;
+      line-height: 26px;
+      vertical-align: -3px;
+    }
+  }
+}
+
+.btn.disabled, .btn[disabled], fieldset[disabled] .btn, .pagination > li.disabled > span {
+  cursor: not-allowed !important;
+  opacity: 0.65;
+}
+
+.link {
+  position: relative;
+  display: inline-block;
+  color: $dark-text-color;
+  font: 500 14px/1.2 $font-custom;
+  transition: $base-transition;
+  text-decoration: none;
+  cursor: pointer;
+
+  @media (min-width: $screen-sm-min) and (max-width: $screen-md-min - 1) {
+    font-size: 13px;
+  }
+
+  @media (min-width: $screen-md-min) {
+    font-size: 16px;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 100%;
+    left: 0;
+    border-bottom: 1px solid CurrentColor;
+    bottom: 0;
+    opacity: 0;
+    transition: all .3s $custom-timing-function;
+    transform: scale3d(0, 1, 1);
+    will-change: transform, opacity;
+  }
+
+  &:hover {
+    text-decoration: none;
+    color: $link-hover-color;
+
+    &::before {
+      opacity: 1;
+      transform: scale3d(1, 1, 1);
+    }
+  }
+
+  &.link-reverse {
+    &::before {
+      opacity: 1;
+      transform: scale3d(1, 1, 1);
+    }
+    &:hover {
+      &::before {
+        transform: scale3d(0, 1, 1);
+      }
+    }
+
+  }
+}
+
+.btn-success {
+  border-color: darken($color-succes, 15%);
+  background: $color-succes;
+  transition: $base-transition;
+
+  &:hover {
+    border-color: darken($color-succes, 20%);
+    background: darken($color-succes, 15%);
+    color: $light-text-color;
+  }
+}
+
+.btn-warning, .btn-danger {
+  border-color: darken($color-warning, 15%);
+  background: $color-warning;
+  transition: $base-transition;
+
+  &:hover {
+    border-color: darken($color-warning, 20%);
+    background: darken($color-warning, 15%);
+    color: $light-text-color;
+  }
+}
+
+@keyframes buttonFocusAnimation {
+  0% {
+    opacity: 0.8;
+    transform: scale3d(0.98, 0.98, 1);
+  }
+
+  66% {
+    opacity: 0.9;
+    transform: scale3d(1.01, 1.01, 1);
+  }
+
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes textAnimation {
+  0% {
+    transform: translateY(0);
+  }
+
+  66% {
+    transform: translateY(-3px);
+  }
+
+  100% {
+    transform: none;
+  }
+}

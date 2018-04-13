@@ -1,0 +1,107 @@
+@import "../../../../../_theme_variables";
+
+.footer-container {
+
+  .footer-block {
+    @media (min-width: 1600px) {
+      margin-top: 5.17vw;
+    }
+  }
+  #newsletter_block_left, #homegooglemap #tmmap {
+    height: 320px;
+    margin-bottom: 0;
+
+    @media (min-width: $screen-sm-min) {
+      height: 29.17vw;
+    }
+  }
+  #newsletter_block_left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 6.67vw;
+
+    p {
+      color: $light-text-color;
+    }
+
+    .btn-primary {
+      color: $dark-text-color;
+
+      &::before {
+        border: 2px solid $light-border-color;
+      }
+      &::after {
+        background: $light-background;
+      }
+
+      @media (min-width: $screen-sm-min) {
+        &:hover {
+          color: $light-border-color;
+        }
+
+        &:active:focus, &:active, &:focus, #{'.active'} > &, &.disabled, &.btn[disabled], #{'.disabled'} > & {
+          color: $dark-text-color;
+        }
+      }
+
+      @media only screen and (max-width: $screen-sm-min - 1) {
+        &:active:focus, &:active, &:focus, &.hover, &:hover {
+          color: $dark-text-color;
+        }
+      }
+    }
+  }
+
+  .tmhtmlcontent-footer {
+    margin-right: 0;
+    margin-left: 0;
+
+    li {
+      a {
+        padding-left: 0 !important;
+
+        &::before {
+          display: none !important;
+        }
+      }
+    }
+
+    .item-link {
+      margin-top: 11px;
+    }
+
+    .item-html {
+      padding-right: 4.21vw;
+      line-height: (30/16);
+
+      @media (min-width: $screen-lg-min) {
+        font-size: 16px;
+      }
+    }
+  }
+
+  #block_contact_infos {
+    @media (min-width: $screen-sm-min) {
+      margin-top: 15px;
+
+      h4 {
+        display: none;
+      }
+
+      a, span {
+        color: $light-text-color;
+
+        &::before {
+          color: $primary-text-color;
+        }
+      }
+
+      a:hover {
+        color: $link-hover-color;
+      }
+    }
+  }
+  
+
+}

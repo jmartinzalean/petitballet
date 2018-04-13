@@ -1,0 +1,71 @@
+@import "_theme_variables";
+
+/*
+* @subsection   My-account Page Styles
+*/
+#my-account {
+  .page-heading {
+    padding-bottom: 0;
+
+    @media (min-width: $screen-md-min) and (max-width: $screen-lg-min - 1) {
+      margin-bottom: 20px;
+    }
+  }
+
+  .addresses-lists {
+    margin-bottom: 30px;
+  }
+  p.info-account {
+    margin: -4px 0 24px 0;
+  }
+  ul.myaccount-link-list {
+    li {
+      overflow: hidden;
+      padding-bottom: 10px;
+
+      a {
+        display: block;
+        overflow: hidden;
+        font: $font-subheading;
+        font-weight: 500;
+        text-decoration: none;
+        position: relative;
+        border: 1px solid;
+        border-color: $base-border-color;
+        background: $base-box-bg;
+        transition: $base-transition;
+
+        @media (min-width: $screen-md-min) and (max-width: $screen-lg-min - 1) {
+          font-size: 18px;
+          font-weight: 500;
+        }
+
+        i {
+          font-size: 25px;
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 52px;
+          height: 100%;
+          padding: 0;
+          line-height: 55px;
+          text-align: center;
+          border-right: 1px solid lighten($base-border-color, 15);
+        }
+        span {
+          display: block;
+          padding: 13px 15px 15px 17px;
+          overflow: hidden;
+          border-left: 1px solid;
+          margin-left: 52px;
+          border-color: $base-border-color;
+        }
+        &:hover {
+          background: darken($base-box-bg, 5);
+          border-color: darken($base-border-color, 5);
+          color: $base-body-color;
+        }
+      }
+    }
+  }
+}

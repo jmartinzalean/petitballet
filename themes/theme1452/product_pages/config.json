@@ -1,0 +1,17 @@
+{
+  "default": {
+    "name": "Default",
+    "preview": "default.jpg",
+    "default": 1
+  },
+  "product_1": {
+    "name": "Product 1",
+    "preview": "product_1.jpg",
+    "default": 0
+  },
+  "product_2": {
+    "name": "Product 2",
+    "preview": "product_2.jpg",
+    "default": 0
+  }
+}

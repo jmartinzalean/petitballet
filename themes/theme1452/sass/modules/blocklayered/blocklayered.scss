@@ -1,0 +1,322 @@
+@import "../../_theme_variables";
+@import "../../_elements_variables";
+@import '../../bootstrap_lib/_mixins';
+
+#layered_block_left {
+  .ui-slider-horizontal {
+    height: 2px;
+    border-radius: 0;
+    background: #e8e8e8;
+
+    .ui-widget-header {
+      background: $primary-background;
+    }
+    .ui-slider-range {
+      top: -2px;
+      height: 4px;
+    }
+    .ui-slider-handle {
+      top: -8px;
+      margin-left: -10px;
+      border-radius: 50%;
+      background: $primary-background;
+      border-color: $primary-background;
+
+      @include size(15px, 15px);
+
+      &.ui-state-active {
+        box-shadow: 0 0 10px 0 rgba($color-primary, 0.3);
+      }
+    }
+  }
+
+  .title_block {
+    &:after {
+      display: none;
+    }
+  }
+
+  .layered_subtitle_heading {
+    margin-bottom: 10px;
+  }
+
+  #layered_form {
+    .layered_subtitle {
+      font: $font-subheading;
+      color: $dark-text-color;
+
+      @media (min-width: $screen-md-min) and (max-width: $screen-lg-min - 1), (min-width: $screen-sm-min) and (max-width: $screen-md-min - 1) {
+        font-size: 15px;
+      }
+
+      @media (min-width: $screen-lg-min) {
+        font-size: 17px;
+      }
+    }
+    #enabled_filters {
+      margin-bottom: 40px;
+      padding: 20px 25px;
+      border: 2px solid #e8e8e8;
+
+      @media (min-width: 1600px) {
+        margin-right: 51px;
+        margin-bottom: 100px;
+      }
+
+      ul li {
+        font-size: 14px;
+        text-transform: lowercase;
+
+        a {
+          float: right;
+          cursor: pointer;
+          color: $dark-text-color;
+
+          &:hover {
+            color: $base-body-color;
+          }
+        }
+
+        span {
+          text-transform: capitalize;
+          color: $dark-text-color;
+          font-weight: 700;
+          font-family: $font-custom;
+
+          @media (min-width: $screen-lg-min) {
+            font-size: 17px;
+          }
+        }
+      }
+    }
+    .layered_filter, .layered_price {
+      margin-bottom: 25px;
+
+      @media (min-width: 1600px) {
+        margin-bottom: 80px;
+      }
+    }
+    .layered_price {
+      ul li.layered_list {
+        float: left;
+        clear: left;
+      }
+
+      label {
+        margin-bottom: 15px;
+      }
+    }
+    ul {
+      float: none;
+      clear: both;
+      padding: 0;
+      margin: 0;
+
+      li {
+        float: none;
+        padding: 0;
+        list-style-type: none;
+
+        + li {
+          margin-top: 10px;
+        }
+
+        &.disabled {
+          color: #666;
+        }
+        &.layered_list {
+          display: block;
+          cursor: pointer;
+          &.layered_list_selected, &:hover {
+            font-weight: bold;
+          }
+        }
+      }
+      .selector {
+        margin-bottom: 15px;
+      }
+      .layered_slider_container {
+        margin: 6px 0 6px 10px;
+        width: 89%;
+        .layered_slider {
+          margin-top: 5px;
+        }
+      }
+    }
+
+    a {
+      transition: $base-transition;
+    }
+
+    .color-group li {
+      line-height: 19px;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+
+      .color-option {
+        position: relative;
+        display: block;
+        width: 22px;
+        height: 22px;
+        margin: 0 10px 0 0;
+        border: none;
+        border-radius: 50%;
+        outline: none;
+        cursor: pointer;
+        transition: $base-transition;
+
+        &.on, &:hover {
+          transform: scale3d(0.7, 0.7, 1);
+          box-shadow: 0 0 0 3px $light-background, 0 0 0 5px currentColor;
+        }
+
+        &.disable {
+          opacity: 0.5;
+          filter: alpha(opacity=50);
+          -moz-opacity: 0.5;
+        }
+      }
+    }
+    .form-group {
+      margin-top: 15px;
+      margin-bottom: 0;
+      &:first-child {
+        margin-top: 0;
+      }
+      .form-label {
+        display: inline-block;
+        margin-bottom: 5px;
+      }
+    }
+    .hide-action {
+      text-align: right;
+      display: block;
+      cursor: pointer;
+      &:hover {
+        font-weight: bold;
+      }
+    }
+  }
+  #layered_ajax_loader p {
+    margin: 20px 0;
+    text-align: center;
+  }
+  @media (min-width: $screen-sm-min) {
+    .collapse {
+      display: block !important;
+      height: auto !important;
+    }
+    .title-collapse {
+      display: none !important;
+    }
+  }
+  @media (max-width: $screen-xs-max) {
+    display: block;
+    width: 90%;
+    height: 100vh;
+    z-index: 10000;
+    position: fixed;
+    right: 0;
+    top: 0;
+    padding: 80px 30px 30px;
+    background: $light-background;
+    transform: translate(100%, 0);
+    transition: transform .3s ease;
+
+    &.active {
+      transform: translate(0, 0);
+    }
+    .layered_block_inner {
+      max-height: 100%;
+      overflow: auto;
+    }
+    .selector {
+      min-width: 228px;
+      span {
+        min-width: 216px;
+      }
+    }
+    .filter-close {
+      display: block;
+      cursor: pointer;
+      color: $dark-text-color;
+      width: 24px;
+      height: 24px;
+      position: absolute;
+      top: 15px;
+      left: 15px;
+      text-align: center;
+      z-index: 5;
+
+      &:before {
+        font-size: 24px;
+        @include addIconCustom('\e00b');
+      }
+    }
+  }
+}
+
+#filter-button {
+  @media (min-width: $screen-sm-min) {
+    display: none !important;
+  }
+  @media (max-width: $screen-xs-max) {
+    margin-bottom: 30px;
+    &:before {
+      @include addIconCustom('\e020');
+      margin-right: 20px;
+    }
+  }
+
+  @media only screen and (max-width: 479px) {
+    width: calc(50% - 5px);
+    margin-right: 5px;
+    margin-left: -5px;
+    margin-bottom: 20px;
+
+    &:before {
+      margin: 0;
+    }
+
+    span {
+      display: none;
+    }
+  }
+}
+
+#filter-overlay {
+  background: $dark-background;
+  opacity: 0.5;
+  position: fixed;
+  left: -500px;
+  top: -500px;
+  right: -500px;
+  bottom: -500px;
+  display: none;
+  z-index: 9999;
+  &.active {
+    display: block;
+  }
+  @media (min-width: $screen-sm-min) {
+    display: none !important;
+  }
+}
+/*
+* @package      loader
+* @description  loader on category page
+*
+*/
+.loader {
+  z-index: 10;
+  position: absolute;
+  top: 300px;
+  left: 50%;
+  transform: translateX(-50%);
+}

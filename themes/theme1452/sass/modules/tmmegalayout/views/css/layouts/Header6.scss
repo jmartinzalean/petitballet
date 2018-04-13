@@ -1,0 +1,85 @@
+@import "../../../../../_theme_variables";
+
+.header-container {
+  .top_menu, .top_menu .stickUpHolder {
+    > ul {
+      > li {
+        &:first-child {
+          > a, &.without-link > span {
+            @media (min-width: $screen-md-min) {
+              padding-left: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: $screen-md-min - 1) {
+    .align-items-center {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .header_logo {
+      justify-content: center;
+
+      @media only screen and (max-width: 550px) {
+        margin: 10px 0;
+      }
+    }
+  }
+
+  .responsive-wrapper {
+    @media (max-width: $screen-md-min - 1) {
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+
+    .responsive-elements-2-child {
+      order: 2;
+    }
+    .responsive-elements-child {
+      order: 1;
+    }
+  }
+
+  .block-contact {
+    .shop-email {
+      @media (max-width: $screen-md-min - 1) {
+        margin-right: 15px;
+      }
+
+      @media only screen and (max-width: 479px) {
+        display: none;
+      }
+    }
+  }
+
+  #header-login div.current {
+    @media (min-width: $screen-md-min) {
+      a {
+        display: flex;
+        align-items: center;
+      }
+
+      [class*='-title'] {
+        order: 1;
+        display: block;
+        margin-left: 10px;
+      }
+
+      &.active, .active & {
+        a{
+          &::before {
+            animation: iconAnimationIn 0.3s $custom-timing-function;
+          }
+
+          &::after {
+            animation:  iconAnimationOut 0.3s $custom-timing-function both;
+          }
+        }
+      }
+    }
+  }
+}

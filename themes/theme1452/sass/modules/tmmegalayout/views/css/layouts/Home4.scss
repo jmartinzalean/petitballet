@@ -1,0 +1,33 @@
+@import '../../../../../_theme_variables';
+
+/*
+* @package        title block styles
+* @description
+*
+*/
+.block {
+  .title_block, .block h4 {
+    font-weight: 700;
+    text-transform: uppercase;
+
+    .index & {
+      text-align: left;
+    }
+
+    span {
+      &::after {
+        display: none;
+      }
+    }
+  }
+}
+
+.one-column {
+  #daydeal-products {
+    margin-bottom: 30px;
+
+    @media (min-width: $screen-lg-min) {
+      margin-bottom: 50px;
+    }
+  }
+}

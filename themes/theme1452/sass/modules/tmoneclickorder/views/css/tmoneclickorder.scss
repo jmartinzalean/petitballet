@@ -1,0 +1,72 @@
+@import "../../../../_theme_variables";
+
+.preorder-form-box {
+  @media (min-width: $screen-xs-min) {
+    .fancybox-wrap & {
+      min-width: 400px;
+    }
+  }
+
+  .fancybox-skin {
+    border-radius: 0px;
+  }
+  .fancybox-inner {
+    width: auto !important;
+    form {
+      padding: 15px;
+
+      @media (min-width: $screen-lg-min) {
+        padding: 40px;
+      }
+    }
+  }
+  .fancybox-close {
+    background: none;
+    font-size: 14px;
+    right: -6px;
+    top: -6px;
+  }
+
+  input {
+    &.form-control {
+      & + .form-control {
+        margin-top: 15px;
+      }
+    }
+  }
+
+  textarea {
+    min-height: 100px;
+  }
+
+  #submitPreorder {
+    width: 100%;
+    font-size: 15px;
+  }
+  .form-group {
+    &.form-ok, &.form-error {
+      input, textarea {
+        //background-position: 98% 11px;
+      }
+    }
+  }
+  .content-description {
+    font-size: 20px;
+    font-weight: bold;
+  }
+}
+
+#add_preorder {
+}
+
+.datepicker {
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.preorder-form-success {
+  .fancybox-inner {
+    padding: 20px;
+  }
+}
