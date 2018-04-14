@@ -1,0 +1,6 @@
+.block .title_block, .block h4 {
+  margin-bottom: 30px;
+  font-weight: 400; }
+
+.homefeatured-wrap h4 + p {
+  display: none; }

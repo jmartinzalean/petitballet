@@ -1,0 +1,51 @@
+@import "../../_theme_variables";
+@import "../../_header_modules_variables";
+
+#languages-block-top {
+  position: relative;
+  font-size: 16px;
+  font-weight: 700;
+
+  span.firstWord {
+    display: none;
+  }
+  div.current {
+    @include hm-indent;
+
+    text-transform: uppercase;
+
+    span {
+      margin-right: 3px;
+    }
+
+    &:after {
+      @include hm-icon;
+
+      transition: $base-transition;
+      transform-origin: center;
+    }
+    &.active {
+      &:after {
+        transform: rotate(-180deg) translateZ(0);
+      }
+    }
+  }
+
+  ul {
+    @include hm-drop-down-box;
+    font-weight: 400;
+
+    .justify-end & {
+      @media (min-width: 1600px) {
+        left: 0;
+        right: auto;
+      }
+    }
+
+    li {
+      &.selected, &.selected a, a:hover, a:focus {
+        color: $hm-text-color;
+      }
+    }
+  }
+}

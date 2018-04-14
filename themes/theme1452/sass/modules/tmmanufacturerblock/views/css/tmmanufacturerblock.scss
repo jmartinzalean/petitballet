@@ -1,0 +1,96 @@
+@import "../../../../_theme_variables";
+@import "../../../../_elements_variables";
+
+/**************************************************************************
+		        Style TM Manufacturer Block
+**************************************************************************/
+
+#tm_manufacturers_block {
+  text-align: center;
+
+  @media (min-width: 1600px) {
+    margin-bottom: 60px;
+  }
+
+  .bx-wrapper {
+    .manufacturers_items {
+      li {
+        &.caroucel_item {
+          width: 25%;
+        }
+      }
+    }
+    .bx-controls {
+      margin-top: 25px;
+
+      @media (min-width: $screen-lg-min) {
+        margin-top: 1.6vw;
+      }
+
+      .bx-pager {
+        .bx-pager-link {
+          &.active,
+          &:hover {
+            background: $dark-text-color;
+          }
+        }
+      }
+      .bx-controls-direction {
+        @include bxControls();
+
+        a {
+          &:before {
+            color: $dark-text-color;
+          }
+          &:hover {
+            &:before {
+              color: $dark-text-color;
+            }
+          }
+          &.bx-prev {
+            left: 12px;
+          }
+          &.bx-next {
+            right: 12px;
+          }
+        }
+
+      }
+    }
+  }
+
+  a {
+    display: block;
+    transition: $base-transition;
+
+    &:hover {
+      opacity: 0.5;
+    }
+
+    img {
+      display: inline-block;
+    }
+
+    + p {
+      margin-top: 14px;
+      padding: 0 3.02vw;
+      line-height: (24/16);
+    }
+    + a {
+      margin-top: 12px;
+    }
+  }
+
+  .manufacturer-name {
+    color: $dark-text-color;
+    font: 700 24px/#{(30/24)} $font-custom;
+  }
+
+  p {
+    color: $base-body-color;
+
+    @media (min-width: $screen-md-min) {
+      font-size: 16px;
+    }
+  }
+}

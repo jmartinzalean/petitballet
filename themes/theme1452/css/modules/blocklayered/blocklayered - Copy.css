@@ -1,0 +1,144 @@
+#layered_block_left {
+  overflow: hidden; }
+  #layered_block_left .title_block:after {
+    display: none; }
+  #layered_block_left #layered_form .layered_subtitle {
+    font: bold 18px/24px "Open Sans", sans-serif; }
+  #layered_block_left #layered_form #enabled_filters {
+    background: #f1f4f7;
+    border: 1px solid #d2dae3;
+    padding: 14px 18px 13px;
+    margin: 0 0 30px 0;
+    font: normal 13px/23px "Open Sans", sans-serif;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px; }
+    #layered_block_left #layered_form #enabled_filters ul li {
+      padding: 2px 0; }
+      #layered_block_left #layered_form #enabled_filters ul li a {
+        float: right;
+        cursor: pointer; }
+  #layered_block_left #layered_form .layered_filter {
+    border-bottom: 1px solid #eee;
+    overflow: hidden;
+    margin-bottom: 15px; }
+    #layered_block_left #layered_form .layered_filter .layered_filter_ul.color-group {
+      list-style-type: none;
+      margin: 0 -2px; }
+      #layered_block_left #layered_form .layered_filter .layered_filter_ul.color-group li {
+        display: inline-block;
+        margin: 0 2px 4px;
+        padding: 1px;
+        border: 1px solid #d2dae3;
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+        border-radius: 5px;
+        clear: none;
+        width: auto;
+        float: none;
+        position: relative; }
+        #layered_block_left #layered_form .layered_filter .layered_filter_ul.color-group li > a, #layered_block_left #layered_form .layered_filter .layered_filter_ul.color-group li > input {
+          display: block;
+          height: 30px;
+          width: 30px;
+          cursor: pointer;
+          margin: 0;
+          -moz-border-radius: 5px;
+          -webkit-border-radius: 5px;
+          border-radius: 5px;
+          position: relative;
+          border: none; }
+          #layered_block_left #layered_form .layered_filter .layered_filter_ul.color-group li > a.on, #layered_block_left #layered_form .layered_filter .layered_filter_ul.color-group li > input.on {
+            -moz-box-shadow: 0 0 0 2px #d2dae3;
+            -webkit-box-shadow: 0 0 0 2px #d2dae3;
+            box-shadow: 0 0 0 2px #d2dae3; }
+            #layered_block_left #layered_form .layered_filter .layered_filter_ul.color-group li > a.on + label span, #layered_block_left #layered_form .layered_filter .layered_filter_ul.color-group li > a.on + input + label span, #layered_block_left #layered_form .layered_filter .layered_filter_ul.color-group li > input.on + label span, #layered_block_left #layered_form .layered_filter .layered_filter_ul.color-group li > input.on + input + label span {
+              display: none; }
+            #layered_block_left #layered_form .layered_filter .layered_filter_ul.color-group li > a.on + label a:before, #layered_block_left #layered_form .layered_filter .layered_filter_ul.color-group li > a.on + input + label a:before, #layered_block_left #layered_form .layered_filter .layered_filter_ul.color-group li > input.on + label a:before, #layered_block_left #layered_form .layered_filter .layered_filter_ul.color-group li > input.on + input + label a:before {
+              font-family: "FontAwesome";
+              content: "\f00c";
+              display: inline-block;
+              font-weight: normal;
+              color: #f13340; }
+        #layered_block_left #layered_form .layered_filter .layered_filter_ul.color-group li > input {
+          height: 54.4px;
+          width: 54.4px; }
+        #layered_block_left #layered_form .layered_filter .layered_filter_ul.color-group li label {
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          text-align: center;
+          cursor: pointer;
+          -moz-transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+          -o-transform: translate(-50%, -50%);
+          -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%); }
+          #layered_block_left #layered_form .layered_filter .layered_filter_ul.color-group li label a {
+            height: 21.25px;
+            width: 21.25px;
+            line-height: 21.25px;
+            display: block;
+            background: white;
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;
+            border-radius: 5px; }
+          #layered_block_left #layered_form .layered_filter .layered_filter_ul.color-group li label strong {
+            display: none; }
+        #layered_block_left #layered_form .layered_filter .layered_filter_ul.color-group li.selected {
+          border: 1px solid #102747; }
+  #layered_block_left #layered_form ul {
+    clear: both;
+    padding: 5px 0;
+    margin: 0; }
+    #layered_block_left #layered_form ul li {
+      padding: 5px 0;
+      list-style-type: none; }
+      #layered_block_left #layered_form ul li.disabled {
+        color: #666; }
+      #layered_block_left #layered_form ul li.layered_list {
+        display: block;
+        cursor: pointer; }
+        #layered_block_left #layered_form ul li.layered_list.layered_list_selected, #layered_block_left #layered_form ul li.layered_list:hover {
+          font-weight: bold; }
+    #layered_block_left #layered_form ul .selector {
+      margin-bottom: 15px; }
+    #layered_block_left #layered_form ul .layered_slider_container {
+      margin: 6px 0 6px 10px;
+      width: 89%; }
+      #layered_block_left #layered_form ul .layered_slider_container .layered_slider {
+        margin-top: 5px; }
+  #layered_block_left #layered_form .color-option {
+    border: 1px solid #102747;
+    height: 16px;
+    margin-left: 0;
+    padding: 0;
+    width: 16px;
+    margin-right: 5px; }
+    #layered_block_left #layered_form .color-option.on + input + label, #layered_block_left #layered_form .color-option.on + label {
+      -moz-box-shadow: 0 0 0 2px #f13340;
+      -webkit-box-shadow: 0 0 0 2px #f13340;
+      box-shadow: 0 0 0 2px #f13340; }
+      #layered_block_left #layered_form .color-option.on + input + label span, #layered_block_left #layered_form .color-option.on + label span {
+        display: none !important; }
+    #layered_block_left #layered_form .color-option.disable {
+      opacity: 0.5;
+      filter: alpha(opacity=50);
+      -moz-opacity: 0.5; }
+  #layered_block_left #layered_form .form-group {
+    margin-top: 15px;
+    margin-bottom: 0; }
+    #layered_block_left #layered_form .form-group:first-child {
+      margin-top: 0; }
+    #layered_block_left #layered_form .form-group .form-label {
+      display: inline-block;
+      margin-bottom: 5px; }
+  #layered_block_left #layered_form .hide-action {
+    text-align: right;
+    display: block;
+    cursor: pointer; }
+    #layered_block_left #layered_form .hide-action:hover {
+      font-weight: bold; }
+  #layered_block_left #layered_ajax_loader p {
+    margin: 20px 0;
+    text-align: center; }

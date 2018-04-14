@@ -1,0 +1,37 @@
+@import "../../../../../_theme_variables";
+
+.footer-container {
+  background: transparent;
+
+  .tmhtmlcontent-footer {
+    margin-top: 40px;
+    text-align: center;
+
+    @media (min-width: $screen-md-min) {
+      margin-top: 4.69vw;
+    }
+
+    @media (min-width: 1600px) {
+      margin-top: 90px;
+    }
+
+    img {
+      display: inline-block;
+    }
+
+    .item-html {
+      p {
+        display: inline-block;
+        max-width: 100%;
+        padding: 0 15px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+
+        @media (min-width: $screen-sm-min) {
+          max-width: 650px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,118 @@
+@import 'bootstrap_lib/_variables';
+@import "css3-mixins";
+
+// ------- FONTS -------
+
+$font-family: 'Open Sans', sans-serif;
+$font-custom: 'Roboto', sans-serif;
+$font: normal 13px/18px $font-family;
+$font-heading: 700 35px/#{(52/30)} $font-custom;
+$font-maxheading: bold 65px/#{(85/65)} $font-custom;
+$font-subheading: bold 24px/28px $font-custom;
+$fa-font-path: "../fonts";
+$font-icon: "FontAwesome";
+$font-icon-custom: 'fl-outicons';
+
+// ------- MAIN ICON MIXIN -------
+
+@mixin addIcon($content) {
+  font-family: $font-icon;
+  content: $content;
+  display: inline-block;
+  font-weight: normal;
+}
+
+@mixin addIconCustom($content) {
+  font-family: $font-icon-custom;
+  content: $content;
+  display: inline-block;
+  font-weight: normal;
+}
+
+// ------- MAIN COLORS --------
+
+$color-base: #595959;
+$color-primary: #cbab91;
+$color-dark: #121212;
+$color-light: #fff;
+$color-black: #000;
+$color-succes: #91dd4d;
+$color-warning: #ff514d;
+$color-box: #f3f3f3;
+$color-secondary: #f4f4f4;
+
+// ------- BORDERS ---------
+
+$base-border-color: darken(saturate(adjust_hue($color-box, 139.99999999999983), 5.263157894736871%), 6.470588235294116%);
+$table-border-color: $base-border-color;
+$main_border: 1px solid $base-border-color;
+$dark-border-color: $color-dark;
+$light-border-color: $color-light;
+$primary-border-color: $color-primary;
+$secondary-border-color: darken(saturate(adjust_hue($color-box, 0), 0%), 56.8627450980392%);
+
+// ------- BACKGROUNDS -------
+
+$base-box-bg: lighten($color-box, 10);
+$table-background: $base-box-bg;
+$dark-background: $color-dark;
+$light-background: $color-light;
+$primary-background: $color-primary;
+$secondary-background: $color-secondary;
+$olark-heading-bg: $primary-background;
+$black-background: $color-black;
+
+// ---- footer backgrounds
+
+$secondary-background-2: #131313;
+$secondary-background-3: #1f1f1f;
+$secondary-background-3: #2d2d2d;
+
+// ------- COLORS -------
+
+$base-body-color: $color-base;
+$base-text-color: darken($color-base, 10);
+$light-text-color: $color-light;
+$dark-text-color: $color-dark;
+$primary-text-color: $color-primary;
+$secondary-text-color: darken(saturate(adjust_hue($color-box, 0), 0%), 56.8627450980392%);
+
+$base-heading-color: $color-dark;
+$base-title-color: $base-text-color;
+
+$link-color: lighten(saturate(adjust_hue($color-base, 0), 0%), 3.529411764705891%);;
+$link-hover-color: $color-primary;
+
+// ------- Cart Steps On Page Checkout --------
+
+$cs-border-radius: 0;
+$step-todo-bg: $base-box-bg;
+$step-todo-border-color: darken($step-todo-bg, 15);
+$step-current-bg: $primary-background;
+$step-current-border-color: darken($step-current-bg, 15);
+$step-done-bg: $dark-background;
+$step-done-border-color: darken($step-done-bg, 15);
+$step-hover-bg: darken($step-done-bg, 15);
+$step-hover-border-color: darken($step-hover-bg, 15);
+
+// ------- Border radius on --inputs--selects--buttons--itc----------
+
+$border-radius-base: 0px;
+$border-radius-small: 0px;
+
+// ------- TRANSITIONS -------
+$base-transition: all 0.3s ease-in-out;
+$custom-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+// ------- BOX-SHADOWS -------
+$base-box-shadow: 0 2px 30px rgba(12, 12, 12, .06);
+
+
+// -----   custom break points ------ //
+
+$screen-xl-min: 1640px;
+$screen-lg-max: 1639px;
+
+// ------ overlay image ---
+
+$overlay-data-img: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABCCAMAAACWyYNNAAAABlBMVEX09PT6+vqUvHGeAAAAAnRSTlMzMz0oyR4AAACNSURBVHgB7ddBCgUxCIPh3/tf+u1mNeImkTcSD+BHGygpNQ2C2TCYCD/CAsIVBD8CfoQFhCMI+BEWEI4gGGbDQG+8bHEYVWakJkR4+y0iMJplYuN9ndZoFKnRKUqjVYRGrziNqhnRVQXnOR7GajzIR0r7P/xw6r4RQ4/ESOYeI3nEyLsbI5knj+SRvssPD1EHflIEpeQAAAAASUVORK5CYII=';

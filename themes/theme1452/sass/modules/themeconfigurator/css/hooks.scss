@@ -1,0 +1,474 @@
+@import '../../../_theme_variables';
+
+/* Top hook CSS */
+.htmlcontent-top, .htmlcontent-home {
+  display: flex;
+  margin-bottom: 30px;
+
+  .item-html {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    padding: 8%;
+    color: $light-text-color;
+
+    @media (max-width: $screen-sm-min - 1) {
+      text-align: center;
+    }
+
+    @media (min-width: $screen-sm-min) {
+      padding: 13.75%;
+    }
+
+    > * {
+      width: 100%;
+    }
+  }
+
+  .banner-box {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 15px 0;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      display: block;
+      width: 12vw;
+      height: 12vw;
+      max-width: 220px;
+      max-height: 220px;
+      border-radius: 50%;
+      background-color: $dark-background;
+      transform: translate(-50%, -50%);
+
+      @media only screen and (max-width: 399px) {
+        width: 40vw;
+        height: 40vw;
+      }
+    }
+
+    span:not(.big) {
+      position: relative;
+      display: none;
+      font-size: 1.35vw;
+      color: $base-body-color;
+      letter-spacing: 0.06em;
+
+      @media (min-width: $screen-sm-min) {
+        display: inline-block;
+      }
+    }
+
+    .big {
+      position: relative;
+      font-size: 3.13vw;
+      letter-spacing: 0.04em;
+      color: $light-text-color;
+
+      @media only screen and (max-width: 399px) {
+        font-size: 14vw;
+      }
+    }
+  }
+
+  .btn {
+    display: none;
+    font-size: 14px;
+    font-weight: 700;
+
+    @media (min-width: 1600px) {
+      min-width: 200px;
+    }
+    @media (min-width: $screen-sm-min) {
+      display: inline-block;
+    }
+  }
+
+  .link {
+    display: none;
+    color: $light-text-color;
+
+    &::before {
+      border-width: 2px;
+    }
+
+    @media (min-width: $screen-sm-min) {
+      display: inline-block;
+    }
+  }
+
+  h3, h4, .link, .banner-box {
+    font-family: $font-custom;
+    font-weight: 700;
+    line-height: (70/58);
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+
+    + .banner-box {
+      margin-top: 4.60vw;
+
+      @media only screen and (max-width: 399px) {
+        margin-top: 15.60vw;
+      }
+
+      @media (min-width: $screen-lg-min) {
+        margin-top: 2.60vw;
+      }
+    }
+
+    + p {
+      margin-top: 10px;
+    }
+  }
+
+  h3 {
+    margin: 0;
+    font-size: 25px;
+
+    @media (min-width: 400px) {
+      font-size: 5.02vw;
+    }
+
+    @media (min-width: $screen-sm-min) {
+      font-size: 3.02vw;
+    }
+  }
+
+  h4 {
+    margin: 0;
+    font-size: 25px;
+
+    @media (min-width: 400px) {
+      font-size: 3.08vw;
+    }
+
+    @media (min-width: $screen-sm-min) {
+      font-size: 2.08vw;
+    }
+  }
+
+  p {
+    display: none;
+    line-height: (30/20);
+    font-weight: 300;
+    letter-spacing: 0;
+
+    @media (min-width: $screen-sm-min) {
+      display: block;
+    }
+
+    @media (min-width: 1600px) {
+      font-size: 20px;
+    }
+
+    + p {
+      margin-top: 1.56vw;
+    }
+  }
+
+  li {
+    padding: 0;
+
+    @media (min-width: 400px) {
+      padding: 0 2px;
+    }
+
+    @media (min-width: $screen-xs-min) {
+      padding: 0 5px;
+    }
+
+    @media (min-width: $screen-md-min) {
+      padding: 0 10px;
+    }
+    &:last-child {
+      display: flex;
+      flex-direction: column;
+
+      justify-content: space-between;
+
+      .item-html > * {
+        @media (min-width: $screen-lg-min) {
+          width: 89%;
+        }
+
+        @media (min-width: 1600px) {
+          width: 83%;
+        }
+      }
+    }
+    &:first-child {
+      .item-html {
+        align-items: flex-end;
+
+        > * {
+          @media (min-width: $screen-lg-min) {
+            width: 63%;
+          }
+
+          @media (min-width: 1600px) {
+            width: 60%;
+          }
+        }
+      }
+    }
+
+    &:nth-child(2) {
+      text-align: center;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      transition: $base-transition;
+    }
+  }
+
+  a {
+    position: relative;
+    display: block;
+    overflow: hidden;
+
+    backface-visibility: hidden;
+
+    &::before, &::after {
+      content: '';
+      transition: all 0.5s $custom-timing-function;
+      pointer-events: none;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-top: 2px solid $light-border-color;
+      border-bottom: 2px solid $light-border-color;
+      opacity: 0;
+      transform: rotate3d(0, 0, 1, 45deg) scale3d(1, 0, 1);
+      transform-origin: 50% 50%;
+    }
+
+    &:hover {
+      @media (min-width: $screen-md-min) {
+        &::after {
+          opacity: 0.2;
+          transform: rotate3d(0, 0, 1, 45deg) scale3d(1, 1, 1);
+        }
+        img {
+          opacity: 0.9;
+          transform: scale3d(1.05, 1.05, 1);
+        }
+      }
+    }
+  }
+}
+
+.htmlcontent-top {
+  @media only screen and (max-width: 400px) {
+    flex-wrap: wrap;
+
+    > *:not(:last-child), > *:last-child > * {
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.htmlcontent-home {
+  @media (min-width: 1600px) {
+    margin-bottom: 75px;
+  }
+
+  @media only screen and (max-width: 479px) {
+    flex-wrap: wrap;
+
+    > * {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+
+    h4 {
+      font-size: 20px;
+    }
+  }
+
+  .item-html {
+    align-items: center;
+    > * {
+      width: auto;
+    }
+  }
+
+  li {
+    &:first-child, &:last-child {
+      .item-html {
+        align-items: center;
+        > * {
+          @media (min-width: $screen-lg-min) {
+            width: auto;
+          }
+          @media (min-width: 1600px) {
+            width: auto;
+          }
+        }
+      }
+    }
+  }
+
+  .link, h4 {
+    @media (min-width: $screen-sm-min) {
+      margin-bottom: auto;
+    }
+  }
+
+  h4 {
+    text-shadow: 0 0 10px $dark-text-color;
+  }
+
+  .link {
+    color: $dark-text-color;
+    text-shadow: 0 0 10px $light-text-color;
+
+    @media (min-width: $screen-lg-min) {
+      font-size: 22px;
+    }
+  }
+}
+
+/* Left hook CSS */
+.htmlcontent-left {
+  position: relative;
+  display: none;
+  margin: 0;
+
+  @media (min-width: $screen-sm-min) {
+    display: block;
+  }
+
+  .item-html {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    padding: 8%;
+    text-align: center;
+    color: $light-text-color;
+
+    @media (max-width: $screen-sm-min - 1) {
+      text-align: center;
+    }
+
+    @media (min-width: $screen-sm-min) {
+      padding: 13.75%;
+    }
+
+    > * {
+      width: 100%;
+    }
+  }
+
+  h3, h5 {
+    font-family: $font-custom;
+    font-weight: 700;
+    line-height: (70/58);
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+  }
+
+  h3 {
+    position: relative;
+    margin: 0;
+    letter-spacing: -0.05em;
+    font-size: 5.02vw;
+    font-weight: 900;
+
+    @media (min-width: $screen-sm-min) {
+      font-size: 3.02vw;
+    }
+
+    @media (min-width: 1600px) {
+      font-size: 178px;
+    }
+
+    span {
+      font-weight: 700;
+
+      &:first-child {
+        top: 3px;
+        margin-left: 5px;
+
+        @media (min-width: 1600px) {
+          position: absolute;
+          font-size: 120px;
+        }
+      }
+
+      &:nth-child(2) {
+        margin-left: 5px;
+        letter-spacing: 0.075em;
+        @media (min-width: $screen-lg-min) {
+          font-size: 36px;
+        }
+      }
+    }
+  }
+
+  h5 {
+    margin: 0;
+    font-size: 3.08vw;
+    font-weight: 900;
+    letter-spacing: 0.075em;
+
+    @media (min-width: $screen-sm-min) {
+      font-size: 2.08vw;
+    }
+
+    @media (min-width: 1600px) {
+      font-size: 48px;
+    }
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+    transition: $base-transition;
+  }
+}
+
+/* Right hook CSS */
+#htmlcontent_right {
+}
+
+/* Footer hook CSS */
+#htmlcontent_footer {
+}
+
+.firefox {
+  .htmlcontent-top {
+    > li:first-child {
+      .item-link {
+        height: 100%;
+
+        img {
+          height: 100%;
+        }
+      }
+    }
+  }
+}

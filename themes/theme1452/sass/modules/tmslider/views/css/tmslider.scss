@@ -1,0 +1,166 @@
+@import "../../../../_theme_variables";
+
+.slider-pro {
+  margin-bottom: 30px;
+
+  @media (min-width: 1600px) {
+    margin-bottom: 60px;
+  }
+
+  .sp-caption-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: left;
+    h2 {
+      position: relative;
+    }
+    p {
+      color: white;
+      position: relative;
+    }
+    button {
+      position: relative;
+    }
+  }
+
+  .sp-slides-container {
+    .sp-layer {
+      h2 {
+        position: relative;
+        color: $light-text-color;
+        font: 900 76px/#{(86/76)} $font-custom;
+        letter-spacing: 0.04em;
+
+        @media only screen and (max-width: 479px) {
+          font-size: 120px;
+        }
+      }
+
+      p {
+        font-size: 16px;
+        color: $light-text-color;
+        letter-spacing: 0;
+
+        .top-column &{
+          @media (min-width: $screen-sm-min) and (max-width: $screen-md-min - 1),
+          (min-width: $screen-xs-min) and (max-width: $screen-sm-min - 1){
+            font-size: 30px;
+            line-height: 1.2;
+          }
+        }
+
+        @media only screen and (max-width: 479px) {
+          display: none;
+        }
+      }
+
+      &.dark-content-color {
+        h2, p {
+          color: $dark-text-color;
+        }
+      }
+    }
+
+    .tmslider-category {
+
+      &, p {
+        display: none;
+        font: 400 14px/#{(52/14)} $font-custom;
+        text-transform: uppercase;
+        letter-spacing: 0.02em;
+        color: $dark-text-color;
+
+        @media (min-width: $screen-md-min) {
+          display: block;
+        }
+      }
+    }
+
+    .tmslider-name {
+      &, p {
+        display: block;
+        min-width: 500px;
+        font: 700 58px/#{(70/58)} $font-custom;
+        text-transform: uppercase;
+        letter-spacing: 0.02em;
+        color: #131313
+      }
+    }
+
+    .tmslider-desc {
+      &, p {
+        display: none;
+        color: $dark-text-color;
+        font-size: 16px;
+        line-height: (24/16);
+
+        @media (min-width: $screen-md-min) {
+          display: block;
+        }
+      }
+    }
+  }
+
+  .sp-arrows {
+    .sp-arrow {
+      $arrow-width: 70px;
+      display: none;
+      width: $arrow-width/2;
+      height: $arrow-width/2;
+      background-color: $light-background;
+      transition: all 0.3s $custom-timing-function;
+
+      @media (min-width: $screen-xs-min) {
+        display: block;
+      }
+
+      @media (min-width: $screen-md-min) {
+        width: $arrow-width;
+        height: $arrow-width;
+      }
+
+      &::after {
+        display: none;
+      }
+
+      &::before {
+        color: $dark-text-color;
+        top: 50%;
+        left: 50%;
+        width: auto;
+        height: auto;
+        font-size: 20px;
+        transform: translate(-50%, -50%);
+      }
+
+      &:hover {
+        width: calc(#{$arrow-width} + 10px);
+
+        @media (min-width: $screen-md-min) {
+          width: calc(#{$arrow-width} + 30px);
+        }
+      }
+    }
+  }
+
+  &.sp-horizontal {
+    .sp-previous-arrow {
+      left: 0;
+
+      &::before {
+        @include addIcon('\f177');
+      }
+    }
+
+    .sp-next-arrow {
+      right: 0;
+      transform: none;
+
+      &::before {
+        @include addIcon('\f178');
+      }
+    }
+  }
+
+}

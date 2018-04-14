@@ -1,0 +1,48 @@
+@import "../../../../../_theme_variables";
+
+.header-container {
+  .responsive-wrapper {
+    @media (max-width: $screen-md-min - 1) {
+      justify-content: space-between;
+    }
+  }
+
+  .header_logo {
+    @media only screen and (max-width: 550px) {
+      justify-content: flex-start;
+      margin: 10px 0;
+    }
+  }
+
+  .top_menu {
+    .is-megamenu {
+      box-shadow: $base-box-shadow;
+    }
+    .is-simplemenu {
+      &, & ul {
+        box-shadow: $base-box-shadow;
+      }
+    }
+  }
+}
+/*
+* @package      tmheaderacount styles
+* @description
+*
+*/
+#header-login .header-login-content {
+
+  @media (min-width: 400px) and (max-width: 600px) {
+    right: 50%;
+    transform: translateX(50%);
+  }
+
+  @media (min-width: $screen-xs-min) and (max-width: $screen-sm-min - 1) {
+    top: calc(100% + 5px);
+  }
+
+  @media (min-width: 600px) and (max-width: $screen-md-min - 1) {
+    right: auto;
+    left: 15px;
+  }
+}

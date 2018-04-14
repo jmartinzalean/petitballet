@@ -1,0 +1,137 @@
+@import "../_theme_variables";
+
+.columns-container {
+  #views_block, #views_block-1 {
+    position: relative;
+    margin-top: 0;
+
+    @media (min-width: $screen-sm-min) {
+      margin-bottom: 35px;
+    }
+
+    body.content_only & {
+      &::before, &::after {
+        display: none;
+      }
+    }
+
+    &::before, &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      display: block;
+      height: 100%;
+      pointer-events: none;
+
+    }
+
+    &::before {
+      left: 0;
+      width: calc(100% / 2);
+      background: $secondary-background;
+
+      @media (min-width: $screen-xs-min) {
+        width: calc(100% / 3);
+      }
+    }
+
+    &::after {
+      right: 0;
+      width: calc(100% - (100% / 2));
+      background: rgba($light-background, 0.5);
+
+      @media (min-width: $screen-xs-min) {
+        width: calc(100% - (100% / 3));
+      }
+    }
+
+    ul {
+      a {
+        display: block;
+
+        @media (min-width: $screen-lg-min) {
+          padding: 0 2.60vw;
+        }
+      }
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .bx-controls-direction {
+      .bx-next, .bx-prev {
+        z-index: 100;
+        top: 50%;
+        margin-top: -25px;
+        background: $dark-background;
+        transition: all .3s $custom-timing-function;
+
+        @media (min-width: $screen-lg-min) {
+          left: 5%;
+        }
+
+        &::before {
+          color: $light-text-color;
+        }
+      }
+
+      .bx-next {
+        @media (min-width: $screen-lg-min) {
+          right: 5%;
+          left: auto;
+        }
+      }
+    }
+  }
+  .pb-right-column {
+    padding-left: 15px;
+
+    @media (min-width: 1640px) {
+      padding-left: 10px;
+    }
+
+    > .row {
+      > *:first-child {
+        @media (min-width: 1600px) {
+
+          .one-column & {
+            padding-right: 7.81vw;
+          }
+        }
+      }
+    }
+  }
+}
+
+.page-product-box {
+  .page-product-heading {
+    font-weight: 400;
+
+    @media (min-width: 1600px) {
+      font-size: 24px;
+    }
+  }
+}
+
+#columns {
+  padding-top: 0;
+}
+
+.product-information {
+  margin-top: 2.60vw;
+
+  .one-column & {
+    @media (min-width: $screen-lg-min) {
+      margin-top: 0;
+    }
+  }
+}
+
+.two-columns {
+
+}
+
+.three-columns {
+
+}

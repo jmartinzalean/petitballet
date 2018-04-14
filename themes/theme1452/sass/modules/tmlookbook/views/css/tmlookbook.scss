@@ -1,0 +1,448 @@
+@import '../../../../_theme_variables';
+@import '../../../../_elements_variables';
+
+#columns {
+  padding-bottom: 0;
+}
+
+.tab-list {
+  margin-top: 20px;
+}
+
+#tmlookbooks {
+  .thumbnail {
+    position: relative;
+    padding: 0;
+    border: none;
+
+    .caption {
+      position: absolute;
+      bottom: 14.9%;
+      left: 0;
+      min-width: 307px;
+      padding: 9px 25px;
+      border-left: 0;
+      background: $dark-background;
+      color: $light-text-color;
+      text-align: center;
+      line-height: 1.5;
+
+      .name {
+        margin: 9px 0;
+        text-transform: uppercase;
+        letter-spacing: -1px;
+        font-weight: 400;
+        font-size: 30px;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .description {
+        display: none;
+      }
+
+      p {
+        font-size: 14px;
+      }
+    }
+    & + .thumbnail {
+      margin-top: 50px;
+    }
+  }
+}
+
+.hotSpotWrap {
+  position: relative;
+  display: inline-block;
+
+  .point {
+    z-index: 2;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    margin-top: -13px;
+    margin-left: -13px;
+    border-radius: 100%;
+    cursor: pointer;
+    transition: $base-transition;
+
+    @media (min-width: $screen-lg-min) {
+      width: 30px;
+      height: 30px;
+    }
+
+    &:before {
+      content: '\e000';
+      display: block;
+      width: 100%;
+      height: 100%;
+      color: #fff;
+      font-size: 20px;
+      font-family: $font-icon-custom;
+      line-height: 1;
+      transition: 0.3s;
+
+      @media (min-width: $screen-lg-min) {
+        font-size: 30px;
+      }
+    }
+
+    &.active {
+      z-index: 4;
+
+      &:before {
+        transition: 0.3s;
+        transform: rotate(45deg) translateZ(0);
+      }
+    }
+
+    &:hover {
+      &::before {
+        color: $link-hover-color;
+      }
+    }
+  }
+}
+
+.tm-lookbook-block {
+  .popover {
+    z-index: 3;
+    max-width: 150px;
+    width: 150px;
+    margin: 0;
+    border: none;
+    border-radius: 0;
+    box-shadow: $base-box-shadow;
+    transition: $base-transition;
+    transform: scale3d(0, 0, 1);
+
+    @media (min-width: $screen-xs-min) {
+      max-width: 200px;
+      width: 200px;
+    }
+
+    @media (min-width: $screen-lg-min) {
+      max-width: 400px;
+      width: 400px;
+    }
+
+    &.right {
+      top: 14px !important;
+      left: 5px !important;
+      transform-origin: top left;
+
+      @media only screen and (max-width: 479px) {
+        top: 5px !important;
+        left: -3px !important;
+      }
+    }
+
+    &.left {
+      top: 14px !important;
+      right: 9px !important;
+      left: auto !important;
+      margin-left: 14px;
+      transform-origin: top right;
+
+      @media only screen and (max-width: 479px) {
+        top: 5px !important;
+        right: 10px !important;
+      }
+    }
+
+    &.in {
+      transform: scale3d(1, 1, 1);
+    }
+
+    .arrow {
+      display: none;
+    }
+
+    .daydeal-box {
+      display: none;
+    }
+
+    .popover-content {
+      overflow: hidden;
+      padding: 8px;
+
+      @media (min-width: $screen-xs-min) {
+        padding: 15px;
+      }
+
+      @media (min-width: $screen-lg-min) {
+        padding: 30px;
+      }
+
+      .product-container {
+        display: flex;
+
+        [itemprop='name'] {
+          display: inline-block;
+          margin-top: 0;
+          margin-bottom: 0;
+
+          @media (min-width: $screen-xs-min) {
+            margin-bottom: 5px;
+          }
+        }
+        .content_price {
+          @media only screen and (max-width: 479px) {
+            .price, .old-price, .price-percent-reduction {
+              font-size: 12px;
+            }
+          }
+
+          @media (min-width: $screen-lg-min) {
+            margin-bottom: 35px;
+          }
+        }
+        .product-name {
+          @media only screen and (max-width: 479px) {
+            font-size: 10px;
+          }
+
+          @media (max-width: $screen-lg-min - 1) {
+            display: block;
+            display: -webkit-box;
+            max-height: 28px;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+          }
+
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 14px;
+        }
+        .product-price {
+          font-size: 16px;
+        }
+        .left-block {
+          @media (max-width: $screen-lg-min - 1) {
+            width: 40%;
+          }
+          .new-box, .sale-box {
+            display: none;
+          }
+          .product_img_link {
+            overflow: hidden;
+            max-width: 82px;
+
+            @include product-image();
+          }
+        }
+        .right-block {
+          margin-left: 8px;
+
+          @media (min-width: $screen-xs-min) {
+            margin-left: 20px;
+          }
+
+          @media (max-width: $screen-lg-min - 1) {
+            width: 60%;
+          }
+
+          @media (min-width: $screen-lg-min) {
+            margin-top: 15px;
+          }
+        }
+
+        .product_link {
+          display: none;
+
+          @media (min-width: $screen-lg-min) {
+            display: inline-block;
+            padding-right: 25px;
+            padding-left: 25px;
+            letter-spacing: 0.06em;
+            font-weight: 700;
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.tm-lookbook-block {
+  clear: both;
+
+  .module-tmlookbook-pages & {
+    @media (min-width: $screen-lg-min) {
+      margin-top: 50px;
+    }
+  }
+
+  &.tm-lookbook-top {
+    .lookbook-tab {
+      > div {
+        display: block;
+      }
+
+      .product_list {
+        margin-left: 0;
+        margin-right: 0;
+      }
+    }
+
+    .hotSpotWrap {
+      display: block !important;
+      width: 100%;
+      margin-bottom: 20px;
+
+      > img {
+        width: 100% !important;
+      }
+    }
+  }
+}
+
+.lookbook-tab {
+  > div {
+    @media (min-width: $screen-sm-min) {
+      display: flex;
+    }
+
+    > div:first-child {
+      margin-bottom: 20px;
+
+      @media (min-width: $screen-sm-min) {
+        margin-bottom: 0;
+      }
+
+      .hotSpotWrap, & {
+        @media (min-width: 1300px) {
+          .one-column &{
+            display: flex;
+          }
+        }
+      }
+    }
+  }
+
+  .product_list {
+    clear: both;
+    margin-top: 25px;
+    margin-right: -15px;
+    margin-left: -15px;
+
+    @media (min-width: 1640px) {
+      margin-right: -10px;
+      margin-left: -10px;
+    }
+    @media only screen and (max-width: 479px) {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    > li {
+      @media only screen and (max-width: 479px) {
+        width: 50%;
+        margin-bottom: 20px;
+      }
+    }
+
+    .product-container {
+      position: relative;
+      text-align: center;
+
+      .product_link {
+        display: none;
+      }
+
+      .product_img_link {
+        display: block;
+
+        @include product-image();
+      }
+    }
+
+    .daydeal-box {
+      display: none;
+
+      @media (min-width: $screen-md-min) {
+        display: block;
+      }
+    }
+  }
+}
+
+.tab-list {
+  margin-bottom: 20px;
+  > * {
+    display: block;
+
+    a {
+      display: block;
+      overflow: hidden;
+      transition: $base-transition;
+
+      &.active {
+        box-shadow: 0 0 10px $dark-background;
+      }
+    }
+  }
+}
+
+.lookbook-default {
+  .tab-list {
+    margin-top: 0;
+    margin-bottom: 0;
+
+    > * {
+      display: block;
+
+      &:not(:first-child, :nth-child(2)) {
+        margin-top: 20px;
+      }
+
+    }
+  }
+}
+
+.product-lookbooks {
+  display: flex;
+  align-items: center;
+
+  .lookbook-popover {
+    width: 40px;
+    text-align: center;
+    transition: $base-transition;
+
+    &:before {
+      @include addIconCustom('\e041');
+      margin: 0;
+      font-size: 24px;
+      line-height: 1;
+      text-align: center;
+    }
+
+    label {
+      display: none;
+    }
+  }
+
+  .popover-content {
+    text-align: center;
+  }
+
+  ul {
+    display: inline-block;
+    margin-bottom: 0;
+
+    li {
+      a {
+        display: inline-block;
+        color: #333;
+        text-transform: capitalize;
+        font-weight: 300;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
