@@ -4,7 +4,8 @@
     {foreach from=$languages key=k item=language name="languages"}
       {if $language.iso_code == $lang_iso}
         <div class="current">
-          <span>{$language.iso_code}</span>
+            <img src="{$img_lang_dir}{$language.id_lang}.jpg" alt="{$language.iso_code}" width="33" height="33" /><!-- /Flag image -->
+          <!--<span>{$language.iso_code}</span>-->
         </div>
       {/if}
     {/foreach}
@@ -19,7 +20,9 @@
               <a href="{$link->getLanguageLink($language.id_lang)|escape:'html':'UTF-8'}" title="{$language.name|escape:'html':'UTF-8'}" rel="alternate" hreflang="{$language.iso_code|escape:'html':'UTF-8'}">
             {/if}
           {/if}
-              <span>{$language.name|regex_replace:"/\s\(.*\)$/":""}</span>
+              <!--<span>{$language.name|regex_replace:"/\s\(.*\)$/":""}</span>-->
+              <!-- Flag image -->
+              <img src="{$img_lang_dir}{$language.id_lang}.jpg" alt="{$language.iso_code}" width="33" height="33" /><!-- /Flag image -->
           {if $language.iso_code != $lang_iso}
             </a>
           {/if}
