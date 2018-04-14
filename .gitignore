@@ -1,3 +1,5 @@
+.idea/*
+.git/*
 /mails/
 /upload/
 /cgi-bin/
@@ -33,3 +35,4 @@
 /themes/default-bootstrap/
 /nbproject/
 /themes/default-bootstrap/
+!.gitignore

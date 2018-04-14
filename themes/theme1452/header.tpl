@@ -38,6 +38,7 @@
     {/foreach}
   {/if}
   {$HOOK_HEADER}
+    <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
   {if (($hide_left_column || $hide_right_column) && ($hide_left_column !='true' || $hide_right_column !='true')) && !$content_only}
     {assign var="columns" value="2"}
   {elseif (($hide_left_column && $hide_right_column) && ($hide_left_column =='true' && $hide_right_column =='true')) && !$content_only}
@@ -102,6 +103,7 @@
             <div>
               <div class="container">
                 <div class="row">
+                  <div id="header_logo">
                     <a href="{if isset($force_ssl) && $force_ssl}{$base_dir_ssl}{else}{$base_dir}{/if}" title="{$shop_name|escape:'html':'UTF-8'}">
                       <img class="logo img-responsive" src="{$logo_url}" alt="{$shop_name|escape:'html':'UTF-8'}"{if isset($logo_image_width) && $logo_image_width} width="{$logo_image_width}"{/if}{if isset($logo_image_height) && $logo_image_height} height="{$logo_image_height}"{/if}/>
                     </a>
@@ -139,4 +141,3 @@
           <div class="row">
             <div id="center_column" class="center_column col-xs-12 col-sm-{12 - $left_column_size}">
 {/if}
-           

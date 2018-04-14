@@ -18,12 +18,12 @@
       margin-right: 3px;
     }
 
-    &:after {
+    /*&:after {
       @include hm-icon;
 
       transition: $base-transition;
       transform-origin: center;
-    }
+    }*/
     &.active {
       &:after {
         transform: rotate(-180deg) translateZ(0);

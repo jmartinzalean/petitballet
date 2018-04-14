@@ -239,11 +239,10 @@
 
   //PAGER
   .bx-wrapper .bx-pager {
-    top: 50%;
-    right: calc(100vw - 970px - ((100vw - 970px) / 2));
+    top: 90%;
     bottom: auto;
     display: none;
-    width: 50px;
+    width: auto;
     transform: translateY(-50%);
     padding-top: 20px;
     color: #666;
@@ -251,6 +250,8 @@
     font-weight: bold;
     font-size: 0.85em;
     font-family: $font-family;
+    left: 0;
+    right: 0 !important;
 
     @media (min-width: $screen-md-min) {
       display: block;
