@@ -1,0 +1,55 @@
+.preorder-form-box {
+  min-width: 400px;
+  .fancybox-skin {
+    border-radius: 0px;
+  }
+  .fancybox-inner {
+    width: auto !important;
+    form {
+      padding: 15px;
+    }
+  }
+  .fancybox-close {
+    background: none;
+    font-size: 14px;
+    right: -6px;
+    top: -6px;
+  }
+  input {
+    height: 37px;
+    &.form-control{
+      &+.form-control {
+        margin-top: 15px;
+      }
+    }
+  }
+  textarea {
+    min-height: 100px;
+  }
+  #submitPreorder {
+    width: 100%;
+    padding: 8px;
+    font-size: 15px;
+  }
+  .form-group {
+    &.form-ok, &.form-error  {
+      input, textarea {
+        background-position: 98% 11px;
+      }
+    }
+  }
+  .content-description {
+    font-size: 20px;
+    font-weight: bold;
+  }
+}
+
+#add_preorder {
+  float: right;
+}
+
+.datepicker {
+  &:hover {
+    cursor: pointer;
+  }
+}

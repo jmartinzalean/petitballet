@@ -1,0 +1,77 @@
+.fancybox-inner .product.active:before {
+  position: absolute;
+  content: "\f046";
+  font-family: FontAwesome;
+  color: green;
+  right: 5px;
+  font-size: 20px;
+}
+
+.fancybox-inner .product {
+  position: relative;
+}
+
+.fancybox-inner .product .remove-product {
+  display: none;
+}
+
+#selected_products .ui-sortable-placeholder {
+  float: left;
+}
+
+#selected_products {
+  overflow: hidden;
+}
+
+#selected_products .product, .fancybox-inner .product {
+  position: relative;
+  float: left;
+  min-height: 150px;
+  width: 100px;
+  margin: 10px;
+}
+
+#selected_products .product .remove-product {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  color: red;
+}
+
+#manage-products {
+  display: block;
+  clear: both;
+}
+
+.fancybox-inner .footer-buttons {
+  border-top: 1px solid #ddd;
+  padding: 10px;
+  overflow: hidden;
+  clear: both
+}
+
+.fancybox-inner .content {
+  padding: 10px;
+}
+
+.fancybox-inner .search {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  padding: 10px;
+}
+
+.fancybox-inner .search input {
+  width: 100%;
+}
+
+.fancybox-inner .search .clear_serach {
+  position: absolute;
+  right: 10px;
+  top:10px;
+  z-index: 1;
+}
+
+.fancybox-inner .pull-left{
+  margin-right: 5px;
+}

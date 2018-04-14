@@ -1,0 +1,225 @@
+#tmsearch {
+  position: relative;
+  padding-top: 42px;
+}
+#tmsearch #tmsearchbox {
+  width: 100%;
+  border: 1px solid #d6d4d4;
+  position: relative;
+  background: #fbfbfb;
+  padding-right: 50px;
+  padding-left: 200px;
+}
+@media (max-width: 479px) {
+  #tmsearch #tmsearchbox {
+    padding-left: 140px;
+  }
+}
+#tmsearch #tmsearchbox label {
+  color: #333333;
+}
+#tmsearch .btn.button-search {
+  background: #333333;
+  display: block;
+  position: absolute;
+  top: -1px;
+  right: -1px;
+  border: none;
+  color: white;
+  width: 50px;
+  text-align: center;
+  padding: 10px 0 11px 0;
+}
+#tmsearch .btn.button-search:before {
+  content: "\f002";
+  display: block;
+  font-family: "FontAwesome";
+  font-size: 17px;
+  width: 100%;
+  text-align: center;
+}
+#tmsearch .btn.button-search:hover {
+  color: #6f6f6f;
+}
+#tmsearch .btn.button-search span {
+  display: none;
+}
+#tmsearch .selector {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+}
+#tmsearch select {
+  width: 180px;
+}
+@media (max-width: 479px) {
+  #tmsearch select {
+    width: 120px;
+  }
+}
+#tmsearch select option {
+  padding: 5px;
+}
+#tmsearch #tm_search_query {
+  display: inline-block;
+  padding: 12px 10px 9px 13px;
+  height: 43px;
+  border: none;
+  border-left: 1px solid #d6d4d4;
+  background: none;
+  box-shadow: none;
+}
+#tmsearch #tmsearch_result {
+  position: absolute;
+  left: 0;
+  top: 100%;
+  background: #fbfbfb;
+  width: 100%;
+  z-index: 5;
+  padding: 15px;
+  border-top: 5px solid #f7f7f7;
+}
+#tmsearch #tmsearch_result .search-page {
+  overflow: hidden;
+  clear: both;
+}
+#tmsearch #tmsearch_result .tmsearch-row {
+  padding: 15px;
+  margin-top: 30px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+#tmsearch #tmsearch_result .tmsearch-row .tmsearch-inner-row {
+  position: relative;
+}
+#tmsearch #tmsearch_result .tmsearch-row .tmsearch-inner-row img {
+  margin-right: 15px;
+  background: #ffffff;
+  float: left;
+}
+#tmsearch #tmsearch_result .tmsearch-row:first-child {
+  margin: 0;
+}
+#tmsearch #tmsearch_result .tmsearch-row:hover {
+  background: #f7f7f7;
+}
+#tmsearch #tmsearch_result .reference, #tmsearch #tmsearch_result .quantity, #tmsearch #tmsearch_result .availability {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 15px 0 0;
+  font-size: 12px;
+}
+#tmsearch #tmsearch_result .reference.availability, #tmsearch #tmsearch_result .quantity.availability, #tmsearch #tmsearch_result .availability.availability {
+  text-decoration: underline;
+}
+#tmsearch #tmsearch_result .reference.quantity, #tmsearch #tmsearch_result .quantity.quantity, #tmsearch #tmsearch_result .availability.quantity {
+  color: #ccc;
+}
+#tmsearch #tmsearch_result .name {
+  display: block;
+  font-size: 15px;
+  line-height: 21px;
+  font-weight: bold;
+  margin: 5px 0;
+}
+#tmsearch #tmsearch_result .name strong {
+  color: black;
+}
+#tmsearch #tmsearch_result .price {
+  color: #333;
+  font-size: 13px;
+  font-weight: bold;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+#tmsearch #tmsearch_result .price.new-price {
+  color: red;
+}
+#tmsearch #tmsearch_result .description-short {
+  margin-bottom: 10px;
+}
+#tmsearch #tmsearch_result div > strong {
+  font-weight: normal;
+  color: black;
+}
+#tmsearch #tmsearch_result .manufacturer-name, #tmsearch #tmsearch_result .supplier-name {
+  float: right;
+  margin-left: 20px;
+  display: block;
+  background: #ffffff;
+  padding: 3px 7px;
+  font-size: 11px;
+  line-height: 15px;
+}
+#tmsearch #tmsearch_result.loading {
+  opacity: 0.5;
+}
+#tmsearch #tmsearch_result div.hidden-row, #tmsearch #tmsearch_result div.hidden-page {
+  display: none;
+}
+#tmsearch #tmsearch_result .pagers {
+  float: right;
+  padding-top: 15px;
+}
+#tmsearch #tmsearch_result .pagers a {
+  background: #f7f7f7;
+  padding: 5px 10px;
+  margin: 0 3px;
+  display: inline-block;
+  text-decoration: none;
+}
+#tmsearch #tmsearch_result .pagers a:hover, #tmsearch #tmsearch_result .pagers a.active, #tmsearch #tmsearch_result .pagers a:focus {
+  background: #f1f0f0;
+  color: #000;
+  outline: none;
+}
+#tmsearch #tmsearch_result .navigation {
+  float: right;
+  padding-top: 15px;
+}
+#tmsearch #tmsearch_result .navigation.top {
+  padding-top: 0;
+  padding-bottom: 15px;
+}
+#tmsearch #tmsearch_result .navigation > a {
+  float: left;
+  font-size: 24px;
+  padding: 2px 0;
+  text-decoration: none;
+}
+#tmsearch #tmsearch_result .navigation > a.disabled {
+  cursor: default;
+  color: #cccccc;
+}
+#tmsearch #tmsearch_result .navigation > a:hover, #tmsearch #tmsearch_result .navigation > a.active, #tmsearch #tmsearch_result .navigation > a:focus {
+  outline: none;
+}
+#tmsearch #tmsearch_result .navigation .pagers {
+  float: left;
+  padding-top: 0;
+}
+#tmsearch #tmsearch_result .navigation .count-pages {
+  float: left;
+  font-size: 17px;
+  padding: 5px 10px;
+}
+#tmsearch #tmsearch_result .navigation .count-pages .current {
+  color: #000000;
+}
+#tmsearch #tmsearch_result .tmsearch-alllink {
+  padding-top: 20px;
+  float: left;
+}
+#tmsearch #tmsearch_result .tmsearch-alllink a {
+  display: block;
+}
+#tmsearch #tmsearch_result .tmsearch-alllink a:after {
+  font-family: "FontAwesome";
+  content: '\f021';
+  font-size: 24px;
+  margin-left: 10px;
+  vertical-align: -4px;
+  color: #85ce90;
+}

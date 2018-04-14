@@ -1,0 +1,42 @@
+/**************************************************************************
+		        Style TM Products Slider
+**************************************************************************/
+
+.related-block .bx-wrapper {
+  position: relative;
+  padding: 0;
+  *zoom: 1;
+  max-width: 100% !important;
+}
+
+@media only screen and (min-width: 991px) {
+  .related-block .bx-wrapper {
+    margin: 0 !important;
+  }
+}
+
+.related-block .bx-wrapper img {
+  max-width: 100%;
+  display: block;
+}
+
+.related-block .bx-wrapper .product-name {
+  margin-bottom: 5px;
+}
+
+.related-block .bx-wrapper .product-name a {
+  color: #3a3939;
+  font-size: 15px;
+  line-height: 18px;
+}
+
+.related-block .bx-wrapper .product-name a:hover {
+  color: #515151;
+}
+
+.related-block .bx-wrapper .exclusive span {
+  font-size: 13px;
+  line-height: 18px;
+  padding: 2px 8px 3px;
+  text-decoration: none;
+}

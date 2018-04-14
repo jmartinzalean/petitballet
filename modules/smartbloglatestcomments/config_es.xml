@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+	<name>smartbloglatestcomments</name>
+	<displayName><![CDATA[&Uacute;ltimos Comentarios de Smart Blog]]></displayName>
+	<version><![CDATA[2.0.1]]></version>
+	<description><![CDATA[Los M&aacute;s Poderosos Comentarios del M&oacute;dulo de Blogs de Presta shop &ndash; por smartdatasoft]]></description>
+	<author><![CDATA[SmartDataSoft]]></author>
+	<tab><![CDATA[front_office_features]]></tab>
+	<confirmUninstall><![CDATA[¿Estás seguro de querer borrar tus datos?]]></confirmUninstall>
+	<is_configurable>1</is_configurable>
+	<need_instance>1</need_instance>
+	<limited_countries></limited_countries>
+</module>

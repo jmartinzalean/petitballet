@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+	<name>tmdaydeal</name>
+	<displayName><![CDATA[Предложение дня]]></displayName>
+	<version><![CDATA[1.0.0]]></version>
+	<description><![CDATA[Модуль &quot;Предложение дня&quot; показывает ежедневные предложения со счётчиком времени на страницах ваших товаров.]]></description>
+	<author><![CDATA[TemplateMonster (Sergiy Sakun)]]></author>
+	<tab><![CDATA[administration]]></tab>
+	<is_configurable>1</is_configurable>
+	<need_instance>0</need_instance>
+	<limited_countries></limited_countries>
+</module>

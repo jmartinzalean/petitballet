@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+	<name>tmheaderaccount</name>
+	<displayName><![CDATA[TM Header Account Block]]></displayName>
+	<version><![CDATA[2.0.1]]></version>
+	<description><![CDATA[Mostrar informaci&oacute;n de la cuenta del cliente en el encabezado del sitio]]></description>
+	<author><![CDATA[TemplateMonster (Alexander Grosul)]]></author>
+	<tab><![CDATA[front_office_features]]></tab>
+	<confirmUninstall><![CDATA[¿Seguro que desea eliminar la totalidad de su API?]]></confirmUninstall>
+	<is_configurable>1</is_configurable>
+	<need_instance>0</need_instance>
+	<limited_countries></limited_countries>
+</module>

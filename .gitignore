@@ -26,11 +26,10 @@
 /Adapter/
 /config/
 /log/
-/img/
 /css/
 /header.php
 /LICENSES
 /Install_PrestaShop.html
 /themes/default-bootstrap/
-/modules/
 /nbproject/
+/themes/default-bootstrap/

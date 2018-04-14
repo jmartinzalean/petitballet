@@ -1,0 +1,49 @@
+.preorder-form-box {
+  min-width: 400px;
+}
+.preorder-form-box .fancybox-skin {
+  border-radius: 0px;
+}
+.preorder-form-box .fancybox-inner {
+  width: auto !important;
+}
+.preorder-form-box .fancybox-inner form {
+  padding: 15px;
+}
+.preorder-form-box .fancybox-close {
+  background: none;
+  font-size: 14px;
+  right: -6px;
+  top: -6px;
+}
+.preorder-form-box input {
+  height: 37px;
+}
+.preorder-form-box input.form-control + .form-control {
+  margin-top: 15px;
+}
+.preorder-form-box textarea {
+  min-height: 100px;
+}
+.preorder-form-box #submitPreorder {
+  width: 100%;
+  padding: 8px;
+  font-size: 15px;
+}
+.preorder-form-box .form-group.form-ok input, .preorder-form-box .form-group.form-ok textarea, .preorder-form-box .form-group.form-error input, .preorder-form-box .form-group.form-error textarea {
+  background-position: 98% 11px;
+}
+.preorder-form-box .content-description {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#add_preorder {
+  float: right;
+}
+
+.datepicker:hover {
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=tmoneclickorder.css.map */
