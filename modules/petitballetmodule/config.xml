@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+	<name>petitballetmodule</name>
+	<displayName><![CDATA[Petit Ballet Module]]></displayName>
+	<version><![CDATA[1.0.0]]></version>
+	<description><![CDATA[Modulo de configuraci&oacute;n general para petit ballet.]]></description>
+	<author><![CDATA[azertiumit]]></author>
+	<tab><![CDATA[others]]></tab>
+	<confirmUninstall><![CDATA[¿Desea desinstalar?]]></confirmUninstall>
+	<is_configurable>0</is_configurable>
+	<need_instance>0</need_instance>
+	<limited_countries></limited_countries>
+</module>
