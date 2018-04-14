@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+	<name>tmnewsletter</name>
+	<displayName><![CDATA[TemplateMonster Информационная рассылка]]></displayName>
+	<version><![CDATA[1.1.0]]></version>
+	<description><![CDATA[Отобразить всплывающее окно подписки модуля информационной рассылки на фронтенде сайта]]></description>
+	<author><![CDATA[TemplateMonster (Alexander Grosul)]]></author>
+	<tab><![CDATA[front_office_features]]></tab>
+	<confirmUninstall><![CDATA[Вы уверенны, что хотите удалить ваши детали?]]></confirmUninstall>
+	<is_configurable>1</is_configurable>
+	<need_instance>0</need_instance>
+	<limited_countries></limited_countries>
+</module>

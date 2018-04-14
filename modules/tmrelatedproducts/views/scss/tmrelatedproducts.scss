@@ -1,0 +1,38 @@
+@import "compass";
+
+/**************************************************************************
+		        Style TM Products Slider
+**************************************************************************/
+
+.related-block .bx-wrapper {
+  position: relative;
+  padding: 0;
+  *zoom: 1;
+  max-width: 100%!important;
+  @media only screen and (min-width: 991px) {
+    margin: 0 !important;
+  }
+  img {
+    max-width: 100%;
+    display: block;
+  }
+  .product-name {
+    margin-bottom: 5px;
+    a {
+      color: #3a3939;
+      font-size: 15px;
+      line-height: 18px;
+      &:hover {
+        color: #515151;
+      }
+    }
+  }
+  .exclusive {
+    span {
+      font-size: 13px;
+      line-height: 18px;
+      padding: 2px 8px 3px;
+      text-decoration: none;
+    }
+  }
+}

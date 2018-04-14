@@ -1,0 +1,310 @@
+@import "../../../../themes/theme1452/sass/_theme_variables.scss";
+
+.block-category-slide {
+  .product_list {
+    > li {
+
+      &:first-of-type {
+        display: block;
+
+        .without-slider & {
+          display: flex;
+        }
+
+        a {
+          .without-slider & {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            width: 100%;
+            background-position: top 50% left 50%;
+            background-size: cover;
+          }
+
+          display: block;
+          width: auto;
+
+          &:hover {
+            h3 {
+              @media (min-width: $screen-sm-min) {
+                transform: translateY(-20px);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  /*
+  * @sub package  slider in
+  *
+  */
+  .module:not(.without-slider) & {
+    display: flex !important;
+
+    .category {
+      position: relative;
+      display: none;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: center;
+      padding-bottom: 5%;
+      background-position: top 50% left 50%;
+      background-size: cover;
+      background-repeat: no-repeat;
+
+      @media (min-width: $screen-lg-min) {
+        display: flex;
+        width: 33.33%;
+        margin-right: 3.54vw;
+      }
+    }
+
+    .catslide-controls {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+
+      .prev, .next {
+        a {
+          $bx-button-xs-size: 40px;
+          $bx-button-md-size: 50px;
+
+          display: inline-block;
+          width: $bx-button-xs-size;
+          height: $bx-button-xs-size;
+          background-color: $light-background;
+          font-family: $font-icon;
+          font-size: 20px;
+          line-height: 22px;
+          text-align: center;
+          color: $dark-text-color;
+
+          @media (min-width: $screen-md-min) {
+            width: $bx-button-md-size;
+            height: $bx-button-md-size;
+          }
+
+          &::before {
+            line-height: $bx-button-xs-size;
+
+            @media (min-width: $screen-md-min) {
+              line-height: $bx-button-md-size;
+            }
+          }
+        }
+
+        .bx-next:before {
+          content: '\f178';
+        }
+        .bx-prev:before {
+          content: '\f177';
+        }
+      }
+    }
+
+    .product_list {
+      margin: 0 -10px !important;
+      transform: translateZ(0);
+
+      @media (min-width: $screen-lg-min) {
+        width: 66.66%;
+        margin: 0 !important;
+      }
+
+      > li {
+        position: relative;
+        padding-bottom: 20px;
+
+        @media (min-width: $screen-sm-min) {
+          flex: inherit !important;
+          width: calc((100% - (20px * 4)) / 4);
+        }
+
+        &.animate {
+          animation: rotate180 300ms linear both;
+        }
+
+        @for $i from 1 through $grid-columns {
+          &:nth-child(#{$i + 1}) {
+            animation-delay: 0.1s + $i/10;
+          }
+        }
+
+        &:nth-of-type(n+5) {
+          @media (min-width: $screen-lg-min) {
+            padding-bottom: 0;
+          }
+        }
+
+        &:hover {
+          .right-block {
+            opacity: 1;
+          }
+
+          .product-image-container {
+            opacity: 0.2;
+          }
+        }
+
+        .product-image-container {
+          transition: $base-transition;
+        }
+      }
+
+      .daydeal-box {
+        display: none;
+        transform-origin: top left;
+
+        @media (min-width: $screen-md-min) {
+          display: block;
+          transform: scale(0.6) translateZ(0);
+        }
+      }
+
+      .ajax_add_to_cart_button, .customize {
+        width: auto;
+
+        &::before {
+          position: static;
+          border: none;
+          font-size: 16px;
+          line-height: 1.4;
+          opacity: 1;
+          transform: none;
+
+          @include addIconCustom('\e04f');
+        }
+
+        &:hover, &:focus, &:active, &:focus:active {
+          &::before {
+            display: inline-block;
+          }
+        }
+
+        span {
+          display: none;
+        }
+      }
+
+      .customize {
+        &::before {
+          content: '\e024';
+        }
+      }
+
+      .quick-view, .product-attr {
+        display: none !important;
+      }
+
+      .right-block {
+        position: absolute;
+        bottom: 5%;
+        left: 0;
+        width: 100%;
+        opacity: 0;
+        transition: $base-transition;
+
+        .button-container {
+          position: static;
+          width: 100%;
+          transform: none;
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  h3 {
+    font: 900 40px/#{(86/72)} $font-custom;
+    color: $light-text-color;
+    text-transform: uppercase;
+    transition: transform .3s $custom-timing-function;
+
+    @media (min-width: $screen-md-min) {
+      font-size: 3.5vw;
+    }
+  }
+
+  .without-slider & {
+    ul.product_list.grid > li {
+      @media (min-width: $screen-lg-min) and (max-width: 1600px) {
+        flex: 1 1 255px;
+      }
+    }
+  }
+}
+
+.one-column {
+  .block-category-slide {
+    margin-top: 0;
+
+    > ul.product_list.grid > li {
+      @media (min-width: 1600px) {
+        flex: 1 1 450px;
+      }
+
+      &:first-child {
+        @media (min-width: 1600px) {
+          max-width: 550px !important;
+        }
+      }
+    }
+  }
+  .without-slider {
+    .block-category-slide {
+      margin-top: 0;
+
+      @media (min-width: $screen-lg-min) {
+        margin-top: 50px;
+      }
+    }
+  }
+}
+
+// if used slick slider
+.module:not(.without-slider) {
+  .slick-slider {
+    outline: none;
+  }
+
+  > .slick-slider {
+    > .slick-prev, > .slick-next {
+      $bx-button-xs-size: 40px;
+      $bx-button-md-size: 50px;
+
+      &::before {
+        font-family: $font-icon;
+        font-size: 20px;
+        color: $dark-text-color;
+        line-height: $bx-button-xs-size;
+
+        @media (min-width: $screen-md-min) {
+          line-height: $bx-button-md-size;
+        }
+      }
+    }
+
+    > .slick-next:before {
+      content: '\f178';
+    }
+    > .slick-prev:before {
+      content: '\f177';
+    }
+
+    .block-category-slide {
+      outline: none;
+    }
+
+    .product_list {
+      margin: 0 !important;
+    }
+  }
+
+  .product-list-slideshow & {
+    ul.product_list.grid > li.hovered .button-container {
+      transform: none;
+    }
+  }
+}

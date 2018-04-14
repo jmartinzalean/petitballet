@@ -1,0 +1,24 @@
+.tmhomepagecategorygallery-block {
+	position:relative;
+	z-index:1;
+	width:100%;
+	clear:both;	
+}
+.tmhomepagecategorygallery-block #tmhomepagecategorygallery-nav {
+	position:absolute;
+	z-index:1;
+	top:0;
+	right:15px;
+}
+#tmhomepagecategorygallery-nav > li.current-item > a, #tmhomepagecategorygallery-nav > li > a:hover {
+	color:#f00;	
+}
+#tmhomepagecategorygallery > li {
+	position:relative;
+	z-index:1;	
+}
+#tmhomepagecategorygallery > li .tmhomepagecategorygallery-content {
+	position:absolute;
+	left:0;
+	top:0;
+}
