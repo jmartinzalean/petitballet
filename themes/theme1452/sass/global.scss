@@ -93,7 +93,7 @@ body {
 #page {
   overflow: hidden;
   .columns-container {
-    background: $light-background;
+    background: $color-white;
     #columns {
       position: relative;
       padding-bottom: 15px;
@@ -153,7 +153,7 @@ body {
 header {
   z-index: 5003;
   position: relative;
-  background: $light-background;
+  background: $color-white;
 
   [class*='col-'] {
     min-height: 0;
@@ -241,7 +241,7 @@ header {
       a {
         position: relative;
         display: inline-block;
-        color: $primary-text-color;
+        color: $color-light;
         transition: $base-transition;
 
         &:not([href*='tel']):not([href*='mailto']) {
@@ -257,7 +257,7 @@ header {
             left: 0;
             display: block;
             transform: translate(0, -50%);
-            color: $base-body-color;
+            color: $color-light;
             transition: transform .3s $custom-timing-function;
 
             @include addIcon('\f105');
@@ -385,7 +385,7 @@ header {
 .bottom-footer {
   a {
     transition: $base-transition;
-    color: #626262;
+    color: $color-light;
   }
   @media (min-width: $screen-lg-min) {
     font-size: 14px;
@@ -576,7 +576,7 @@ a {
   position: relative;
   display: inline-block;
   margin-left: 30px;
-  color: $base-body-color;
+  color: $color-primary;
   letter-spacing: 0;
   line-height: 1.5;
   transition: $base-transition;

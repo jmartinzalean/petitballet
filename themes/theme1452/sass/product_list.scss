@@ -440,7 +440,7 @@ ul.product_list.grid {
 
     .product-container {
       position: relative;
-      background: $light-background;
+      background: $color-white;
       padding: 0;
       .product-image-container {
         @include product-image;
