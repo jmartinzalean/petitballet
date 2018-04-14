@@ -3,6 +3,8 @@
 #Ignoramos all
 
 *
+!img/**
+!modules/**
 !themes/
 !themes/theme1452/**
 
