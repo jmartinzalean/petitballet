@@ -1890,7 +1890,7 @@ body {
 
     span {
       &::after {
-        background: $light-background;
+        background: #fff;
       }
     }
   }
@@ -1934,7 +1934,7 @@ body {
     align-items: center;
     margin: 0 -15px;
     padding: 20px;
-    background: $secondary-background;
+    background: $color-light;
 
     @media (min-width: $screen-sm-min) {
       margin: 0;
@@ -2012,6 +2012,8 @@ body {
 
       #uniform-selectProductSort {
         display: inline-block;
+        background-color: #fff;
+        border-radius: 5px;
       }
 
       select {
@@ -2085,6 +2087,7 @@ body {
       border: 2px solid #e1e4e2;
       cursor: pointer;
       transition: $base-transition;
+      border-radius: 5px;
 
       @include size($display-btn-size-xs, $display-btn-size-xs);
 
@@ -2101,7 +2104,7 @@ body {
         border-color: $primary-border-color;
 
         a {
-          color: $light-text-color;
+          color: $secondary-background-2;
         }
       }
 
@@ -2112,7 +2115,7 @@ body {
         display: inline-block;
         transform: translate(-50%, -50%);
         font-size: 24px;
-        color: $dark-text-color;
+        color: $secondary-background-2;
         cursor: pointer;
 
         i {
