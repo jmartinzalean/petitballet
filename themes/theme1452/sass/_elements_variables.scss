@@ -1,0 +1,303 @@
+@import 'bootstrap_lib/_variables';
+
+// ------- Pagination Buttons --- +/- Buttons and Input --- Pagination Buttons --------
+// width and height for input, buttons, line-height for label
+
+$input-label-button-size: 36px;
+
+// ------- BOX ELEMENTS ON SUB PAGES -------
+
+@mixin box-style {
+  background: $base-box-bg;
+  border: $main_border;
+  padding: 14px 18px 13px;
+  margin: 0 0 30px 0;
+  font: normal 13px/23px $font-custom;
+  @include border-radius($border-radius-base);
+
+  @media (min-width: $screen-lg-min) {
+    padding: 30px;
+  }
+}
+
+// ------- PopUp Elements(layered cart, newsletter, quick view ... ) -------
+
+@mixin popup-box-style {
+  background: $light-background;
+  box-shadow: $base-box-shadow;
+  border: none;
+  @include border-radius($border-radius-base);
+  z-index: 99999;
+}
+
+@mixin popup-overlay-style {
+  background: rgba($dark-background, 0.8);
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  z-index: 9999;
+  overflow: hidden;
+}
+
+@mixin popup-close-button {
+  position: absolute;
+  right: -14px;
+  top: -14px;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  color: $light-text-color;
+  text-align: center;
+  transition: $base-transition;
+  background: $dark-background;
+  @include border-radius(100%);
+
+  &:before {
+    @include addIconCustom('\e00b');
+    @extend %icon-sm;
+    line-height: 24px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    @include transform (translate(-50%, -50%));
+  }
+  &:hover {
+    color: $primary-text-color;
+  }
+}
+
+// ------- PRODUCT ELEMENTS ------
+
+// ------- Product name -------
+
+$product-font: normal 14px/1.4 $font-custom;
+$product-name-color: $base-body-color;
+$product-name-hover-color: lighten($base-body-color, 30%);
+
+// ------- Product price -------
+
+$price-font: bold 14px/25px $font-custom;
+$price-color: $dark-text-color;
+$product-price-color: $dark-text-color;
+$product-special-price-color: $dark-text-color;
+$product-old-price-color: $base-body-color;
+
+@mixin price-large {
+  font: $font-heading;
+  color: $dark-text-color;
+
+  @media (min-width: 1600px) {
+    font-size: 30px;
+  }
+}
+
+// ------- Image vars -------
+
+@mixin product-image {
+  position: relative;
+  display: block;
+  background: $secondary-background;
+}
+
+@mixin products-block-image {
+  display: block;
+  background: $secondary-background;
+}
+
+@mixin post-category-image {
+  @include product-image;
+  float: left;
+  margin: 0 20px 10px 0;
+}
+
+@mixin post-image {
+  display: block;
+  margin-bottom: 30px;
+}
+
+/*
+* @package       change-grid-on-big-screen
+* @description   make grid like in design
+*
+*/
+@mixin change-grid-on-big-screen($gutter: 20px) {
+  $i: 1;
+  $list: ".col-xs-#{$i}, .col-sm-#{$i}, .col-md-#{$i}, .col-lg-#{$i}";
+  @for $i from (1 + 1) through 12 {
+    $list: "#{$list}, .col-xs-#{$i}, .col-sm-#{$i}, .col-md-#{$i}, .col-lg-#{$i}";
+  }
+  #{$list} {
+    position: relative;
+    min-height: 0;
+    padding-left: ceil(($gutter / 2));
+    padding-right: floor(($gutter / 2));
+  }
+}
+
+/*
+* @package       custom-scroll-bar
+* @description   make you scroll bar pretty and better
+*
+*/
+@mixin custom-scroll-bar($color: $color-box) {
+  &::-webkit-scrollbar-button {
+    width: 2px;
+    height: 0;
+    background-color: transparent;
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border-radius: 0;
+    background-color: $color;
+  }
+
+  &::-webkit-scrollbar-thumb:hover {
+    background-color: darken($color, 20%);
+  }
+
+  &::-webkit-scrollbar {
+    width: 4px;
+  }
+}
+
+/*
+* @subsection   icons
+*
+* @description
+*/
+%icon-sm {
+  font-size: 24px;
+  line-height: 1;
+}
+
+/*
+* @package       header icons title display mixin
+* @description
+*
+*/
+@mixin title-display() {
+  [class*='-title'] {
+    position: relative;
+    display: none;
+    text-transform: capitalize;
+    transition: $base-transition;
+
+    .with-out-icon & {
+      + span[class*='fl-outicons'] {
+        @media (min-width: $screen-md-min) {
+          display: none;
+        }
+      }
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0px;
+      display: block;
+      width: 100%;
+      border-bottom: 1px solid $base-border-color;
+      transition: transform 0.4s $custom-timing-function;
+
+      .bg-dark & {
+        border-color: rgba($base-border-color, 0.3);
+      }
+    }
+
+    &:hover {
+      &::before {
+        transform: scaleX(0);
+      }
+    }
+
+    @media (min-width: $screen-md-min) {
+      font-size: 17px;
+    }
+
+    .with-out-icon & {
+      @media (min-width: $screen-md-min) {
+        display: block;
+        font-weight: 400;
+        line-height: 1.5;
+      }
+    }
+  }
+
+  > a {
+    .with-out-icon & {
+      @media (min-width: $screen-md-min) {
+        &::after, &::before {
+          display: none !important;
+        }
+      }
+    }
+
+    &.active {
+      [class*='-title'] {
+        color: $link-hover-color;
+      }
+    }
+  }
+}
+
+/*
+* @package     bxSlider controls mixin
+* @description
+*
+*/
+
+@mixin bxControls() {
+  @media (min-width: $screen-lg-min) {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 34vw;
+    margin: 0 auto;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 42%;
+      border-bottom: 2px solid $base-border-color;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  .bx-next, .bx-prev {
+    position: relative;
+    display: inline-block;
+    margin: 0 40px;
+
+    &::before {
+      font-size: 30px;
+    }
+  }
+}
+
+@mixin multiline-ellipsis($lines: 2, $max-height: 50px) {
+  @if $lines == 1 {
+    display: inline-block;
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  } @else {
+    display: block;
+    display: -webkit-box;
+    max-height: $max-height;
+    -webkit-line-clamp: $lines;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+

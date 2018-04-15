@@ -1,0 +1,18 @@
+.category-block ul.product_list.grid > li.first-in-line, .category-block  ul.product_list.grid > li.first-item-of-mobile-line, .category-block ul.product_list.grid > li.first-item-of-tablet-line {
+	clear:none !important;
+}
+.category-block .bx-viewport > ul {
+	margin:0;
+}
+
+.category-block .bx-pager-link.active, .category-block .bx-pager-link:hover{
+	background: #777!important;
+}
+
+.category-block .bx-next {
+	right: -5px;
+}
+
+.category-block .bx-prev {
+	left: -5px;
+}

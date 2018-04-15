@@ -1,0 +1,12 @@
+@import "../../_theme_variables";
+
+.tags_block {
+  .block_content {
+    overflow: hidden;
+    a {
+      display: inline-block;
+      margin: 0 3px 5px 0;
+      line-height: 1;
+    }
+  }
+}

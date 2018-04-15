@@ -1,0 +1,537 @@
+@import "../../../../_theme_variables";
+@import "../../../../_elements_variables";
+
+.daydeal-box {
+  &.products_block {
+    $counter-item-size: 40px;
+
+    > div {
+      > span {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: $counter-item-size;
+        height: $counter-item-size - 10px;
+        background: $light-background;
+        border: 2px solid $base-border-color;
+        font: 400 7px/1.2 $font-custom;
+        color: $color-warning;
+        text-transform: uppercase;
+
+        @media (min-width: $screen-xs-min) {
+          width: $counter-item-size + 10;
+          height: $counter-item-size + 10;
+        }
+
+        @media (min-width: $screen-xs-min) {
+          font-size: 8px;
+        }
+        @media (min-width: $screen-sm-min) {
+          width: $counter-item-size - 5;
+          height: $counter-item-size - 5;
+          font-size: 6px;
+        }
+
+        @media (min-width: $screen-md-min) {
+          width: 3.49vw;
+          height: 3.49vw;
+          font-size: 0.57vw;
+        }
+
+        &:not(:last-child) {
+          border-bottom: none;
+        }
+
+        > span {
+          font-weight: 700;
+          @media (min-width: $screen-sm-min) {
+            font-size: 15px;
+          }
+          @media (min-width: $screen-md-min) {
+            font-size: 1.56vw;
+          }
+        }
+      }
+    }
+  }
+}
+
+#daydeal-products {
+  margin-top: 0;
+  margin-bottom: 0;
+
+  .ajax_add_to_cart_button {
+    span {
+      @media (min-width: 720px) and (max-width: $screen-md-min - 1) {
+        display: inline-block;
+        width: 100%;
+        line-height: 1;
+        vertical-align: middle;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+    }
+
+    @media only screen and (max-width: 479px) {
+      width: 100%;
+      &::before {
+        position: static;
+        border: none;
+        font-size: 16px;
+        line-height: 1.4;
+        opacity: 1;
+        transform: none;
+
+        @include addIconCustom('\e04f');
+      }
+
+      span {
+        display: none;
+      }
+
+      &.customize {
+        &::before {
+          content: '\e024';
+        }
+      }
+    }
+  }
+
+  .title_block {
+    padding: 0;
+
+    @media only screen and (max-width: 479px) {
+      margin-bottom: 25px;
+    }
+
+    &:after {
+      display: none;
+    }
+  }
+  .block_content {
+    margin-bottom: 0;
+  }
+  .label-daydeal {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    display: inline-block;
+    padding: 5px 12px;
+    background: #FF0;
+  }
+  .products {
+    > li {
+      margin-top: 0;
+
+      @media (min-width: 720px) {
+        display: flex;
+      }
+    }
+    .left-block {
+      background: $base-box-bg;
+      @media (min-width: 720px) {
+        width: 47.5%;
+      }
+      .product_img_link {
+        position: relative;
+        display: block;
+        overflow: hidden;
+        @include product-image();
+
+        img {
+          @include transition(0.7s all ease);
+        }
+        &:hover {
+          img {
+          }
+        }
+      }
+    }
+    .right-block {
+      padding: 10px 0;
+
+      @media (min-width: 720px) {
+        width: 52.5%;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        border-left: none;
+      }
+      @media (max-width: $screen-xs-min - 1) {
+        border-top: none;
+      }
+      @media (min-width: 1800px) {
+        padding: 38px;
+      }
+    }
+
+    h5 {
+      margin: 0;
+    }
+    .product-name {
+      color: $base-body-color;
+
+      @media (min-width: $screen-md-min) {
+        font-size: 16px;
+      }
+
+      &:hover {
+        color: $dark-text-color;
+      }
+    }
+    .product-description {
+      display: none;
+      line-height: (24 / 16);
+      margin: 10px 0 0;
+
+      .small-items & {
+        display: none;
+      }
+
+      @media (min-width: $screen-xs-min) {
+        display: block;
+      }
+
+      @media (min-width: $screen-lg-min) {
+        margin-top: 20px;
+      }
+
+      @media (min-width: $screen-lg-min) {
+        font-size: 16px;
+      }
+
+      + div {
+        margin-top: 20px;
+
+        @media (min-width: $screen-lg-min) {
+          margin-top: 2.34vw;
+        }
+      }
+    }
+    .hook-reviews {
+      margin-top: 6px;
+      @media (max-width: $screen-xs-max) {
+        display: none;
+      }
+    }
+    .comments_note {
+      .star_content {
+        display: inline-block;
+        vertical-align: top;
+      }
+      .nb-comments {
+        display: inline-block;
+        vertical-align: top;
+        font-size: 12px;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        padding-top: 3px;
+      }
+    }
+    .daydeal-box {
+      position: absolute;
+      width: 100%;
+      top: 45px;
+      left: 5px;
+      display: block;
+      text-align: center;
+      margin-bottom: 0;
+
+      @media (min-width: $screen-xs-min) {
+        top: auto;
+        bottom: 10px;
+      }
+
+      @media (min-width: $screen-xs-min) {
+        left: 0;
+        bottom: 10%;
+      }
+
+      @media (min-width: $screen-lg-min) {
+        bottom: 20px;
+      }
+
+      > div {
+        @media (min-width: $screen-xs-min) {
+          display: flex;
+          justify-content: center;
+        }
+
+        > span {
+
+          @media (min-width: $screen-xs-min) {
+            border: 2px solid $base-border-color;
+
+            &:not(:last-child) {
+              border-right: none;
+            }
+          }
+        }
+      }
+    }
+    .price-content {
+      margin-top: 10px;
+
+      @media (min-width: 1600px) {
+        margin-top: 16px;
+      }
+    }
+    .price, .old-price, .price-percent-reduction {
+      letter-spacing: 0;
+
+      @media (min-width: $screen-md-min) {
+        font-size: 24px;
+      }
+      @media (min-width: 1600px) {
+        font-size: 30px;
+      }
+      @media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+        font-size: 18px;
+      }
+    }
+    .old-price {
+      margin-left: 10px;
+
+      @media (min-width: $screen-md-min) {
+        font-size: 16px;
+      }
+
+      @media (min-width: 1600px) {
+        font-size: 20px;
+      }
+    }
+    .price-percent-reduction {
+      margin-left: 5px;
+    }
+    * + h5 {
+      margin-top: 13px;
+      @media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+        margin-top: 7px;
+      }
+    }
+  }
+
+  .bx-wrapper {
+    @media (min-width: $screen-lg-min) {
+      padding-top: 40px;
+    }
+    .bx-controls-direction {
+      .small-items & {
+        margin-top: 20px !important;
+        text-align: center;
+
+        @media (min-width: $screen-sm-min) {
+          margin-top: 30px !important;
+        }
+
+        @include bxControls();
+
+        @media only screen and (max-width: 479px) {
+          display: none;
+        }
+
+        .bx-next, .bx-prev {
+          top: 0;
+        }
+      }
+
+      .bx-next, .bx-prev {
+        top: -40px;
+        right: 0;
+        left: auto;
+        display: none;
+        transform: none;
+        transition: all .3s $custom-timing-function;
+
+        @media (min-width: $screen-xs-min) {
+          display: block;
+        }
+      }
+
+      .bx-prev {
+        right: 50px;
+      }
+    }
+
+    .products {
+      margin: 0;
+
+      > li {
+        padding: 0;
+      }
+    }
+  }
+}
+
+.two-columns {
+  #daydeal-products {
+    .title_block {
+      @media (max-width: $screen-md-max) {
+        margin-bottom: 13px;
+      }
+    }
+    .products {
+      .bx-wrapper & {
+        margin: 0;
+      }
+
+      > li {
+        @media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+          width: 100%;
+        }
+      }
+      .right-block {
+        padding: 1.2vw;
+        @media (min-width: 1800px) {
+          padding: 20px 38px 20px 28px;
+        }
+      }
+      .product-name {
+        @media (min-width: $screen-lg-min) and (max-width: $screen-lg) {
+          font-size: 18px;
+        }
+      }
+      .daydeal-box {
+        @media (min-width: $screen-lg-min) and (max-width: $screen-lg) {
+          padding: 4px 10px;
+          margin-top: 8px;
+          > div > span {
+            font-size: 10px;
+            & + span {
+              margin-left: 10px;
+            }
+            > span {
+              font-size: 18px;
+            }
+          }
+        }
+      }
+      .price-content {
+        @media (min-width: $screen-lg-min) and (max-width: $screen-lg) {
+          margin-top: 5px;
+        }
+      }
+      .price, .old-price, .price-percent-reduction {
+        @media (min-width: $screen-lg-min) and (max-width: 1699px) {
+          font-size: 18px;
+        }
+      }
+      * + h5 {
+        @media (min-width: $screen-lg-min) and (max-width: $screen-lg) {
+          margin-top: 7px;
+        }
+      }
+    }
+  }
+}
+
+.three-columns {
+  #daydeal-products {
+    .title_block {
+      margin-bottom: 0;
+    }
+    .products {
+      > li {
+        @media (min-width: $screen-md-min) {
+          width: 100%;
+        }
+      }
+      .right-block {
+        @media (min-width: 1800px) {
+          padding: 38px;
+        }
+      }
+      .product-name {
+        @media (min-width: $screen-lg-min) and (max-width: $screen-lg) {
+          font-size: 18px;
+        }
+      }
+      .product-description {
+
+        @media (max-width: $screen-lg) {
+          display: none;
+        }
+      }
+      .daydeal-box {
+        @media (min-width: $screen-lg-min) and (max-width: $screen-lg) {
+          padding: 4px 10px;
+          margin-top: 8px;
+          > div > span {
+            font-size: 10px;
+            & + span {
+              margin-left: 10px;
+            }
+            > span {
+              font-size: 18px;
+            }
+          }
+        }
+      }
+      .price-content {
+        @media (min-width: $screen-lg-min) and (max-width: $screen-lg) {
+          margin-top: 5px;
+        }
+      }
+      .price, .old-price, .price-percent-reduction {
+        @media (min-width: $screen-lg-min) and (max-width: 1699px) {
+          font-size: 18px;
+        }
+      }
+      * + h5 {
+        @media (min-width: $screen-lg-min) and (max-width: $screen-lg) {
+          margin-top: 7px;
+        }
+      }
+    }
+  }
+}
+
+.daydeal-box-product {
+  border: 2px solid $primary-text-color;
+  padding: 7px 26px;
+  &.act {
+    display: none;
+  }
+}
+
+#product {
+  .daydeal-box {
+    width: 100%;
+    display: block;
+    text-align: center;
+    margin-bottom: 0;
+
+    > div {
+      display: flex;
+
+      > span {
+        border: 2px solid $base-border-color;
+
+        @media (max-width: $screen-sm-min - 1) {
+          width: 60px;
+          height: 60px;
+        }
+
+        @media only screen and (max-width: 479px) {
+          width: 50px;
+          height: 50px;
+        }
+
+        span {
+          @media (max-width: $screen-sm-min - 1) {
+            font-size: 30px;
+          }
+
+          @media only screen and (max-width: 479px) {
+            font-size: 20px;
+          }
+        }
+
+        &:not(:last-child) {
+          border-right: none;
+        }
+      }
+    }
+  }
+}

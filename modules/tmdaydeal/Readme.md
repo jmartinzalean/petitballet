@@ -1,0 +1,1 @@
+# TemplateMonster Deal of Day

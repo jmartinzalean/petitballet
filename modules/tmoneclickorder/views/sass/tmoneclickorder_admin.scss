@@ -1,0 +1,602 @@
+//colors
+$color_alto_approx: #ddd;
+$white: #fff;
+$white_70: rgba(255, 255, 255, 0.7);
+$color_porcelain_approx: #eff1f2;
+$color_desert_storm_approx: #f8f8f8;
+$color_cerulean_approx: #00aff0;
+
+//@extend-elements
+//original selectors
+//#one-click-order-settings .tab-content, #one-click-orders .tab-content
+%extend_1 {
+  background: $white;
+  border: 1px solid $color_alto_approx;
+  border-top: none;
+  min-height: 100px;
+  padding: 15px;
+}
+
+#one-click-order-settings {
+  .nav-tabs {
+    border-bottom: 1px solid $color_alto_approx;
+  }
+  .tab-content {
+    @extend %extend_1;
+  }
+}
+
+#one-click-orders {
+  .panel-heading {
+    white-space: normal !important;
+  }
+  .nav-tabs {
+    border-bottom: 1px solid $color_alto_approx;
+  }
+  .tab-content {
+    @extend %extend_1;
+    .tab-pane {
+      min-height: 400px;
+      position: relative;
+    }
+    .no-orders {
+      background: #eff1f2;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 99;
+      div {
+        text-align: center;
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+  }
+  .show-new-orders {
+    text-align: center;
+    background: $color_cerulean_approx;
+    color: $white;
+    span {
+      float: none;
+    }
+  }
+  h3.order_header {
+    margin: 0 0 20px !important;
+    padding-bottom: 10px;
+    border-bottom: 1px solid $color_desert_storm_approx;
+  }
+}
+
+#order_settings_template {
+  .btn {
+    display: block;
+    padding: 20px;
+    margin-top: 10px;
+  }
+  .one-click-order-field {
+    position: relative;
+    .type {
+      padding: 20px;
+      display: block;
+      text-align: center;
+      font-weight: normal;
+      vertical-align: middle;
+      cursor: pointer;
+      background: $white;
+      border: 1px solid $color_alto_approx;
+      white-space: nowrap;
+      font-size: 12px;
+      line-height: 1.42857;
+      //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+      border-radius: 3px;
+      text-transform: capitalize;
+    }
+    &:hover {
+      .type {
+        background: $white_70;
+      }
+      .remove-field {
+        display: block;
+      }
+    }
+    .remove-field {
+      position: absolute;
+      top: 5px;
+      right: 5px;
+      display: none;
+	&:hover {
+ 	   cursor: pointer;
+ 	   color: #000;	
+	}
+    }
+    + .one-click-order-field {
+      margin-top: 10px;
+    }
+  }
+  .fields {
+    background: $color_porcelain_approx;
+    padding: 10px;
+    text-align: center;
+  }
+}
+
+.fancybox-inner {
+  overflow-y: auto !important;
+  max-height: 600px;
+  margin-right: 5px;
+  .panel {
+    margin-bottom: 0 !important;
+  }
+  .footer-buttons {
+    border-top: 1px solid $color_alto_approx;
+    padding: 10px;
+    overflow: hidden;
+    clear: both;
+  }
+  .content {
+    padding: 10px;
+  }
+  .search {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    padding: 10px 0;
+    input {
+      width: 100%;
+    }
+    .clear_serach {
+      position: absolute;
+      right: 0;
+      top: 10px;
+      z-index: 1;
+    }
+  }
+  #content.bootstrap {
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+  }
+}
+
+.sidebar-nav {
+  .navbar {
+    border: none;
+  }
+  .order-list-wrap {
+    max-height: 455px;
+    position: relative;
+    overflow: hidden;
+    .ps-scrollbar-y-rail {
+      z-index: 200;
+    }
+  }
+  .navbar-nav {
+    width: 100%;
+    background: $white;
+    border: none;
+    li {
+      width: 100%;
+      margin-bottom: 3px;
+      a {
+        width: 100%;
+        display: block;
+        overflow: hidden;
+        border: 1px solid #f8f8f8;
+        span {
+          float: left;
+          width: 33%;
+        }
+        .order_date {
+          text-align: center;
+        }
+        .total_price {
+          text-align: right;
+        }
+      }
+    }
+  }
+  .navbar-collapse {
+    padding: 0;
+  }
+}
+
+.tmoco_preloader {
+  //Instead of the line below you could use @include border-image($value)
+  //Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+  transition: all 0.3s ease 0s;
+  i {
+
+    font-size: 75px;
+    color: #00aff0;
+    position: relative;
+    animation: 1s steps(100) 0s normal none infinite running preloader_rotate;
+    &:before {
+
+    }
+  }
+}
+
+@-webkit-keyframes preloader_rotate {
+  from {
+    //Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+    transform: rotate(0deg);
+  }
+  to {
+    //Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+    transform: rotate(360deg);
+  }
+}
+
+@-moz-keyframes preloader_rotate {
+  from {
+    //Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+    transform: rotate(0deg);
+  }
+  to {
+    //Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+    transform: rotate(360deg);
+  }
+}
+
+@-o-keyframes preloader_rotate {
+  from {
+    //Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+    transform: rotate(0deg);
+  }
+  to {
+    //Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes preloader_rotate {
+  from {
+    //Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+    transform: rotate(0deg);
+  }
+  to {
+    //Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+    transform: rotate(360deg);
+  }
+}
+
+.preorder_content {
+  min-height: 475px !important;
+  position: relative !important;
+  &.load{
+    max-height: 455px;
+    overflow: hidden;
+  }
+}
+
+#create_order {
+  width: 100%;
+  padding: 20px;
+}
+
+.input_wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+#random_password {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.form-group {
+  position: relative;
+  .tmoco_preloader {
+    bottom: auto;
+    height: 15px;
+    left: auto;
+    margin: auto;
+    position: absolute;
+    right: 7px;
+    top: 30px;
+    //Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+    transform: none;
+    width: 15px;
+  }
+}
+
+.tab-content {
+  .tmoco_preloader_wrap {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #FFF;
+    z-index: 200;
+  }
+}
+
+.tab-content .tmoco_preloader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  //Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+  transform: translate(-50%, -50%);
+}
+
+.nav-tabs .tmoco_preloader {
+  width: 15px;
+  height: 15px;
+  margin-left: 10px;
+  margin-top: 3px;
+  float: right;
+}
+
+.customer_info {
+  padding: 10px;
+}
+
+#cart_summary {
+  tr {
+    &.selected {
+      td {
+        background: #f4f8fb;
+      }
+    }
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+.btns-wrap {
+  padding: 5px 0px;
+  overflow: hidden;
+  .btn {
+    &.pull-right {
+      margin-left: 10px;
+    }
+  }
+}
+
+.customers_list {
+  .btn {
+    display: block;
+    &:hover {
+      background: #00aff0 !important;
+    }
+    span {
+      text-transform: capitalize;
+    }
+  }
+}
+
+.accordion {
+  .accordion-heading {
+    padding: 10px;
+    font-size: 14px;
+    border-bottom: 1px solid #f8f8f8;
+  }
+}
+
+.bootstrap .nav-tabs > li > a {
+  border-radius: 0px;
+}
+
+#one-click-orders {
+  .panel {
+    border-radius: 0px !important;
+    .panel-heading {
+      border-radius: 0px !important;
+    }
+    dl.dl-horizontal {
+      dt {
+        width: auto !important;
+        text-align: left;
+      }
+      dd {
+        width: auto !important;
+      }
+    }
+  }
+}
+
+#cart_summary {
+  border: 1px solid #eaedef;
+}
+
+.panel-content {
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+
+.panel-content .col-sm-6 .form-group,
+.panel-content .col-sm-12 .form-group {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+.create_address {
+  overflow: hidden;
+}
+
+.navbar-nav li {
+  a {
+    position: relative;
+    z-index: 1;
+    &:before {
+      content: '';
+      position: absolute;
+      top: -10px;
+      left: -10px;
+      width: 20px;
+      height: 20px;
+      transform: rotate(45deg);
+      transition: .3s;
+      z-index: -1;
+    }
+  }
+  &.active {
+    a {
+      background: none !important;
+    }
+  }
+  &.new {
+    a {
+      &:before {
+        background: #5bc0de;
+      }
+    }
+    &.active,&:hover {
+      a {
+        border-color: #5bc0de;
+        color: #5bc0de !important;
+      }
+
+    }
+  }
+  &.removed {
+    a {
+      &:before {
+        background: #f0ad4e;
+      }
+    }
+    &.active, &:hover {
+      a {
+        border-color: #f0ad4e;
+        color: #f0ad4e !important;
+      }
+
+    }
+  }
+  &.created {
+    a {
+      &:before {
+        background: #5cb85c;
+      }
+    }
+    &.active, &:hover {
+      a {
+        border-color: #5cb85c;
+        color: #5cb85c !important;
+      }
+
+    }
+  }
+}
+
+#create_preorder, .show-new-orders {
+  display: block;
+  padding-bottom: 9px;
+  padding-top: 9px;
+  margin-bottom: 3px;
+  text-align: center;
+  color: #ffffff;
+}
+
+#create_preorder {
+  background: #5cb85c;
+  &:hover, &:active{
+    text-decoration: none;
+    background: #449d44;
+  }
+}
+
+.no-results {
+  display: block;
+  padding-bottom: 9px;
+  padding-top: 9px;
+  margin-bottom: 3px;
+  text-align: center;
+  color: #000;
+}
+
+
+
+input.datepicker.form-control.grey.hasDatepicker {
+  max-width: 200px !important;
+  display: inline-block !important;
+}
+
+#content.bootstrap .preorder_content>.panel,
+#content.bootstrap .preorder_content>form>.panel{
+  .toggle-panel {
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  >.panel-heading {
+    margin: -21px -21px 15px;
+    padding: 0 0 0 10px;
+    color: #FFF;
+    border: 0px;
+    background: #5bc0de;
+    overflow: hidden;
+    transition: .3s;
+    .panel-title {
+      float: left;
+    }
+    .toggle-panel-btn {
+      display: block;
+      text-align: center;
+      float: right;
+      color: #FFF;
+      padding: 6px;
+      i {
+        font-size: 20px;
+      }
+      &:hover, &:active, &:focus {
+        outline: none;
+        text-decoration: none;
+      }
+    }
+  }
+  .panel-content {
+    margin-bottom: 0;
+  }
+  &.closed {
+    padding-bottom: 0;
+    >.panel-heading {
+      transition: .3s;
+      border-radius: 5px;
+      margin-bottom: 0;
+    }
+  }
+  &.success {
+    >.panel-heading {
+      background: #5cb85c;
+    }
+  }
+
+  &.error {
+    >.panel-heading {
+      background: #d43f3a;
+    }
+  }
+
+  &.warning {
+    >.panel-heading {
+      background: #f0ad4e;
+    }
+  }
+}
+.customerCard {
+  .email{
+    display: inline-block;
+    padding-top: 7px;
+  }
+}
+
+.restore-order {
+  padding-right: 10px;
+  i {
+    color: #FFF!important;
+  }
+  &:hover {
+    i {
+      color: rgba(#FFF, 0.7) !important;
+    }
+  }
+}

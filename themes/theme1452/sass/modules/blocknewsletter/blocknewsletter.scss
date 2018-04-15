@@ -1,0 +1,138 @@
+@import "../../_theme_variables";
+
+/* Block newsletter */
+#columns #newsletter_block_left {
+  .form-group {
+    margin-bottom: 0;
+    .form-control {
+      max-width: 100%;
+      display: block;
+      margin-right: 6px;
+      margin-bottom: 10px;
+    }
+    &.email-error, &.form-error {
+      border-color: #f00;
+      .form-control {
+        color: #f00;
+      }
+    }
+    &.email-valid, &.form-ok {
+      border-color: #0C3;
+      .form-control {
+        color: #0C3;
+      }
+    }
+  }
+  .success_inline, .warning_inline {
+    text-align: left;
+    padding: 1px 0 0 0;
+    margin-bottom: -19px;
+  }
+  .success_inline {
+    color: $color-succes;
+  }
+  .warning_inline {
+    color: $color-warning;
+  }
+}
+
+/* Block newsletter footer */
+.footer-container {
+  #newsletter_block_left {
+    .title_block, h4 {
+      padding: 0;
+      text-transform: uppercase;
+      color: $light-text-color;
+
+      &::after {
+        display: none;
+      }
+    }
+
+    p {
+      @media (min-width: 1600px) {
+        margin-bottom: 40px;
+      }
+    }
+
+    .form-group {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-end;
+      margin-bottom: 0;
+      position: relative;
+      border-radius: $border-radius-base;
+
+      @media (min-width: $screen-xs-min) {
+        flex-wrap: nowrap;
+      }
+
+      .form-control {
+        overflow: hidden;
+        display: block;
+        height: 54px;
+        margin-bottom: 20px;
+        padding: 15px 0;
+        border: none;
+        box-shadow: inset 0 -2px 0 currentColor;
+        background: none;
+        line-height: 30px;
+        color: $light-text-color;
+
+        @media (min-width: $screen-xs-min) {
+          margin-right: 10px;
+          margin-bottom: 0;
+        }
+
+        @media (min-width: $screen-lg-min) {
+          margin-right: 20px;
+          font-size: 16px;
+        }
+
+        &:focus {
+          box-shadow: inset 0 -6px 0 currentColor;
+        }
+      }
+
+      .btn {
+        width: 100%;
+
+        @media (min-width: $screen-xs-min) {
+          width: auto;
+        }
+
+        @media (min-width: 1600px) {
+          min-width: 200px;
+        }
+      }
+    }
+    .warning_inline {
+      display: block;
+      color: $color-warning;
+      font-size: 13px;
+      line-height: 26px;
+      clear: both;
+
+      @media (min-width: $screen-lg) { // min 1200px
+        display: inline-block;
+        position: relative;
+        top: -35px;
+        margin-bottom: -35px;
+        left: 15px;
+        clear: none;
+      }
+    }
+    .form-group {
+      &.email-error, &.form-error {
+        .form-control {
+          color: $color-warning !important;
+        }
+      }
+      &.email-valid, &.form-ok {
+        .form-control {
+          color: $color-succes !important;
+        }
+      }
+    }
+  }
+}

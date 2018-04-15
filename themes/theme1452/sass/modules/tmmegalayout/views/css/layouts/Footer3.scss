@@ -1,0 +1,65 @@
+@import "../../../../../_theme_variables";
+
+.footer-container {
+
+  #newsletter_block_left {
+    margin-left: auto;
+    margin-right: auto;
+
+    @media (min-width: $screen-sm-min) {
+      width: 80%;
+    }
+
+    @media (min-width: $screen-lg-min) {
+      width: 50%;
+    }
+
+    .title_block, h4 {
+      padding: 0;
+      text-align: center;
+
+      &::after {
+        display: none;
+      }
+    }
+
+    .form-group .form-control {
+      @media (min-width: 1600px) {
+        margin-right: 80px;
+      }
+    }
+
+    .btn-primary {
+      color: $dark-text-color;
+      border-color: $light-background;
+
+      &::after {
+        background: $light-background;
+      }
+
+      @media (min-width: $screen-sm-min) {
+        &:hover {
+          color: $light-border-color;
+        }
+
+        &:active:focus, &:active, &:focus, #{'.active'} > &, &.disabled, &.btn[disabled], #{'.disabled'} > & {
+          color: $dark-text-color;
+        }
+      }
+
+      @media only screen and (max-width: $screen-sm-min - 1) {
+        &:active:focus, &:active, &:focus, &.hover, &:hover {
+          color: $dark-text-color;
+        }
+      }
+    }
+  }
+
+  .paiement_logo_block {
+    margin-top: 0;
+  }
+
+  #social_block ul li a {
+    margin-bottom: 5px;
+  }
+}

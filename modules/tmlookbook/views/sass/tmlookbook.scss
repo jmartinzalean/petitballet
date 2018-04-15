@@ -1,0 +1,220 @@
+#columns {
+  padding-bottom: 0;
+}
+
+.tab-list {
+  margin-top: 20px;
+}
+
+#tmlookbooks {
+  .thumbnail {
+    border:none;
+    padding: 0;
+    position: relative;
+    .caption {
+      background: #333333;
+      color:#fff;
+      position: absolute;
+      min-width: 307px;
+      border: 1px solid #383839;
+      border-left: 0;
+      left: 0;
+      bottom: 14.9%;
+      padding: 9px 25px;
+      .name {
+        text-transform: uppercase;
+        font-size: 30px;
+        font-weight: 400;
+        font-family: Arial, Helvetica, sans-serif;
+        letter-spacing: -1px;
+        margin: 9px 0px;
+      }
+      .description {
+        display: none;
+      }
+    }
+    &+.thumbnail {
+      margin-top: 50px;
+    }
+  }
+}
+
+.hotSpotWrap {
+  position: relative;
+  display: inline-block;
+  .point {
+    width: 27px;
+    height: 27px;
+    margin-left: -13px;
+    margin-top: -13px;
+    background: #354458;
+    border-radius: 100%;
+    position: relative;
+    z-index: 2;
+    &:before {
+      content: "+";
+      color: #fff;
+      font-size: 30px;
+      font-weight: 100;
+      transition: .3s;
+      width: 100%;
+      height: 100%;
+      padding: 5px 4px;
+      display: block;
+    }
+    &.active {
+      background: #6ad4ff;
+      z-index: 4;
+      &:before {
+        transform: rotate(45deg);
+        transition: .3s;
+      }
+    }
+  }
+}
+
+.popover {
+  border-radius: 0;
+  z-index: 3;
+  min-width: 230px;
+  &.right {
+    margin-left: -14px;
+  }
+  &.left{
+    margin-left: 14px;
+  }
+  .arrow {
+    display: none;
+  }
+  .popover-content {
+    padding: 19px 19px;
+    overflow: hidden;
+    .product-container {
+      [itemprop="name"] {
+        display: inline-block;
+        margin-bottom: 5px;
+        margin-top: 0;
+      }
+      .content_price {
+        margin-bottom: 35px;
+      }
+      .product-name {
+        font-size: 14px;
+        line-height: 14px;
+        font-weight: 400;
+      }
+      .product-price {
+        font-size: 16px;
+      }
+      .left-block {
+        float: left;
+        .new-box, .sale-box {
+          display: none;
+        }
+        .product_img_link {
+          border: 1px solid #d7d6d6;
+          display: block;
+          overflow: hidden;
+          max-width: 82px;
+        }
+      }
+      .right-block {
+        max-width: 105px;
+        float: right;
+        padding-left: 10px;
+        .product_link {
+          font-weight: 700;
+          color: #6ad4ff;
+        }
+      }
+    }
+  }
+}
+
+.tm-lookbook-block {
+  clear: both;
+}
+
+.lookbook-tab {
+  .product_list {
+    clear: both;
+    >li {
+      min-height: 300px;
+    }
+    margin-top: 38px;
+    .product-container {
+      text-align: center;
+      position: relative;
+      .product_link {
+        display: none;
+      }
+      .product_img_link {
+        display: block;
+        border: 1px solid #d6d4d4;
+      }
+    }
+  }
+}
+.tab-list {
+  margin-bottom: 20px;
+  >*{
+    width: 25%;
+    display: block;
+    float: left;
+    padding: 3px;
+    a{
+      display: block;
+      max-height: 144px;
+      overflow: hidden;
+      &.active {
+        box-shadow: 0 0 10px rgba(0,0,0,.4);
+        border: 6px solid #fff;
+        display: block;
+      }
+    }
+  }
+}
+
+.lookbook-default {
+  .tab-list {
+    margin-top: 0;
+    margin-bottom: 40px;
+    >*{
+      width: 20%;
+      display: block;
+      float: left;
+      padding: 0px 3px;
+      a{
+        display: block;
+        max-height: 180px;
+        overflow: hidden;
+        &.active {
+          box-shadow: 0 0 10px rgba(0,0,0,.4);
+          border: 6px solid #fff;
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+.product-lookbooks {
+  ul {
+    display: inline-block;
+    li {
+      margin-left: 0px;
+      display: inline-block;
+      a {
+        color: #333;
+        display: inline-block;
+        font-weight: 300;
+        line-height: 18px;
+        text-transform: capitalize;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+

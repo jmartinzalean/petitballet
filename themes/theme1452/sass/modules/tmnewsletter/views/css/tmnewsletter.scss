@@ -1,0 +1,150 @@
+@import "../../../../_theme_variables";
+@import "../../../../_elements_variables";
+
+.newsletter-overlay {
+  @include popup-overlay-style;
+  background: url($overlay-data-img) rgba($dark-background, 0.95);
+
+  #newsletter_popup {
+    @include popup-box-style;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    overflow: auto;
+    margin: 0 auto;
+    max-width: 1100px;
+    min-width: 290px;
+    width: 90%;
+    max-height: 90%;
+    background-color: $secondary-background;
+    @include transform (translate(-50%, -50%));
+
+    @media (min-width: $screen-sm-min) {
+      background-image: url('../../../../../img/newsletter-bg.jpg');
+      background-size: cover;
+    }
+
+    @media (min-width: $screen-lg-min) {
+      animation: fadeInDownCenterXY 0.2s ease;
+    }
+
+    .tmnewsletter-inner {
+      position: relative;
+      padding: 30px;
+
+      @media (min-width: $screen-sm-min) {
+        padding: 10% 11.36%;
+      }
+
+      @media (min-width: $screen-sm-min) {
+        padding-left: 37%;
+      }
+
+      .icon.tmnewsletter-close {
+        @include popup-close-button;
+        background: none;
+        color: $dark-text-color;
+        right: 10px;
+        top: 10px;
+      }
+
+      .tmnewsletter-wrap {
+        max-height: 100%;
+        overflow: auto;
+      }
+      .tmnewsletter-header {
+        padding: 10px 15px;
+
+        h2 {
+          margin: 0;
+          font-weight: 700;
+          font-family: $font-custom;
+          letter-spacing: 0.02em;
+          text-transform: uppercase;
+          color: $dark-text-color;
+        }
+      }
+      .tmnewsletter-content {
+        padding: 10px 15px;
+        .email-error {
+          color: $color-warning;
+        }
+        .email-valid {
+          color: $color-succes;
+        }
+
+        .form-group {
+          display: flex;
+          flex-wrap: wrap;
+
+          @media (min-width: $screen-xs-min) {
+            flex-wrap: nowrap;
+          }
+
+          .form-control {
+            height: auto;
+            margin-bottom: 20px;
+
+            @media (min-width: $screen-xs-min) {
+              margin-bottom: 0;
+              margin-right: 20px;
+            }
+          }
+
+          .btn {
+            width: 100%;
+            font-size: 14px;
+            letter-spacing: 0.12em;
+
+            @media (min-width: $screen-xs-min) {
+              width: auto;
+            }
+
+            @media (min-width: $screen-lg-min) {
+              min-width: 200px;
+            }
+          }
+        }
+
+        .description {
+          margin-bottom: 20px;
+
+          @media (min-width: $screen-lg-min) {
+            font-size: 16px;
+            margin-bottom: 30px;
+          }
+        }
+      }
+      .tmnewsletter-footer {
+        text-align: right;
+        padding: 10px 15px 0;
+        overflow: hidden;
+        .btn {
+          margin-left: 5px;
+          margin-bottom: 10px;
+        }
+        .checkbox {
+          float: left;
+          .checker {
+            display: inline-block;
+            vertical-align: -1px;
+            .checked:before {
+              left: 0;
+            }
+
+            label {
+
+            }
+          }
+          input {
+            display: block;
+            z-index: 1;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+          }
+        }
+      }
+    }
+  }
+}

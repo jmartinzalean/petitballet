@@ -1,0 +1,539 @@
+@import '../../../../_theme_variables';
+@import '../../../../_header_modules_variables';
+@import '../../../../_elements_variables';
+
+/*
+* @package      Style for TM Header Account Block
+* @description  This section holds specific style redeclarations for
+*               TM Header Account Block
+*/
+#header-login {
+  @media (min-width: 600px) {
+    position: relative;
+  }
+
+  div.current {
+    @include title-display();
+
+    &.is-logged {
+      a {
+        &::before {
+          content: '\e030';
+        }
+      }
+    }
+    a {
+      @include hm-indent;
+      @include iconActiveAnimation;
+
+      &::before {
+        transition: $base-transition;
+
+        @extend %icon-sm;
+        @include addIconCustom('\e060');
+      }
+
+      &:hover {
+        color: $primary-text-color;
+      }
+    }
+    &.active a {
+      color: $primary-text-color;
+
+      &.dropdown {
+
+      }
+
+      &::before {
+        animation: iconAnimationOut 0.3s $custom-timing-function both;
+
+      }
+      &::after {
+        animation: iconAnimationIn 0.3s $custom-timing-function both;
+      }
+
+    }
+  }
+  .header-login-content {
+    overflow: hidden;
+    z-index: 2;
+    position: absolute;
+    right: 0;
+    display: none;
+    box-shadow: $base-box-shadow;
+
+    @include topPosition;
+
+    @media (max-width: 400px) {
+      width: 100vw;
+    }
+
+    @media (min-width: 400px) and (max-width: $screen-sm-min - 1) {
+      right: 50%;
+      transform: translateX(50%);
+    }
+
+    @media (min-width: $screen-sm-min) {
+      right: -15px;
+    }
+
+    @media (min-width: 550px) {
+      .justify-start & {
+        right: auto;
+        left: 15px;
+      }
+    }
+
+    #create_header_account_error {
+      padding: 8px;
+    }
+  }
+}
+
+/*
+* @section      Style for login wrapper
+* @description  This section holds specific style redeclarations for
+*               login content wrapper
+*/
+
+.header-login-content {
+  margin: 0;
+  padding: 20px;
+  background: $base-box-bg;
+
+  @media (min-width: $screen-xs-min) {
+    padding: 40px;
+  }
+
+  @media (min-width: $screen-md-min) {
+    padding: 40px 70px;
+  }
+
+  .alert {
+    text-align: left;
+  }
+
+  &.is-logged {
+    ul {
+      li {
+        margin-bottom: 5px;
+      }
+    }
+  }
+
+  > li {
+    @media (min-width: $screen-lg-min) {
+      @include animation(fadeIn 0.2s 0.2s ease both);
+    }
+  }
+
+  h2 {
+    margin-top: 0;
+    font: 700 18px/#{(29/18)} $font-custom;
+    letter-spacing: 0.04em;
+    text-transform: capitalize;
+    color: $dark-text-color;
+
+    @media (min-width: $screen-md-min) {
+      font-size: 30px;
+    }
+  }
+
+  li {
+    margin: 0;
+    padding: 0;
+
+    &.user-data {
+      overflow: hidden;
+      img {
+        float: left;
+        margin-right: 20px;
+        margin-bottom: 18px;
+      }
+      p {
+        span {
+          display: block;
+          white-space: nowrap;
+        }
+      }
+    }
+    ul {
+      margin: 0 0 16px;
+      li {
+        display: block;
+        overflow: hidden;
+        a {
+          color: #525252;
+          &:hover {
+            color: #000000;
+          }
+          i {
+            display: none;
+          }
+        }
+      }
+    }
+    &.onecolumn {
+      min-width: 205px;
+
+      @media (min-width: $screen-md-min) {
+        min-width: 290px;
+      }
+    }
+    &.twocolumns {
+      min-width: 405px;
+
+      @media (min-width: $screen-md-min) {
+        min-width: 500px;
+      }
+      > ul {
+        float: left;
+        width: 50%;
+      }
+    }
+    input[type='checkbox'] + label:hover, input[type='checkbox'] + .label label:hover, input[type='radio'] + label:hover, input[type='radio'] + .label label:hover {
+      color: $light-text-color;
+    }
+    .radio-inline, .checkbox {
+      margin-bottom: 5px;
+      label {
+        margin: 0;
+        cursor: pointer;
+      }
+      input {
+        z-index: 5;
+        top: 0;
+        left: 0;
+        display: block;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        cursor: pointer;
+      }
+    }
+  }
+  &:not(.is-logged) > li {
+    @media (min-width: 400px) {
+      width: 275px;
+    }
+
+    @media (min-width: $screen-md-min) {
+      width: 290px;
+    }
+  }
+  img {
+    max-width: 100%;
+  }
+  .form-group {
+    margin-bottom: 14px;
+
+    label {
+      sup {
+        color: #f13340;
+      }
+    }
+    input {
+      height: 55px;
+      font-size: 14px;
+      text-align: center;
+      line-height: 55px;
+    }
+    .form_info {
+      display: inline-block;
+      margin-top: 10px;
+      color: $color-warning;
+    }
+
+    &.form-ok, &.form-error {
+
+      .form-control {
+        padding-left: 30px;
+      }
+    }
+  }
+  p {
+    margin-bottom: 17px;
+    &.submit {
+      padding-top: 3px;
+    }
+    &.logout {
+      clear: both;
+      margin: 0;
+    }
+    a.forgot-password:hover {
+      color: $dark-text-color;
+    }
+    .create {
+      color: $color-dark;
+    }
+  }
+  .btn-md {
+    width: 100%;
+    &.signin {
+    }
+  }
+  .create-account-content {
+    @media only screen and (max-width: 479px) {
+      margin-top: 20px;
+    }
+    .row {
+      margin: 0 -3px;
+      > div {
+        padding: 0 3px;
+
+        .selector {
+          $selector-height: 36px;
+          width: auto !important;
+          height: $selector-height;
+
+          &.focus {
+            span {
+              &::after {
+                transform: rotate(180deg);
+              }
+            }
+          }
+
+          select {
+            height: $selector-height;
+          }
+          span {
+            width: auto !important;
+            height: $selector-height;
+            line-height: $selector-height;
+            padding-right: 28px;
+
+            &::after {
+              border: none;
+              background: transparent;
+              font-size: 10px;
+              transition: $base-transition;
+              height: $selector-height - 2;
+              line-height: $selector-height - 2;
+
+              @include addIcon('\f107');
+            }
+          }
+        }
+      }
+    }
+    .social-login-buttons {
+      div {
+        margin-bottom: 15px;
+
+        &.one-element {
+          .btn {
+            margin-left: 0;
+            font-size: 12px;
+            line-height: 1.1;
+            span {
+              margin: 0;
+            }
+            &:before {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+  .forgot-password-content {
+    .signin {
+      i {
+        margin-right: 5px;
+      }
+    }
+  }
+}
+
+/*
+* @section      Style for social account
+*/
+
+.social-login-buttons {
+  margin: 0 -4px;
+  div {
+    margin: 0;
+    padding: 0 4px;
+    float: left;
+    &.one-element {
+      width: 100%;
+      .btn span {
+        margin-left: 10px;
+      }
+    }
+    &.two-elements {
+      width: (100%/2);
+      .btn span {
+        display: none;
+      }
+    }
+    &.three-elements {
+      width: (100%/3);
+      .btn span {
+        display: none;
+      }
+    }
+    .btn {
+      width: 100%;
+      //font: bold 15px/28px "Open Sans", Helvetica, Arial, sans-serif;
+      color: $dark-text-color;
+      //padding: 9px 15px 7px;
+      border-radius: 0;
+      transition: $base-transition;
+
+      .three-columns & {
+        @media (min-width: $screen-sm-min) and (max-width: $screen-md-min - 1) {
+          padding-left: 9px;
+          padding-right: 9px;
+        }
+      }
+
+      span {
+        margin-left: 10px;
+      }
+      &:before {
+        display: inline-block;
+        font: normal 13px/1em "FontAwesome";
+      }
+      &.btn-login-facebook {
+        //background-color: #3b5998;
+        &:before {
+          content: '\f09a';
+        }
+        &:hover {
+          //background-color: darken(#3b5998, 10);
+        }
+      }
+      &.btn-login-google {
+        //background-color: #df4a32;
+        &:before {
+          content: '\f1a0';
+        }
+        &:hover {
+          //background-color: darken(#df4a32, 10);
+        }
+      }
+      &.btn-login-vk {
+        //background-color: #3383c1;
+
+        &:before {
+          content: '\f189';
+        }
+        &:hover {
+          //background-color: darken(#3383c1, 10);
+        }
+      }
+    }
+  }
+}
+
+/*
+* @section      Style for left and right sidebars
+* @description  This section holds specific style redeclarations for
+*               left and right sidebars
+*/
+
+.tmha-sidebar-left, .tmha-sidebar-right {
+  z-index: 99999;
+  position: fixed;
+  top: 0;
+  overflow: auto;
+  max-height: 100%;
+  height: 100%;
+  background: $base-box-bg;
+  transition: all 0.3s ease;
+
+  .header-login-content {
+    box-shadow: none;
+  }
+}
+
+.tmha-sidebar-left {
+  left: 0;
+  transform: translateX(-100%);
+}
+
+.tmha-sidebar-right {
+  right: 0;
+  transform: translateX(100%);
+  .tmha-close-btn {
+    right: auto;
+    left: 19px;
+  }
+}
+
+.tmha-sidebar-left.active {
+  left: 0;
+  transform: translateX(0);
+}
+
+.tmha-sidebar-right.active {
+  right: 0;
+  transform: translateX(0);
+}
+
+.tmha-close-btn {
+  position: absolute;
+  top: 25px;
+  right: 19px;
+  display: block;
+  outline: none !important;
+  color: $dark-text-color;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  transform: scale(1);
+
+  &:before {
+    font-size: 24px;
+    @include addIconCustom('\e00b');
+  }
+  &:hover {
+    color: $base-body-color;
+  }
+
+  @media only screen and (max-width: 767px) {
+    top: 9px;
+    right: 4px;
+  }
+}
+
+/*
+* @section      Style for left and right columns
+* @description  This section holds specific style redeclarations for
+*               left and right columns
+*/
+
+#columns {
+  .header-login-content {
+    padding: 0;
+
+    li.user-data {
+      p span {
+        display: inline-block;
+      }
+      img {
+        float: none;
+      }
+    }
+    &:not(.is-logged) li {
+      width: 100%;
+    }
+  }
+  #center_column {
+    .social-login-buttons {
+      div {
+        margin-bottom: 10px;
+        .btn span {
+          @media (min-width: 992px) {
+            display: inline-block;
+            font-size: 12px;
+          }
+          @media (min-width: 1200px) {
+            font-size: 13px;
+          }
+        }
+      }
+    }
+  }
+}

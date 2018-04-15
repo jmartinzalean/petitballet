@@ -1,0 +1,19 @@
+@import '../../../../../_theme_variables';
+
+/*
+* @package        title block styles
+* @description
+*
+*/
+.block {
+  .title_block, .block h4 {
+    text-transform: uppercase;
+    font-weight: 700;
+
+    span {
+      &::after {
+        display: none;
+      }
+    }
+  }
+}

@@ -1,0 +1,27 @@
+@import "../../../../../_theme_variables";
+
+header {
+  .offset-1 {
+    @media (min-width: 1600px) {
+      margin-bottom: 2vw;
+    }
+  }
+
+  .config-wrap {
+    .module {
+      &:first-child {
+        @media (min-width: 1800px) {
+          margin-right: 22px;
+        }
+      }
+    }
+  }
+
+  .responsive-wrapper {
+    > div:not(.config-wrap) {
+      @media (min-width: 1600px) {
+        margin-left: 19px;
+      }
+    }
+  }
+}

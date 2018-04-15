@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+	<name>tmmegamenu</name>
+	<displayName><![CDATA[TM Mega Menu]]></displayName>
+	<version><![CDATA[1.7.2]]></version>
+	<description><![CDATA[Mega Menu от Template Monster]]></description>
+	<author><![CDATA[TemplateMonster (Alexander Grosul)]]></author>
+	<tab><![CDATA[front_office_features]]></tab>
+	<confirmUninstall><![CDATA[Вы уверены, что хотите удалить все свои данные?]]></confirmUninstall>
+	<is_configurable>1</is_configurable>
+	<need_instance>1</need_instance>
+	<limited_countries></limited_countries>
+</module>

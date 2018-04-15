@@ -1,0 +1,30 @@
+<?php
+
+global $_MODULE;
+$_MODULE = array();
+$_MODULE['<{tmmosaicproducts}prestashop>tmmosaicproducts_2f8884508edb72de3c69cbb8918ad107'] = 'TemplateMonster Mosaic Products';
+$_MODULE['<{tmmosaicproducts}prestashop>tmmosaicproducts_6b96146c40aa0ab20d787ae6183dab53'] = 'Afficher les produits d\'une catégorie en différentes dispositions sur la page d\'accueil';
+$_MODULE['<{tmmosaicproducts}prestashop>tmmosaicproducts_da09b13b50d6279e8d3ca72c5a00399d'] = 'Etes-vous sûr de vouloir désinstaller ce module? Toutes les données seront perdues!';
+$_MODULE['<{tmmosaicproducts}prestashop>tmmosaicproducts_ab03c8973cc7a3314e8ce68b5d88bcd9'] = 'Ajouter un nouvel élément';
+$_MODULE['<{tmmosaicproducts}prestashop>tmmosaicproducts_7e12eedbcea3dc74b1f25ea17181d69d'] = 'Mise à jour de l\'élément';
+$_MODULE['<{tmmosaicproducts}prestashop>tmmosaicproducts_ff19c966036b4a0c7350b2fc7e2861c2'] = 'Ajouter un élément';
+$_MODULE['<{tmmosaicproducts}prestashop>tmmosaicproducts_03368e3c1eb4d2a9048775874301b19f'] = 'Choisir une catégorie';
+$_MODULE['<{tmmosaicproducts}prestashop>tmmosaicproducts_92288eaed28f9ce24ca094f89f95f084'] = 'Nombre de produits à afficher';
+$_MODULE['<{tmmosaicproducts}prestashop>tmmosaicproducts_ec53a8c4f07baed5d8825072c89799be'] = 'Statut';
+$_MODULE['<{tmmosaicproducts}prestashop>tmmosaicproducts_00d23a76e43b46dae9ec7aa9dcbebb32'] = 'Activé';
+$_MODULE['<{tmmosaicproducts}prestashop>tmmosaicproducts_b9f5c797ebbf55adccdd8539a65a0241'] = 'Désactivé';
+$_MODULE['<{tmmosaicproducts}prestashop>tmmosaicproducts_c9cc8cce247e49bae79f15173ce97354'] = 'Enregistrer';
+$_MODULE['<{tmmosaicproducts}prestashop>tmmosaicproducts_4a79f8950c64f34c7a1775ba32a63c33'] = '%s ligne(s)';
+$_MODULE['<{tmmosaicproducts}prestashop>tmmosaicproducts_418b1244aba3d8c17ad5f311c3a03754'] = 'Nombre de produits à afficher dans une ligne';
+$_MODULE['<{tmmosaicproducts}prestashop>tmmosaicproducts_4c0fa9eb4830c8f752fa25ba0d20018f'] = 'Catégorie du bloc';
+$_MODULE['<{tmmosaicproducts}prestashop>tmmosaicproducts_18d4c0f418e5354c069e4b81fe460ae0'] = 'Produits à afficher';
+$_MODULE['<{tmmosaicproducts}prestashop>tmmosaicproducts_eb325c2c8e2cf0f18b4781185e02ccd1'] = 'Liste des blocs';
+$_MODULE['<{tmmosaicproducts}prestashop>tmmosaicproducts_c06c1fdf2690acc9c0b4ed3f4c87b36e'] = 'L\'élément n\'a pas pu être ajouté.';
+$_MODULE['<{tmmosaicproducts}prestashop>tmmosaicproducts_d9b36eff81dbacc1d424b5460ddcc482'] = 'L\'élément n\'a pas pu être mis à jour.';
+$_MODULE['<{tmmosaicproducts}prestashop>tmmosaicproducts_72ed90af737192981c4b0dbf7463b70b'] = 'L\'élément est enregistré.';
+$_MODULE['<{tmmosaicproducts}prestashop>tmmosaicproducts_ac7d4ba78718a5150b22a3889dd4a86d'] = 'Une erreur est survenue lors de la suppression de l\'élément';
+$_MODULE['<{tmmosaicproducts}prestashop>tmmosaicproducts_dd3d494b6b636f96e9b0a7fa450b5505'] = 'L\'élément est supprimé avec succès';
+$_MODULE['<{tmmosaicproducts}prestashop>tmmosaicproducts_7168ff2e0599cf851a5daf121776fc7c'] = 'Le statut de l\'élément n\'a pas pu être mis à jour.';
+$_MODULE['<{tmmosaicproducts}prestashop>tmmosaicproducts_fb8a0ab97d657ff4a382425a6b80e603'] = 'Le statut de l\'élément est mis à jour avec succès.';
+$_MODULE['<{tmmosaicproducts}prestashop>tmmosaicproducts_cad461c02b23c99b28cdd367704aa72b'] = 'Vous ne pouvez pas gérer les paramètres de ce module à partir de \\\"Toutes les boutiques\\\" ou  \\\"Groupe de boutique\\\", sélectionnez la boutique que vous souhaitez éditer';
+$_MODULE['<{tmmosaicproducts}prestashop>tmmosaicproducts_fedfc84ec71841fdcfd18b0529bbb315'] = 'Aucun produit dans cette catégorie.';
