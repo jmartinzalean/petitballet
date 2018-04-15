@@ -4,7 +4,8 @@
     {foreach from=$languages key=k item=language name="languages"}
       {if $language.iso_code == $lang_iso}
         <div class="current">
-            <img src="{$img_lang_dir}{$language.id_lang}.jpg" alt="{$language.iso_code}" width="33" height="33" /><!-- /Flag image -->
+            <img src="{$img_lang_dir}{$language.id_lang}.jpg" alt="{$language.iso_code}" width="28" height="28" /><!-- /Flag image
+             -->
           <!--<span>{$language.iso_code}</span>-->
         </div>
       {/if}
@@ -22,7 +23,8 @@
           {/if}
               <!--<span>{$language.name|regex_replace:"/\s\(.*\)$/":""}</span>-->
               <!-- Flag image -->
-              <img src="{$img_lang_dir}{$language.id_lang}.jpg" alt="{$language.iso_code}" width="33" height="33" /><!-- /Flag image -->
+              <img src="{$img_lang_dir}{$language.id_lang}.jpg" alt="{$language.iso_code}" width="28" height="28" /><!-- /Flag
+              image -->
           {if $language.iso_code != $lang_iso}
             </a>
           {/if}
