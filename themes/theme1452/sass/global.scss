@@ -4170,3 +4170,42 @@ body #olark-wrapper {
         top: -10px;
     }
 }
+@media (max-width: 1200px) {
+    .stickUpTop.isStuck .logo_petit {
+        width: 120px !important;
+        top: 3px;
+    }
+}
+@media (max-width: 992px) {
+    .logo_petit {
+        width: 180px;
+        right: 50%;
+        left: -60%;
+    }
+}
+@media (max-width: 767px) {
+    .logo_petit {
+        width: 180px;
+        left: -90%;
+        right: 30%;
+        top: 0;
+        position: absolute;
+    }
+}
+
+.row.it_DQFFESZRHBTA {
+    display: none !important;
+}
+.row.it_BYRRSCYOJMCX,
+.row.it_FJGMZOIQTNQE,
+.row.it_NZPZFLLYATEI,
+.wrapper.it_TAKMJNMTXFGB,
+.wrapper.it_QOJIFVILXIUL,
+.wrapper.it_SQTSELBBDJEU {
+    margin-top: 0;
+}
+.it_TLTETPCRPGEH {
+    div#homepage-slider {
+        margin-bottom: 0;
+    }
+}
