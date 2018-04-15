@@ -1,1 +1,38 @@
-.stickUpTop{position:relative;width:100%;left:0;top:0}.stickUpHolder{padding:0;max-width:100%}@media only screen and (max-width: 1199px){.isStuck .container{padding-left:15px;padding-right:15px}}#block_top_menu{padding-top:25px}
+/* -------------------------------------------------------------
+  Sass CSS3 Mixins! The Cross-Browser CSS3 Sass Library
+  By: Matthieu Aussaguel, http://www.mynameismatthieu.com, @matthieu_tweets
+
+  List of CSS3 Sass Mixins File to be @imported and @included as you need
+
+  The purpose of this library is to facilitate the use of CSS3 on different browsers avoiding HARD TO READ and NEVER
+  ENDING css files
+
+  note: All CSS3 Properties are being supported by Safari 5
+  more info: http://www.findmebyip.com/litmus/#css3-properties
+
+------------------------------------------------------------- */
+/* line 3, ../../../../sass/modules/blocktopmenu/css/blocktopmenu.scss */
+.stickUpTop {
+  position: relative;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+
+/* line 9, ../../../../sass/modules/blocktopmenu/css/blocktopmenu.scss */
+.stickUpHolder {
+  padding: 0;
+  max-width: 100%;
+}
+
+@media only screen and (max-width: 1199px) {
+  /* line 14, ../../../../sass/modules/blocktopmenu/css/blocktopmenu.scss */
+  .isStuck .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+/* line 19, ../../../../sass/modules/blocktopmenu/css/blocktopmenu.scss */
+#block_top_menu {
+  padding-top: 25px;
+}

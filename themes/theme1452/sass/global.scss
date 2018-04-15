@@ -2864,46 +2864,46 @@ table#cart_summary .gift-icon {
 }
 
 .order, .authentication, .address, .history {
-  .columns-container .center_column {
-    .form-control:not([type=file]) {
-      box-shadow: none;
-      border: 2px solid $base-border-color;
-      padding-left: 10px;
+    .columns-container .center_column {
+        .form-control:not([type=file]) {
+          box-shadow: none;
+          border: 2px solid $base-border-color;
+          padding-left: 10px;
 
-      &:focus {
-        border-color: $dark-border-color;
-      }
+          &:focus {
+            border-color: $dark-border-color;
+          }
 
+        }
+
+        .form-ok > .form-control:not([type=file]) {
+          border-color: $color-succes;
+        }
+
+        .form-error > .form-control:not([type=file]) {
+          border-color: $color-warning;
+        }
+
+        .form-group:not(.date-select) {
+//            .selector:not(.date-select, #uniform-days, #uniform-months, #uniform-years) {
+  //              min-width: 271px;
+    //        }
+        }
     }
 
-    .form-ok > .form-control:not([type=file]) {
-      border-color: $color-succes;
+    td {
+        &.cart_total {
+          text-align: center;
+        }
     }
 
-    .form-error > .form-control:not([type=file]) {
-      border-color: $color-warning;
+    h1 {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 30px;
     }
-
-    .form-group:not(.date-select) {
-      .selector:not(.date-select, #uniform-days, #uniform-months, #uniform-years) {
-        min-width: 271px;
-      }
-    }
-  }
-
-  td {
-    &.cart_total {
-      text-align: center;
-    }
-  }
-
-  h1 {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 30px;
-  }
 }
 
 .order_carrier_content {

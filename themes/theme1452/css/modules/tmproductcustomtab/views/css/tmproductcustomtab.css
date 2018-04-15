@@ -1,1 +1,119 @@
-.product-custom-tab-content .table{display:-webkit-box;display:-ms-flexbox;display:-webkit-flex;display:flex;padding:8px;border:1px solid #e4e1e1;color:#121212;margin-bottom:10px}.product-custom-tab-content .table table{table-layout:auto;background:none}.product-custom-tab-content .table table td,.product-custom-tab-content .table table th{border-right:5px solid #dedede}.product-custom-tab-content .table table th{background:#f4f4f4;border-bottom:8px solid #dedede;text-transform:uppercase;letter-spacing:0.06em;font-size:10px}@media (min-width: 480px){.product-custom-tab-content .table table th{font-size:14px}}@media (max-width: 479px){.product-custom-tab-content .table table th{height:70px;max-width:60px}}.product-custom-tab-content .table table tr:hover td{background:#f4f4f4}.product-custom-tab-content .table .left-table{flex-shrink:0}.product-custom-tab-content .table .left-table table td{background:#f4f4f4}.product-custom-tab-content .table .right-table{flex:1 1 auto;overflow:auto;padding-bottom:20px}.product-custom-tab-content .table .right-table table th,.product-custom-tab-content .table .right-table table td{text-align:center}.product-custom-tab-content .table .right-table table td:hover{background:#f4d6d6}.product-custom-tab-content table{table-layout:fixed;width:100%;background:#fff;color:#121212}@media (max-width: 767px){.product-custom-tab-content table{font-size:14px}}.product-custom-tab-content table img{max-width:100%;height:auto}
+/* -------------------------------------------------------------
+  Sass CSS3 Mixins! The Cross-Browser CSS3 Sass Library
+  By: Matthieu Aussaguel, http://www.mynameismatthieu.com, @matthieu_tweets
+
+  List of CSS3 Sass Mixins File to be @imported and @included as you need
+
+  The purpose of this library is to facilitate the use of CSS3 on different browsers avoiding HARD TO READ and NEVER
+  ENDING css files
+
+  note: All CSS3 Properties are being supported by Safari 5
+  more info: http://www.findmebyip.com/litmus/#css3-properties
+
+------------------------------------------------------------- */
+/**
+* 2002-2016 TemplateMonster
+*
+* TM Product Custom Tab
+*
+* NOTICE OF LICENSE
+*
+* This source file is subject to the General Public License (GPL 2.0)
+* that is bundled with this package in the file LICENSE.txt.
+* It is also available through the world-wide-web at this URL:
+* http://opensource.org/licenses/GPL-2.0
+*
+* DISCLAIMER
+*
+* Do not edit or add to this file if you wish to upgrade the module to newer
+* versions in the future.
+*
+*  @author    TemplateMonster
+*  @copyright 2002-2016 TemplateMonster
+*  @license   http://opensource.org/licenses/GPL-2.0 General Public License (GPL 2.0)
+*/
+/* line 26, ../../../../../sass/modules/tmproductcustomtab/views/css/tmproductcustomtab.scss */
+.product-custom-tab-content .table {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  padding: 8px;
+  border: 1px solid #e1e4e2;
+  color: #121212;
+  margin-bottom: 10px;
+}
+/* line 35, ../../../../../sass/modules/tmproductcustomtab/views/css/tmproductcustomtab.scss */
+.product-custom-tab-content .table table {
+  table-layout: auto;
+  background: none;
+}
+/* line 38, ../../../../../sass/modules/tmproductcustomtab/views/css/tmproductcustomtab.scss */
+.product-custom-tab-content .table table td, .product-custom-tab-content .table table th {
+  border-right: 5px solid #dedede;
+}
+/* line 41, ../../../../../sass/modules/tmproductcustomtab/views/css/tmproductcustomtab.scss */
+.product-custom-tab-content .table table th {
+  background: #f4f4f4;
+  border-bottom: 8px solid #dedede;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-size: 10px;
+}
+@media (min-width: 480px) {
+  /* line 41, ../../../../../sass/modules/tmproductcustomtab/views/css/tmproductcustomtab.scss */
+  .product-custom-tab-content .table table th {
+    font-size: 14px;
+  }
+}
+@media (max-width: 479px) {
+  /* line 41, ../../../../../sass/modules/tmproductcustomtab/views/css/tmproductcustomtab.scss */
+  .product-custom-tab-content .table table th {
+    height: 70px;
+    max-width: 60px;
+  }
+}
+/* line 56, ../../../../../sass/modules/tmproductcustomtab/views/css/tmproductcustomtab.scss */
+.product-custom-tab-content .table table tr:hover td {
+  background: #f4f4f4;
+}
+/* line 61, ../../../../../sass/modules/tmproductcustomtab/views/css/tmproductcustomtab.scss */
+.product-custom-tab-content .table .left-table {
+  flex-shrink: 0;
+}
+/* line 64, ../../../../../sass/modules/tmproductcustomtab/views/css/tmproductcustomtab.scss */
+.product-custom-tab-content .table .left-table table td {
+  background: #f4f4f4;
+}
+/* line 69, ../../../../../sass/modules/tmproductcustomtab/views/css/tmproductcustomtab.scss */
+.product-custom-tab-content .table .right-table {
+  flex: 1 1 auto;
+  overflow: auto;
+  padding-bottom: 20px;
+}
+/* line 74, ../../../../../sass/modules/tmproductcustomtab/views/css/tmproductcustomtab.scss */
+.product-custom-tab-content .table .right-table table th, .product-custom-tab-content .table .right-table table td {
+  text-align: center;
+}
+/* line 77, ../../../../../sass/modules/tmproductcustomtab/views/css/tmproductcustomtab.scss */
+.product-custom-tab-content .table .right-table table td:hover {
+  background: #f4d6d6;
+}
+/* line 83, ../../../../../sass/modules/tmproductcustomtab/views/css/tmproductcustomtab.scss */
+.product-custom-tab-content table {
+  table-layout: fixed;
+  width: 100%;
+  background: white;
+  color: #121212;
+}
+@media (max-width: 767px) {
+  /* line 83, ../../../../../sass/modules/tmproductcustomtab/views/css/tmproductcustomtab.scss */
+  .product-custom-tab-content table {
+    font-size: 14px;
+  }
+}
+/* line 91, ../../../../../sass/modules/tmproductcustomtab/views/css/tmproductcustomtab.scss */
+.product-custom-tab-content table img {
+  max-width: 100%;
+  height: auto;
+}

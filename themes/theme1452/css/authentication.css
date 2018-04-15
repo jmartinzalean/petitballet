@@ -1,1 +1,61 @@
-#account-creation_form .id_state,#account-creation_form .dni,#account-creation_form .postcode{display:none}#center_column #create-account_form{min-height:307px}#center_column #create-account_form p{margin-bottom:8px}#center_column #create-account_form .form-group{margin:0 0 20px 0}#center_column #login_form{min-height:307px}#center_column #login_form .form-group{margin:0 0 3px 0}#center_column #login_form .form-group.lost_password{margin:14px 0 15px 0}#center_column #login_form .form-group.lost_password a{text-decoration:underline}#center_column #login_form .form-group.lost_password a:hover{text-decoration:none}#login_form .form-control,#create-account_form .form-control{max-width:271px}
+/* -------------------------------------------------------------
+  Sass CSS3 Mixins! The Cross-Browser CSS3 Sass Library
+  By: Matthieu Aussaguel, http://www.mynameismatthieu.com, @matthieu_tweets
+
+  List of CSS3 Sass Mixins File to be @imported and @included as you need
+
+  The purpose of this library is to facilitate the use of CSS3 on different browsers avoiding HARD TO READ and NEVER
+  ENDING css files
+
+  note: All CSS3 Properties are being supported by Safari 5
+  more info: http://www.findmebyip.com/litmus/#css3-properties
+
+------------------------------------------------------------- */
+/*
+* @subsection   Authentication Styles
+*/
+/* line 8, ../sass/authentication.scss */
+#account-creation_form .id_state,
+#account-creation_form .dni,
+#account-creation_form .postcode {
+  display: none;
+}
+
+/* line 12, ../sass/authentication.scss */
+#center_column #create-account_form {
+  min-height: 307px;
+}
+/* line 14, ../sass/authentication.scss */
+#center_column #create-account_form p {
+  margin-bottom: 8px;
+}
+/* line 17, ../sass/authentication.scss */
+#center_column #create-account_form .form-group {
+  margin: 0 0 20px 0;
+}
+
+/* line 22, ../sass/authentication.scss */
+#center_column #login_form {
+  min-height: 307px;
+}
+/* line 24, ../sass/authentication.scss */
+#center_column #login_form .form-group {
+  margin: 0 0 3px 0;
+}
+/* line 26, ../sass/authentication.scss */
+#center_column #login_form .form-group.lost_password {
+  margin: 14px 0 15px 0;
+}
+/* line 28, ../sass/authentication.scss */
+#center_column #login_form .form-group.lost_password a {
+  text-decoration: underline;
+}
+/* line 30, ../sass/authentication.scss */
+#center_column #login_form .form-group.lost_password a:hover {
+  text-decoration: none;
+}
+
+/* line 39, ../sass/authentication.scss */
+#login_form .form-control, #create-account_form .form-control {
+  max-width: 271px;
+}

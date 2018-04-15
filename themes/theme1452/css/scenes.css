@@ -1,1 +1,142 @@
-#scenes .popover-button span{display:block;font-size:28px;text-align:center}#scenes .popover-button span:before{content:"\f0fe";font-family:"FontAwesome";display:block;vertical-align:5px}.thumbs_banner{margin:10px auto;padding:0;height:62px !important;width:100%;border-top:1px solid #e4e1e1;border-bottom:1px solid #e4e1e1}.thumbs_banner .space-keeper{width:21px;float:left;display:block;height:100%}.thumbs_banner .space-keeper a.prev{display:none;width:21px;background:#fff;text-decoration:none;color:#404040}.thumbs_banner .space-keeper a.prev:before{font-family:"FontAwesome";content:"\f053";vertical-align:middle;padding-top:35px;padding-left:5px}.thumbs_banner .space-keeper a.next{float:left;display:block;width:21px;background:#fff;text-decoration:none;color:#404040}.thumbs_banner .space-keeper a.next:before{font-family:"FontAwesome";content:"\f054";vertical-align:middle;padding-top:35px;padding-left:5px}#scenes_list{overflow:hidden;float:left;width:828px}#scenes_list ul{list-style-type:none}#scenes_list li{float:left}#scenes_list a{display:block}#scenes a.popover-button{display:block;position:absolute;text-decoration:none}#scenes .popover{-webkit-border-radius:0;-khtml-border-radius:0;-moz-border-radius:0;-ms-border-radius:0;-o-border-radius:0;border-radius:0;border-color:#e4e1e1}#scenes .product-image-container,#scenes .product-name{margin-bottom:15px}#scenes div.description{margin-bottom:15px}#scenes .button-container{margin-bottom:15px}#scenes .button-container a{text-decoration:none}#scenes .price{margin-bottom:10px}@media (max-width: 1199px){#scenes{display:none}}
+/* -------------------------------------------------------------
+  Sass CSS3 Mixins! The Cross-Browser CSS3 Sass Library
+  By: Matthieu Aussaguel, http://www.mynameismatthieu.com, @matthieu_tweets
+
+  List of CSS3 Sass Mixins File to be @imported and @included as you need
+
+  The purpose of this library is to facilitate the use of CSS3 on different browsers avoiding HARD TO READ and NEVER
+  ENDING css files
+
+  note: All CSS3 Properties are being supported by Safari 5
+  more info: http://www.findmebyip.com/litmus/#css3-properties
+
+------------------------------------------------------------- */
+/*
+* @section      Scenes Styles
+*/
+/* line 6, ../sass/scenes.scss */
+#scenes .popover-button span {
+  display: block;
+  font-size: 28px;
+  text-align: center;
+}
+/* line 10, ../sass/scenes.scss */
+#scenes .popover-button span:before {
+  content: "\f0fe";
+  font-family: "FontAwesome";
+  display: block;
+  vertical-align: 5px;
+}
+
+/* line 18, ../sass/scenes.scss */
+.thumbs_banner {
+  margin: 10px auto;
+  padding: 0;
+  height: 62px !important;
+  width: 100%;
+  border-top: 1px solid #e1e4e2;
+  border-bottom: 1px solid #e1e4e2;
+}
+/* line 25, ../sass/scenes.scss */
+.thumbs_banner .space-keeper {
+  width: 21px;
+  float: left;
+  display: block;
+  height: 100%;
+}
+/* line 30, ../sass/scenes.scss */
+.thumbs_banner .space-keeper a.prev {
+  display: none;
+  width: 21px;
+  background: white;
+  text-decoration: none;
+  color: #3f3f3f;
+}
+/* line 36, ../sass/scenes.scss */
+.thumbs_banner .space-keeper a.prev:before {
+  font-family: "FontAwesome";
+  content: "\f053";
+  vertical-align: middle;
+  padding-top: 35px;
+  padding-left: 5px;
+}
+/* line 44, ../sass/scenes.scss */
+.thumbs_banner .space-keeper a.next {
+  float: left;
+  display: block;
+  width: 21px;
+  background: white;
+  text-decoration: none;
+  color: #3f3f3f;
+}
+/* line 51, ../sass/scenes.scss */
+.thumbs_banner .space-keeper a.next:before {
+  font-family: "FontAwesome";
+  content: "\f054";
+  vertical-align: middle;
+  padding-top: 35px;
+  padding-left: 5px;
+}
+
+/* line 62, ../sass/scenes.scss */
+#scenes_list {
+  overflow: hidden;
+  float: left;
+  width: 828px;
+}
+/* line 66, ../sass/scenes.scss */
+#scenes_list ul {
+  list-style-type: none;
+}
+/* line 69, ../sass/scenes.scss */
+#scenes_list li {
+  float: left;
+}
+/* line 72, ../sass/scenes.scss */
+#scenes_list a {
+  display: block;
+}
+
+/* line 78, ../sass/scenes.scss */
+#scenes a.popover-button {
+  display: block;
+  position: absolute;
+  text-decoration: none;
+}
+/* line 83, ../sass/scenes.scss */
+#scenes .popover {
+  -webkit-border-radius: 0;
+  -khtml-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+  border-color: #e1e4e2;
+}
+/* line 88, ../sass/scenes.scss */
+#scenes .product-image-container,
+#scenes .product-name {
+  margin-bottom: 15px;
+}
+/* line 91, ../sass/scenes.scss */
+#scenes div.description {
+  margin-bottom: 15px;
+}
+/* line 94, ../sass/scenes.scss */
+#scenes .button-container {
+  margin-bottom: 15px;
+}
+/* line 96, ../sass/scenes.scss */
+#scenes .button-container a {
+  text-decoration: none;
+}
+/* line 100, ../sass/scenes.scss */
+#scenes .price {
+  margin-bottom: 10px;
+}
+@media (max-width: 1199px) {
+  /* line 77, ../sass/scenes.scss */
+  #scenes {
+    display: none;
+  }
+}

@@ -1,1 +1,68 @@
-#tm_manufacturers_block .title_block,#tm_manufacturers_block .manufacturer-name,#tm_manufacturers_block p,#tm_manufacturers_block .bx-controls{display:none}#tm_manufacturers_block img{opacity:.6}.block .title_block,.block .block h4{position:relative;text-transform:uppercase;font-weight:400}.block .title_block::before,.block .block h4::before{content:'';position:absolute;top:50%;left:0;display:block;width:100%;border-bottom:2px solid #e4e1e1;background-color:#dedede;transform:translateY(-50%)}.block .title_block span,.block .block h4 span{position:relative;padding:0 5vw;background-color:#dedede}.block .title_block span::after,.block .block h4 span::after{display:none}.block .title_block a,.block .block h4 a{transition:all 0.3s ease-in-out}.block .title_block a:hover,.block .block h4 a:hover{padding:0 2vw}
+/* -------------------------------------------------------------
+  Sass CSS3 Mixins! The Cross-Browser CSS3 Sass Library
+  By: Matthieu Aussaguel, http://www.mynameismatthieu.com, @matthieu_tweets
+
+  List of CSS3 Sass Mixins File to be @imported and @included as you need
+
+  The purpose of this library is to facilitate the use of CSS3 on different browsers avoiding HARD TO READ and NEVER
+  ENDING css files
+
+  note: All CSS3 Properties are being supported by Safari 5
+  more info: http://www.findmebyip.com/litmus/#css3-properties
+
+------------------------------------------------------------- */
+/*
+* @package       tm_manufacturers_block styles
+* @description
+*
+*/
+/* line 9, ../../../../../../sass/modules/tmmegalayout/views/css/layouts/Home6.scss */
+#tm_manufacturers_block .title_block, #tm_manufacturers_block .manufacturer-name, #tm_manufacturers_block p, #tm_manufacturers_block .bx-controls {
+  display: none;
+}
+/* line 13, ../../../../../../sass/modules/tmmegalayout/views/css/layouts/Home6.scss */
+#tm_manufacturers_block img {
+  opacity: .6;
+}
+
+/*
+* @package        title block styles
+* @description
+*
+*/
+/* line 23, ../../../../../../sass/modules/tmmegalayout/views/css/layouts/Home6.scss */
+.block .title_block, .block .block h4 {
+  position: relative;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+/* line 28, ../../../../../../sass/modules/tmmegalayout/views/css/layouts/Home6.scss */
+.block .title_block::before, .block .block h4::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  display: block;
+  width: 100%;
+  border-bottom: 2px solid #e1e4e2;
+  background-color: #dedede;
+  transform: translateY(-50%);
+}
+/* line 40, ../../../../../../sass/modules/tmmegalayout/views/css/layouts/Home6.scss */
+.block .title_block span, .block .block h4 span {
+  position: relative;
+  padding: 0 5vw;
+  background-color: #dedede;
+}
+/* line 45, ../../../../../../sass/modules/tmmegalayout/views/css/layouts/Home6.scss */
+.block .title_block span::after, .block .block h4 span::after {
+  display: none;
+}
+/* line 50, ../../../../../../sass/modules/tmmegalayout/views/css/layouts/Home6.scss */
+.block .title_block a, .block .block h4 a {
+  transition: all 0.3s ease-in-out;
+}
+/* line 53, ../../../../../../sass/modules/tmmegalayout/views/css/layouts/Home6.scss */
+.block .title_block a:hover, .block .block h4 a:hover {
+  padding: 0 2vw;
+}

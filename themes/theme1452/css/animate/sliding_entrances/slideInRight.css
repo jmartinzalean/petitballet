@@ -1,1 +1,17 @@
-@keyframes slideInRight{0%{transform:translate3d(100%, 0, 0);visibility:visible}100%{transform:translate3d(0, 0, 0)}}.slideInRight{animation-name:slideInRight}
+@keyframes slideInRight {
+  /* line 2, ../../../sass/animate/sliding_entrances/slideInRight.scss */
+  0% {
+    transform: translate3d(100%, 0, 0);
+    visibility: visible;
+  }
+
+  /* line 7, ../../../sass/animate/sliding_entrances/slideInRight.scss */
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+/* line 12, ../../../sass/animate/sliding_entrances/slideInRight.scss */
+.slideInRight {
+  animation-name: slideInRight;
+}

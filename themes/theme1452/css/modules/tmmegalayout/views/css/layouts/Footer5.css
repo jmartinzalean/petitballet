@@ -1,1 +1,81 @@
-.footer-container{background:#dedede}.footer-container h4,.footer-container h4 a{color:#121212}.footer-container #newsletter_block_left{margin-left:auto;margin-right:auto;margin-bottom:40px}@media (min-width: 768px){.footer-container #newsletter_block_left{width:80%}}@media (min-width: 1200px){.footer-container #newsletter_block_left{width:50%;margin-bottom:80px}}.footer-container #newsletter_block_left .title_block,.footer-container #newsletter_block_left h4,.footer-container #newsletter_block_left p{display:none}.footer-container #newsletter_block_left .form-group .form-control{color:#121212}@media (min-width: 1600px){.footer-container #newsletter_block_left .form-group .form-control{margin-right:80px}}.footer-container .divider-top::before{border-color:#e8e8e8}.footer-container .copyright-block::before{background:#dedede;border-color:#e8e8e8}@media (max-width: 767px){.footer-container .footer-block{text-align:left}}.footer-container .footer-block li a{color:#121212}.footer-container .footer-block li a:hover{color:#f4d6d6}.footer-container .footer-block li a[href*='tel']::before,.footer-container .footer-block li a[href*='mailto']::before,.footer-container .footer-block li span::before{color:#f4d6d6}
+/* -------------------------------------------------------------
+  Sass CSS3 Mixins! The Cross-Browser CSS3 Sass Library
+  By: Matthieu Aussaguel, http://www.mynameismatthieu.com, @matthieu_tweets
+
+  List of CSS3 Sass Mixins File to be @imported and @included as you need
+
+  The purpose of this library is to facilitate the use of CSS3 on different browsers avoiding HARD TO READ and NEVER
+  ENDING css files
+
+  note: All CSS3 Properties are being supported by Safari 5
+  more info: http://www.findmebyip.com/litmus/#css3-properties
+
+------------------------------------------------------------- */
+/* line 3, ../../../../../../sass/modules/tmmegalayout/views/css/layouts/Footer5.scss */
+.footer-container {
+  background: #dedede;
+}
+/* line 7, ../../../../../../sass/modules/tmmegalayout/views/css/layouts/Footer5.scss */
+.footer-container h4, .footer-container h4 a {
+  color: #121212;
+}
+/* line 12, ../../../../../../sass/modules/tmmegalayout/views/css/layouts/Footer5.scss */
+.footer-container #newsletter_block_left {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+}
+@media (min-width: 768px) {
+  /* line 12, ../../../../../../sass/modules/tmmegalayout/views/css/layouts/Footer5.scss */
+  .footer-container #newsletter_block_left {
+    width: 80%;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 12, ../../../../../../sass/modules/tmmegalayout/views/css/layouts/Footer5.scss */
+  .footer-container #newsletter_block_left {
+    width: 50%;
+    margin-bottom: 80px;
+  }
+}
+/* line 26, ../../../../../../sass/modules/tmmegalayout/views/css/layouts/Footer5.scss */
+.footer-container #newsletter_block_left .title_block, .footer-container #newsletter_block_left h4, .footer-container #newsletter_block_left p {
+  display: none;
+}
+/* line 30, ../../../../../../sass/modules/tmmegalayout/views/css/layouts/Footer5.scss */
+.footer-container #newsletter_block_left .form-group .form-control {
+  color: #121212;
+}
+@media (min-width: 1600px) {
+  /* line 30, ../../../../../../sass/modules/tmmegalayout/views/css/layouts/Footer5.scss */
+  .footer-container #newsletter_block_left .form-group .form-control {
+    margin-right: 80px;
+  }
+}
+/* line 40, ../../../../../../sass/modules/tmmegalayout/views/css/layouts/Footer5.scss */
+.footer-container .divider-top::before {
+  border-color: #e8e8e8;
+}
+/* line 46, ../../../../../../sass/modules/tmmegalayout/views/css/layouts/Footer5.scss */
+.footer-container .copyright-block::before {
+  background: #dedede;
+  border-color: #e8e8e8;
+}
+@media (max-width: 767px) {
+  /* line 52, ../../../../../../sass/modules/tmmegalayout/views/css/layouts/Footer5.scss */
+  .footer-container .footer-block {
+    text-align: left;
+  }
+}
+/* line 58, ../../../../../../sass/modules/tmmegalayout/views/css/layouts/Footer5.scss */
+.footer-container .footer-block li a {
+  color: #121212;
+}
+/* line 61, ../../../../../../sass/modules/tmmegalayout/views/css/layouts/Footer5.scss */
+.footer-container .footer-block li a:hover {
+  color: #f4d6d6;
+}
+/* line 67, ../../../../../../sass/modules/tmmegalayout/views/css/layouts/Footer5.scss */
+.footer-container .footer-block li a[href*='tel']::before, .footer-container .footer-block li a[href*='mailto']::before, .footer-container .footer-block li span::before {
+  color: #f4d6d6;
+}

@@ -1,1 +1,405 @@
-﻿#layered_block_left .ui-slider-horizontal{height:2px;border-radius:0;background:#e8e8e8}#layered_block_left .ui-slider-horizontal .ui-widget-header{background:#f4d6d6}#layered_block_left .ui-slider-horizontal .ui-slider-range{top:-2px;height:4px}#layered_block_left .ui-slider-horizontal .ui-slider-handle{top:-8px;margin-left:-10px;border-radius:50%;background:#f4d6d6;border-color:#f4d6d6;width:15px;height:15px}#layered_block_left .ui-slider-horizontal .ui-slider-handle.ui-state-active{box-shadow:0 0 10px 0 rgba(244,214,214,0.3)}#layered_block_left .title_block:after{display:none}#layered_block_left .layered_subtitle_heading{margin-bottom:10px}#layered_block_left #layered_form .layered_subtitle{font:bold 24px/28px "Poiret One",sans-serif;color:#121212}@media (min-width: 992px) and (max-width: 1199px), (min-width: 768px) and (max-width: 991px){#layered_block_left #layered_form .layered_subtitle{font-size:15px}}@media (min-width: 1200px){#layered_block_left #layered_form .layered_subtitle{font-size:17px}}#layered_block_left #layered_form #enabled_filters{margin-bottom:40px;padding:20px 25px;border:2px solid #e8e8e8}@media (min-width: 1600px){#layered_block_left #layered_form #enabled_filters{margin-right:51px;margin-bottom:100px}}#layered_block_left #layered_form #enabled_filters ul li{font-size:14px;text-transform:lowercase}#layered_block_left #layered_form #enabled_filters ul li a{float:right;cursor:pointer;color:#121212}#layered_block_left #layered_form #enabled_filters ul li a:hover{color:#595959}#layered_block_left #layered_form #enabled_filters ul li span{text-transform:capitalize;color:#121212;font-weight:700;font-family:"Poiret One",sans-serif}@media (min-width: 1200px){#layered_block_left #layered_form #enabled_filters ul li span{font-size:17px}}#layered_block_left #layered_form .layered_filter,#layered_block_left #layered_form .layered_price{margin-bottom:25px}@media (min-width: 1600px){#layered_block_left #layered_form .layered_filter,#layered_block_left #layered_form .layered_price{margin-bottom:80px}}#layered_block_left #layered_form .layered_price ul li.layered_list{float:left;clear:left}#layered_block_left #layered_form .layered_price label{margin-bottom:15px}#layered_block_left #layered_form ul{float:none;clear:both;padding:0;margin:0}#layered_block_left #layered_form ul li{float:none;padding:0;list-style-type:none}#layered_block_left #layered_form ul li+li{margin-top:10px}#layered_block_left #layered_form ul li.disabled{color:#666}#layered_block_left #layered_form ul li.layered_list{display:block;cursor:pointer}#layered_block_left #layered_form ul li.layered_list.layered_list_selected,#layered_block_left #layered_form ul li.layered_list:hover{font-weight:bold}#layered_block_left #layered_form ul .selector{margin-bottom:15px}#layered_block_left #layered_form ul .layered_slider_container{margin:6px 0 6px 10px;width:89%}#layered_block_left #layered_form ul .layered_slider_container .layered_slider{margin-top:5px}#layered_block_left #layered_form a{transition:all 0.3s ease-in-out}#layered_block_left #layered_form .color-group li{line-height:19px;display:-ms-flexbox;display:-webkit-flex;display:flex;-webkit-flex-direction:row;-ms-flex-direction:row;flex-direction:row;-webkit-flex-wrap:nowrap;-ms-flex-wrap:nowrap;flex-wrap:nowrap}#layered_block_left #layered_form .color-group li .color-option{position:relative;display:block;width:22px;height:22px;margin:0 10px 0 0;border:none;border-radius:50%;outline:none;cursor:pointer;transition:all 0.3s ease-in-out}#layered_block_left #layered_form .color-group li .color-option.on,#layered_block_left #layered_form .color-group li .color-option:hover{transform:scale3d(0.7, 0.7, 1);box-shadow:0 0 0 3px #dedede,0 0 0 5px currentColor}#layered_block_left #layered_form .color-group li .color-option.disable{opacity:0.5;filter:alpha(opacity=50);-moz-opacity:0.5}#layered_block_left #layered_form .form-group{margin-top:15px;margin-bottom:0}#layered_block_left #layered_form .form-group:first-child{margin-top:0}#layered_block_left #layered_form .form-group .form-label{display:inline-block;margin-bottom:5px}#layered_block_left #layered_form .hide-action{text-align:right;display:block;cursor:pointer}#layered_block_left #layered_form .hide-action:hover{font-weight:bold}#layered_block_left #layered_ajax_loader p{margin:20px 0;text-align:center}@media (min-width: 768px){#layered_block_left .collapse{display:block !important;height:auto !important}#layered_block_left .title-collapse{display:none !important}}@media (max-width: 767px){#layered_block_left{display:block;width:90%;height:100vh;z-index:10000;position:fixed;right:0;top:0;padding:80px 30px 30px;background:#dedede;transform:translate(100%, 0);transition:transform .3s ease}#layered_block_left.active{transform:translate(0, 0)}#layered_block_left .layered_block_inner{max-height:100%;overflow:auto}#layered_block_left .selector{min-width:228px}#layered_block_left .selector span{min-width:216px}#layered_block_left .filter-close{display:block;cursor:pointer;color:#121212;width:24px;height:24px;position:absolute;top:15px;left:15px;text-align:center;z-index:5}#layered_block_left .filter-close:before{font-size:24px;font-family:"fl-outicons";content:"";display:inline-block;font-weight:normal}}@media (min-width: 768px){#filter-button{display:none !important}}@media (max-width: 767px){#filter-button{margin-bottom:30px}#filter-button:before{font-family:"fl-outicons";content:"";display:inline-block;font-weight:normal;margin-right:20px}}@media only screen and (max-width: 479px){#filter-button{width:calc(50% - 5px);margin-right:5px;margin-left:-5px;margin-bottom:20px}#filter-button:before{margin:0}#filter-button span{display:none}}#filter-overlay{background:#121212;opacity:0.5;position:fixed;left:-500px;top:-500px;right:-500px;bottom:-500px;display:none;z-index:9999}#filter-overlay.active{display:block}@media (min-width: 768px){#filter-overlay{display:none !important}}.loader{z-index:10;position:absolute;top:300px;left:50%;transform:translateX(-50%)}
+/* -------------------------------------------------------------
+  Sass CSS3 Mixins! The Cross-Browser CSS3 Sass Library
+  By: Matthieu Aussaguel, http://www.mynameismatthieu.com, @matthieu_tweets
+
+  List of CSS3 Sass Mixins File to be @imported and @included as you need
+
+  The purpose of this library is to facilitate the use of CSS3 on different browsers avoiding HARD TO READ and NEVER
+  ENDING css files
+
+  note: All CSS3 Properties are being supported by Safari 5
+  more info: http://www.findmebyip.com/litmus/#css3-properties
+
+------------------------------------------------------------- */
+/*
+* @package       change-grid-on-big-screen
+* @description   make grid like in design
+*
+*/
+/*
+* @package       custom-scroll-bar
+* @description   make you scroll bar pretty and better
+*
+*/
+/*
+* @subsection   icons
+*
+* @description
+*/
+/*
+* @package       header icons title display mixin
+* @description
+*
+*/
+/*
+* @package     bxSlider controls mixin
+* @description
+*
+*/
+/* line 6, ../../../sass/modules/blocklayered/blocklayered.scss */
+#layered_block_left .ui-slider-horizontal {
+  height: 2px;
+  border-radius: 0;
+  background: #e8e8e8;
+}
+/* line 11, ../../../sass/modules/blocklayered/blocklayered.scss */
+#layered_block_left .ui-slider-horizontal .ui-widget-header {
+  background: #f4d6d6;
+}
+/* line 14, ../../../sass/modules/blocklayered/blocklayered.scss */
+#layered_block_left .ui-slider-horizontal .ui-slider-range {
+  top: -2px;
+  height: 4px;
+}
+/* line 18, ../../../sass/modules/blocklayered/blocklayered.scss */
+#layered_block_left .ui-slider-horizontal .ui-slider-handle {
+  top: -8px;
+  margin-left: -10px;
+  border-radius: 50%;
+  background: #f4d6d6;
+  border-color: #f4d6d6;
+  width: 15px;
+  height: 15px;
+}
+/* line 27, ../../../sass/modules/blocklayered/blocklayered.scss */
+#layered_block_left .ui-slider-horizontal .ui-slider-handle.ui-state-active {
+  box-shadow: 0 0 10px 0 rgba(244, 214, 214, 0.3);
+}
+/* line 34, ../../../sass/modules/blocklayered/blocklayered.scss */
+#layered_block_left .title_block:after {
+  display: none;
+}
+/* line 39, ../../../sass/modules/blocklayered/blocklayered.scss */
+#layered_block_left .layered_subtitle_heading {
+  margin-bottom: 10px;
+}
+/* line 44, ../../../sass/modules/blocklayered/blocklayered.scss */
+#layered_block_left #layered_form .layered_subtitle {
+  font: bold 24px/28px "Poiret One", sans-serif;
+  color: #121212;
+}
+@media (min-width: 992px) and (max-width: 1199px), (min-width: 768px) and (max-width: 991px) {
+  /* line 44, ../../../sass/modules/blocklayered/blocklayered.scss */
+  #layered_block_left #layered_form .layered_subtitle {
+    font-size: 15px;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 44, ../../../sass/modules/blocklayered/blocklayered.scss */
+  #layered_block_left #layered_form .layered_subtitle {
+    font-size: 17px;
+  }
+}
+/* line 56, ../../../sass/modules/blocklayered/blocklayered.scss */
+#layered_block_left #layered_form #enabled_filters {
+  margin-bottom: 40px;
+  padding: 20px 25px;
+  border: 2px solid #e8e8e8;
+}
+@media (min-width: 1600px) {
+  /* line 56, ../../../sass/modules/blocklayered/blocklayered.scss */
+  #layered_block_left #layered_form #enabled_filters {
+    margin-right: 51px;
+    margin-bottom: 100px;
+  }
+}
+/* line 66, ../../../sass/modules/blocklayered/blocklayered.scss */
+#layered_block_left #layered_form #enabled_filters ul li {
+  font-size: 14px;
+  text-transform: lowercase;
+}
+/* line 70, ../../../sass/modules/blocklayered/blocklayered.scss */
+#layered_block_left #layered_form #enabled_filters ul li a {
+  float: right;
+  cursor: pointer;
+  color: #121212;
+}
+/* line 75, ../../../sass/modules/blocklayered/blocklayered.scss */
+#layered_block_left #layered_form #enabled_filters ul li a:hover {
+  color: #595959;
+}
+/* line 80, ../../../sass/modules/blocklayered/blocklayered.scss */
+#layered_block_left #layered_form #enabled_filters ul li span {
+  text-transform: capitalize;
+  color: #121212;
+  font-weight: 700;
+  font-family: "Poiret One", sans-serif;
+}
+@media (min-width: 1200px) {
+  /* line 80, ../../../sass/modules/blocklayered/blocklayered.scss */
+  #layered_block_left #layered_form #enabled_filters ul li span {
+    font-size: 17px;
+  }
+}
+/* line 92, ../../../sass/modules/blocklayered/blocklayered.scss */
+#layered_block_left #layered_form .layered_filter, #layered_block_left #layered_form .layered_price {
+  margin-bottom: 25px;
+}
+@media (min-width: 1600px) {
+  /* line 92, ../../../sass/modules/blocklayered/blocklayered.scss */
+  #layered_block_left #layered_form .layered_filter, #layered_block_left #layered_form .layered_price {
+    margin-bottom: 80px;
+  }
+}
+/* line 100, ../../../sass/modules/blocklayered/blocklayered.scss */
+#layered_block_left #layered_form .layered_price ul li.layered_list {
+  float: left;
+  clear: left;
+}
+/* line 105, ../../../sass/modules/blocklayered/blocklayered.scss */
+#layered_block_left #layered_form .layered_price label {
+  margin-bottom: 15px;
+}
+/* line 109, ../../../sass/modules/blocklayered/blocklayered.scss */
+#layered_block_left #layered_form ul {
+  float: none;
+  clear: both;
+  padding: 0;
+  margin: 0;
+}
+/* line 115, ../../../sass/modules/blocklayered/blocklayered.scss */
+#layered_block_left #layered_form ul li {
+  float: none;
+  padding: 0;
+  list-style-type: none;
+}
+/* line 120, ../../../sass/modules/blocklayered/blocklayered.scss */
+#layered_block_left #layered_form ul li + li {
+  margin-top: 10px;
+}
+/* line 124, ../../../sass/modules/blocklayered/blocklayered.scss */
+#layered_block_left #layered_form ul li.disabled {
+  color: #666;
+}
+/* line 127, ../../../sass/modules/blocklayered/blocklayered.scss */
+#layered_block_left #layered_form ul li.layered_list {
+  display: block;
+  cursor: pointer;
+}
+/* line 130, ../../../sass/modules/blocklayered/blocklayered.scss */
+#layered_block_left #layered_form ul li.layered_list.layered_list_selected, #layered_block_left #layered_form ul li.layered_list:hover {
+  font-weight: bold;
+}
+/* line 135, ../../../sass/modules/blocklayered/blocklayered.scss */
+#layered_block_left #layered_form ul .selector {
+  margin-bottom: 15px;
+}
+/* line 138, ../../../sass/modules/blocklayered/blocklayered.scss */
+#layered_block_left #layered_form ul .layered_slider_container {
+  margin: 6px 0 6px 10px;
+  width: 89%;
+}
+/* line 141, ../../../sass/modules/blocklayered/blocklayered.scss */
+#layered_block_left #layered_form ul .layered_slider_container .layered_slider {
+  margin-top: 5px;
+}
+/* line 147, ../../../sass/modules/blocklayered/blocklayered.scss */
+#layered_block_left #layered_form a {
+  transition: all 0.3s ease-in-out;
+}
+/* line 151, ../../../sass/modules/blocklayered/blocklayered.scss */
+#layered_block_left #layered_form .color-group li {
+  line-height: 19px;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+}
+/* line 163, ../../../sass/modules/blocklayered/blocklayered.scss */
+#layered_block_left #layered_form .color-group li .color-option {
+  position: relative;
+  display: block;
+  width: 22px;
+  height: 22px;
+  margin: 0 10px 0 0;
+  border: none;
+  border-radius: 50%;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+/* line 175, ../../../sass/modules/blocklayered/blocklayered.scss */
+#layered_block_left #layered_form .color-group li .color-option.on, #layered_block_left #layered_form .color-group li .color-option:hover {
+  transform: scale3d(0.7, 0.7, 1);
+  box-shadow: 0 0 0 3px #dedede, 0 0 0 5px currentColor;
+}
+/* line 180, ../../../sass/modules/blocklayered/blocklayered.scss */
+#layered_block_left #layered_form .color-group li .color-option.disable {
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+  -moz-opacity: 0.5;
+}
+/* line 187, ../../../sass/modules/blocklayered/blocklayered.scss */
+#layered_block_left #layered_form .form-group {
+  margin-top: 15px;
+  margin-bottom: 0;
+}
+/* line 190, ../../../sass/modules/blocklayered/blocklayered.scss */
+#layered_block_left #layered_form .form-group:first-child {
+  margin-top: 0;
+}
+/* line 193, ../../../sass/modules/blocklayered/blocklayered.scss */
+#layered_block_left #layered_form .form-group .form-label {
+  display: inline-block;
+  margin-bottom: 5px;
+}
+/* line 198, ../../../sass/modules/blocklayered/blocklayered.scss */
+#layered_block_left #layered_form .hide-action {
+  text-align: right;
+  display: block;
+  cursor: pointer;
+}
+/* line 202, ../../../sass/modules/blocklayered/blocklayered.scss */
+#layered_block_left #layered_form .hide-action:hover {
+  font-weight: bold;
+}
+/* line 207, ../../../sass/modules/blocklayered/blocklayered.scss */
+#layered_block_left #layered_ajax_loader p {
+  margin: 20px 0;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  /* line 212, ../../../sass/modules/blocklayered/blocklayered.scss */
+  #layered_block_left .collapse {
+    display: block !important;
+    height: auto !important;
+  }
+  /* line 216, ../../../sass/modules/blocklayered/blocklayered.scss */
+  #layered_block_left .title-collapse {
+    display: none !important;
+  }
+}
+@media (max-width: 767px) {
+  /* line 5, ../../../sass/modules/blocklayered/blocklayered.scss */
+  #layered_block_left {
+    display: block;
+    width: 90%;
+    height: 100vh;
+    z-index: 10000;
+    position: fixed;
+    right: 0;
+    top: 0;
+    padding: 80px 30px 30px;
+    background: #dedede;
+    transform: translate(100%, 0);
+    transition: transform .3s ease;
+  }
+  /* line 233, ../../../sass/modules/blocklayered/blocklayered.scss */
+  #layered_block_left.active {
+    transform: translate(0, 0);
+  }
+  /* line 236, ../../../sass/modules/blocklayered/blocklayered.scss */
+  #layered_block_left .layered_block_inner {
+    max-height: 100%;
+    overflow: auto;
+  }
+  /* line 240, ../../../sass/modules/blocklayered/blocklayered.scss */
+  #layered_block_left .selector {
+    min-width: 228px;
+  }
+  /* line 242, ../../../sass/modules/blocklayered/blocklayered.scss */
+  #layered_block_left .selector span {
+    min-width: 216px;
+  }
+  /* line 246, ../../../sass/modules/blocklayered/blocklayered.scss */
+  #layered_block_left .filter-close {
+    display: block;
+    cursor: pointer;
+    color: #121212;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    text-align: center;
+    z-index: 5;
+  }
+  /* line 258, ../../../sass/modules/blocklayered/blocklayered.scss */
+  #layered_block_left .filter-close:before {
+    font-size: 24px;
+    font-family: "fl-outicons";
+    content: "\e00b";
+    display: inline-block;
+    font-weight: normal;
+  }
+}
+
+@media (min-width: 768px) {
+  /* line 266, ../../../sass/modules/blocklayered/blocklayered.scss */
+  #filter-button {
+    display: none !important;
+  }
+}
+@media (max-width: 767px) {
+  /* line 266, ../../../sass/modules/blocklayered/blocklayered.scss */
+  #filter-button {
+    margin-bottom: 30px;
+  }
+  /* line 272, ../../../sass/modules/blocklayered/blocklayered.scss */
+  #filter-button:before {
+    font-family: "fl-outicons";
+    content: "\e020";
+    display: inline-block;
+    font-weight: normal;
+    margin-right: 20px;
+  }
+}
+@media only screen and (max-width: 479px) {
+  /* line 266, ../../../sass/modules/blocklayered/blocklayered.scss */
+  #filter-button {
+    width: calc(50% - 5px);
+    margin-right: 5px;
+    margin-left: -5px;
+    margin-bottom: 20px;
+  }
+  /* line 284, ../../../sass/modules/blocklayered/blocklayered.scss */
+  #filter-button:before {
+    margin: 0;
+  }
+  /* line 288, ../../../sass/modules/blocklayered/blocklayered.scss */
+  #filter-button span {
+    display: none;
+  }
+}
+
+/* line 294, ../../../sass/modules/blocklayered/blocklayered.scss */
+#filter-overlay {
+  background: #121212;
+  opacity: 0.5;
+  position: fixed;
+  left: -500px;
+  top: -500px;
+  right: -500px;
+  bottom: -500px;
+  display: none;
+  z-index: 9999;
+}
+/* line 304, ../../../sass/modules/blocklayered/blocklayered.scss */
+#filter-overlay.active {
+  display: block;
+}
+@media (min-width: 768px) {
+  /* line 294, ../../../sass/modules/blocklayered/blocklayered.scss */
+  #filter-overlay {
+    display: none !important;
+  }
+}
+
+/*
+* @package      loader
+* @description  loader on category page
+*
+*/
+/* line 316, ../../../sass/modules/blocklayered/blocklayered.scss */
+.loader {
+  z-index: 10;
+  position: absolute;
+  top: 300px;
+  left: 50%;
+  transform: translateX(-50%);
+}

@@ -1,1 +1,19 @@
-@media (min-width: 992px) and (max-width: 1199px){.top_menu .stickUpHolder>ul>li.without-link>span,.top_menu .stickUpHolder>ul>li>a,.top_menu>ul>li.without-link>span,.top_menu>ul>li>a{font-size:1.5vw}}
+/* -------------------------------------------------------------
+  Sass CSS3 Mixins! The Cross-Browser CSS3 Sass Library
+  By: Matthieu Aussaguel, http://www.mynameismatthieu.com, @matthieu_tweets
+
+  List of CSS3 Sass Mixins File to be @imported and @included as you need
+
+  The purpose of this library is to facilitate the use of CSS3 on different browsers avoiding HARD TO READ and NEVER
+  ENDING css files
+
+  note: All CSS3 Properties are being supported by Safari 5
+  more info: http://www.findmebyip.com/litmus/#css3-properties
+
+------------------------------------------------------------- */
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* line 3, ../../../../../../sass/modules/tmmegalayout/views/css/layouts/Header2.scss */
+  .top_menu .stickUpHolder > ul > li.without-link > span, .top_menu .stickUpHolder > ul > li > a, .top_menu > ul > li.without-link > span, .top_menu > ul > li > a {
+    font-size: 1.5vw;
+  }
+}

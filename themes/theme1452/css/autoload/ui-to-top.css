@@ -1,1 +1,70 @@
-.ui-to-top{overflow:hidden;position:fixed;right:10px;bottom:80px;width:40px;height:40px;border-radius:50%;background:#000;font-size:20px;line-height:39px;color:#dedede;text-align:center;text-decoration:none;z-index:999;transition:all 0.3s ease-in-out;box-shadow:0 2px 30px rgba(12,12,12,0.06);opacity:0}.ui-to-top:before{line-height:37px}.ui-to-top:hover,.ui-to-top:active,.ui-to-top:focus,.ui-to-top:focus:hover,.ui-to-top:active:hover{background:#f4d6d6;text-decoration:none;color:#dedede}.ui-to-top.active{opacity:1}.ui-to-top.active:hover{color:#dedede}.mobile .ui-to-top,.tablet .ui-to-top{right:15px;bottom:20px}@media (min-width: 480px){.ui-to-top{right:25px;bottom:70px}}.content_only .ui-to-top{display:none !important}
+/* -------------------------------------------------------------
+  Sass CSS3 Mixins! The Cross-Browser CSS3 Sass Library
+  By: Matthieu Aussaguel, http://www.mynameismatthieu.com, @matthieu_tweets
+
+  List of CSS3 Sass Mixins File to be @imported and @included as you need
+
+  The purpose of this library is to facilitate the use of CSS3 on different browsers avoiding HARD TO READ and NEVER
+  ENDING css files
+
+  note: All CSS3 Properties are being supported by Safari 5
+  more info: http://www.findmebyip.com/litmus/#css3-properties
+
+------------------------------------------------------------- */
+/* line 3, ../../sass/autoload/ui-to-top.scss */
+.ui-to-top {
+  overflow: hidden;
+  position: fixed;
+  right: 10px;
+  bottom: 80px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: black;
+  font-size: 20px;
+  line-height: 39px;
+  color: #dedede;
+  text-align: center;
+  text-decoration: none;
+  z-index: 999;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 2px 30px rgba(12, 12, 12, 0.06);
+  opacity: 0;
+}
+/* line 22, ../../sass/autoload/ui-to-top.scss */
+.ui-to-top:before {
+  line-height: 37px;
+}
+/* line 26, ../../sass/autoload/ui-to-top.scss */
+.ui-to-top:hover, .ui-to-top:active, .ui-to-top:focus, .ui-to-top:focus:hover, .ui-to-top:active:hover {
+  background: #f4d6d6;
+  text-decoration: none;
+  color: #dedede;
+}
+/* line 32, ../../sass/autoload/ui-to-top.scss */
+.ui-to-top.active {
+  opacity: 1;
+}
+/* line 35, ../../sass/autoload/ui-to-top.scss */
+.ui-to-top.active:hover {
+  color: #dedede;
+}
+
+/* line 42, ../../sass/autoload/ui-to-top.scss */
+.mobile .ui-to-top,
+.tablet .ui-to-top {
+  right: 15px;
+  bottom: 20px;
+}
+
+@media (min-width: 480px) {
+  /* line 48, ../../sass/autoload/ui-to-top.scss */
+  .ui-to-top {
+    right: 25px;
+    bottom: 70px;
+  }
+}
+/* line 55, ../../sass/autoload/ui-to-top.scss */
+.content_only .ui-to-top {
+  display: none !important;
+}

@@ -1,1 +1,200 @@
-.blog-image{margin-bottom:15px}.blog-image a{position:relative;display:block;overflow:hidden;backface-visibility:hidden}.blog-image a::before,.blog-image a::after{content:'';transition:all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);pointer-events:none}.blog-image a::after{content:'';position:absolute;top:0;left:0;width:100%;height:100%;border-top:2px solid #dedede;border-bottom:2px solid #dedede;opacity:0;transform:rotate3d(0, 0, 1, 45deg) scale3d(1, 0, 1);transform-origin:50% 50%}@media (min-width: 992px){.blog-image a:hover::after{opacity:0.2;transform:rotate3d(0, 0, 1, 45deg) scale3d(1, 1, 1)}.blog-image a:hover img{opacity:0.9;transform:scale3d(1.05, 1.05, 1)}}.blog-image a img{max-width:100%;height:auto;transition:all 0.3s ease-in-out}@media only screen and (max-width: 767px){.blog-image a img{width:100%}}#homepage-blog{text-align:center}.carousel #homepage-blog .row{margin:0}.carousel #homepage-blog li[class*='col-']{width:50%;padding:0;clear:none !important}#homepage-blog .title_block:after{display:none}#homepage-blog .title_block+p{display:none}#homepage-blog .title_block a{font-family:"Poiret One",sans-serif}#homepage-blog .post-meta{display:flex;flex-direction:column}#homepage-blog .post-meta h5{margin:10px 0}#homepage-blog .post-meta h5 a{font:700 18px/1.2 "Poiret One",sans-serif;color:#121212;transition:all 0.3s ease-in-out;text-transform:none}@media (min-width: 1200px){#homepage-blog .post-meta h5 a{font-size:24px}}#homepage-blog .post-meta h5 a:hover{color:#5f5f5f}#homepage-blog .post-meta .date-added{font-size:14px}#homepage-blog .post-meta .post-descr{padding:0 1.56vw;color:#121212;line-height:1.5}@media (min-width: 992px){#homepage-blog .post-meta .post-descr{font-size:16px}}#homepage-blog li{margin-bottom:30px}@media (min-width: 992px){#homepage-blog li.first-in-line{clear:left}}@media (min-width: 768px) and (max-width: 991px){#homepage-blog li.first-item-of-tablet-line{clear:left}}@media only screen and (max-width: 767px){#homepage-blog li.first-item-of-mobile-line{clear:left}}#homepage-blog .bx-wrapper .bx-controls-direction .bx-next,#homepage-blog .bx-wrapper .bx-controls-direction .bx-prev{top:35%;opacity:0;transform:translateX(-20px);transition:all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55)}#homepage-blog .bx-wrapper .bx-controls-direction .bx-next{transform:translateX(20px)}#homepage-blog .bx-wrapper:hover .bx-controls-direction .bx-next,#homepage-blog .bx-wrapper:hover .bx-controls-direction .bx-prev{opacity:1;transform:translateX(0)}
+/* -------------------------------------------------------------
+  Sass CSS3 Mixins! The Cross-Browser CSS3 Sass Library
+  By: Matthieu Aussaguel, http://www.mynameismatthieu.com, @matthieu_tweets
+
+  List of CSS3 Sass Mixins File to be @imported and @included as you need
+
+  The purpose of this library is to facilitate the use of CSS3 on different browsers avoiding HARD TO READ and NEVER
+  ENDING css files
+
+  note: All CSS3 Properties are being supported by Safari 5
+  more info: http://www.findmebyip.com/litmus/#css3-properties
+
+------------------------------------------------------------- */
+/*
+* @package       change-grid-on-big-screen
+* @description   make grid like in design
+*
+*/
+/*
+* @package       custom-scroll-bar
+* @description   make you scroll bar pretty and better
+*
+*/
+/*
+* @subsection   icons
+*
+* @description
+*/
+/*
+* @package       header icons title display mixin
+* @description
+*
+*/
+/*
+* @package     bxSlider controls mixin
+* @description
+*
+*/
+/* line 4, ../../../../sass/modules/smartbloghomelatestnews/css/smartbloglatestnews.scss */
+.blog-image {
+  margin-bottom: 15px;
+}
+/* line 7, ../../../../sass/modules/smartbloghomelatestnews/css/smartbloglatestnews.scss */
+.blog-image a {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  backface-visibility: hidden;
+}
+/* line 13, ../../../../sass/modules/smartbloghomelatestnews/css/smartbloglatestnews.scss */
+.blog-image a::before, .blog-image a::after {
+  content: '';
+  transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  pointer-events: none;
+}
+/* line 19, ../../../../sass/modules/smartbloghomelatestnews/css/smartbloglatestnews.scss */
+.blog-image a::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-top: 2px solid #dedede;
+  border-bottom: 2px solid #dedede;
+  opacity: 0;
+  transform: rotate3d(0, 0, 1, 45deg) scale3d(1, 0, 1);
+  transform-origin: 50% 50%;
+}
+@media (min-width: 992px) {
+  /* line 35, ../../../../sass/modules/smartbloghomelatestnews/css/smartbloglatestnews.scss */
+  .blog-image a:hover::after {
+    opacity: 0.2;
+    transform: rotate3d(0, 0, 1, 45deg) scale3d(1, 1, 1);
+  }
+  /* line 39, ../../../../sass/modules/smartbloghomelatestnews/css/smartbloglatestnews.scss */
+  .blog-image a:hover img {
+    opacity: 0.9;
+    transform: scale3d(1.05, 1.05, 1);
+  }
+}
+/* line 46, ../../../../sass/modules/smartbloghomelatestnews/css/smartbloglatestnews.scss */
+.blog-image a img {
+  max-width: 100%;
+  height: auto;
+  transition: all 0.3s ease-in-out;
+}
+@media only screen and (max-width: 767px) {
+  /* line 46, ../../../../sass/modules/smartbloghomelatestnews/css/smartbloglatestnews.scss */
+  .blog-image a img {
+    width: 100%;
+  }
+}
+
+/* line 58, ../../../../sass/modules/smartbloghomelatestnews/css/smartbloglatestnews.scss */
+#homepage-blog {
+  text-align: center;
+}
+/* line 62, ../../../../sass/modules/smartbloghomelatestnews/css/smartbloglatestnews.scss */
+.carousel #homepage-blog .row {
+  margin: 0;
+}
+/* line 66, ../../../../sass/modules/smartbloghomelatestnews/css/smartbloglatestnews.scss */
+.carousel #homepage-blog li[class*='col-'] {
+  width: 50%;
+  padding: 0;
+  clear: none !important;
+}
+/* line 74, ../../../../sass/modules/smartbloghomelatestnews/css/smartbloglatestnews.scss */
+#homepage-blog .title_block:after {
+  display: none;
+}
+/* line 78, ../../../../sass/modules/smartbloghomelatestnews/css/smartbloglatestnews.scss */
+#homepage-blog .title_block + p {
+  display: none;
+}
+/* line 82, ../../../../sass/modules/smartbloghomelatestnews/css/smartbloglatestnews.scss */
+#homepage-blog .title_block a {
+  font-family: "Poiret One", sans-serif;
+}
+/* line 87, ../../../../sass/modules/smartbloghomelatestnews/css/smartbloglatestnews.scss */
+#homepage-blog .post-meta {
+  display: flex;
+  flex-direction: column;
+}
+/* line 91, ../../../../sass/modules/smartbloghomelatestnews/css/smartbloglatestnews.scss */
+#homepage-blog .post-meta h5 {
+  margin: 10px 0;
+}
+/* line 94, ../../../../sass/modules/smartbloghomelatestnews/css/smartbloglatestnews.scss */
+#homepage-blog .post-meta h5 a {
+  font: 700 18px/1.2 "Poiret One", sans-serif;
+  color: #121212;
+  transition: all 0.3s ease-in-out;
+  text-transform: none;
+}
+@media (min-width: 1200px) {
+  /* line 94, ../../../../sass/modules/smartbloghomelatestnews/css/smartbloglatestnews.scss */
+  #homepage-blog .post-meta h5 a {
+    font-size: 24px;
+  }
+}
+/* line 104, ../../../../sass/modules/smartbloghomelatestnews/css/smartbloglatestnews.scss */
+#homepage-blog .post-meta h5 a:hover {
+  color: #5f5f5f;
+}
+/* line 110, ../../../../sass/modules/smartbloghomelatestnews/css/smartbloglatestnews.scss */
+#homepage-blog .post-meta .date-added {
+  font-size: 14px;
+}
+/* line 114, ../../../../sass/modules/smartbloghomelatestnews/css/smartbloglatestnews.scss */
+#homepage-blog .post-meta .post-descr {
+  padding: 0 1.56vw;
+  color: #121212;
+  line-height: 1.5;
+}
+@media (min-width: 992px) {
+  /* line 114, ../../../../sass/modules/smartbloghomelatestnews/css/smartbloglatestnews.scss */
+  #homepage-blog .post-meta .post-descr {
+    font-size: 16px;
+  }
+}
+/* line 126, ../../../../sass/modules/smartbloghomelatestnews/css/smartbloglatestnews.scss */
+#homepage-blog li {
+  margin-bottom: 30px;
+}
+@media (min-width: 992px) {
+  /* line 129, ../../../../sass/modules/smartbloghomelatestnews/css/smartbloglatestnews.scss */
+  #homepage-blog li.first-in-line {
+    clear: left;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  /* line 134, ../../../../sass/modules/smartbloghomelatestnews/css/smartbloglatestnews.scss */
+  #homepage-blog li.first-item-of-tablet-line {
+    clear: left;
+  }
+}
+@media only screen and (max-width: 767px) {
+  /* line 139, ../../../../sass/modules/smartbloghomelatestnews/css/smartbloglatestnews.scss */
+  #homepage-blog li.first-item-of-mobile-line {
+    clear: left;
+  }
+}
+/* line 147, ../../../../sass/modules/smartbloghomelatestnews/css/smartbloglatestnews.scss */
+#homepage-blog .bx-wrapper .bx-controls-direction .bx-next, #homepage-blog .bx-wrapper .bx-controls-direction .bx-prev {
+  top: 35%;
+  opacity: 0;
+  transform: translateX(-20px);
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+/* line 153, ../../../../sass/modules/smartbloghomelatestnews/css/smartbloglatestnews.scss */
+#homepage-blog .bx-wrapper .bx-controls-direction .bx-next {
+  transform: translateX(20px);
+}
+/* line 160, ../../../../sass/modules/smartbloghomelatestnews/css/smartbloglatestnews.scss */
+#homepage-blog .bx-wrapper:hover .bx-controls-direction .bx-next, #homepage-blog .bx-wrapper:hover .bx-controls-direction .bx-prev {
+  opacity: 1;
+  transform: translateX(0);
+}

@@ -1,1 +1,653 @@
-#cms .bx-wrapper{margin:0 auto !important}#cms #center_column .material-design-ico,#cms #center_column .fa{font:normal 13px/18px "Poiret One",sans-serif}#cms #center_column .fa:before{font-family:"FontAwesome"}#cms #center_column .block-cms{padding-bottom:20px}#cms #center_column h1{margin-bottom:28px;margin-top:35px;font:bold 45px/85px "Poiret One",sans-serif;color:#121212;text-align:center}#cms #center_column h1 a{color:#121212}#cms #center_column h1 a:hover{color:#595959}@media (max-width: 567px){#cms #center_column h1{font:bold 40px/55px "Poiret One",sans-serif}}#cms #center_column h2{font:bold 36px/45px "Poiret One",sans-serif;color:#121212}#cms #center_column h2.icon:before{line-height:45px;font-size:56px;display:inline-block;margin-right:12px}@media (max-width: 567px){#cms #center_column h2{font:bold 26px/35px "Poiret One",sans-serif}}#cms #center_column h3{font:bold 20px/30px "Poiret One",sans-serif;border-bottom:none;margin:10px 0 26px;padding:0;color:#121212}@media (max-width: 567px){#cms #center_column h3{font:bold 16px/24px "Poiret One",sans-serif}}#cms #center_column h4{font:bold 16px/30px "Poiret One",sans-serif;color:#121212;margin:0 0 15px}#cms #center_column h4:after{display:none}@media (max-width: 567px){#cms #center_column h4{font:bold 14px/22px "Poiret One",sans-serif}}#cms #center_column .border_bottom{border-bottom:1px solid #e4e1e1;padding:0 50px 82px;margin-bottom:69px}@media (max-width: 567px){#cms #center_column .border_bottom{padding:0 10px 32px;margin-bottom:39px}}#cms #center_column .border_bottom2{border-bottom:1px solid #e4e1e1;padding:0 0 70px;margin-bottom:69px}@media (max-width: 567px){#cms #center_column .border_bottom2{padding:0 0 32px;margin-bottom:39px}}#cms #center_column ul{list-style:none}#cms #center_column .animateCount li{text-align:center;font:bold 56px/45px "Poiret One",sans-serif;color:#121212;padding:6px 15px 0}@media (min-width: 768px) and (max-width: 991px){#cms #center_column .animateCount li{font:bold 46px/35px "Poiret One",sans-serif}}@media (max-width: 567px){#cms #center_column .animateCount li{font:bold 36px/30px "Poiret One",sans-serif}}@media (max-width: 479px){#cms #center_column .animateCount li{width:100%}}#cms #center_column .animateCount li h3{margin-top:21px}@media (min-width: 768px) and (max-width: 991px){#cms #center_column .animateCount li h3{font:bold 16px/24px "Poiret One",sans-serif}}#cms #center_column .iconBox li{padding-top:41px}@media (max-width: 580px){#cms #center_column .iconBox li{width:100%}}#cms #center_column .iconBox li>a{display:block;height:270px;-webkit-border-radius:3px;-khtml-border-radius:3px;-moz-border-radius:3px;-ms-border-radius:3px;-o-border-radius:3px;border-radius:3px;color:#404040;background:#fff;padding:54px 50px 0;font:bold 20px/34px "Poiret One",sans-serif;text-transform:uppercase;text-align:center;-webkit-transition:0.3s;-khtml-transition:0.3s;-moz-transition:0.3s;-ms-transition:0.3s;-o-transition:0.3s;transition:0.3s;cursor:pointer}#cms #center_column .iconBox li>a:before{font-size:81px;line-height:1em;display:block;margin-bottom:17px}#cms #center_column .iconBox li>a:hover{background:#121212;color:#dedede}@media (min-width: 992px) and (max-width: 1199px){#cms #center_column .iconBox li>a{padding:54px 20px 0}}#cms #center_column .list-1{list-style:none}#cms #center_column .list-1 li{padding:4px 0 6px 0;font-weight:bold;color:#91dd4d;border-top:1px solid #e4e1e1}#cms #center_column .list-1 li:first-child{border:none}#cms #center_column .list-1 li em{font-size:20px;line-height:20px;padding-right:15px;vertical-align:-2px}#cms #center_column .list-2{padding-top:40px}#cms #center_column .list-2.border_bottom{padding:40px 0 40px}#cms #center_column .list-2 li{clear:both;width:100%;overflow:hidden;padding-bottom:30px}#cms #center_column .list-2 li:before{font-size:70px;line-height:148px;width:148px;height:148px;text-align:center;background:#fff;display:block;float:left;-webkit-border-radius:50%;-khtml-border-radius:50%;-moz-border-radius:50%;-ms-border-radius:50%;-o-border-radius:50%;border-radius:50%;margin-right:35px;color:#404040;margin-bottom:10px}@media (max-width: 580px){#cms #center_column .list-2 li:before{font-size:40px;line-height:100px;width:100px;height:100px}}#cms #center_column .list-3{overflow:hidden;padding:23px 0 64px;border:none;position:relative}#cms #center_column .list-3:after{content:"";display:block;position:absolute;left:15px;right:15px;border-bottom:1px solid #e4e1e1;bottom:0}#cms #center_column .list-3 li{padding-bottom:20px}#cms #center_column .list-3.countBox{counter-reset:li}#cms #center_column .list-3.countBox li h4:before{display:inline-block;content:counter(li, decimal-leading-zero);counter-increment:li;font-size:36px;line-height:30px;margin-right:15px;font-weight:300;color:#595959}#cms #center_column .list-3.disk{padding-top:31px}#cms #center_column .list-3.disk li h4:before{display:inline-block;content:"";height:14px;width:14px;background:#121212;margin-right:20px;-webkit-border-radius:50%;-khtml-border-radius:50%;-moz-border-radius:50%;-ms-border-radius:50%;-o-border-radius:50%;border-radius:50%;vertical-align:-1px}#cms #center_column .list-4 li{text-align:center;padding-top:14px}@media (max-width: 479px){#cms #center_column .list-4 li{width:100%}}@media (min-width: 768px) and (max-width: 991px){#cms #center_column .list-4 li h3{font:bold 16px/24px "Poiret One",sans-serif}}#cms #center_column .list-4 li:before{font-size:86px;line-height:1em;color:#121212;margin:0 0 8px;display:inline-block}#cms #center_column #testimonials li{font:bold 16px/28px "Poiret One",sans-serif;text-transform:uppercase;text-align:center;padding:5px 15px 40px}@media (max-width: 479px){#cms #center_column #testimonials li{font:normal 13px/22px "Poiret One",sans-serif}}#cms #center_column #testimonials li:before{font-size:84px;line-height:1em;color:#121212;margin:0 0 38px;display:block;text-align:center}#cms #center_column #testimonials li p{margin-bottom:33px}#cms #center_column .bx-wrapper .bx-controls-direction a{font-size:0;height:30px;line-height:0;margin-top:0;top:auto;bottom:0;width:auto;left:50%;margin-left:-30px;text-align:center}#cms #center_column .bx-wrapper .bx-controls-direction a:before{font-family:"FontAwesome";content:"\f053";font-size:20px;line-height:40px}#cms #center_column .bx-wrapper .bx-controls-direction a.bx-next{left:auto;margin-left:0;right:50%;margin-right:-30px}#cms #center_column .bx-wrapper .bx-controls-direction a.bx-next:before{content:"\f054"}#cms #center_column .bx-wrapper .bx-controls-direction a:hover{color:#121212}#cms #center_column .list-accordion>li>h3{margin-bottom:9px;cursor:pointer;display:inline-block}#cms #center_column .list-accordion>li>h3:hover,#cms #center_column .list-accordion>li>h3.active{color:#f4d6d6}#cms #center_column .list-accordion>li>h3:before{height:41px;width:41px;background:#121212;color:#dedede;content:"+";line-height:38px;font-size:28px;-webkit-border-radius:50%;-khtml-border-radius:50%;-moz-border-radius:50%;-ms-border-radius:50%;-o-border-radius:50%;border-radius:50%;display:inline-block;margin-right:20px;text-align:center;vertical-align:-2px;margin-bottom:10px}#cms #center_column .list-accordion>li>h3.active:before{content:"-"}#cms #center_column .list-accordion>li .list-3{overflow:hidden;padding:0 0 11px 60px;border:none;position:relative}@media (max-width: 580px){#cms #center_column .list-accordion>li .list-3{padding:0 0 11px 20px}}#cms #center_column .list-accordion>li .list-3:after{display:none}#cms #center_column .list-accordion>li .list-3 li{padding-bottom:0}#cms #center_column .list-accordion>li .list-3 li h4{margin-bottom:13px}#cms #center_column .list-accordion>li .list-3 li.text{margin-left:-60px;padding-bottom:26px}@media (max-width: 580px){#cms #center_column .list-accordion>li .list-3 li.text{margin-left:-20px}}#cms #center_column .list-accordion>li .list-3 li.text:before{display:none}#cms #center_column img{margin:4px 0 17px;max-width:100%;height:auto}#cms #center_column #admin-action-cms{background:none repeat 0 0 #F6F6F6;border:1px solid #d2d0d0;padding:10px}#cms #center_column #admin-action-cms p{margin:0}#cms #center_column #admin-action-cms p span{display:block;padding-bottom:10px;font-size:14px;font-weight:bold;color:#121212}#cms #center_column #admin-action-cms p .btn{font:700 17px/21px "Poiret One",sans-serif;padding:0;border:1px solid;padding:10px 14px;display:inline-block}#cms #center_column #admin-action-cms p .btn.publish_button{color:#333;text-shadow:1px 1px rgba(0,0,0,0.2);border-color:#0079b6 #006fa8 #012740 #006fa8;background:#009ad0;background:-moz-linear-gradient(top, #009ad0 0%, #007ab7 100%);background:-webkit-gradient(linear, left top, left bottom, color-stop(0%, #009ad0), color-stop(100%, #007ab7));background:-webkit-linear-gradient(top, #009ad0 0%, #007ab7 100%);background:-o-linear-gradient(top, #009ad0 0%, #007ab7 100%);background:-ms-linear-gradient(top, #009ad0 0%, #007ab7 100%);background:linear-gradient(to bottom, #009ad0 0%, #007ab7 100%);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#009ad0', endColorstr='#007ab7', GradientType=0)}#cms #center_column #admin-action-cms p .btn.publish_button:hover{border-color:#01314e #004b74 #0079b6 #004b74;filter:none;background:#0084bf}#cms #center_column #admin-action-cms p .btn.lnk_view{color:#404040;text-shadow:1px 1px #fff;border-color:#cacaca #b7b7b7 #9a9a9a #b7b7b7;background:#f7f7f7;background:-moz-linear-gradient(top, #f7f7f7 0%, #ededed 100%);background:-webkit-gradient(linear, left top, left bottom, color-stop(0%, #f7f7f7), color-stop(100%, #ededed));background:-webkit-linear-gradient(top, #f7f7f7 0%, #ededed 100%);background:-o-linear-gradient(top, #f7f7f7 0%, #ededed 100%);background:-ms-linear-gradient(top, #f7f7f7 0%, #ededed 100%);background:linear-gradient(to bottom, #f7f7f7 0%, #ededed 100%);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f7f7f7', endColorstr='#ededed', GradientType=0)}#cms #center_column #admin-action-cms p .btn.lnk_view:hover{border-color:#9e9e9e #9e9e9e #c8c8c8 #9e9e9e;filter:none;background:#e7e7e7}@media (max-width: 768px){#cms #center_column .table.table-bordered thead>tr>th,#cms #center_column .table.table-bordered thead>tr>td,#cms #center_column .table.table-bordered>tbody>tr>th,#cms #center_column .table.table-bordered>tbody>tr>td,#cms #center_column .table.table-bordered>tfoot>tr>th,#cms #center_column .table.table-bordered>tfoot>tr>td{padding:9px 5px 11px 4px}}@media (max-width: 479px){#cms.cms-pages-configuration .table{font-size:10px}}@media (min-width: 768px){#cms.two-columns .iconBox li{width:50%}}@media (min-width: 768px){#cms.three-columns .iconBox li{width:100%}}@media (min-width: 992px){#cms.three-columns .iconBox li{width:50%}}@media (min-width: 768px){#cms.three-columns .animateCount li{width:100%}}@media (min-width: 992px){#cms.three-columns .animateCount li{width:50%}}@media (min-width: 768px){#cms.three-columns .list-4 li{width:100%}}
+/* -------------------------------------------------------------
+  Sass CSS3 Mixins! The Cross-Browser CSS3 Sass Library
+  By: Matthieu Aussaguel, http://www.mynameismatthieu.com, @matthieu_tweets
+
+  List of CSS3 Sass Mixins File to be @imported and @included as you need
+
+  The purpose of this library is to facilitate the use of CSS3 on different browsers avoiding HARD TO READ and NEVER
+  ENDING css files
+
+  note: All CSS3 Properties are being supported by Safari 5
+  more info: http://www.findmebyip.com/litmus/#css3-properties
+
+------------------------------------------------------------- */
+/*
+* @package       change-grid-on-big-screen
+* @description   make grid like in design
+*
+*/
+/*
+* @package       custom-scroll-bar
+* @description   make you scroll bar pretty and better
+*
+*/
+/*
+* @subsection   icons
+*
+* @description
+*/
+/*
+* @package       header icons title display mixin
+* @description
+*
+*/
+/*
+* @package     bxSlider controls mixin
+* @description
+*
+*/
+/*
+* @subsection   CMS Pages Styles
+*/
+/* line 8, ../sass/cms.scss */
+#cms .bx-wrapper {
+  margin: 0 auto !important;
+}
+/* line 12, ../sass/cms.scss */
+#cms #center_column .material-design-ico, #cms #center_column .fa {
+  font: normal 13px/18px "Poiret One", sans-serif;
+}
+/* line 15, ../sass/cms.scss */
+#cms #center_column .fa:before {
+  font-family: "FontAwesome";
+}
+/* line 18, ../sass/cms.scss */
+#cms #center_column .block-cms {
+  padding-bottom: 20px;
+}
+/* line 21, ../sass/cms.scss */
+#cms #center_column h1 {
+  margin-bottom: 28px;
+  margin-top: 35px;
+  font: bold 45px/85px "Poiret One", sans-serif;
+  color: #121212;
+  text-align: center;
+}
+/* line 27, ../sass/cms.scss */
+#cms #center_column h1 a {
+  color: #121212;
+}
+/* line 29, ../sass/cms.scss */
+#cms #center_column h1 a:hover {
+  color: #595959;
+}
+@media (max-width: 567px) {
+  /* line 21, ../sass/cms.scss */
+  #cms #center_column h1 {
+    font: bold 40px/55px "Poiret One", sans-serif;
+  }
+}
+/* line 37, ../sass/cms.scss */
+#cms #center_column h2 {
+  font: bold 36px/45px "Poiret One", sans-serif;
+  color: #121212;
+}
+/* line 40, ../sass/cms.scss */
+#cms #center_column h2.icon:before {
+  line-height: 45px;
+  font-size: 56px;
+  display: inline-block;
+  margin-right: 12px;
+}
+@media (max-width: 567px) {
+  /* line 37, ../sass/cms.scss */
+  #cms #center_column h2 {
+    font: bold 26px/35px "Poiret One", sans-serif;
+  }
+}
+/* line 50, ../sass/cms.scss */
+#cms #center_column h3 {
+  font: bold 20px/30px "Poiret One", sans-serif;
+  border-bottom: none;
+  margin: 10px 0 26px;
+  padding: 0;
+  color: #121212;
+}
+@media (max-width: 567px) {
+  /* line 50, ../sass/cms.scss */
+  #cms #center_column h3 {
+    font: bold 16px/24px "Poiret One", sans-serif;
+  }
+}
+/* line 61, ../sass/cms.scss */
+#cms #center_column h4 {
+  font: bold 16px/30px "Poiret One", sans-serif;
+  color: #121212;
+  margin: 0 0 15px;
+}
+/* line 65, ../sass/cms.scss */
+#cms #center_column h4:after {
+  display: none;
+}
+@media (max-width: 567px) {
+  /* line 61, ../sass/cms.scss */
+  #cms #center_column h4 {
+    font: bold 14px/22px "Poiret One", sans-serif;
+  }
+}
+/* line 72, ../sass/cms.scss */
+#cms #center_column .border_bottom {
+  border-bottom: 1px solid #e1e4e2;
+  padding: 0 50px 82px;
+  margin-bottom: 69px;
+}
+@media (max-width: 567px) {
+  /* line 72, ../sass/cms.scss */
+  #cms #center_column .border_bottom {
+    padding: 0 10px 32px;
+    margin-bottom: 39px;
+  }
+}
+/* line 81, ../sass/cms.scss */
+#cms #center_column .border_bottom2 {
+  border-bottom: 1px solid #e1e4e2;
+  padding: 0 0 70px;
+  margin-bottom: 69px;
+}
+@media (max-width: 567px) {
+  /* line 81, ../sass/cms.scss */
+  #cms #center_column .border_bottom2 {
+    padding: 0 0 32px;
+    margin-bottom: 39px;
+  }
+}
+/* line 90, ../sass/cms.scss */
+#cms #center_column ul {
+  list-style: none;
+}
+/* line 94, ../sass/cms.scss */
+#cms #center_column .animateCount li {
+  text-align: center;
+  font: bold 56px/45px "Poiret One", sans-serif;
+  color: #121212;
+  padding: 6px 15px 0;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  /* line 94, ../sass/cms.scss */
+  #cms #center_column .animateCount li {
+    font: bold 46px/35px "Poiret One", sans-serif;
+  }
+}
+@media (max-width: 567px) {
+  /* line 94, ../sass/cms.scss */
+  #cms #center_column .animateCount li {
+    font: bold 36px/30px "Poiret One", sans-serif;
+  }
+}
+@media (max-width: 479px) {
+  /* line 94, ../sass/cms.scss */
+  #cms #center_column .animateCount li {
+    width: 100%;
+  }
+}
+/* line 108, ../sass/cms.scss */
+#cms #center_column .animateCount li h3 {
+  margin-top: 21px;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  /* line 108, ../sass/cms.scss */
+  #cms #center_column .animateCount li h3 {
+    font: bold 16px/24px "Poiret One", sans-serif;
+  }
+}
+/* line 117, ../sass/cms.scss */
+#cms #center_column .iconBox li {
+  padding-top: 41px;
+}
+@media (max-width: 580px) {
+  /* line 117, ../sass/cms.scss */
+  #cms #center_column .iconBox li {
+    width: 100%;
+  }
+}
+/* line 122, ../sass/cms.scss */
+#cms #center_column .iconBox li > a {
+  display: block;
+  height: 270px;
+  -webkit-border-radius: 3px;
+  -khtml-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  color: #3f3f3f;
+  background: white;
+  padding: 54px 50px 0;
+  font: bold 20px/34px "Poiret One", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  -webkit-transition: 0.3s;
+  -khtml-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  cursor: pointer;
+}
+/* line 134, ../sass/cms.scss */
+#cms #center_column .iconBox li > a:before {
+  font-size: 81px;
+  line-height: 1em;
+  display: block;
+  margin-bottom: 17px;
+}
+/* line 140, ../sass/cms.scss */
+#cms #center_column .iconBox li > a:hover {
+  background: #121212;
+  color: #dedede;
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* line 122, ../sass/cms.scss */
+  #cms #center_column .iconBox li > a {
+    padding: 54px 20px 0;
+  }
+}
+/* line 150, ../sass/cms.scss */
+#cms #center_column .list-1 {
+  list-style: none;
+}
+/* line 152, ../sass/cms.scss */
+#cms #center_column .list-1 li {
+  padding: 4px 0 6px 0;
+  font-weight: bold;
+  color: #91dd4d;
+  border-top: 1px solid #e1e4e2;
+}
+/* line 157, ../sass/cms.scss */
+#cms #center_column .list-1 li:first-child {
+  border: none;
+}
+/* line 160, ../sass/cms.scss */
+#cms #center_column .list-1 li em {
+  font-size: 20px;
+  line-height: 20px;
+  padding-right: 15px;
+  vertical-align: -2px;
+}
+/* line 168, ../sass/cms.scss */
+#cms #center_column .list-2 {
+  padding-top: 40px;
+}
+/* line 170, ../sass/cms.scss */
+#cms #center_column .list-2.border_bottom {
+  padding: 40px 0 40px;
+}
+/* line 173, ../sass/cms.scss */
+#cms #center_column .list-2 li {
+  clear: both;
+  width: 100%;
+  overflow: hidden;
+  padding-bottom: 30px;
+}
+/* line 178, ../sass/cms.scss */
+#cms #center_column .list-2 li:before {
+  font-size: 70px;
+  line-height: 148px;
+  width: 148px;
+  height: 148px;
+  text-align: center;
+  background: white;
+  display: block;
+  float: left;
+  -webkit-border-radius: 50%;
+  -khtml-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  margin-right: 35px;
+  color: #3f3f3f;
+  margin-bottom: 10px;
+}
+@media (max-width: 580px) {
+  /* line 178, ../sass/cms.scss */
+  #cms #center_column .list-2 li:before {
+    font-size: 40px;
+    line-height: 100px;
+    width: 100px;
+    height: 100px;
+  }
+}
+/* line 200, ../sass/cms.scss */
+#cms #center_column .list-3 {
+  overflow: hidden;
+  padding: 23px 0 64px;
+  border: none;
+  position: relative;
+}
+/* line 205, ../sass/cms.scss */
+#cms #center_column .list-3:after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 15px;
+  right: 15px;
+  border-bottom: 1px solid #e1e4e2;
+  bottom: 0;
+}
+/* line 214, ../sass/cms.scss */
+#cms #center_column .list-3 li {
+  padding-bottom: 20px;
+}
+/* line 217, ../sass/cms.scss */
+#cms #center_column .list-3.countBox {
+  counter-reset: li;
+}
+/* line 221, ../sass/cms.scss */
+#cms #center_column .list-3.countBox li h4:before {
+  display: inline-block;
+  content: counter(li, decimal-leading-zero);
+  counter-increment: li;
+  font-size: 36px;
+  line-height: 30px;
+  margin-right: 15px;
+  font-weight: 300;
+  color: #595959;
+}
+/* line 234, ../sass/cms.scss */
+#cms #center_column .list-3.disk {
+  padding-top: 31px;
+}
+/* line 238, ../sass/cms.scss */
+#cms #center_column .list-3.disk li h4:before {
+  display: inline-block;
+  content: "";
+  height: 14px;
+  width: 14px;
+  background: #121212;
+  margin-right: 20px;
+  -webkit-border-radius: 50%;
+  -khtml-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  vertical-align: -1px;
+}
+/* line 253, ../sass/cms.scss */
+#cms #center_column .list-4 li {
+  text-align: center;
+  padding-top: 14px;
+}
+@media (max-width: 479px) {
+  /* line 253, ../sass/cms.scss */
+  #cms #center_column .list-4 li {
+    width: 100%;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  /* line 260, ../sass/cms.scss */
+  #cms #center_column .list-4 li h3 {
+    font: bold 16px/24px "Poiret One", sans-serif;
+  }
+}
+/* line 265, ../sass/cms.scss */
+#cms #center_column .list-4 li:before {
+  font-size: 86px;
+  line-height: 1em;
+  color: #121212;
+  margin: 0 0 8px;
+  display: inline-block;
+}
+/* line 275, ../sass/cms.scss */
+#cms #center_column #testimonials li {
+  font: bold 16px/28px "Poiret One", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 5px 15px 40px;
+}
+@media (max-width: 479px) {
+  /* line 275, ../sass/cms.scss */
+  #cms #center_column #testimonials li {
+    font: normal 13px/22px "Poiret One", sans-serif;
+  }
+}
+/* line 283, ../sass/cms.scss */
+#cms #center_column #testimonials li:before {
+  font-size: 84px;
+  line-height: 1em;
+  color: #121212;
+  margin: 0 0 38px;
+  display: block;
+  text-align: center;
+}
+/* line 291, ../sass/cms.scss */
+#cms #center_column #testimonials li p {
+  margin-bottom: 33px;
+}
+/* line 296, ../sass/cms.scss */
+#cms #center_column .bx-wrapper .bx-controls-direction a {
+  font-size: 0;
+  height: 30px;
+  line-height: 0;
+  margin-top: 0;
+  top: auto;
+  bottom: 0;
+  width: auto;
+  left: 50%;
+  margin-left: -30px;
+  text-align: center;
+}
+/* line 307, ../sass/cms.scss */
+#cms #center_column .bx-wrapper .bx-controls-direction a:before {
+  font-family: "FontAwesome";
+  content: "\f053";
+  font-size: 20px;
+  line-height: 40px;
+}
+/* line 313, ../sass/cms.scss */
+#cms #center_column .bx-wrapper .bx-controls-direction a.bx-next {
+  left: auto;
+  margin-left: 0;
+  right: 50%;
+  margin-right: -30px;
+}
+/* line 318, ../sass/cms.scss */
+#cms #center_column .bx-wrapper .bx-controls-direction a.bx-next:before {
+  content: "\f054";
+}
+/* line 322, ../sass/cms.scss */
+#cms #center_column .bx-wrapper .bx-controls-direction a:hover {
+  color: #121212;
+}
+/* line 328, ../sass/cms.scss */
+#cms #center_column .list-accordion > li > h3 {
+  margin-bottom: 9px;
+  cursor: pointer;
+  display: inline-block;
+}
+/* line 332, ../sass/cms.scss */
+#cms #center_column .list-accordion > li > h3:hover, #cms #center_column .list-accordion > li > h3.active {
+  color: #f4d6d6;
+}
+/* line 335, ../sass/cms.scss */
+#cms #center_column .list-accordion > li > h3:before {
+  height: 41px;
+  width: 41px;
+  background: #121212;
+  color: #dedede;
+  content: "+";
+  line-height: 38px;
+  font-size: 28px;
+  -webkit-border-radius: 50%;
+  -khtml-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 20px;
+  text-align: center;
+  vertical-align: -2px;
+  margin-bottom: 10px;
+}
+/* line 350, ../sass/cms.scss */
+#cms #center_column .list-accordion > li > h3.active:before {
+  content: "-";
+}
+/* line 354, ../sass/cms.scss */
+#cms #center_column .list-accordion > li .list-3 {
+  overflow: hidden;
+  padding: 0 0 11px 60px;
+  border: none;
+  position: relative;
+}
+@media (max-width: 580px) {
+  /* line 354, ../sass/cms.scss */
+  #cms #center_column .list-accordion > li .list-3 {
+    padding: 0 0 11px 20px;
+  }
+}
+/* line 363, ../sass/cms.scss */
+#cms #center_column .list-accordion > li .list-3:after {
+  display: none;
+}
+/* line 366, ../sass/cms.scss */
+#cms #center_column .list-accordion > li .list-3 li {
+  padding-bottom: 0;
+}
+/* line 368, ../sass/cms.scss */
+#cms #center_column .list-accordion > li .list-3 li h4 {
+  margin-bottom: 13px;
+}
+/* line 371, ../sass/cms.scss */
+#cms #center_column .list-accordion > li .list-3 li.text {
+  margin-left: -60px;
+  padding-bottom: 26px;
+}
+@media (max-width: 580px) {
+  /* line 371, ../sass/cms.scss */
+  #cms #center_column .list-accordion > li .list-3 li.text {
+    margin-left: -20px;
+  }
+}
+/* line 377, ../sass/cms.scss */
+#cms #center_column .list-accordion > li .list-3 li.text:before {
+  display: none;
+}
+/* line 385, ../sass/cms.scss */
+#cms #center_column img {
+  margin: 4px 0 17px;
+  max-width: 100%;
+  height: auto;
+}
+/* line 390, ../sass/cms.scss */
+#cms #center_column #admin-action-cms {
+  background: none repeat 0 0 #F6F6F6;
+  border: 1px solid #d2d0d0;
+  padding: 10px;
+}
+/* line 394, ../sass/cms.scss */
+#cms #center_column #admin-action-cms p {
+  margin: 0;
+}
+/* line 396, ../sass/cms.scss */
+#cms #center_column #admin-action-cms p span {
+  display: block;
+  padding-bottom: 10px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #121212;
+}
+/* line 403, ../sass/cms.scss */
+#cms #center_column #admin-action-cms p .btn {
+  font: 700 17px/21px "Poiret One", sans-serif;
+  padding: 0;
+  border: 1px solid;
+  padding: 10px 14px;
+  display: inline-block;
+}
+/* line 409, ../sass/cms.scss */
+#cms #center_column #admin-action-cms p .btn.publish_button {
+  color: #333;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.2);
+  border-color: #0079b6 #006fa8 #012740 #006fa8;
+  background: #009ad0;
+  background: -moz-linear-gradient(top, #009ad0 0%, #007ab7 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #009ad0), color-stop(100%, #007ab7));
+  background: -webkit-linear-gradient(top, #009ad0 0%, #007ab7 100%);
+  background: -o-linear-gradient(top, #009ad0 0%, #007ab7 100%);
+  background: -ms-linear-gradient(top, #009ad0 0%, #007ab7 100%);
+  background: linear-gradient(to bottom, #009ad0 0%, #007ab7 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#009ad0', endColorstr='#007ab7', GradientType=0);
+}
+/* line 421, ../sass/cms.scss */
+#cms #center_column #admin-action-cms p .btn.publish_button:hover {
+  border-color: #01314e #004b74 #0079b6 #004b74;
+  filter: none;
+  background: #0084bf;
+}
+/* line 427, ../sass/cms.scss */
+#cms #center_column #admin-action-cms p .btn.lnk_view {
+  color: #3f3f3f;
+  text-shadow: 1px 1px white;
+  border-color: #cacaca #b7b7b7 #9a9a9a #b7b7b7;
+  background: #f7f7f7;
+  background: -moz-linear-gradient(top, #f7f7f7 0%, #ededed 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f7f7f7), color-stop(100%, #ededed));
+  background: -webkit-linear-gradient(top, #f7f7f7 0%, #ededed 100%);
+  background: -o-linear-gradient(top, #f7f7f7 0%, #ededed 100%);
+  background: -ms-linear-gradient(top, #f7f7f7 0%, #ededed 100%);
+  background: linear-gradient(to bottom, #f7f7f7 0%, #ededed 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f7f7f7', endColorstr='#ededed', GradientType=0);
+}
+/* line 439, ../sass/cms.scss */
+#cms #center_column #admin-action-cms p .btn.lnk_view:hover {
+  border-color: #9e9e9e #9e9e9e #c8c8c8 #9e9e9e;
+  filter: none;
+  background: #e7e7e7;
+}
+@media (max-width: 768px) {
+  /* line 453, ../sass/cms.scss */
+  #cms #center_column .table.table-bordered thead > tr > th,
+  #cms #center_column .table.table-bordered thead > tr > td,
+  #cms #center_column .table.table-bordered > tbody > tr > th,
+  #cms #center_column .table.table-bordered > tbody > tr > td,
+  #cms #center_column .table.table-bordered > tfoot > tr > th,
+  #cms #center_column .table.table-bordered > tfoot > tr > td {
+    padding: 9px 5px 11px 4px;
+  }
+}
+@media (max-width: 479px) {
+  /* line 459, ../sass/cms.scss */
+  #cms.cms-pages-configuration .table {
+    font-size: 10px;
+  }
+}
+
+@media (min-width: 768px) {
+  /* line 468, ../sass/cms.scss */
+  #cms.two-columns .iconBox li {
+    width: 50%;
+  }
+}
+@media (min-width: 768px) {
+  /* line 475, ../sass/cms.scss */
+  #cms.three-columns .iconBox li {
+    width: 100%;
+  }
+}
+@media (min-width: 992px) {
+  /* line 475, ../sass/cms.scss */
+  #cms.three-columns .iconBox li {
+    width: 50%;
+  }
+}
+@media (min-width: 768px) {
+  /* line 485, ../sass/cms.scss */
+  #cms.three-columns .animateCount li {
+    width: 100%;
+  }
+}
+@media (min-width: 992px) {
+  /* line 485, ../sass/cms.scss */
+  #cms.three-columns .animateCount li {
+    width: 50%;
+  }
+}
+@media (min-width: 768px) {
+  /* line 495, ../sass/cms.scss */
+  #cms.three-columns .list-4 li {
+    width: 100%;
+  }
+}

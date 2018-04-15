@@ -1,1 +1,17 @@
-@keyframes slideOutUp{0%{transform:translate3d(0, 0, 0)}100%{visibility:hidden;transform:translate3d(0, -100%, 0)}}.slideOutUp{animation-name:slideOutUp}
+@keyframes slideOutUp {
+  /* line 2, ../../../sass/animate/sliding_exits/slideOutUp.scss */
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+
+  /* line 6, ../../../sass/animate/sliding_exits/slideOutUp.scss */
+  100% {
+    visibility: hidden;
+    transform: translate3d(0, -100%, 0);
+  }
+}
+
+/* line 12, ../../../sass/animate/sliding_exits/slideOutUp.scss */
+.slideOutUp {
+  animation-name: slideOutUp;
+}
