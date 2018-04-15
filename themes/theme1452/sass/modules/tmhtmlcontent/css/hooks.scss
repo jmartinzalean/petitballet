@@ -1,0 +1,338 @@
+@import "../../../_theme_variables";
+@import "../../../_elements_variables";
+
+#tmhtmlcontent_topColumn {
+  .bx-wrapper {
+    .bx-controls-direction {
+      text-align: center;
+      margin-top: 15px;
+
+      a {
+        position: static;
+        display: inline-block;
+        width: auto;
+        height: auto;
+        margin: 10px;
+
+        &:hover {
+          &::before {
+            color: $primary-text-color;
+          }
+        }
+
+        &::before {
+          transition: $base-transition;
+          color: $dark-text-color;
+          font-size: 30px;
+        }
+
+        &.bx-prev {
+          &::before {
+            content: '\f177';
+          }
+        }
+
+        &.bx-next {
+          &::before {
+            content: '\f178';
+          }
+        }
+      }
+    }
+  }
+}
+
+.tmhtmlcontent-topColumn {
+  .item-html {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    padding: 6.74%;
+    color: $light-text-color;
+
+    @media (max-width: $screen-sm-min - 1) {
+    }
+  }
+
+  li {
+    &.light-background {
+      .item-html {
+        color: $dark-text-color;
+
+        h3 {
+          @media (min-width: $screen-xs-min) and (max-width: $screen-sm-min - 1) {
+            text-shadow: 0 0 5px $light-text-color;
+          }
+        }
+
+        .btn-secondary-2 {
+          color: $light-text-color;
+          border-color: $dark-border-color;
+
+          &::after {
+            background: $dark-background;
+          }
+
+          @media (min-width: $screen-sm-min) {
+            &:hover {
+              color: $dark-background;
+            }
+
+            &:active:focus, &:active, &:focus, #{'.active'} > &, &.disabled, &.btn[disabled], #{'.disabled'} > & {
+              background-color: transparent;
+              color: $light-text-color;
+            }
+          }
+
+          @media only screen and (max-width: $screen-sm-min - 1) {
+            &:active:focus, &:active, &:focus, &.hover, &:hover {
+              color: $light-text-color;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+    transition: $base-transition;
+  }
+
+  a {
+    position: relative;
+    display: block;
+    overflow: hidden;
+
+    backface-visibility: hidden;
+
+    &::before, &::after {
+      content: '';
+      transition: all 0.5s $custom-timing-function;
+      pointer-events: none;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-top: 3px solid $light-border-color;
+      border-bottom: 3px solid $light-border-color;
+      opacity: 0;
+      transform: rotate3d(0, 0, 1, 45deg) scale3d(1, 0, 1);
+      transform-origin: 50% 50%;
+    }
+
+    &:hover {
+      @media (min-width: $screen-md-min) {
+        &::after {
+          opacity: 0.2;
+          transform: rotate3d(0, 0, 1, 45deg) scale3d(1, 1, 1);
+        }
+        img {
+          opacity: 0.9;
+          transform: scale3d(1.05, 1.05, 1);
+        }
+      }
+    }
+  }
+
+  h3 {
+    margin: 0;
+    font-family: $font-custom;
+    font-size: 5.02vw;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: (70/58);
+    letter-spacing: 0.02em;
+
+    @media (min-width: $screen-sm-min) {
+      font-size: 3.02vw;
+    }
+
+    & + p {
+      margin-top: 2.5vw;
+    }
+  }
+
+  p {
+    display: none;
+    line-height: (30/20);
+    font-weight: 400;
+    letter-spacing: 0;
+
+    @media (min-width: $screen-sm-min) {
+      display: block;
+    }
+
+    @media (min-width: $screen-lg-min) {
+      width: 60%;
+    }
+
+    @media (min-width: 1600px) {
+      font-size: 20px;
+    }
+
+    & + p {
+      margin-top: 2.5vw;
+    }
+  }
+
+  .btn-md {
+    @media (min-width: $screen-lg-min) {
+      font-size: 14px;
+      letter-spacing: 0.12em;
+      min-width: 10.42vw;
+    }
+
+    @media (min-width: 1600px) {
+      padding-top: 16px;
+      padding-bottom: 16px;
+
+      &.icon-right {
+        span {
+          padding-right: 30px;
+        }
+      }
+    }
+  }
+}
+
+.tmhtmlcontent-home {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 0;
+
+  li {
+    display: flex;
+    padding: 0;
+
+    .safari & {
+      flex: 1 1 24%;
+    }
+
+    @media only screen and (max-width: 479px) {
+      width: 50%;
+
+      .safari & {
+        flex: 1 1 49%;
+      }
+    }
+
+    @media (min-width: $screen-sm-min) {
+      padding: 0 10px 20px;
+
+      &:nth-child(n + 5) {
+        padding-bottom: 0;
+      }
+    }
+  }
+  a {
+    display: block;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    color: $dark-text-color;
+    transition: $base-transition;
+
+    @media (min-width: $screen-sm-min) {
+      padding: 3.39vw 20px;
+    }
+
+    @media (min-width: 1600px) {
+      padding: 47px 20px;
+    }
+
+    @media (min-width: $screen-sm-min) {
+      @include product-image;
+    }
+
+    &:hover {
+      @media (min-width: $screen-md-min) {
+        [class*='icon-'] {
+          &::before {
+            animation: iconAnimationOut .3s $custom-timing-function both;
+          }
+
+          &::after {
+            animation: iconAnimationIn .3s $custom-timing-function both;
+          }
+        }
+
+        h5 {
+          transform: translateY(50%);
+        }
+      }
+    }
+  }
+
+  h5 {
+    position: relative;
+    font: 700 14px/#{(30/24)} $font-custom;
+    letter-spacing: 0.02em;
+    transition: transform .3s $custom-timing-function;
+
+    @media (min-width: $screen-lg-min) {
+      font-size: 1.25vw;
+    }
+  }
+  .icon-lg {
+    line-height: 1;
+  }
+
+  [class*='icon-'] {
+    position: relative;
+
+    &::before {
+      position: relative;
+      display: inline-block;
+      will-change: transform, opacity;
+      animation: iconAnimationIn .3s $custom-timing-function;
+    }
+
+    $icon-width: 5.24vw;
+    &::after {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: $icon-width;
+      margin-top: -$icon-width/2;
+      margin-left: -$icon-width/2;
+      text-align: center;
+      font-size: calc(#{$icon-width} - 30px);
+      line-height: $icon-width;
+      will-change: transform, opacity;
+      animation: iconAnimationOut .3s $custom-timing-function both;
+
+      @include addIconCustom('\e04f');
+    }
+  }
+}
+
+#tmhtmlcontent_home {
+  margin-bottom: 0;
+}
+
+.tmhtmlcontent-footer {
+  .item-link {
+    display: inline-block;
+    margin-bottom: 20px;
+
+    @media (min-width: $screen-xs-min) {
+      margin-bottom: 2.08vw;
+    }
+
+    @media (min-width: 1600px) {
+      margin-bottom: 40px;
+    }
+  }
+}

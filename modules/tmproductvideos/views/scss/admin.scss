@@ -1,0 +1,27 @@
+@import "compass";
+
+/**************************************************************************
+		        Style for back-end TM Product Videos
+**************************************************************************/
+
+.video-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  li {
+    border: 1px solid #ccc;
+	@include border-radius(5px);
+	padding: 20px 20px;
+	margin-bottom: 5px;
+	background: #fff;
+	&.video-item .controls button {
+	  display: inline-block;
+	  margin-bottom: 10px;
+	  margin-left: 10px;
+	}
+  }
+}
+.video-preview {
+	position:relative;
+	z-index:1;
+}

@@ -1,0 +1,95 @@
+.newsletter-overlay {
+  background: rgba(0, 0, 0, 0.3);
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  z-index: 9999;
+  overflow: hidden;
+}
+
+.newsletter-box {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  z-index: 9999;
+  overflow: hidden;
+}
+
+/*popup styles*/
+#newsletter_popup {
+  background: #fff;
+  border: 1px solid #ddd;
+  margin: 0 auto;
+  max-width: 830px;
+  min-width: 300px;
+  width: 90%;
+  position: relative;
+  margin: 30px auto;
+}
+
+.tmnewsletter-inner {position: relative;}
+
+/*header styles*/
+.tmnewsletter-header {
+  padding: 10px 15px;
+  border-bottom: 1px solid #ddd;
+  h4 {
+    margin: 0;
+    text-transform: uppercase;
+  }
+}
+
+/*content styles*/
+.tmnewsletter-content {padding: 10px 15px;}
+
+/*footer styles*/
+.tmnewsletter-footer {
+  border-top: 1px solid #ddd;
+  text-align: right;
+  padding: 10px 15px 0;
+  overflow: hidden;
+  .btn {
+    margin-left: 5px;
+    margin-bottom: 10px;
+  }
+  .checkbox {float: left;}
+}
+
+/*submit button styles*/
+.tmnewsletter-submit {
+  background: #000;
+  border-color: #000;
+  color: #fff;
+  &:hover {
+    background: #fff;
+    color: #000;
+  }
+}
+
+/*close button styles*/
+.icon.tmnewsletter-close {
+  width: 30px;
+  height: 30px;
+  border-radius: 50px;
+  position: absolute;
+  right: -15px;
+  top: -15px;
+  cursor: pointer;
+  background: #000;
+  text-align: center;
+  line-height: 30px;
+  color: #fff;
+  &:before {
+    content: '\f00d';
+    font-family: "FontAwesome";
+  }
+}
+
+.form-group {
+  &.email-valid input {border-color: #0C6;}
+  &.email-error input {border-color: #f00;}
+}

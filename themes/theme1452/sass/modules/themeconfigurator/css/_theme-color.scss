@@ -1,0 +1,381 @@
+//----- Buttons variables
+
+$addToCart-color: $theme-color1;
+$addToCart-hover-bg: #000;
+$addToCart-border: darken($addToCart-color, 20%);
+$addToCart-hover-border: darken($addToCart-hover-bg, 20%);
+
+$button-bg: #ccc;
+$button-hover-bg: #000;
+$button-border: darken($button-bg, 20%);
+$button-hover-border: darken($addToCart-hover-bg, 20%);
+// -------------- labels vars
+$new-bg: $theme-color1;
+
+a, .breadcrumb li a, .link, #tmsearch .tmsearch-close-btn, #tmsearch .btn.button-search {
+  &:hover, &:focus {
+    color: $theme-color1;
+  }
+}
+
+//---- Buttons styles
+.btn-primary {
+  border-color: $theme-color1;
+
+  &::after {
+    background-color: $theme-color1;
+  }
+
+  @media (min-width: $screen-sm-min) {
+    &:hover {
+      border-color: $theme-color1;
+      color: $theme-color1;
+    }
+
+    &:active:focus, &:active:hover, &:active, &:focus, #{'.active'} > &, &.disabled, &.btn[disabled], #{'.disabled'} > & {
+      border-color: darken($theme-color1, 10%);
+      color: $light-text-color;
+
+      &::after {
+        background-color: darken($theme-color1, 10%);
+        transform: scale3d(1, 1, 1);
+      }
+    }
+  }
+
+  @media only screen and (max-width: $screen-sm-min - 1) {
+    &:active:focus, &:active, &:focus, &.hover, &:hover {
+      border-color: darken($theme-color1, 10%);
+      color: $light-text-color;
+
+      &::after {
+        background-color: darken($theme-color1, 10%);
+      }
+    }
+  }
+}
+
+//------ product list styles
+
+ul.product_list {
+  &.grid {
+    > li, & .slick-track > li {
+      .ajax_add_to_cart_button, .customize {
+        @media (min-width: $screen-sm-min) {
+          &:hover {
+            border-color: darken($theme-color1, 10%);
+            color: $light-text-color;
+
+            &::after {
+              background-color: darken($theme-color1, 10%);
+            }
+          }
+        }
+      }
+    }
+  }
+  .functional-buttons {
+    > div {
+      a, label {
+        &:hover {
+          color: $theme-color1;
+        }
+      }
+    }
+  }
+}
+
+.content_sortPagiBar {
+  .display, .display_m {
+    li {
+      &.selected, &:hover {
+        background-color: $theme-color1;
+        border-color: $theme-color1;
+      }
+    }
+  }
+}
+
+// -------- header icons
+
+header {
+  div:not(.with-out-icon) {
+    #header-login div.current a, .tm-search-toggle, .wishlist-link a,
+    .shopping_cart > a:first-child, .config-wrap > span {
+      &:hover, &.active {
+        color: $theme-color1;
+      }
+    }
+  }
+
+  .top_menu, .stickUpHolder {
+    .menu-title.active {
+      color: $theme-color1;
+    }
+  }
+
+  .block-contact .shop-phone a:hover, #header-login div.current.active a {
+    color: $theme-color1;
+  }
+}
+
+// ---------- slider styles
+
+#homepage-slider {
+  #homeslider {
+    .homeslider-container {
+      .homeslider-description {
+        .social li a:hover {
+          color: $theme-color1;
+        }
+      }
+    }
+  }
+}
+
+#tm-products-slider {
+  #slider_container {
+    .main-slides {
+      .slide-inner {
+        .slide-info {
+          .product-price {
+            color: $theme-color1;
+          }
+        }
+      }
+    }
+
+    span.next-btn:hover:before, span.prev-btn:hover:before {
+      color: $theme-color1;
+    }
+  }
+}
+
+.motoslider_wrapper .ms-product-price {
+  color: $theme-color1;
+}
+
+#tmhtmlcontent_topColumn {
+  .bx-wrapper {
+    .bx-controls-direction a:hover:before {
+      color: $theme-color1;
+    }
+  }
+}
+
+//------ footer styles
+
+.footer-container {
+  a {
+
+  }
+  .footer-block {
+    li {
+      a {
+        color: $theme-color1;
+      }
+    }
+  }
+
+  h4 {
+    a {
+      &:hover {
+        color: $theme-color1;
+      }
+    }
+  }
+
+  #social_block {
+    ul {
+      li {
+        a {
+          color: $theme-color1;
+        }
+      }
+    }
+  }
+
+  body & {
+    #block_contact_infos .toggle-footer li {
+      a, span {
+        &:before {
+          color: $theme-color1;
+        }
+      }
+    }
+
+    .footer-block li a {
+      &:hover {
+        color: $theme-color1;
+      }
+    }
+
+  }
+}
+
+// ---------- menu styles
+
+.top_menu, .top_menu .stickUpHolder {
+  > ul {
+    > li {
+      > a, &.without-link > span {
+        &.sf-with-ul {
+          &::before {
+            border-color: $theme-color1;
+          }
+        }
+      }
+      &:hover > a, &.sfHover > a, &.sfHoverForce > a, > a:hover, &:hover > span, &.sfHover > span, &.sfHoverForce > span, > span:hover {
+        color: $theme-color1;
+      }
+
+      ul.is-simplemenu, ul.is-simplemenu ul {
+        a {
+          &:hover {
+            color: $theme-color1;
+          }
+        }
+      }
+    }
+  }
+
+  .is-megamenu {
+    ul.content {
+      > li {
+        > a {
+          &:hover {
+            color: $theme-color1;
+          }
+        }
+      }
+    }
+  }
+}
+
+//------ olark chat styles
+
+body #olark-wrapper {
+  .olark-launch-button, .olark-top-bar, #olark-container .olark-form-send-button {
+    background: $theme-color1 !important;
+    border-radius: 0 !important;
+  }
+  .olark-launch-button {
+    svg {
+      position: relative;
+      transition: all 0.2s ease;
+    }
+    &:hover {
+      svg {
+        transform: scale(0.8);
+      }
+    }
+
+  }
+}
+
+// --- to top
+
+.ui-to-top {
+  &:hover, &:active, &:focus, &:focus:hover, &:active:hover {
+    background: $theme-color1;
+  }
+}
+
+// ---------- bx-slider 
+
+.bx-wrapper .bx-controls-direction {
+  .bx-next:hover::before, .bx-prev:hover::before {
+    color: $theme-color1;
+  }
+}
+
+//--------- fancy box
+
+body {
+  #fancybox-loading, .loader {
+    &::after {
+      background: $theme-color1;
+    }
+
+    div {
+      background: darken($theme-color1, 15%) !important;
+    }
+  }
+  .fancybox-wrap {
+    .fancybox-skin {
+      .fancybox-close {
+        &:hover {
+          color: $theme-color1;
+        }
+      }
+    }
+  }
+
+}
+
+// ------ product page 
+
+#usefull_link_block li a, #usefull_link_block li a {
+  &:hover {
+    color: $theme-color1;
+  }
+}
+
+#product_comments_block_extra {
+  color: $theme-color1;
+}
+
+.product-custom-tab-content .table .right-table table td:hover {
+  background: $theme-color1;
+  color: $light-text-color;
+}
+
+// -----  404
+
+#pagenotfound {
+  .pagenotfound {
+    $colors: darken($theme-color1, 10%), $color-dark, $theme-color1, $color-base, $color-black;
+    $max: length($colors);
+    $dash: 70;
+    $dash-gap: 15;
+    $dash-space: $dash * ($max - 1) + $dash-gap * $max;
+    $time: 6s;
+    $time-step: $time/$max;
+
+    svg {
+      display: block;
+      text-transform: uppercase;
+    }
+
+    .content {
+      font: 900 30.5em/1 $font-custom;
+    }
+
+    .text {
+      stroke-dasharray: $dash $dash-space;
+      -webkit-animation: stroke $time infinite linear;
+      animation: stroke $time infinite linear;
+
+      @for $item from 1 through $max {
+        &:nth-child(#{$max}n + #{$item}) {
+          $color: nth($colors, $item);
+          stroke: $color;
+          -webkit-animation-delay: -($time-step * $item);
+          animation-delay: -($time-step * $item);
+        }
+      }
+    }
+  }
+}
+
+// ------- cart styles
+
+.cart_block .cart_block_list .ajax_cart_block_remove_link:hover:before, .cart_block .cart_block_list .remove_link a:hover:before {
+  color: $theme-color1;
+}
+
+// ------------  links styles
+
+.block .list-block li a:hover {
+  color: $theme-color1;
+}

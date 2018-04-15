@@ -1,0 +1,393 @@
+/*
+* @package      Style for TM Header Account Block
+* @description  This section holds specific style redeclarations for
+*               TM Header Account Block
+*/
+
+#header-login {
+  position: relative;
+  float: right;
+  div.current {
+    border-right: none;
+    a {
+      background: #333333;
+      text-decoration: none;
+      &.dropdown {
+        &:after {
+          content: "\f0d7";
+          font-family: "FontAwesome";
+          font-size: 18px;
+          line-height: 19px;
+          color: #686666;
+          vertical-align: -2px;
+          padding-left: 12px;
+        }
+      }
+      &:hover {
+        background: #2b2b2b;
+      }
+    }
+    &.active a {
+      background: #2b2b2b;
+      &.dropdown {
+        &:after {
+          content: "\f0d8";
+        }
+      }
+    }
+  }
+  .header-login-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    z-index: 1;
+    #create_header_account_error {
+      padding: 8px;
+    }
+  }
+}
+
+/*
+* @section      Style for login wrapper
+* @description  This section holds specific style redeclarations for
+*               login content wrapper
+*/
+
+.header-login-content {
+  padding: 40px;
+  margin: 0;
+  background: #f7f7f7;
+  color: #525252;
+  li {
+    margin: 0;
+    padding: 0;
+    &.user-data {
+      overflow: hidden;
+      img {
+        float: left;
+        margin-bottom: 18px;
+        margin-right: 20px;
+      }
+      p {
+        font: 600 18px/25px "Open Sans", Helvetica, Arial, sans-serif;
+        span {
+          display: block;
+          white-space: nowrap;
+        }
+      }
+    }
+    ul {
+      margin:0 0 16px;
+      li {
+        display: block;
+        overflow: hidden;
+        font: 600 14px/25px "Open Sans", Helvetica, Arial, sans-serif;
+        a {
+          color: #525252;
+          &:hover {
+            color: #000000;
+          }
+          i {
+            display: none;
+          }
+        }
+      }
+    }
+    &.onecolumn {
+      min-width: 205px;
+    }
+    &.twocolumns {
+      min-width: 405px;
+      > ul {
+        width: 50%;
+        float: left;
+      }
+    }
+  }
+  &:not(.is-logged) > li {
+    width: 275px;
+  }
+  img {
+    max-width: 100%;
+  }
+  .form-group {
+    margin-bottom: 14px;
+    label {
+      font: 600 14px/20px "Open Sans", Helvetica, Arial, sans-serif;
+      margin-bottom: 0;
+      sup {
+        color: #f13340;
+      }
+    }
+    input {
+      height: 40px;
+      font-size: 14px;
+      line-height: 38px;
+      background-position: 98% 12px;
+    }
+    .form_info {
+      color: #f13340;
+    }
+  }
+  p {
+    margin-bottom: 17px;
+    &.submit {
+      padding-top: 3px;
+    }
+    &.logout {
+      margin: 0;
+      overflow: hidden;
+      clear: both;
+    }
+  }
+  .btn-md {
+    width: 100%;
+    font: bold 18px/28px "Open Sans", Helvetica, Arial, sans-serif;
+    color: #fff;
+    padding: 9px 15px 7px;
+    border-radius: 0;
+    &.btn-default {
+      background-color: #42b655;
+      border: 1px solid #399a49;
+      box-shadow: inset 0 0 0 1px #82e491;
+      &:hover {
+        background-color: darken(#42b655, 10);
+        border-color: darken(#399a49, 10);
+        box-shadow: inset 0 0 0 1px darken(#82e491, 10);
+      }
+    }
+    &.btn-primary {
+      background-color: #fe9f38;
+      border: 1px solid #d98305;
+      box-shadow: inset 0 0 0 1px #ffd456;
+      &:hover {
+        background-color: darken(#fe9f38, 10);
+        border-color: darken(#d98305, 10);
+        box-shadow: inset 0 0 0 1px darken(#ffd456, 10);
+      }
+    }
+    &.signin {
+      &:before {
+        font: normal 18px/1.1 "FontAwesome";
+        content: '\f053';
+        margin-right: 7px;
+      }
+    }
+  }
+  .create-account-content {
+    .row {
+      margin: 0 -3px;
+      > div {
+        padding: 0 3px;
+      }
+    }
+    .social-login-buttons {
+      div {
+        margin-bottom: 15px;
+        &.one-element {
+          .btn {
+            margin-left: 0;
+            font-size: 12px;
+            line-height: 1.1;
+            span {
+              margin: 0;
+            }
+            &:before {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+  .forgot-password-content {
+    .signin {
+      i {
+        margin-right: 5px;
+      }
+    }
+  }
+}
+
+/*
+* @section      Style for social account
+*/
+
+.social-login-buttons {
+  margin: 0 -4px;
+  div {
+    margin: 0;
+    padding: 0 4px;
+    float: left;
+    &.one-element {
+      width: 100%;
+      .btn span {
+        margin-left: 10px;
+      }
+    }
+    &.two-elements {
+      width: (100%/2);
+      .btn span {
+        display: none;
+      }
+    }
+    &.three-elements {
+      width: (100%/3);
+      .btn span {
+        display: none;
+      }
+    }
+    .btn {
+      width: 100%;
+      font: bold 15px/28px "Open Sans", Helvetica, Arial, sans-serif;
+      color: #fff;
+      padding: 9px 15px 7px;
+      border-radius: 0;
+      span {
+        margin-left: 10px;
+      }
+      &:before {
+        display: inline-block;
+        font: normal 21px/1em "FontAwesome";
+      }
+      &.btn-login-facebook {
+        background-color: #3b5998;
+        border: 1px solid #294173;
+        box-shadow: inset 0 0 0 1px #6c91cf;
+        &:before {
+          content: '\f09a';
+        }
+        &:hover {
+          background-color: darken(#3b5998, 10);
+          border-color: darken(#294173, 10);
+          box-shadow: inset 0 0 0 1px darken(#6c91cf, 10);
+        }
+      }
+      &.btn-login-google {
+        background-color: #df4a32;
+        border: 1px solid #bf3822;
+        box-shadow: inset 0 0 0 1px #f58265;
+        &:before {
+          content: '\f1a0';
+        }
+        &:hover {
+          background-color: darken(#df4a32, 10);
+          border-color: darken(#bf3822, 10);
+          box-shadow: inset 0 0 0 1px darken(#f58265, 10);
+        }
+      }
+      &.btn-login-vk {
+        background-color: #3383c1;
+        border: 1px solid #205ca0;
+        box-shadow: inset 0 0 0 1px #5eb0e2;
+        &:before {
+          content: '\f189';
+        }
+        &:hover {
+          background-color: darken(#3383c1, 10);
+          border-color: darken(#205ca0, 10);
+          box-shadow: inset 0 0 0 1px darken(#5eb0e2, 10);
+        }
+      }
+    }
+  }
+}
+
+/*
+* @section      Style for left and right sidebars
+* @description  This section holds specific style redeclarations for
+*               left and right sidebars
+*/
+
+.tmha-sidebar-left, .tmha-sidebar-right {
+  background: #f7f7f7;
+  height: 100%;
+  position: fixed;
+  transition: all 0.3s ease;
+  top: 0;
+  z-index: 99999;
+  overflow: auto;
+  max-height: 100%;
+}
+
+.tmha-sidebar-left {
+  left: 0;
+  transform: translateX(-100%);
+}
+
+.tmha-sidebar-right {
+  right: 0;
+  transform: translateX(100%);
+  .tmha-close-btn {
+    right: auto;
+    left: 19px;
+  }
+}
+
+.tmha-sidebar-left.active {
+  left: 0;
+  transform: translateX(0);
+}
+
+.tmha-sidebar-right.active {
+  right: 0;
+  transform: translateX(0);
+}
+
+.tmha-close-btn {
+  position: absolute;
+  top: 15px;
+  right: 19px;
+  cursor: pointer;
+  display: block;
+  color: #b0b0b0;
+  outline: none !important;
+  transition: all 0.3s ease;
+  transform: scale(1);
+  &:before {
+    font: normal 18px/1.1 "FontAwesome";
+    content: '\f00d';
+  }
+  &:hover {
+    color: #333;
+  }
+}
+
+/*
+* @section      Style for left and right columns
+* @description  This section holds specific style redeclarations for
+*               left and right columns
+*/
+
+#columns {
+  .header-login-content {
+    padding: 20px;
+    li.user-data {
+      p span {
+        display: inline-block;
+      }
+      img {
+        float: none;
+      }
+    }
+    &:not(.is-logged) li {
+      width: 100%;
+    }
+  }
+  #center_column {
+    .social-login-buttons {
+      div {
+        .btn span {
+          @media (min-width: 992px) {
+            display: inline-block;
+            font-size: 13px;
+          }
+          @media (min-width: 1200px) {
+            font-size: 15px;
+          }
+        }
+      }
+    }
+  }
+}

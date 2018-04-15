@@ -1,0 +1,49 @@
+@import "../../../../../_theme_variables";
+
+.top_menu, .top_menu .stickUpHolder {
+  > ul {
+    > li {
+      &:first-child {
+        > a, &.without-link > span {
+          @media (min-width: $screen-md-min) {
+            padding-left: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+.header-container {
+  .header_logo {
+    @media only screen and (max-width: 550px) {
+      justify-content: flex-start;
+      margin: 10px 0;
+    }
+  }
+  .align-items-center {
+    @media only screen and (max-width: 550px) {
+      display: flex;
+    }
+  }
+}
+
+header {
+  .config-wrap {
+    .module {
+      &:first-child {
+        @media (min-width: 1800px) {
+          margin-right: 22px;
+        }
+      }
+    }
+  }
+
+  .justify-end.align-items-center {
+    > div:not(.config-wrap) {
+      @media (min-width: 1600px) {
+        margin-left: 19px;
+      }
+    }
+  }
+}

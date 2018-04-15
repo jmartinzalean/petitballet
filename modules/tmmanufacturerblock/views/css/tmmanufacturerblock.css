@@ -1,0 +1,32 @@
+/**************************************************************************
+		        Style TM Manufacturer Block
+**************************************************************************/
+
+#tm_manufacturers_block {
+  padding: 30px 0;
+}
+
+#tm_manufacturers_block .bx-wrapper .manufacturers_items li.caroucel_item {
+  width: 25%;
+}
+
+#tm_manufacturers_block .bx-wrapper .bx-controls .bx-pager .bx-pager-link.active,
+#tm_manufacturers_block .bx-wrapper .bx-controls .bx-pager .bx-pager-link:hover {
+  background: #777;
+}
+
+#tm_manufacturers_block .bx-wrapper .bx-controls .bx-controls-direction a:before {
+  color: #333;
+}
+
+#tm_manufacturers_block .bx-wrapper .bx-controls .bx-controls-direction a:hover:before {
+  color: #777;
+}
+
+#tm_manufacturers_block .bx-wrapper .bx-controls .bx-controls-direction a.bx-prev {
+  left: 12px;
+}
+
+#tm_manufacturers_block .bx-wrapper .bx-controls .bx-controls-direction a.bx-next {
+  right: 12px;
+}

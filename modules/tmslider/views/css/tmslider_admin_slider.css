@@ -1,0 +1,48 @@
+.slides-list {
+  margin: 0 0 0 0;
+  padding: 10px 0 0 0;
+  list-style-type: none;
+}
+
+.slides-list li {
+  border: 1px solid #ccc;
+  margin-bottom: 5px;
+  overflow: hidden;
+  display: none;
+}
+
+.slides-list.show li {
+  display: block;
+  cursor: pointer;
+}
+
+.slides-list.show li:hover {
+  background-color: #eee;
+}
+
+.slides-list.show li.active {
+  background-color: #eee;
+}
+
+.slides-list li.active {
+  display: block;
+}
+
+.slides-list li .preview {
+  float: left;
+  margin-right: 10px;
+}
+.slides-list li .info {
+  overflow: hidden;
+}
+
+.slides-list li .none-content {
+  width: 200px;
+  height: 100px;
+  line-height: 100px;
+  text-align: center;
+}
+
+#tmslider_sliders_slides_form .select-button {
+  padding-top: 8px;
+}

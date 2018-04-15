@@ -1,0 +1,150 @@
+@import "compass";
+
+/**************************************************************************
+		        Style TM Google Map
+**************************************************************************/
+
+#homegooglemap #tmmap {
+  width: 100%;
+  height: 400px;
+  margin-top:  10px;
+  .marker_content {
+    width: 300px;
+    font-family: "Open Sans", sans-serif;
+    padding: 5px 20px 0 0;
+    @media only screen and (max-width:479px) {
+      width: 215px;
+    }
+    .tmaddress-content {
+      margin-bottom: 15px;
+    }
+    .marker_logo {
+      float: left;
+      margin-right: 5%;
+      width: 45%;
+      height: auto;
+      @media only screen and (max-width:479px) {
+        width: 90%;
+        margin-right: 0;
+      }
+    }
+    .tmgooglemap-hours > p {
+      float: left;
+      font-size: 13px;
+      width: 50%;
+      margin: 0 0 3px 0;
+      color: #a7a7a7;
+      @media only screen and (max-width:479px) {
+        width: 100%;
+        float: none;
+      }
+      b {
+        color: #333;
+        display: inline-block;
+        min-width: 40px;
+        font-weight: normal;
+      }
+      span {
+        display: inline-block;
+        color: #a7a7a7;
+      }
+    }
+    .tmgooglemap-content {
+      .tmgooglemap-days{
+        width: 45%;
+        float: left;
+        margin-top: -1px;
+        p {
+          color: #a7a7a7;
+          margin-bottom: 2px;
+          b {
+            font-weight: normal;
+            color: #333;
+          }
+        }
+      }
+      .tmgooglemap-phone {
+        width: 50%;
+        margin-right: 5%;
+        float: left;
+        p {
+          font-size: 16px;
+          font-weight: 600;
+          color: #333;
+          margin-bottom: 12px;
+          &:last-child {
+            margin-bottom: 0;
+          }
+          &:before {
+            font-family: 'FontAwesome';
+            content: '\f095';
+            display: inline-block;
+            font-size: 20px;
+            color: #a7a7a7;
+            margin-right: 7px;
+            vertical-align: -2px;
+          }
+        }
+      }
+    }
+    .description {
+      width: 50%;
+      float: left;
+      @media only screen and (max-width:479px) {
+        width: 90%;
+        float: none;
+      }
+      h5 {
+        display: block;
+        font-size: 14px;
+        font-weight: normal;
+        color: #333;
+        margin: 10px 0 5px 0;
+      }
+      p {
+        font-size: 14px;
+        color: #a7a7a7;
+        line-height: 24px;
+      }
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+    > p {
+      font-size: 11px;
+      margin-bottom: 5px;
+      width: 50%;
+      float: left;
+      padding-right: 10px;
+    }
+    .tmlink-directions {
+      float: right;
+      font-size: 14px;
+      font-weight: normal;
+      color: #333;
+      margin: -5px 0 7px;
+      @include transition (all 0.3s linear);
+      @media only screen and (max-width:479px) {
+        margin: 7px 25px 7px 0;
+      }
+      &:before {
+        font-family: 'FontAwesome';
+        content: '\f041';
+        display: inline-block;
+        color: #06aaf5;
+        font-size: 18px;
+        margin-right: 7px;
+        vertical-align: -1px;
+      }
+      &:hover {
+        color: #06aaf5;
+      }
+    }
+  }
+  .gm-style-iw  {
+    div {
+      overflow-x: hidden !important;
+    }
+  }
+}

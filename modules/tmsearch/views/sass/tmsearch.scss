@@ -1,0 +1,227 @@
+#tmsearch {
+  position: relative;
+  padding-top: 42px;
+  #tmsearchbox {
+    width: 100%;
+    border: 1px solid #d6d4d4;
+    position: relative;
+    background: #fbfbfb;
+    padding-right: 50px;
+    padding-left: 200px;
+    @media (max-width: 479px) {
+      padding-left: 140px;
+    }
+    label {
+      color: #333333;
+    }
+  }
+
+  .btn.button-search {
+    background: #333333;
+    display: block;
+    position: absolute;
+    top: -1px;
+    right: -1px;
+    border: none;
+    color: white;
+    width: 50px;
+    text-align: center;
+    padding: 10px 0 11px 0;
+    &:before {
+      content: "\f002";
+      display: block;
+      font-family: "FontAwesome";
+      font-size: 17px;
+      width: 100%;
+      text-align: center;
+    }
+    &:hover {
+      color: #6f6f6f;
+    }
+    span {
+      display: none;
+    }
+  }
+
+  .selector {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+  }
+  select {
+    width: 180px;
+    @media (max-width: 479px) {
+      width: 120px;
+    }
+    option {
+      padding: 5px;
+    }
+  }
+
+  #tm_search_query {
+    display: inline-block;
+    padding: 12px 10px 9px 13px;
+    height: 43px;
+    border: none;
+    border-left: 1px solid #d6d4d4;
+    background: none;
+    box-shadow: none;
+  }
+
+  #tmsearch_result {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background: #fbfbfb;
+    width: 100%;
+    z-index: 5;
+    padding: 15px;
+    border-top: 5px solid #f7f7f7;
+    .search-page {
+      overflow: hidden;
+      clear: both;
+    }
+    .tmsearch-row {
+      padding: 15px;
+      margin-top: 30px;
+      overflow: hidden;
+      cursor: pointer;
+      transition: all 0.15s ease;
+      .tmsearch-inner-row {
+        position: relative;
+        img {
+          margin-right: 15px;
+          background: #ffffff;
+          float: left;
+        }
+      }
+      &:first-child {
+        margin: 0;
+      }
+      &:hover {
+        background: #f7f7f7;
+      }
+    }
+    .reference, .quantity, .availability {
+      display: inline-block;
+      vertical-align: middle;
+      margin: 0 15px 0 0;
+      font-size: 12px;
+      &.availability {
+        text-decoration: underline;
+      }
+      &.quantity {
+        color: #ccc;
+      }
+    }
+    .name {
+      display: block;
+      font-size: 15px;
+      line-height: 21px;
+      font-weight: bold;
+      margin: 5px 0;
+      strong {
+        color: black;
+      }
+    }
+    .price {
+      color: #333;
+      font-size: 13px;
+      font-weight: bold;
+      position: absolute;
+      right: 0;
+      top: 0;
+      &.new-price {
+        color: red;
+      }
+    }
+    .description-short {
+      margin-bottom: 10px;
+    }
+    div > strong {
+      font-weight: normal;
+      color: black;
+    }
+    .manufacturer-name, .supplier-name {
+      float: right;
+      margin-left: 20px;
+      display: block;
+      background: #ffffff;
+      padding: 3px 7px;
+      font-size: 11px;
+      line-height: 15px;
+    }
+
+    &.loading {
+      opacity: 0.5;
+    }
+
+    div.hidden-row, div.hidden-page {
+      display: none;
+    }
+    .pagers {
+      float: right;
+      padding-top: 15px;
+      a {
+        background: #f7f7f7;
+        padding: 5px 10px;
+        margin: 0 3px;
+        display: inline-block;
+        text-decoration: none;
+        &:hover, &.active, &:focus {
+          background: #f1f0f0;
+          color: #000;
+          outline: none;
+        }
+      }
+    }
+    .navigation {
+      float: right;
+      padding-top: 15px;
+      &.top {
+        padding-top: 0;
+        padding-bottom: 15px;
+      }
+      > a {
+        float: left;
+        font-size: 24px;
+        padding: 2px 0;
+        text-decoration: none;
+        &.disabled {
+          cursor: default;
+          color: #cccccc;
+        }
+        &:hover, &.active, &:focus {
+          outline: none;
+        }
+      }
+      .pagers {
+        float: left;
+        padding-top: 0;
+      }
+      .count-pages {
+        float: left;
+        font-size: 17px;
+        padding: 5px 10px;
+        .current {
+          color: #000000;
+        }
+      }
+    }
+    .tmsearch-alllink {
+      padding-top: 20px;
+      float: left;
+      a {
+        display: block;
+        &:after {
+          font-family: "FontAwesome";
+          content: '\f021';
+          font-size: 24px;
+          margin-left: 10px;
+          vertical-align: -4px;
+          color: #85ce90;
+        }
+      }
+    }
+  }
+}

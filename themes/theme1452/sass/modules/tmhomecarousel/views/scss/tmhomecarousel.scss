@@ -1,0 +1,105 @@
+@import "../../../../_theme_variables";
+
+.tab-content {
+  > ul {
+    display: none !important;
+
+    &.slick-slider {
+      display: block !important;
+    }
+  }
+
+  .bx-wrapper {
+    margin: 0 !important;
+    #homepage-carousel {
+      overflow: hidden;
+      li {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        clear: none;
+      }
+
+      > li{
+        animation: fadeIn 0.3s ease both;
+      }
+    }
+    .bx-controls {
+      a {
+        &:before {
+          font-family: 'FontAwesome';
+        }
+      }
+      .bx-pager {
+        padding: 0;
+        overflow: hidden;
+        .bx-pager-item {
+          float: left;
+          text-align: center;
+          margin-right: 3px;
+          a {
+            display: block;
+            width: 20px;
+            height: 20px;
+            text-indent: 0;
+            margin: 0;
+            text-decoration: none;
+            color: #fff;
+            &.active,
+            &:hover {
+              background: #777;
+            }
+          }
+        }
+      }
+      .bx-controls-auto {
+        .bx-controls-auto-item {
+          float: left;
+          margin-right: 0;
+          text-align: center;
+          a {
+            display: block;
+            width: 17px;
+            height: 17px;
+            text-indent: 0;
+            background: none;
+            text-decoration: none;
+            margin: 0;
+            &.bx-start {
+              &:before {
+                content: '\f04b';
+              }
+            }
+            &.bx-stop {
+              &:before {
+                content: '\f04c';
+              }
+            }
+          }
+        }
+      }
+    }
+    .bx-controls-direction {
+      .bx-next, .bx-prev {
+        top: 35%;
+        opacity: 0;
+        transform: translateX(-20px);
+        transition: all .3s $custom-timing-function;
+      }
+      .bx-next {
+        transform: translateX(20px);
+      }
+    }
+
+    &:hover {
+      .bx-controls-direction {
+        .bx-next, .bx-prev {
+          opacity: 1;;
+          transform: translateX(0);
+        }
+      }
+    }
+  }
+
+
+
+}

@@ -1,0 +1,37 @@
+<?php
+
+global $_MODULE;
+$_MODULE = array();
+$_MODULE['<{tmcategoryproductsslider}prestashop>tmcategoryproductsslider_e0ccfcf1df18565934771009f647fe88'] = 'Vous ne pouvez pas ajouter/modifier des éléments à partir de \"Toutes les boutiques\" ou \"Groupe Boutique\"';
+$_MODULE['<{tmcategoryproductsslider}prestashop>tmcategoryproductsslider_8cb5bce55ab3a5325dd4cc35a6b61864'] = 'Bloc liste';
+$_MODULE['<{tmcategoryproductsslider}prestashop>tmcategoryproductsslider_ef61fb324d729c341ea8ab9901e23566'] = 'Ajouter';
+$_MODULE['<{tmcategoryproductsslider}prestashop>tmcategoryproductsslider_b1764121274eac7781b7405fbe2e8469'] = 'Onglet id';
+$_MODULE['<{tmcategoryproductsslider}prestashop>tmcategoryproductsslider_4c0fa9eb4830c8f752fa25ba0d20018f'] = 'Bloc catégorie';
+$_MODULE['<{tmcategoryproductsslider}prestashop>tmcategoryproductsslider_ec53a8c4f07baed5d8825072c89799be'] = 'Statut';
+$_MODULE['<{tmcategoryproductsslider}prestashop>tmcategoryproductsslider_da4fef7e98e2b8ab7b623475754c7f98'] = 'Mise à jour de bloc';
+$_MODULE['<{tmcategoryproductsslider}prestashop>tmcategoryproductsslider_2ff8071bcd15a31f9a743f1b06d0d00f'] = 'Ajouter un bloc';
+$_MODULE['<{tmcategoryproductsslider}prestashop>tmcategoryproductsslider_00d23a76e43b46dae9ec7aa9dcbebb32'] = 'Activé';
+$_MODULE['<{tmcategoryproductsslider}prestashop>tmcategoryproductsslider_b9f5c797ebbf55adccdd8539a65a0241'] = 'Désactivé';
+$_MODULE['<{tmcategoryproductsslider}prestashop>tmcategoryproductsslider_03368e3c1eb4d2a9048775874301b19f'] = 'Choisir une catégorie';
+$_MODULE['<{tmcategoryproductsslider}prestashop>tmcategoryproductsslider_1b5388ba1717ebb3cb7ea612eda6ae5d'] = 'Utiliser le nom en avant';
+$_MODULE['<{tmcategoryproductsslider}prestashop>tmcategoryproductsslider_9ceafcc230188888eaeaacc5477b5564'] = 'Sélectionnez des produits à afficher';
+$_MODULE['<{tmcategoryproductsslider}prestashop>tmcategoryproductsslider_0255b332c28fe6ed4f34e7124a397a2d'] = 'Produits à afficher:';
+$_MODULE['<{tmcategoryproductsslider}prestashop>tmcategoryproductsslider_92288eaed28f9ce24ca094f89f95f084'] = 'Nombre de produits à afficher';
+$_MODULE['<{tmcategoryproductsslider}prestashop>tmcategoryproductsslider_c9cc8cce247e49bae79f15173ce97354'] = 'Enregistrer';
+$_MODULE['<{tmcategoryproductsslider}prestashop>tmcategoryproductsslider_2bc71af7c06aff4140c41d2b383829bb'] = 'Annuler';
+$_MODULE['<{tmcategoryproductsslider}prestashop>tmcategoryproductsslider_8db9aedf6e11eb57c1f33ce1e730e4ef'] = 'Impossible d\'enregistrer un onglet';
+$_MODULE['<{tmcategoryproductsslider}prestashop>tmcategoryproductsslider_b3513dc48f35fb950da0de059f6081bc'] = 'Bloc a été enregistré';
+$_MODULE['<{tmcategoryproductsslider}prestashop>tmcategoryproductsslider_11a81073cad10bf07bf8693d82f20708'] = 'Impossible de supprimer un élément';
+$_MODULE['<{tmcategoryproductsslider}prestashop>tmcategoryproductsslider_f6fefe344352f0815e6f53ad8f97ae76'] = 'Article a été supprimé';
+$_MODULE['<{tmcategoryproductsslider}prestashop>tmcategoryproductsslider_5f49e39b50b4f3679dc6c8a727066d12'] = 'Statut de l\'élément ne peut pas être mis à jour';
+$_MODULE['<{tmcategoryproductsslider}prestashop>tmcategoryproductsslider_5da83f6eb94b0a6addd2670744479a1e'] = 'Statut de l\'élément a été mis à jour';
+$_MODULE['<{tmcategoryproductsslider}prestashop>tmcategoryproductsslider_674296afa6d6acdac950ed43b3c02735'] = 'Valeur du champ \'Nombre de produits à afficher \' incorrecte';
+$_MODULE['<{tmcategoryproductsslider}prestashop>tmcategoryproductsslider_ae733d7b98b3ce5b92cbb534beaa3949'] = 'Format de nom incorrect';
+$_MODULE['<{tmcategoryproductsslider}prestashop>tmcategoryproductsslider_6857042f031c093ec64102b71e33accc'] = 'Tous les produits sélectionnés seront effacés';
+$_MODULE['<{tmcategoryproductsslider}prestashop>admintmcategoryproductsslider_e5363b0f5e10354c3d61c5348ed4911f'] = 'Aucun produit pour sélectionner';
+$_MODULE['<{tmcategoryproductsslider}prestashop>product_list_4c41e0bd957698b58100a5c687d757d9'] = 'Sélectionner tout';
+$_MODULE['<{tmcategoryproductsslider}prestashop>product_list_52e3ce2bc983012661c3c11fe8b0f8ce'] = 'Déselectionner tout';
+$_MODULE['<{tmcategoryproductsslider}prestashop>product_list_ec211f7c20af43e742bf2570c3cb84f9'] = 'Ajouter';
+$_MODULE['<{tmcategoryproductsslider}prestashop>form_ea6fc12147e71d57bdd78ca17ca734ce'] = 'Ajouter des produits';
+$_MODULE['<{tmcategoryproductsslider}prestashop>tmcategoryproducts-home_6f56d3faad54f96765bd3a2dcf58c9af'] = 'Voir tous les produits';
+$_MODULE['<{tmcategoryproductsslider}prestashop>tmcategoryproducts-home_fedfc84ec71841fdcfd18b0529bbb315'] = 'Aucun produit dans cette catégorie.';

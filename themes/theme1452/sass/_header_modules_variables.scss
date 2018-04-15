@@ -1,0 +1,228 @@
+@import 'bootstrap_lib/_variables';
+
+// ------- COLORS -------
+
+$hm-text-color: $dark-text-color;
+$hm-text-color-secondary: $color-base;
+$hm-darken-bg: darken($color-dark, 5%);
+$hm-lighten-bg: lighten($color-dark, 5%);
+
+// ------- Header Modules Indents --------
+
+@mixin hm-indent {
+  padding: 5px 15px;
+  position: relative;
+  display: block;
+  color: $hm-text-color;
+  cursor: pointer;
+  font-family: $font-custom;
+  font-weight: 700;
+
+  .bg-dark & {
+    color: $light-text-color;
+  }
+
+  .mobile-stickup & {
+    @media (max-width: 550px) {
+      color: $light-text-color;
+    }
+  }
+
+  .nav-section & {
+    font-weight: 400;
+  }
+}
+
+// ------- Header Modules Icons -------
+
+@mixin hm-icon {
+  @include addIcon('\f107');
+  font-size: 12px;
+  line-height: 18px;
+  color: $hm-text-color-secondary;
+  font-weight: normal;
+  vertical-align: bottom;
+
+  .bg-dark & {
+    color: $light-text-color;
+  }
+}
+
+@mixin hm-icon-hover {
+  content: "\f0d8";
+}
+
+// ------- Header Modules Drop Down Box -------
+
+@mixin hm-drop-down-box {
+  z-index: 2;
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  display: none;
+  /*padding: 20px 40px;*/
+  padding: 10px;
+  background: $base-box-bg;
+  border-radius: $border-radius-base;
+  box-shadow: $base-box-shadow;
+
+  @media (min-width: 1600px) {
+    min-width: 60;
+  }
+
+  @include topPosition;
+
+  li {
+    padding: 5px;
+
+    @media (min-width: $screen-lg-min) {
+      /*margin-bottom: 10px;*/
+      font-size: 14px;
+    }
+  }
+
+  .nav-section & {
+    right: auto;
+    left: 0;
+  }
+
+  .justify-end & {
+    left: auto;
+    @media (min-width: 400px) {
+      right: 15px;
+    }
+  }
+}
+
+// ------- SEARCH bLOCK IN HEADER AND BLOG SEARCH IN LEFT COLUMN -------
+
+@mixin search-box-style {
+  #tmsearchbox, #searchbox {
+    float: left;
+    width: 100%;
+    border: none;
+    position: relative;
+    background: $base-box-bg;
+    border: 2px solid $secondary-background;
+    border-radius: $border-radius-base;
+
+    .btn.button-search {
+      position: absolute;
+      top: 0;
+      right: 0;
+      display: block;
+      width: 50px;
+      height: 100%;
+      border: none;
+      background: transparent;
+      color: $dark-text-color;
+      text-align: center;
+      transition: $base-transition;
+
+      span {
+        display: none;
+      }
+
+      &:before {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        width: 100%;
+        @extend %icon-sm;
+        @include addIconCustom('\e032');
+        @include transform (translate(0, -50%));
+      }
+      &:hover {
+        background: transparent;
+        color: $link-hover-color;
+      }
+    }
+    #tm_search_query, #search_query_top {
+      display: block;
+      padding: 12px 0 13px 25px;
+      height: 45px;
+      border: none;
+      background: none;
+      box-shadow: none !important;
+      border-right: 60px solid rgba($light-border-color, 0);
+
+      @media (min-width: $screen-lg-min) {
+        height: 55px;
+        padding-top: 16px;
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+/*
+* @package       topPosition
+* @description   to create the equal positions of all popups in header
+*
+*/
+@mixin topPosition {
+  top: calc(100% + 3px);
+
+  @media (min-width: $screen-xs-min) {
+    top: 100%;
+  }
+
+  @media (min-width: $screen-sm-min) {
+    top: calc(100% + 30px);
+
+    .stickUpTop.isStuck & {
+      top: calc(100% + 20px);
+    }
+  }
+}
+
+/*
+* @package      iconActiveAnimation
+* @description  mixin for animation icons
+*
+*/
+@mixin iconActiveAnimation(
+  $icon-close:'\f00d',
+  $icon-width: 24px,
+  $animation-duration: 0.3s
+) {
+  &::before {
+    will-change: transform, opacity;
+    animation: iconAnimationIn 0.3s $custom-timing-function;
+  }
+
+  &::after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: $icon-width;
+    margin-top: -$icon-width/2;
+    margin-left: -$icon-width/2;
+    text-align: center;
+    font-size: $icon-width;
+    line-height: $icon-width;
+    will-change: transform, opacity;
+    animation: iconAnimationOut $animation-duration $custom-timing-function both;
+
+    @include addIcon($icon-close);
+  }
+
+  &.active, .active & {
+    &::before {
+      animation: iconAnimationOut $animation-duration $custom-timing-function both;
+
+      .with-out-icon & {
+        animation: iconAnimationIn 0.3s $custom-timing-function;
+      }
+
+    }
+
+    &::after {
+      animation: iconAnimationIn $animation-duration $custom-timing-function both;
+
+      .with-out-icon & {
+        animation: iconAnimationOut $animation-duration $custom-timing-function both;
+      }
+    }
+  }
+}

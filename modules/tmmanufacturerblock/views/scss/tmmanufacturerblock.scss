@@ -1,0 +1,47 @@
+@import "compass";
+
+/**************************************************************************
+		        Style TM Manufacturer Block
+**************************************************************************/
+
+#tm_manufacturers_block {
+  padding: 30px 0;
+  .bx-wrapper {
+	.manufacturers_items {
+	  li {
+		&.caroucel_item {
+		  width: 25%;
+		}
+	  }
+	}
+	.bx-controls {
+	  .bx-pager {
+		.bx-pager-link {
+		  &.active,
+		  &:hover {
+			background: #777;
+		  }
+		}
+	  }
+	  .bx-controls-direction {
+		a {
+		  &:before {
+			color: #333;
+		  }
+		  &:hover {
+			&:before {
+			  color: #777;
+			}
+		  }
+		  &.bx-prev {
+			left: 12px;
+		  }
+		  &.bx-next {
+			right: 12px;
+		  }
+		}
+
+	  }
+	}
+  }
+}

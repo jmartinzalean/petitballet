@@ -1,0 +1,99 @@
+@import "compass";
+
+/**************************************************************************
+		        Style TM Homepage Products Carousel
+**************************************************************************/
+
+.tab-content {
+  > ul {
+	display: none !important;
+  }
+  .bx-wrapper {
+	margin: 0 !important;
+	#homepage-carousel {
+	  overflow: hidden;
+	  li {
+		padding-left: 0 !important;
+		padding-right: 0 !important;
+		clear: none;
+	  }
+	}
+	.bx-controls {
+	  a {
+		&:before {
+		  font-family: 'FontAwesome';
+		}
+	  }
+	  .bx-pager {
+		padding: 0;
+		overflow: hidden;
+		.bx-pager-item {
+		  float: left;
+		  text-align: center;
+		  margin-right: 3px;
+		  a {
+			display: block;
+			width: 20px;
+			height: 20px;
+			text-indent: 0;
+			margin: 0;
+			text-decoration: none;
+			color: #fff;
+			&.active,
+			&:hover {
+			  background: #777;
+			}
+		  }
+		}
+	  }
+	  .bx-controls-direction {
+		float:left;
+		overflow:hidden;
+		a {
+		  display:block;
+		  width:20px;
+		  height:20px;
+		  text-align:center;
+		  z-index:10;
+		  background:none;
+		  &.bx-prev {
+			&:before {
+			  content: '\f104';
+			}
+		  }
+		  &.bx-next {
+			&:before {
+			  content: '\f105';
+			}
+		  }
+		}
+	  }
+	  .bx-controls-auto {
+		.bx-controls-auto-item {
+		  float: left;
+		  margin-right: 0;
+		  text-align: center;
+		  a {
+			display: block;
+			width: 17px;
+			height: 17px;
+			text-indent: 0;
+			background: none;
+			text-decoration: none;
+			margin: 0;
+			&.bx-start {
+			  &:before {
+				content: '\f04b';
+			  }
+			}
+			&.bx-stop {
+			  &:before {
+				content: '\f04c';
+			  }
+			}
+		  }
+		}
+	  }
+	}
+  }
+}

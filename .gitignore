@@ -1,4 +1,5 @@
 .idea/*
+.git/*
 /mails/
 /upload/
 /cgi-bin/
@@ -27,11 +28,11 @@
 /Adapter/
 /config/
 /log/
-/img/
 /css/
 /header.php
 /LICENSES
 /Install_PrestaShop.html
-/themes/
-/modules/
+/themes/default-bootstrap/
 /nbproject/
+/themes/default-bootstrap/
+!.gitignore

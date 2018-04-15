@@ -1,0 +1,509 @@
+#one-click-order-settings .tab-content, #one-click-orders .tab-content {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-top: none;
+  min-height: 100px;
+  padding: 15px;
+}
+
+#one-click-order-settings .nav-tabs {
+  border-bottom: 1px solid #ddd;
+}
+
+#one-click-orders .panel-heading {
+  white-space: normal !important;
+}
+#one-click-orders .nav-tabs {
+  border-bottom: 1px solid #ddd;
+}
+#one-click-orders .tab-content .tab-pane {
+  min-height: 400px;
+  position: relative;
+}
+#one-click-orders .tab-content .no-orders {
+  background: #eff1f2;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 99;
+}
+#one-click-orders .tab-content .no-orders div {
+  text-align: center;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#order_settings_template .one-click-order-field .remove-field:hover {
+ 	cursor: pointer;
+ 	color: #000;
+}
+#one-click-orders .show-new-orders {
+  text-align: center;
+  background: #00aff0;
+  color: #fff;
+}
+#one-click-orders .show-new-orders span {
+  float: none;
+}
+#one-click-orders h3.order_header {
+  margin: 0 0 20px !important;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #f8f8f8;
+}
+
+#order_settings_template .btn {
+  display: block;
+  padding: 20px;
+  margin-top: 10px;
+}
+#order_settings_template .one-click-order-field {
+  position: relative;
+}
+#order_settings_template .one-click-order-field .type {
+  padding: 20px;
+  display: block;
+  text-align: center;
+  font-weight: normal;
+  vertical-align: middle;
+  cursor: pointer;
+  background: #fff;
+  border: 1px solid #ddd;
+  white-space: nowrap;
+  font-size: 12px;
+  line-height: 1.42857;
+  border-radius: 3px;
+  text-transform: capitalize;
+}
+#order_settings_template .one-click-order-field:hover .type {
+  background: rgba(255, 255, 255, 0.7);
+}
+#order_settings_template .one-click-order-field:hover .remove-field {
+  display: block;
+}
+#order_settings_template .one-click-order-field .remove-field {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  display: none;
+}
+#order_settings_template .one-click-order-field + .one-click-order-field {
+  margin-top: 10px;
+}
+#order_settings_template .fields {
+  background: #eff1f2;
+  padding: 10px;
+  text-align: center;
+}
+
+.fancybox-inner {
+  overflow-y: auto !important;
+  max-height: 600px;
+  margin-right: 5px;
+}
+.fancybox-inner .panel {
+  margin-bottom: 0 !important;
+}
+.fancybox-inner .footer-buttons {
+  border-top: 1px solid #ddd;
+  padding: 10px;
+  overflow: hidden;
+  clear: both;
+}
+.fancybox-inner .content {
+  padding: 10px;
+}
+.fancybox-inner .search {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  padding: 10px 0;
+}
+.fancybox-inner .search input {
+  width: 100%;
+}
+.fancybox-inner .search .clear_serach {
+  position: absolute;
+  right: 0;
+  top: 10px;
+  z-index: 1;
+}
+.fancybox-inner #content.bootstrap {
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+.sidebar-nav .navbar {
+  border: none;
+}
+.sidebar-nav .order-list-wrap {
+  max-height: 455px;
+  position: relative;
+  overflow: hidden;
+}
+.sidebar-nav .order-list-wrap .ps-scrollbar-y-rail {
+  z-index: 200;
+}
+.sidebar-nav .navbar-nav {
+  width: 100%;
+  background: #fff;
+  border: none;
+}
+.sidebar-nav .navbar-nav li {
+  width: 100%;
+  margin-bottom: 3px;
+}
+.sidebar-nav .navbar-nav li a {
+  width: 100%;
+  display: block;
+  overflow: hidden;
+  border: 1px solid #f8f8f8;
+}
+.sidebar-nav .navbar-nav li a span {
+  float: left;
+  width: 33%;
+}
+.sidebar-nav .navbar-nav li a .order_date {
+  text-align: center;
+}
+.sidebar-nav .navbar-nav li a .total_price {
+  text-align: right;
+}
+.sidebar-nav .navbar-collapse {
+  padding: 0;
+}
+
+.tmoco_preloader {
+  transition: all 0.3s ease 0s;
+}
+.tmoco_preloader i {
+  font-size: 75px;
+  color: #00aff0;
+  position: relative;
+  animation: 1s steps(100) 0s normal none infinite running preloader_rotate;
+}
+
+@-webkit-keyframes preloader_rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@-moz-keyframes preloader_rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@-o-keyframes preloader_rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes preloader_rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.preorder_content {
+  min-height: 475px !important;
+  position: relative !important;
+}
+.preorder_content.load {
+  max-height: 455px;
+  overflow: hidden;
+}
+
+#create_order {
+  width: 100%;
+  padding: 20px;
+}
+
+.input_wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+#random_password {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.form-group {
+  position: relative;
+}
+.form-group .tmoco_preloader {
+  bottom: auto;
+  height: 15px;
+  left: auto;
+  margin: auto;
+  position: absolute;
+  right: 7px;
+  top: 30px;
+  transform: none;
+  width: 15px;
+}
+
+.tab-content .tmoco_preloader_wrap {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #FFF;
+  z-index: 200;
+}
+
+.tab-content .tmoco_preloader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.nav-tabs .tmoco_preloader {
+  width: 15px;
+  height: 15px;
+  margin-left: 10px;
+  margin-top: 3px;
+  float: right;
+}
+
+.customer_info {
+  padding: 10px;
+}
+
+#cart_summary tr.selected td {
+  background: #f4f8fb;
+}
+#cart_summary tr:hover {
+  cursor: pointer;
+}
+
+.btns-wrap {
+  padding: 5px 0px;
+  overflow: hidden;
+}
+.btns-wrap .btn.pull-right {
+  margin-left: 10px;
+}
+
+.customers_list .btn {
+  display: block;
+}
+.customers_list .btn:hover {
+  background: #00aff0 !important;
+}
+.customers_list .btn span {
+  text-transform: capitalize;
+}
+
+.accordion .accordion-heading {
+  padding: 10px;
+  font-size: 14px;
+  border-bottom: 1px solid #f8f8f8;
+}
+
+.bootstrap .nav-tabs > li > a {
+  border-radius: 0px;
+}
+
+#one-click-orders .panel {
+  border-radius: 0px !important;
+}
+#one-click-orders .panel .panel-heading {
+  border-radius: 0px !important;
+}
+#one-click-orders .panel dl.dl-horizontal dt {
+  width: auto !important;
+  text-align: left;
+}
+#one-click-orders .panel dl.dl-horizontal dd {
+  width: auto !important;
+}
+
+#cart_summary {
+  border: 1px solid #eaedef;
+}
+
+.panel-content {
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+
+.panel-content .col-sm-6 .form-group,
+.panel-content .col-sm-12 .form-group {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+.create_address {
+  overflow: hidden;
+}
+
+.navbar-nav li a {
+  position: relative;
+  z-index: 1;
+}
+.navbar-nav li a:before {
+  content: '';
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  width: 20px;
+  height: 20px;
+  transform: rotate(45deg);
+  transition: .3s;
+  z-index: -1;
+}
+.navbar-nav li.active a {
+  background: none !important;
+}
+.navbar-nav li.new a:before {
+  background: #5bc0de;
+}
+.navbar-nav li.new.active a, .navbar-nav li.new:hover a {
+  border-color: #5bc0de;
+  color: #5bc0de !important;
+}
+.navbar-nav li.removed a:before {
+  background: #f0ad4e;
+}
+.navbar-nav li.removed.active a, .navbar-nav li.removed:hover a {
+  border-color: #f0ad4e;
+  color: #f0ad4e !important;
+}
+.navbar-nav li.created a:before {
+  background: #5cb85c;
+}
+.navbar-nav li.created.active a, .navbar-nav li.created:hover a {
+  border-color: #5cb85c;
+  color: #5cb85c !important;
+}
+
+#create_preorder, .show-new-orders {
+  display: block;
+  padding-bottom: 9px;
+  padding-top: 9px;
+  margin-bottom: 3px;
+  text-align: center;
+  color: #ffffff;
+}
+
+#create_preorder {
+  background: #5cb85c;
+}
+#create_preorder:hover, #create_preorder:active {
+  text-decoration: none;
+  background: #449d44;
+}
+
+.no-results {
+  display: block;
+  padding-bottom: 9px;
+  padding-top: 9px;
+  margin-bottom: 3px;
+  text-align: center;
+  color: #000;
+}
+
+input.datepicker.form-control.grey.hasDatepicker {
+  max-width: 200px !important;
+  display: inline-block !important;
+}
+
+#content.bootstrap .preorder_content > .panel .toggle-panel:hover,
+#content.bootstrap .preorder_content > form > .panel .toggle-panel:hover {
+  cursor: pointer;
+}
+#content.bootstrap .preorder_content > .panel > .panel-heading,
+#content.bootstrap .preorder_content > form > .panel > .panel-heading {
+  margin: -21px -21px 15px;
+  padding: 0 0 0 10px;
+  color: #FFF;
+  border: 0px;
+  background: #5bc0de;
+  overflow: hidden;
+  transition: .3s;
+}
+#content.bootstrap .preorder_content > .panel > .panel-heading .panel-title,
+#content.bootstrap .preorder_content > form > .panel > .panel-heading .panel-title {
+  float: left;
+}
+#content.bootstrap .preorder_content > .panel > .panel-heading .toggle-panel-btn,
+#content.bootstrap .preorder_content > form > .panel > .panel-heading .toggle-panel-btn {
+  display: block;
+  text-align: center;
+  float: right;
+  color: #FFF;
+  padding: 6px;
+}
+#content.bootstrap .preorder_content > .panel > .panel-heading .toggle-panel-btn i,
+#content.bootstrap .preorder_content > form > .panel > .panel-heading .toggle-panel-btn i {
+  font-size: 20px;
+}
+#content.bootstrap .preorder_content > .panel > .panel-heading .toggle-panel-btn:hover, #content.bootstrap .preorder_content > .panel > .panel-heading .toggle-panel-btn:active, #content.bootstrap .preorder_content > .panel > .panel-heading .toggle-panel-btn:focus,
+#content.bootstrap .preorder_content > form > .panel > .panel-heading .toggle-panel-btn:hover,
+#content.bootstrap .preorder_content > form > .panel > .panel-heading .toggle-panel-btn:active,
+#content.bootstrap .preorder_content > form > .panel > .panel-heading .toggle-panel-btn:focus {
+  outline: none;
+  text-decoration: none;
+}
+#content.bootstrap .preorder_content > .panel .panel-content,
+#content.bootstrap .preorder_content > form > .panel .panel-content {
+  margin-bottom: 0;
+}
+#content.bootstrap .preorder_content > .panel.closed,
+#content.bootstrap .preorder_content > form > .panel.closed {
+  padding-bottom: 0;
+}
+#content.bootstrap .preorder_content > .panel.closed > .panel-heading,
+#content.bootstrap .preorder_content > form > .panel.closed > .panel-heading {
+  transition: .3s;
+  border-radius: 5px;
+  margin-bottom: 0;
+}
+#content.bootstrap .preorder_content > .panel.success > .panel-heading,
+#content.bootstrap .preorder_content > form > .panel.success > .panel-heading {
+  background: #5cb85c;
+}
+#content.bootstrap .preorder_content > .panel.error > .panel-heading,
+#content.bootstrap .preorder_content > form > .panel.error > .panel-heading {
+  background: #d43f3a;
+}
+#content.bootstrap .preorder_content > .panel.warning > .panel-heading,
+#content.bootstrap .preorder_content > form > .panel.warning > .panel-heading {
+  background: #f0ad4e;
+}
+
+.customerCard .email {
+  display: inline-block;
+  padding-top: 7px;
+}
+
+.restore-order {
+  padding-right: 10px;
+}
+.restore-order i {
+  color: #FFF !important;
+}
+.restore-order:hover i {
+  color: rgba(255, 255, 255, 0.7) !important;
+}
+
+/*# sourceMappingURL=tmoneclickorder_admin.css.map */

@@ -1,0 +1,18 @@
+@import '../../../_theme_variables';
+
+#tags_blog_block_left {
+  .block_content {
+    a {
+      display: inline-block;
+      margin: 0 10px 5px 0;
+      font-weight: 400;
+      font-family: $font-family;
+      letter-spacing: 0;
+      text-transform: capitalize;
+
+      @media (min-width: $screen-lg-min) {
+        margin-right: 20px;
+      }
+    }
+  }
+}
