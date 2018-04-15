@@ -4216,3 +4216,13 @@ body #olark-wrapper {
 .homeslider-counter {
     display: none !important;
 }
+
+.button-container {
+    .btn-primary {
+        border-radius: 5px;
+        &::after {
+            background-color: #8b8a8e !important;
+            color: #f4d6d6 !important;
+        }
+    }
+}
