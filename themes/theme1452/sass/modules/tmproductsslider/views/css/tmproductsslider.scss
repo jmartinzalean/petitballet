@@ -3,7 +3,7 @@
 #tm-products-slider {
   width: 100%;
   clear: both;
-  font: normal 16px/29px 'Open Sans', sans-serif;
+  font: normal 16px/29px 'Poiret One', sans-serif;
 
   &.grid {
     margin-bottom: 0;
@@ -117,7 +117,7 @@
           h3 {
             margin: 0;
             font: 700 36px/#{(70/58)} $font-custom;
-            text-transform: uppercase;
+            /*text-transform: uppercase;*/
             letter-spacing: 0.02em;
 
             @media (min-width: $screen-lg-min) {
@@ -127,7 +127,8 @@
             a {
               font-family: $font-custom;
               color: $dark-text-color;
-
+              font-weight: normal;
+              font-size: 60px;
               &:hover {
                 color: lighten($dark-text-color, 20%);
               }
@@ -159,11 +160,13 @@
           }
           .product-price {
             margin-top: 27px;
-            font: 700 26px/#{(40/36)} $font-custom;
+            font: normal 26px/#{(40/36)} $font-custom;
             color: $primary-text-color;
+            font-size: 45px;
+            color: #8b8a8e;
 
             @media (min-width: $screen-md-min) {
-              font-size: 30px;
+              font-size: 45px;
             }
 
             &.product-price-reduction {
@@ -283,7 +286,7 @@
         color: $dark-text-color;
         transition: $base-transition;
 
-        @include addIcon('\f177');
+        @include addIcon('\f104');
       }
 
       &:hover {
@@ -301,7 +304,7 @@
         right: 5%;
       }
       &:before {
-        content: "\f178";
+        content: "\f105";
       }
     }
     .pagers {

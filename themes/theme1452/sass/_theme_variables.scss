@@ -44,7 +44,8 @@ $color-white: #fff;
 
 // ------- BORDERS ---------
 
-$base-border-color: darken(saturate(adjust_hue($color-box, 139.99999999999983), 5.263157894736871%), 6.470588235294116%);
+/*$base-border-color: darken(saturate(adjust_hue($color-box, 139.99999999999983), 5.263157894736871%), 6.470588235294116%);*/
+$base-border-color: #e4e1e1;
 $table-border-color: $base-border-color;
 $main_border: 1px solid $base-border-color;
 $dark-border-color: $color-dark;
