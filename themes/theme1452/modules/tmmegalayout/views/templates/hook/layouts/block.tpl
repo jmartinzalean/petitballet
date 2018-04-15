@@ -20,13 +20,6 @@
 *  @license   http://opensource.org/licenses/GPL-2.0 General Public License (GPL 2.0)
 *}
 
-{if $items.module_name == "logo"}
-  <div class="header_logo">
-    <a href="{if isset($force_ssl) && $force_ssl}{$base_dir_ssl|escape:'html':'UTF-8'}{else}{$base_dir|escape:'html':'UTF-8'}{/if}" title="{$shop_name|escape:'html':'UTF-8'}">
-      <img class="logo img-responsive" src="{$logo_url|escape:'html':'UTF-8'}" alt="{$shop_name|escape:'html':'UTF-8'}"{if isset($logo_image_width) && $logo_image_width} width="{$logo_image_width|escape:'html':'UTF-8'}"{/if}{if isset($logo_image_height) && $logo_image_height} height="{$logo_image_height|escape:'html':'UTF-8'}"{/if}/>
-    </a>
-  </div>
-{/if}
 {if $items.module_name == "copyright"}
   {if Configuration::get('FOOTER_POWEREDBY')}
     <div class="bottom-footer">
