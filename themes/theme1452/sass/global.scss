@@ -4139,3 +4139,34 @@ body #olark-wrapper {
     opacity: 1;
   }
 }
+
+
+/* Azertium */
+@media (min-width: 768px) {
+    header {
+        .stickUpTop {
+            .container {
+                .align-items-center {
+                    div.it_JUFUTMEEJXDH {
+                        display: none;
+                    }
+                    div.it_FLPNNGAEXEBZ {
+                        width: 50% !important;
+                        div.it_VJWGIZQQBZZO {
+                            margin-right: 0 !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .logo_petit {
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        display: block;
+        width: 250px;
+        top: -10px;
+    }
+}
