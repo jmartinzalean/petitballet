@@ -1,10 +1,1 @@
-/* line 2, ../../../../../../sass/modules/tmmegalayout/views/css/layouts/Home1.scss */
-.block .title_block, .block h4 {
-  margin-bottom: 30px;
-  font-weight: 400;
-}
-
-/* line 9, ../../../../../../sass/modules/tmmegalayout/views/css/layouts/Home1.scss */
-.homefeatured-wrap h4 + p {
-  display: none;
-}
+.block .title_block,.block h4{margin-bottom:30px;font-weight:400}.homefeatured-wrap h4+p{display:none}

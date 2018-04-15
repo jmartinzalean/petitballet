@@ -1,17 +1,1 @@
-@keyframes slideInLeft {
-  /* line 2, ../../../sass/animate/sliding_entrances/slideInLeft.scss */
-  0% {
-    transform: translate3d(-100%, 0, 0);
-    visibility: visible;
-  }
-
-  /* line 7, ../../../sass/animate/sliding_entrances/slideInLeft.scss */
-  100% {
-    transform: translate3d(0, 0, 0);
-  }
-}
-
-/* line 12, ../../../sass/animate/sliding_entrances/slideInLeft.scss */
-.slideInLeft {
-  animation-name: slideInLeft;
-}
+@keyframes slideInLeft{0%{transform:translate3d(-100%, 0, 0);visibility:visible}100%{transform:translate3d(0, 0, 0)}}.slideInLeft{animation-name:slideInLeft}

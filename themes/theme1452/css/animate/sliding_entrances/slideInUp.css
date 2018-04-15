@@ -1,18 +1,1 @@
-@keyframes slideInUp {
-  /* line 2, ../../../sass/animate/sliding_entrances/slideInUp.scss */
-  0% {
-    transform: translate3d(0, 50px, 0);
-    opacity: 0;
-  }
-
-  /* line 7, ../../../sass/animate/sliding_entrances/slideInUp.scss */
-  100% {
-    transform: translate3d(0, 0, 0);
-    opacity: 1;
-  }
-}
-
-/* line 13, ../../../sass/animate/sliding_entrances/slideInUp.scss */
-.slideInUp {
-  animation-name: slideInUp;
-}
+@keyframes slideInUp{0%{transform:translate3d(0, 50px, 0);opacity:0}100%{transform:translate3d(0, 0, 0);opacity:1}}.slideInUp{animation-name:slideInUp}

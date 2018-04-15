@@ -1,0 +1,13 @@
+
+[/{shop_url}] 
+
+Kaixo, 
+
+{shop_name} invites you to send this link to your friends, so they
+can see your wishlist: {wishlist}
+
+{message} [/{message}] 		 
+
+{shop_name} [/{shop_url}] PrestaShop(tm)
+[http://www.prestashop.com/]ekin sortua 
+
