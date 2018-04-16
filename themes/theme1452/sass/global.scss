@@ -771,7 +771,8 @@ select.form-control {
   display: inline-block;
   padding: 2px 10px 0;
   white-space: normal;
-  background: $color-succes;
+  /*background: $color-succes;*/
+  background: $color-base;
   color: $light-text-color;
   line-height: (27/14);
   font-family: $font-custom;
@@ -1077,7 +1078,7 @@ body {
   }
   .fancybox-wrap {
     @include popup-box-style;
-
+      background-color: $color-primary !important;
     @media (min-width: $screen-lg-min) {
       opacity: 0 !important;
 

@@ -86,7 +86,7 @@ $product-old-price-color: $base-body-color;
 
 @mixin price-large {
   font: $font-heading;
-  color: $dark-text-color;
+  color: $color-base;
 
   @media (min-width: 1600px) {
     font-size: 30px;

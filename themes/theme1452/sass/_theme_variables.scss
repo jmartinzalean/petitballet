@@ -75,7 +75,7 @@ $secondary-background-3: #2d2d2d;
 $base-body-color: $color-base;
 $base-text-color: darken($color-base, 10);
 $light-text-color: $color-light;
-$dark-text-color: $color-dark;
+$dark-text-color: $color-base;
 $primary-text-color: $color-primary;
 $secondary-text-color: darken(saturate(adjust_hue($color-box, 0), 0%), 56.8627450980392%);
 
