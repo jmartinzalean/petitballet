@@ -258,7 +258,8 @@ $btn-xl-size: $btn-lg-size * 1.1;
 }
 
 .btn-primary {
-  color: $light-text-color;
+  /*color: $light-text-color;*/
+  color: $color-base;
   border-color: $primary-border-color;
 
   &::after {

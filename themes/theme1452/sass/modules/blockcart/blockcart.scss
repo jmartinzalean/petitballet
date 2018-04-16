@@ -457,7 +457,7 @@
   > div {
     display: flex;
     flex-wrap: wrap;
-    background: $light-background;
+    background: $color-primary;
     box-shadow: $base-box-shadow;
 
     @media (min-width: $screen-sm-min) {
@@ -618,6 +618,16 @@
       flex-wrap: wrap;
       width: 100%;
       margin-top: 30px;
+        .btn-primary {
+            color: #fff;
+            &:hover {
+                color: $color-base !important;
+                border-color: $color-base !important;
+                &::after {
+
+                }
+            }
+        }
 
       @media (min-width: $screen-lg-min) {
         flex-wrap: nowrap;
