@@ -1,5 +1,6 @@
 {assign var='left_column_size' value=0}{assign var='right_column_size' value=0}
 {if isset($HOOK_LEFT_COLUMN) && $HOOK_LEFT_COLUMN|trim && !$hide_left_column}
+
 		{if $page_name =='module-smartblog-category' && $hide_right_column || $page_name =='module-smartblog-details' && $hide_right_column}
 				{$left_column_size=4}
 		{else}

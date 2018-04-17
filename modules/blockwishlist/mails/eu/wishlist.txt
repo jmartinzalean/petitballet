@@ -1,0 +1,13 @@
+
+[/{shop_url}] 
+
+Kaixo, 
+
+{firstname} {lastname} indicated you may want to see his/her
+wishlist: {wishlist}
+
+{wishlist} [/{message}] 		 
+
+{shop_name} [/{shop_url}] PrestaShop(tm)
+[http://www.prestashop.com/]ekin sortua 
+
