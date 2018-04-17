@@ -171,7 +171,7 @@
 							{/if}
 							<div class="thumb-info{if !$slide.image} without-image{/if}">
 								<p class="thumb-name">{$slide.info->name|escape:'htmlall':'UTF-8'}</p>
-								{if $slide.info->price && $slide.info->show_price && $settings.prices && !isset($restricted_country_mode) && !$PS_CATALOG_MODE}
+								{if !$slide.info->price && !$slide.info->show_price && !$settings.prices && isset($restricted_country_mode) && $PS_CATALOG_MODE}
 									<span class="thumb-price">{convertPrice price=$slide.info->price}</span>
 								{/if}
 							</div>
@@ -272,7 +272,7 @@
 									{/foreach}
 								</div>
 							{/if}
-							{if $slide.info->price && $slide.info->show_price && $settings.prices && !isset($restricted_country_mode) && !$PS_CATALOG_MODE}
+							{if !$slide.info->price && !$slide.info->show_price && !$settings.prices && isset($restricted_country_mode) && $PS_CATALOG_MODE}
 								<div class="product-price">
 									{if $slide.info->base_price && $slide.info->specificPrice}
 										<span class="product-price product-price-new">{convertPrice price=$slide.info->price}</span>
@@ -488,7 +488,7 @@
 							{/if}
 							<div class="thumb-info{if !$slide.image} without-image{/if}">
 								<p class="thumb-name">{$slide.info->name|escape:'htmlall':'UTF-8'}</p>
-								{if $slide.info->price && $slide.info->show_price && $settings.prices && !isset($restricted_country_mode) && !$PS_CATALOG_MODE}
+								{if !$slide.info->price && !$slide.info->show_price && !$settings.prices && isset($restricted_country_mode) && $PS_CATALOG_MODE}
 									<span class="thumb-price">{convertPrice price=$slide.info->price}</span>
 								{/if}
 							</div>
@@ -589,7 +589,7 @@
 									{/foreach}
 								</div>
 							{/if}
-							{if $slide.info->price && $slide.info->show_price && $settings.prices && !isset($restricted_country_mode) && !$PS_CATALOG_MODE}
+							{if !$slide.info->price && !$slide.info->show_price && !$settings.prices && isset($restricted_country_mode) && $PS_CATALOG_MODE}
 								<div class="product-price">
 									{if $slide.info->base_price && $slide.info->specificPrice}
 										<span class="product-price product-price-new">{convertPrice price=$slide.info->price}</span>
