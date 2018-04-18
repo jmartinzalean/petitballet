@@ -164,6 +164,7 @@
 		<div id="slider_container" style="width: {$settings.list_slider_width|escape:'htmlall':'UTF-8'}px;">
 			<div u="slides" class="main-slides" style="width: {$settings.list_slider_width|escape:'htmlall':'UTF-8'}px; height: {$settings.list_slider_height|escape:'htmlall':'UTF-8'}px;">
 				{foreach from=$slides item=slide}
+                                    {if $slide.info->category neq 'rosita-mauri'}
 					<div class="slide-inner">
 						<div u="thumb">
 							{if isset($slide.image) && $slide.image}
@@ -322,6 +323,7 @@
 							{/if}
 						</div>
 					</div>
+                                        {/if}
 				{/foreach}
 			</div>
 			{if ($settings.list_extended_settings && $settings.list_slider_navigation) || !$settings.list_extended_settings}
@@ -478,9 +480,10 @@
 </script>
 {if isset($slides) && $slides}
 	<div id="tm-products-slider-petit" class="{$settings.slider_type|escape:'htmlall':'UTF-8'}">
-		<div id="slider_container-petit" style="width: {$settings.list_slider_width|escape:'htmlall':'UTF-8'}px;">
+		<div id="slider_container-petit" style="width: {$settings.list_slider_width|escape:'htmlall':'UTF-8'}px;height:800px ">
 			<div u="slides" class="main-slides" style="width: {$settings.list_slider_width|escape:'htmlall':'UTF-8'}px; height: {$settings.list_slider_height|escape:'htmlall':'UTF-8'}px;">
 				{foreach from=$slides item=slide}
+                                    {if $slide.info->category eq 'rosita-mauri'}
 					<div class="slide-inner">
 						<div u="thumb">
 							{if isset($slide.image) && $slide.image}
@@ -493,51 +496,7 @@
 								{/if}
 							</div>
 						</div>
-						{if isset($slide.image) && $slide.image}
-							<div class="slide-image col-xs-4">
-								<div class="slide-image-wrap">
-									{if $slide.info->new && $settings.new_sale_labels}
-										<span class="new-box">
-                                        <span class="new-label">{l s='New' mod='tmproductsslider'}</span>
-                                    </span>
-									{/if}
-									{if $slide.info->on_sale && $settings.new_sale_labels}
-										<span class="sale-box no-print">
-                                        <span class="sale-label">{l s='Sale!' mod='tmproductsslider'}</span>
-                                    </span>
-									{/if}
-									{if $settings.list_extended_settings && $settings.list_images_gallery || !$settings.list_extended_settings}
-										{if isset($slide.images) && $slide.images}
-											<div id="inner-slider-{$slide.info->id|escape:'htmlall':'UTF-8'}" class="sliders-inner">
-												<div u="slides" class="inner-slides">
-													{foreach from=$slide.images item=img}
-														<div>
-															<img u="image" class="img-responsive" src="{$link->getImageLink($slide.info->name, $img.id_image, 'large_default')|escape:'htmlall':'UTF-8'}" alt="{$slide.info->name|escape:'htmlall':'UTF-8'}"/>
-															<img u="thumb" src="{$link->getImageLink($slide.info->name, $img.id_image, 'small_default')|escape:'htmlall':'UTF-8'}" alt="{$slide.info->name|escape:'htmlall':'UTF-8'}"/>
-														</div>
-													{/foreach}
-												</div>
-												<div u="thumbnavigator" class="inner-thumbnail-buttons">
-													<div u="slides">
-														<div u="prototype" class="p">
-															<div class=w>
-																<div u="thumbnailtemplate" class="t"></div>
-															</div>
-															<div class=c></div>
-														</div>
-													</div>
-												</div>
-											</div>
-										{/if}
-									{else}
-										<a class="slide-image" href="{$slide.info->getLink()|escape:'htmlall':'UTF-8'}" title="{$slide.info->name|escape:'htmlall':'UTF-8'}">
-											<img class="img-responsive" src="{$link->getImageLink($slide.info->name, $slide.image.id_image, 'large_default')|escape:'htmlall':'UTF-8'}" alt="{$slide.info->name|escape:'htmlall':'UTF-8'}"/>
-										</a>
-									{/if}
-								</div>
-							</div>
-						{/if}
-						<div class="slide-info {if ($settings.list_extended_settings && $settings.list_slider_thumbnails) || !$settings.list_extended_settings}col-xs-4{else}col-xs-8{/if}">
+                                                        						<div class="slide-info {if ($settings.list_extended_settings && $settings.list_slider_thumbnails) || !$settings.list_extended_settings}col-xs-4{else}col-xs-8{/if}">
 							{if $slide.info->online_only && $settings.online_only}
 								<p class="online_only">{l s='Online only' mod='tmproductsslider'}</p>
 							{/if}
@@ -638,7 +597,52 @@
 								</div>
 							{/if}
 						</div>
+						{if isset($slide.image) && $slide.image}
+							<div class="slide-image col-xs-4">
+								<div class="slide-image-wrap">
+									{if $slide.info->new && $settings.new_sale_labels}
+										<span class="new-box">
+                                        <span class="new-label">{l s='New' mod='tmproductsslider'}</span>
+                                    </span>
+									{/if}
+									{if $slide.info->on_sale && $settings.new_sale_labels}
+										<span class="sale-box no-print">
+                                        <span class="sale-label">{l s='Sale!' mod='tmproductsslider'}</span>
+                                    </span>
+									{/if}
+									{if $settings.list_extended_settings && $settings.list_images_gallery || !$settings.list_extended_settings}
+										{if isset($slide.images) && $slide.images}
+											<div id="inner-slider-{$slide.info->id|escape:'htmlall':'UTF-8'}" class="sliders-inner">
+												<div u="slides" class="inner-slides">
+													{foreach from=$slide.images item=img}
+														<div>
+															<img u="image" class="img-responsive" src="{$link->getImageLink($slide.info->name, $img.id_image, 'large_default')|escape:'htmlall':'UTF-8'}" alt="{$slide.info->name|escape:'htmlall':'UTF-8'}"/>
+															<img u="thumb" src="{$link->getImageLink($slide.info->name, $img.id_image, 'small_default')|escape:'htmlall':'UTF-8'}" alt="{$slide.info->name|escape:'htmlall':'UTF-8'}"/>
+														</div>
+													{/foreach}
+												</div>
+												<div u="thumbnavigator" class="inner-thumbnail-buttons">
+													<div u="slides">
+														<div u="prototype" class="p">
+															<div class=w>
+																<div u="thumbnailtemplate" class="t"></div>
+															</div>
+															<div class=c></div>
+														</div>
+													</div>
+												</div>
+											</div>
+										{/if}
+									{else}
+										<a class="slide-image" href="{$slide.info->getLink()|escape:'htmlall':'UTF-8'}" title="{$slide.info->name|escape:'htmlall':'UTF-8'}">
+											<img class="img-responsive" src="{$link->getImageLink($slide.info->name, $slide.image.id_image, 'large_default')|escape:'htmlall':'UTF-8'}" alt="{$slide.info->name|escape:'htmlall':'UTF-8'}"/>
+										</a>
+									{/if}
+								</div>
+							</div>
+						{/if}
 					</div>
+                                        {/if}
 				{/foreach}
 			</div>
 			{if ($settings.list_extended_settings && $settings.list_slider_navigation) || !$settings.list_extended_settings}

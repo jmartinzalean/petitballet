@@ -795,7 +795,6 @@ class TMProductsSlider extends Module
             $slides[$key]['image'] = $image->getCover($slide['id_product']);
             $slides[$key]['images'] = $product->getImages($this->context->language->id);
         }
-
         return $slides;
     }
 
