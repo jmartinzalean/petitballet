@@ -1,0 +1,10 @@
+
+[/{shop_url}] 
+
+Kaixo {name},
+
+Click here to view this item: {product} [/{product_link}] 
+
+{shop_name} [/{shop_url}] PrestaShop(tm)
+[http://www.prestashop.com/]ekin sortua 
+
