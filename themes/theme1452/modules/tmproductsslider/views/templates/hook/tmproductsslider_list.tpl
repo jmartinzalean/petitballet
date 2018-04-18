@@ -480,7 +480,7 @@
 </script>
 {if isset($slides) && $slides}
 	<div id="tm-products-slider-petit" class="{$settings.slider_type|escape:'htmlall':'UTF-8'}">
-		<div id="slider_container-petit" style="width: {$settings.list_slider_width|escape:'htmlall':'UTF-8'}px;">
+		<div id="slider_container-petit" style="width: {$settings.list_slider_width|escape:'htmlall':'UTF-8'}px;height:800px ">
 			<div u="slides" class="main-slides" style="width: {$settings.list_slider_width|escape:'htmlall':'UTF-8'}px; height: {$settings.list_slider_height|escape:'htmlall':'UTF-8'}px;">
 				{foreach from=$slides item=slide}
                                     {if $slide.info->category eq 'rosita-mauri'}
