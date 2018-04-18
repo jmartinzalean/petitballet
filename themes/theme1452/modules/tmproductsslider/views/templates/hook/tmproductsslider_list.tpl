@@ -164,6 +164,7 @@
 		<div id="slider_container" style="width: {$settings.list_slider_width|escape:'htmlall':'UTF-8'}px;">
 			<div u="slides" class="main-slides" style="width: {$settings.list_slider_width|escape:'htmlall':'UTF-8'}px; height: {$settings.list_slider_height|escape:'htmlall':'UTF-8'}px;">
 				{foreach from=$slides item=slide}
+                                    {if $slide.info->category neq 'rosita-mauri'}
 					<div class="slide-inner">
 						<div u="thumb">
 							{if isset($slide.image) && $slide.image}
@@ -322,6 +323,7 @@
 							{/if}
 						</div>
 					</div>
+                                        {/if}
 				{/foreach}
 			</div>
 			{if ($settings.list_extended_settings && $settings.list_slider_navigation) || !$settings.list_extended_settings}
@@ -481,6 +483,7 @@
 		<div id="slider_container-petit" style="width: {$settings.list_slider_width|escape:'htmlall':'UTF-8'}px;">
 			<div u="slides" class="main-slides" style="width: {$settings.list_slider_width|escape:'htmlall':'UTF-8'}px; height: {$settings.list_slider_height|escape:'htmlall':'UTF-8'}px;">
 				{foreach from=$slides item=slide}
+                                    {if $slide.info->category eq 'rosita-mauri'}
 					<div class="slide-inner">
 						<div u="thumb">
 							{if isset($slide.image) && $slide.image}
@@ -639,6 +642,7 @@
 							</div>
 						{/if}
 					</div>
+                                        {/if}
 				{/foreach}
 			</div>
 			{if ($settings.list_extended_settings && $settings.list_slider_navigation) || !$settings.list_extended_settings}
