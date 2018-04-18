@@ -1,6 +1,6 @@
 @import "../../../../_theme_variables";
 
-#tm-products-slider {
+#tm-products-slider, #tm-products-slider-petit {
   width: 100%;
   clear: both;
   font: normal 16px/29px 'Poiret One', sans-serif;
@@ -19,8 +19,20 @@
       }
     }
   }
-
-  #slider_container {
+  #slider_container-petit {
+        .slide-inner { 
+            display: flex;
+            justify-content: flex-end;
+            .slide-info {
+                text-align: right;
+            }
+        }
+        .thumbnail-buttons {
+            right: auto;
+            left: 20px;
+        }
+  }
+  #slider_container, #slider_container-petit {
     position: relative;
     margin: 0 auto;
     top: 0;
@@ -95,7 +107,7 @@
           padding: 0;
 
           @media (min-width: $screen-lg-min) {
-            opacity: 0;
+            opacity: 1;
           }
 
           &.animate {
