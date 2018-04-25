@@ -4155,6 +4155,7 @@ body #olark-wrapper {
                         display: none;
                     }
                     div.it_FLPNNGAEXEBZ {
+                        margin-top: 3vw;
                         width: 50% !important;
                         div.it_VJWGIZQQBZZO {
                             margin-right: 0 !important;
@@ -4162,6 +4163,9 @@ body #olark-wrapper {
                     }
                 }
             }
+        }
+        div.it_VKUGKERRLSOS {
+            margin-top: 3vw;
         }
     }
     .logo_petit {
@@ -4171,7 +4175,7 @@ body #olark-wrapper {
         margin: 0 auto;
         display: block;
         width: 250px;
-        top: -10px;
+        top: -1.6vw;
     }
 }
 @media (max-width: 1200px) {
@@ -4185,6 +4189,7 @@ body #olark-wrapper {
         width: 180px;
         right: 50%;
         left: -60%;
+        top: -1vw;
     }
 }
 @media (max-width: 767px) {
