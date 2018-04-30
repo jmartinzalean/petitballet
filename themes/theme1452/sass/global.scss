@@ -744,7 +744,7 @@ a {
   }
 
   &:not([type=file]) {
-    box-shadow: inset 0 -2px 0 currentColor;
+    box-shadow: inset 0 -2px 0 $color-base;
     background-position: right -35px top 50%;
     transition: box-shadow .3s $custom-timing-function, color .2s ease-in, padding .2s ease-in, background .3s $custom-timing-function;
 
@@ -752,7 +752,7 @@ a {
 
     &:active,
     &:focus {
-      box-shadow: inset 0 -6px 0 currentColor;
+      box-shadow: inset 0 -6px 0 $color-base;
     }
   }
 
