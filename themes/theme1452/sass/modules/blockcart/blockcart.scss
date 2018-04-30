@@ -117,7 +117,8 @@
       line-height: 15px;
       text-align: center;
       transition: $base-transition;
-
+      top: 0;
+      right: -10px;
       .isStuck & {
         top: -8px;
         right: -3px;
@@ -126,10 +127,8 @@
       .with-out-icon & {
         display: inline-block !important;
       }
-
-      @media (min-width: $screen-lg-min) {
-        top: -15px;
-        right: -10px;
+      @media (max-width: 550px) {
+          right: 0;
       }
     }
 
