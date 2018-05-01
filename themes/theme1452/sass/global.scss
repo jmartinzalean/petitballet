@@ -4205,7 +4205,7 @@ body #olark-wrapper {
 .row.it_DQFFESZRHBTA {
     display: none !important;
 }
-.row.it_BYRRSCYOJMCX,
+/*.row.it_BYRRSCYOJMCX,
 .row.it_FJGMZOIQTNQE,
 .row.it_NZPZFLLYATEI,
 .wrapper.it_TAKMJNMTXFGB,
@@ -4215,7 +4215,13 @@ body #olark-wrapper {
 }
 .it_TLTETPCRPGEH {
     div#homepage-slider {
-        /*margin-bottom: 0;*/
+        margin-bottom: 0;
+    }
+}*/
+.it_UOTHMTTHNFYC .module {
+    margin-bottom: 30px;
+    &:first-child {
+        margin-bottom: 0;
     }
 }
 
