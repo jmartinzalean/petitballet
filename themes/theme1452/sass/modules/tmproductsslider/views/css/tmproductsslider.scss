@@ -1,9 +1,10 @@
 @import "../../../../_theme_variables";
 
 #tm-products-slider, #tm-products-slider-petit {
+    margin-bottom: 30px;
   width: 100%;
   clear: both;
-  font: normal 16px/29px 'Poiret One', sans-serif;
+  font: normal 16px/29px 'Museo', sans-serif;
 
   &.grid {
     margin-bottom: 0;
@@ -20,7 +21,7 @@
     }
   }
   #slider_container-petit {
-        .slide-inner { 
+        .slide-inner {
             display: flex;
             justify-content: flex-end;
             .slide-info {
@@ -30,6 +31,8 @@
         .thumbnail-buttons {
             right: auto;
             left: 20px;
+            top: 0;
+            position: absolute;
         }
   }
   #slider_container, #slider_container-petit {
@@ -366,7 +369,7 @@
     .thumbnail-buttons {
       width: 100%;
       height: 250px;
-      position: relative;
+      position: absolute;
       margin-top: -35px;
       cursor: move;
 

@@ -425,6 +425,12 @@ ul.product_list.grid {
       display: flex;
       flex-direction: column;
       transition: all .3s 0.2s $custom-timing-function;
+      .btn-primary {
+          color: $color-light;
+          &:hover {
+              color: #fff;
+          }
+      }
 
       @media (min-width: $screen-lg-min) {
         opacity: 0;

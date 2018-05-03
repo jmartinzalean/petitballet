@@ -102,19 +102,23 @@
       padding-right: 5px;
     }
     .ajax_cart_quantity {
-      display: none !important;
-      min-width: 25px;
+      /*display: none !important;*/
+      position: absolute;
+      /*min-width: 25px;*/
+      min-width: 15px;
       margin-top: -3px;
       margin-left: 3px;
       padding: 3px 7px;
       border-radius: 50%;
-      background-color: $dark-background;
+      background-color: $color-base;
       color: $light-text-color;
       font-size: 13px;
-      line-height: 22px;
+      /*line-height: 22px;*/
+      line-height: 15px;
       text-align: center;
       transition: $base-transition;
-
+      top: 0;
+      right: -10px;
       .isStuck & {
         top: -8px;
         right: -3px;
@@ -123,10 +127,8 @@
       .with-out-icon & {
         display: inline-block !important;
       }
-
-      @media (min-width: $screen-lg-min) {
-        top: -15px;
-        right: -10px;
+      @media (max-width: 550px) {
+          right: 0;
       }
     }
 
@@ -135,7 +137,10 @@
       transition: $base-transition;
 
       @extend %icon-sm;
-      @include addIconCustom('\e04f');
+      /*@include addIconCustom('\e04f');*/
+        content: url('../../../fonts/bag.png');
+        margin-top: 4px;
+        display: inline-block;
 
       @media (min-width: $screen-sm-min) {
         .block-cart-secondary & {
@@ -155,6 +160,9 @@
     }
     &:hover, &:focus {
       color: $primary-text-color;
+        &::before {
+            content: url(../../../fonts/bag_h.png);
+        }
 
       .ajax_cart_quantity {
         color: $light-text-color;
