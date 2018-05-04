@@ -1,4 +1,5 @@
 <div class="tm-search-wrap">
+	<button class="tm-search-toggle"></button>
 	<div class="tmsearch-canvas">
 		<div id="tmsearch">
 			<span class="tmsearch-close-btn"></span>
