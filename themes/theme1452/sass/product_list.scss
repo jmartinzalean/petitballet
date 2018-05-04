@@ -841,6 +841,11 @@ ul.product_list.list {
         margin-bottom: 15px;
       }
     }
+    .button-container {
+      .btn-primary {
+        color: $color-light;
+      }
+    }
 
     .functional-buttons {
       > div {

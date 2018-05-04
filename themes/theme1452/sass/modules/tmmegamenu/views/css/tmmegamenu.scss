@@ -110,6 +110,7 @@ $mega-menu-bg: $secondary-background;
         letter-spacing: 0.06em;
         font: $menu-main-font;
         transition: $base-transition;
+        font-weight: normal;
 
         .bg-dark & {
           @media (min-width: $screen-md-min) {
