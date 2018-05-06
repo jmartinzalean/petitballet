@@ -4250,3 +4250,16 @@ body #olark-wrapper {
     }
   }
 }
+
+// Cookies
+div#cookieNoticeContent {
+    table td {
+        vertical-align: middle;
+    }
+}
+span.closeButtonNormal {
+    text-transform: uppercase;
+    background: $color-primary;
+    color: $color-dark;
+    padding: 10px;
+}
