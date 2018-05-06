@@ -39,12 +39,13 @@
                     <fieldset>
                         <div class="clearfix">
                             <div class="form-group">
-                                <button type="submit" class="btn btn-primary float-xs-right bonnewsletter_send">
-                                    <span>{l s='Subscribe' mod='bonnewsletter'}</span>
-                                </button>
                                 <div class="input-wrapper">
                                     <input class="form-control bon_newsletter_email" type="text" id="bon_newsletter_email" name="bon_newsletter_email" placeholder="{l s='Your email address' mod='bonnewsletter'}" value="">
                                 </div>
+                                <button type="submit" class="btn btn-primary float-xs-right bonnewsletter_send">
+                                    {*<span>{l s='Subscribe' mod='bonnewsletter'}</span>*}
+                                    <span></span>
+                                </button>
                             </div>
                             <p class="bon_newsletter_errors alert alert-danger"></p>
                             <p class="bon_newsletter_success alert alert-success"></p>
