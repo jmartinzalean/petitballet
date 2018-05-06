@@ -46,7 +46,7 @@ class BlockLanguages extends Module
 
 	public function install()
 	{
-		return (parent::install() && $this->registerHook('displayNav') && $this->registerHook('displayHeader'));
+		return (parent::install() && $this->registerHook('displayNav') && $this->registerHook('displayHeader') && $this->registerHook('displayFooter'));
 	}
 
 	protected function _prepareHook($params)
@@ -105,6 +105,11 @@ class BlockLanguages extends Module
 	public function hookDisplayNav($params)
 	{
 
+		return $this->hookDisplayTop($params);
+	}
+        
+        public function hookDisplayFooter($params)
+	{
 		return $this->hookDisplayTop($params);
 	}
 
