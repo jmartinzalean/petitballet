@@ -29,15 +29,15 @@
 }
 
 .tmsearch-canvas {
-  z-index: 5;
-  position: fixed;
+  z-index: 99999999;
   top: 0;
   right: 0;
-  display: flex;
+  display: none;
   max-height: 400px;
   width: 100vw;
   height: 50vw;
-  background-color: rgba($dark-background, 0.9);
+  //background-color: rgba($dark-background, 0.9);
+  background-color: $color-base;
   opacity: 0;
   transition: $base-transition;
   transform: translateY(-100%);
@@ -47,8 +47,9 @@
 
   &.active-search {
     opacity: 1;
+    display: flex;
     transform: translateY(0);
-
+    transition: $base-transition;
     #tmsearch {
       animation: fadeInDown 0.5s 0.2s $custom-timing-function both;
     }
@@ -98,7 +99,8 @@
     padding-right: 50px;
     padding-left: 50px;
     border-radius: $border-radius-base;
-    background: $light-background;
+    //background: $light-background;
+    background: #fff;
 
     @media (min-width: $screen-md-min) {
       padding-left: 190px;
@@ -147,7 +149,8 @@
     top: 5px;
     left: 5px;
     height: $selector-height;
-    background: $light-background;
+    //background: $light-background;
+    background: #fff;
 
     span {
       height: $selector-height;
@@ -156,7 +159,8 @@
       &::after {
         height: $selector-height - 2;
         border: none;
-        background: $light-background;
+        //background: $light-background;
+        background: #fff  ;
         line-height: $selector-height - 2;
 
         @include addIcon('\f107');
@@ -206,7 +210,7 @@
   }
 
   #tmsearch_result {
-    z-index: 5;
+    z-index: 999999;
     position: absolute;
     top: calc(100% + 10px);
     right: 0;

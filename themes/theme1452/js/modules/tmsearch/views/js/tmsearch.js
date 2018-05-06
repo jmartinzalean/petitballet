@@ -468,14 +468,21 @@ $(document).ready(function () {
  */
 function tmSearchToggle() {
   $(document).on("click", '.tm-search-toggle', function () {
-    $(this).next(".tmsearch-canvas").toggleClass("active-search");
+    //$(this).next(".tmsearch-canvas").toggleClass("active-search");
+    $('.tmsearch-canvas').toggleClass("active-search");
     $(this).toggleClass("active")
     $("#tm_search_query").trigger("focus");
-  }).on('scroll.tmsearch', function () {
-    if ($('#tmsearch_result').length == 0) $(document).trigger('mouseup');
   });
 
-  $(document).mouseup(function (e) {
+  $(document).on('click', '.tmsearch-close-btn', function() {
+      $('.tmsearch-canvas').removeClass("active-search");
+      $('.tm-search-toggle').removeClass('active');
+  });
+     /* .on('scroll.tmsearch', function () {
+    if ($('#tmsearch_result').length == 0) $(document).trigger('mouseup');
+  });*/
+
+  /*$(document).mouseup(function (e) {
     var container = $('.tmsearch-canvas'),
       targetClassName = typeof $(e.target).attr('class') !== 'undefined' ? $(e.target).attr('class') : '';
 
@@ -484,7 +491,7 @@ function tmSearchToggle() {
       $('.tmsearch-canvas').removeClass("active-search");
       $('.tm-search-toggle').removeClass('active');
     }
-  });
+  });*/
 
 
 }
