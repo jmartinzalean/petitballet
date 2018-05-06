@@ -23,11 +23,13 @@
 
 {if $items && isset($items)}
     <div  class="bon-newsletter" style="max-width: {$width|escape:'html':'UTF-8'}px; height: {$height|escape:'html':'UTF-8'}px;">
-        <div class="image-newsletter col-md-6 hidden-sm hidden-xs">
+        {*<div class="image-newsletter col-md-6 hidden-sm hidden-xs">
             <img src="{$image_baseurl|escape:'htmlall':'UTF-8'}{$items[0].image|escape:'htmlall':'UTF-8'}" alt="{l s='Newsletter' mod='bonnewsletter'}">
-        </div>
-        <div class="col-md-6 col-sm-12 col-xs-12 box-newsletter" style="height: {$height|escape:'html':'UTF-8'}px;">
+        </div>*}
+        <div class="col-md-12 col-sm-12 col-xs-12 box-newsletter" style="height: {$height|escape:'html':'UTF-8'}px;">
             <div class="innerbox-newsletter">
+                <img class="logo_popup" src="{$image_baseurl|escape:'htmlall':'UTF-8'}{$items[0].image|escape:'htmlall':'UTF-8'}"
+                     alt="{l s='Newsletter' mod='bonnewsletter'}">
                 {if $items[0].description && isset($items[0].description)}
                     <div class="newsletter-content">
                         {$items[0].description nofilter}
@@ -37,12 +39,13 @@
                     <fieldset>
                         <div class="clearfix">
                             <div class="form-group">
-                                <button type="submit" class="btn btn-primary float-xs-right bonnewsletter_send">
-                                    <span>{l s='Subscribe' mod='bonnewsletter'}</span>
-                                </button>
                                 <div class="input-wrapper">
                                     <input class="form-control bon_newsletter_email" type="text" id="bon_newsletter_email" name="bon_newsletter_email" placeholder="{l s='Your email address' mod='bonnewsletter'}" value="">
                                 </div>
+                                <button type="submit" class="btn btn-primary float-xs-right bonnewsletter_send">
+                                    {*<span>{l s='Subscribe' mod='bonnewsletter'}</span>*}
+                                    <span></span>
+                                </button>
                             </div>
                             <p class="bon_newsletter_errors alert alert-danger"></p>
                             <p class="bon_newsletter_success alert alert-success"></p>
