@@ -23,11 +23,13 @@
 
 {if $items && isset($items)}
     <div  class="bon-newsletter" style="max-width: {$width|escape:'html':'UTF-8'}px; height: {$height|escape:'html':'UTF-8'}px;">
-        <div class="image-newsletter col-md-6 hidden-sm hidden-xs">
+        {*<div class="image-newsletter col-md-6 hidden-sm hidden-xs">
             <img src="{$image_baseurl|escape:'htmlall':'UTF-8'}{$items[0].image|escape:'htmlall':'UTF-8'}" alt="{l s='Newsletter' mod='bonnewsletter'}">
-        </div>
-        <div class="col-md-6 col-sm-12 col-xs-12 box-newsletter" style="height: {$height|escape:'html':'UTF-8'}px;">
+        </div>*}
+        <div class="col-md-12 col-sm-12 col-xs-12 box-newsletter" style="height: {$height|escape:'html':'UTF-8'}px;">
             <div class="innerbox-newsletter">
+                <img class="logo_popup" src="{$image_baseurl|escape:'htmlall':'UTF-8'}{$items[0].image|escape:'htmlall':'UTF-8'}"
+                     alt="{l s='Newsletter' mod='bonnewsletter'}">
                 {if $items[0].description && isset($items[0].description)}
                     <div class="newsletter-content">
                         {$items[0].description nofilter}
