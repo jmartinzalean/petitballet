@@ -8,3 +8,251 @@ and open the template in the editor.
     Author     : juanantonio
 */
 
+.bon-newsletter {
+    display: none;
+    background-size: cover;
+    /*background-color: #fff;*/
+    background-color: transparent;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    padding: 0;
+    top: 50%;
+    left: 50%;
+    margin: 0 auto;
+    min-width: 290px;
+    width: 90%;
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    .image-newsletter,
+    .box-newsletter {
+        padding: 0;
+        text-align: center;
+    }
+    .bon-newsletter-dont:hover {
+        color: #333!important;
+    }
+    .box-newsletter {
+        .innerbox-newsletter {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            -moz-transform: translate(-50%, -50%);
+            -webkit-transform: translate(-50%, -50%);
+            width: 100%;
+            padding: 0 37px;
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+        }
+    }
+    .bon-newsletter-close {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 45px;
+        height: 45px;
+        cursor: pointer;
+        color: #fff;
+        z-index: 2;
+        background: #252525;
+        text-align: center;
+        -moz-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        -webkit-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+        &:hover{
+            background: #dc2f47;
+        }
+        &:before {
+            content: "✖";
+            display: block;
+            font-size: 22px;
+            line-height: 43px;
+        }
+    }
+    .bon-newsletter-dont {
+        position: absolute;
+        right: 12px;
+        bottom: 12px;
+        -moz-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        -webkit-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+    }
+}
+.newsletter-content {
+    h2 {
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+    p {
+        margin-bottom: 25px;
+        font-size: 14px;
+    }
+}
+
+img.logo_popup {
+    width: auto;
+    margin: 0 auto 2vw auto;
+}
+
+.innerbox-newsletter {
+    height: 100%;
+    padding: 3vw !important;
+}
+
+.bon-newsletter-link {
+    display: block;
+}
+
+.bon_newsletter_email.act {
+    border: 1px solid red;
+}
+
+.bon-newsletter .input-wrapper {
+    overflow: hidden;
+    display: inline-block;
+    width: 90%;
+}
+.bon-newsletter .image-newsletter img{
+    width: 100%;
+}
+@media (max-width: 991px) {
+    .bon-newsletter .box-newsletter,
+    .bon-newsletter {
+        min-height: 400px!important;
+        height: 400px!important;
+    }
+    .bon-newsletter .image-newsletter {
+        display: none!important;
+    }
+    .box-newsletter {
+        width: 100%;
+    }
+}
+
+.innerbox-newsletter {
+    .bonnewsletter_form {
+        .form-group {
+            .form-control {
+                background-color: #f4d6d6 !important;
+                color: #595959 !important;
+                border-radius: 5px 0 0 5px;
+                font-size: 14px !important;
+                padding: 15px 10px !important;
+                height: 42px !important;
+                margin-right: 0 !important;
+                box-shadow: none !important;
+            }
+            .btn {
+                min-width: 50px !important;
+                padding: 0;
+                height: 42px;
+                border-radius: 0 5px 5px 0;
+                display: inline-block;
+                vertical-align: top;
+                margin-left: -0.5vw;
+                &:hover {
+                    margin-left: -0.5vw;
+                }
+                &:after {
+                    background-color: #e2b3c1;
+                    border-radius: 0 5px 5px 0;
+                    width: 54px;
+                    height: 42px;
+                }
+                span {
+                    padding-right: 0;
+                    &:before {
+                        transition: all 0.3s ease-in-out;
+                        font-family: "fl-outicons";
+                        content: '\e034';
+                        display: inline-block;
+                        font-weight: normal;
+                        width: 50px;
+                    }
+                    &:after {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
+.bon-newsletter .bon-newsletter-dont {
+    color: #fff;
+}
+
+.bon-newsletter .bon-newsletter-close {
+    background-color: transparent;
+}
+.bon-newsletter .bon-newsletter-close:hover {
+    background-color: transparent;
+    cursor: pointer;
+}
+
+
+
+.innerbox-newsletter .bonnewsletter_form .form-group .form-control {
+    background-color: #f4d6d6 !important;
+    color: #595959 !important;
+    border-radius: 5px 0 0 5px;
+    font-size: 14px !important;
+    padding: 15px 10px !important;
+    height: 42px !important;
+    margin-right: 0 !important;
+    box-shadow: none !important;
+}
+
+.innerbox-newsletter .bonnewsletter_form .form-group .btn {
+    min-width: 50px !important;
+    padding: 0;
+    height: 42px;
+    border-radius: 0 5px 5px 0;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: -0.5vw;
+}
+.innerbox-newsletter .bonnewsletter_form .form-group .btn:hover {
+    margin-left: -0.5vw;
+}
+.innerbox-newsletter .bonnewsletter_form .form-group .btn span {
+    padding-right: 0;
+}
+.innerbox-newsletter .bonnewsletter_form .form-group .btn span:before {
+    transition: all 0.3s ease-in-out;
+    font-family: "fl-outicons";
+    content: '\e034';
+    display: inline-block;
+    font-weight: normal;
+    width: 50px;
+}
+
+.innerbox-newsletter .bonnewsletter_form .form-group .btn span:after {
+    display: none;
+}
+.innerbox-newsletter .bonnewsletter_form .form-group .btn:after {
+    background-color: #e2b3c1;
+    border-radius: 0 5px 5px 0;
+    width: 54px;
+    height: 42px;
+}
+
+.bon-newsletter .bon-newsletter-dont {
+    color: #fff;
+}
+
+.bon-newsletter .bon-newsletter-close {
+    background-color: transparent !important;
+}
+.bon-newsletter .bon-newsletter-close:hover {
+    background-color: transparent !important;
+    cursor: pointer;
+}
