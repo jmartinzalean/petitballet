@@ -4202,13 +4202,16 @@ body #olark-wrapper {
         margin: 0 auto;
         display: block;
         width: 250px;
-        top: -1.6vw;
+        top: 0vw;
+    }
+    .stickUpTop.isStuck .logo_petit {
+        top: 1vw !important;
     }
 }
 @media (max-width: 1200px) {
     .stickUpTop.isStuck .logo_petit {
-        width: 120px !important;
-        top: 3px;
+        width: 180px !important;
+        top: 1vw !important;
     }
 }
 @media (max-width: 992px) {
@@ -4216,15 +4219,18 @@ body #olark-wrapper {
         width: 180px;
         right: 50%;
         left: -60%;
-        top: -1vw;
+        top: 1.2vw;
     }
 }
 @media (max-width: 767px) {
+    .stickUpTop.isStuck .logo_petit {
+        top: 2vw !important;
+    }
     .logo_petit {
         width: 180px;
         left: -90%;
         right: 30%;
-        top: 0;
+        top: 1.7vw;
         position: absolute;
     }
 }

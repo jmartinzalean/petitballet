@@ -1,1 +1,686 @@
-﻿.daydeal-box.products_block>div>span{display:flex;flex-direction:column;justify-content:center;width:40px;height:30px;background:#dedede;border:2px solid #e4e1e1;font:400 7px/1.2 "Museo",sans-serif;color:#ff514d;text-transform:uppercase}@media (min-width: 480px){.daydeal-box.products_block>div>span{width:50px;height:50px}}@media (min-width: 480px){.daydeal-box.products_block>div>span{font-size:8px}}@media (min-width: 768px){.daydeal-box.products_block>div>span{width:35px;height:35px;font-size:6px}}@media (min-width: 992px){.daydeal-box.products_block>div>span{width:3.49vw;height:3.49vw;font-size:0.57vw}}.daydeal-box.products_block>div>span:not(:last-child){border-bottom:none}.daydeal-box.products_block>div>span>span{font-weight:700}@media (min-width: 768px){.daydeal-box.products_block>div>span>span{font-size:15px}}@media (min-width: 992px){.daydeal-box.products_block>div>span>span{font-size:1.56vw}}#daydeal-products{margin-top:0;margin-bottom:0}@media (min-width: 720px) and (max-width: 991px){#daydeal-products .ajax_add_to_cart_button span{display:inline-block;width:100%;line-height:1;vertical-align:middle;overflow:hidden;text-overflow:ellipsis}}@media only screen and (max-width: 479px){#daydeal-products .ajax_add_to_cart_button{width:100%}#daydeal-products .ajax_add_to_cart_button::before{position:static;border:none;font-size:16px;line-height:1.4;opacity:1;transform:none;font-family:"fl-outicons";content:"";display:inline-block;font-weight:normal}#daydeal-products .ajax_add_to_cart_button span{display:none}#daydeal-products .ajax_add_to_cart_button.customize::before{content:'\e024'}}#daydeal-products .title_block{padding:0}@media only screen and (max-width: 479px){#daydeal-products .title_block{margin-bottom:25px}}#daydeal-products .title_block:after{display:none}#daydeal-products .block_content{margin-bottom:0}#daydeal-products .label-daydeal{position:absolute;right:5px;top:5px;display:inline-block;padding:5px 12px;background:#FF0}#daydeal-products .products>li{margin-top:0}@media (min-width: 720px){#daydeal-products .products>li{display:flex}}#daydeal-products .products .left-block{background:#fff}@media (min-width: 720px){#daydeal-products .products .left-block{width:47.5%}}#daydeal-products .products .left-block .product_img_link{position:relative;display:block;overflow:hidden;position:relative;display:block;background:#f4f4f4}#daydeal-products .products .left-block .product_img_link img{-webkit-transition:0.7s all ease;-khtml-transition:0.7s all ease;-moz-transition:0.7s all ease;-ms-transition:0.7s all ease;-o-transition:0.7s all ease;transition:0.7s all ease}#daydeal-products .products .right-block{padding:10px 0}@media (min-width: 720px){#daydeal-products .products .right-block{width:52.5%;padding:20px;display:flex;flex-direction:column;justify-content:space-between;border-left:none}}@media (max-width: 479px){#daydeal-products .products .right-block{border-top:none}}@media (min-width: 1800px){#daydeal-products .products .right-block{padding:38px}}#daydeal-products .products h5{margin:0}#daydeal-products .products .product-name{color:#595959}@media (min-width: 992px){#daydeal-products .products .product-name{font-size:16px}}#daydeal-products .products .product-name:hover{color:#595959}#daydeal-products .products .product-description{display:none;line-height:1.5;margin:10px 0 0}.small-items #daydeal-products .products .product-description{display:none}@media (min-width: 480px){#daydeal-products .products .product-description{display:block}}@media (min-width: 1200px){#daydeal-products .products .product-description{margin-top:20px}}@media (min-width: 1200px){#daydeal-products .products .product-description{font-size:16px}}#daydeal-products .products .product-description+div{margin-top:20px}@media (min-width: 1200px){#daydeal-products .products .product-description+div{margin-top:2.34vw}}#daydeal-products .products .hook-reviews{margin-top:6px}@media (max-width: 767px){#daydeal-products .products .hook-reviews{display:none}}#daydeal-products .products .comments_note .star_content{display:inline-block;vertical-align:top}#daydeal-products .products .comments_note .nb-comments{display:inline-block;vertical-align:top;font-size:12px;letter-spacing:0.06em;text-transform:uppercase;padding-top:3px}#daydeal-products .products .daydeal-box{position:absolute;width:100%;top:45px;left:5px;display:block;text-align:center;margin-bottom:0}@media (min-width: 480px){#daydeal-products .products .daydeal-box{top:auto;bottom:10px}}@media (min-width: 480px){#daydeal-products .products .daydeal-box{left:0;bottom:10%}}@media (min-width: 1200px){#daydeal-products .products .daydeal-box{bottom:20px}}@media (min-width: 480px){#daydeal-products .products .daydeal-box>div{display:flex;justify-content:center}}@media (min-width: 480px){#daydeal-products .products .daydeal-box>div>span{border:2px solid #e4e1e1}#daydeal-products .products .daydeal-box>div>span:not(:last-child){border-right:none}}#daydeal-products .products .price-content{margin-top:10px}@media (min-width: 1600px){#daydeal-products .products .price-content{margin-top:16px}}#daydeal-products .products .price,#daydeal-products .products .old-price,#daydeal-products .products .price-percent-reduction{letter-spacing:0}@media (min-width: 992px){#daydeal-products .products .price,#daydeal-products .products .old-price,#daydeal-products .products .price-percent-reduction{font-size:24px}}@media (min-width: 1600px){#daydeal-products .products .price,#daydeal-products .products .old-price,#daydeal-products .products .price-percent-reduction{font-size:30px}}@media (min-width: 992px) and (max-width: 1199px){#daydeal-products .products .price,#daydeal-products .products .old-price,#daydeal-products .products .price-percent-reduction{font-size:18px}}#daydeal-products .products .old-price{margin-left:10px}@media (min-width: 992px){#daydeal-products .products .old-price{font-size:16px}}@media (min-width: 1600px){#daydeal-products .products .old-price{font-size:20px}}#daydeal-products .products .price-percent-reduction{margin-left:5px}#daydeal-products .products *+h5{margin-top:13px}@media (min-width: 992px) and (max-width: 1199px){#daydeal-products .products *+h5{margin-top:7px}}@media (min-width: 1200px){#daydeal-products .bx-wrapper{padding-top:40px}}.small-items #daydeal-products .bx-wrapper .bx-controls-direction{margin-top:20px !important;text-align:center}@media (min-width: 768px){.small-items #daydeal-products .bx-wrapper .bx-controls-direction{margin-top:30px !important}}@media (min-width: 1200px){.small-items #daydeal-products .bx-wrapper .bx-controls-direction{position:relative;display:flex;justify-content:space-between;width:34vw;margin:0 auto}.small-items #daydeal-products .bx-wrapper .bx-controls-direction::before{content:'';position:absolute;top:50%;left:50%;width:42%;border-bottom:2px solid #e4e1e1;transform:translate(-50%, -50%)}}.small-items #daydeal-products .bx-wrapper .bx-controls-direction .bx-next,.small-items #daydeal-products .bx-wrapper .bx-controls-direction .bx-prev{position:relative;display:inline-block;margin:0 40px}.small-items #daydeal-products .bx-wrapper .bx-controls-direction .bx-next::before,.small-items #daydeal-products .bx-wrapper .bx-controls-direction .bx-prev::before{font-size:30px}@media only screen and (max-width: 479px){.small-items #daydeal-products .bx-wrapper .bx-controls-direction{display:none}}.small-items #daydeal-products .bx-wrapper .bx-controls-direction .bx-next,.small-items #daydeal-products .bx-wrapper .bx-controls-direction .bx-prev{top:0}#daydeal-products .bx-wrapper .bx-controls-direction .bx-next,#daydeal-products .bx-wrapper .bx-controls-direction .bx-prev{top:-40px;right:0;left:auto;display:none;transform:none;transition:all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55)}@media (min-width: 480px){#daydeal-products .bx-wrapper .bx-controls-direction .bx-next,#daydeal-products .bx-wrapper .bx-controls-direction .bx-prev{display:block}}#daydeal-products .bx-wrapper .bx-controls-direction .bx-prev{right:50px}#daydeal-products .bx-wrapper .products{margin:0}#daydeal-products .bx-wrapper .products>li{padding:0}@media (max-width: 1199px){.two-columns #daydeal-products .title_block{margin-bottom:13px}}.bx-wrapper .two-columns #daydeal-products .products{margin:0}@media (min-width: 992px) and (max-width: 1199px){.two-columns #daydeal-products .products>li{width:100%}}.two-columns #daydeal-products .products .right-block{padding:1.2vw}@media (min-width: 1800px){.two-columns #daydeal-products .products .right-block{padding:20px 38px 20px 28px}}@media (min-width: 1200px) and (max-width: 1200px){.two-columns #daydeal-products .products .product-name{font-size:18px}}@media (min-width: 1200px) and (max-width: 1200px){.two-columns #daydeal-products .products .daydeal-box{padding:4px 10px;margin-top:8px}.two-columns #daydeal-products .products .daydeal-box>div>span{font-size:10px}.two-columns #daydeal-products .products .daydeal-box>div>span+span{margin-left:10px}.two-columns #daydeal-products .products .daydeal-box>div>span>span{font-size:18px}}@media (min-width: 1200px) and (max-width: 1200px){.two-columns #daydeal-products .products .price-content{margin-top:5px}}@media (min-width: 1200px) and (max-width: 1699px){.two-columns #daydeal-products .products .price,.two-columns #daydeal-products .products .old-price,.two-columns #daydeal-products .products .price-percent-reduction{font-size:18px}}@media (min-width: 1200px) and (max-width: 1200px){.two-columns #daydeal-products .products *+h5{margin-top:7px}}.three-columns #daydeal-products .title_block{margin-bottom:0}@media (min-width: 992px){.three-columns #daydeal-products .products>li{width:100%}}@media (min-width: 1800px){.three-columns #daydeal-products .products .right-block{padding:38px}}@media (min-width: 1200px) and (max-width: 1200px){.three-columns #daydeal-products .products .product-name{font-size:18px}}@media (max-width: 1200px){.three-columns #daydeal-products .products .product-description{display:none}}@media (min-width: 1200px) and (max-width: 1200px){.three-columns #daydeal-products .products .daydeal-box{padding:4px 10px;margin-top:8px}.three-columns #daydeal-products .products .daydeal-box>div>span{font-size:10px}.three-columns #daydeal-products .products .daydeal-box>div>span+span{margin-left:10px}.three-columns #daydeal-products .products .daydeal-box>div>span>span{font-size:18px}}@media (min-width: 1200px) and (max-width: 1200px){.three-columns #daydeal-products .products .price-content{margin-top:5px}}@media (min-width: 1200px) and (max-width: 1699px){.three-columns #daydeal-products .products .price,.three-columns #daydeal-products .products .old-price,.three-columns #daydeal-products .products .price-percent-reduction{font-size:18px}}@media (min-width: 1200px) and (max-width: 1200px){.three-columns #daydeal-products .products *+h5{margin-top:7px}}.daydeal-box-product{border:2px solid #f4d6d6;padding:7px 26px}.daydeal-box-product.act{display:none}#product .daydeal-box{width:100%;display:block;text-align:center;margin-bottom:0}#product .daydeal-box>div{display:flex}#product .daydeal-box>div>span{border:2px solid #e4e1e1}@media (max-width: 767px){#product .daydeal-box>div>span{width:60px;height:60px}}@media only screen and (max-width: 479px){#product .daydeal-box>div>span{width:50px;height:50px}}@media (max-width: 767px){#product .daydeal-box>div>span span{font-size:30px}}@media only screen and (max-width: 479px){#product .daydeal-box>div>span span{font-size:20px}}#product .daydeal-box>div>span:not(:last-child){border-right:none}
+@charset "UTF-8";
+/* -------------------------------------------------------------
+  Sass CSS3 Mixins! The Cross-Browser CSS3 Sass Library
+  By: Matthieu Aussaguel, http://www.mynameismatthieu.com, @matthieu_tweets
+
+  List of CSS3 Sass Mixins File to be @imported and @included as you need
+
+  The purpose of this library is to facilitate the use of CSS3 on different browsers avoiding HARD TO READ and NEVER
+  ENDING css files
+
+  note: All CSS3 Properties are being supported by Safari 5
+  more info: http://www.findmebyip.com/litmus/#css3-properties
+
+------------------------------------------------------------- */
+/*$base-border-color: darken(saturate(adjust_hue($color-box, 139.99999999999983), 5.263157894736871%), 6.470588235294116%);*/
+/*
+* @package       change-grid-on-big-screen
+* @description   make grid like in design
+*
+*/
+/*
+* @package       custom-scroll-bar
+* @description   make you scroll bar pretty and better
+*
+*/
+/*
+* @subsection   icons
+*
+* @description
+*/
+/*
+* @package       header icons title display mixin
+* @description
+*
+*/
+/*
+* @package     bxSlider controls mixin
+* @description
+*
+*/
+.daydeal-box.products_block > div > span {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 40px;
+  height: 30px;
+  background: #dedede;
+  border: 2px solid #e4e1e1;
+  font: 400 7px/1.2 "Museo", sans-serif;
+  color: #ff514d;
+  text-transform: uppercase;
+}
+
+@media (min-width: 480px) {
+  .daydeal-box.products_block > div > span {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+@media (min-width: 480px) {
+  .daydeal-box.products_block > div > span {
+    font-size: 8px;
+  }
+}
+
+@media (min-width: 768px) {
+  .daydeal-box.products_block > div > span {
+    width: 35px;
+    height: 35px;
+    font-size: 6px;
+  }
+}
+
+@media (min-width: 992px) {
+  .daydeal-box.products_block > div > span {
+    width: 3.49vw;
+    height: 3.49vw;
+    font-size: 0.57vw;
+  }
+}
+
+.daydeal-box.products_block > div > span:not(:last-child) {
+  border-bottom: none;
+}
+
+.daydeal-box.products_block > div > span > span {
+  font-weight: 700;
+}
+
+@media (min-width: 768px) {
+  .daydeal-box.products_block > div > span > span {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 992px) {
+  .daydeal-box.products_block > div > span > span {
+    font-size: 1.56vw;
+  }
+}
+
+#daydeal-products {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+@media (min-width: 720px) and (max-width: 991px) {
+  #daydeal-products .ajax_add_to_cart_button span {
+    display: inline-block;
+    width: 100%;
+    line-height: 1;
+    vertical-align: middle;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+@media only screen and (max-width: 479px) {
+  #daydeal-products .ajax_add_to_cart_button {
+    width: 100%;
+  }
+  #daydeal-products .ajax_add_to_cart_button::before {
+    position: static;
+    border: none;
+    font-size: 16px;
+    line-height: 1.4;
+    opacity: 1;
+    transform: none;
+    font-family: "fl-outicons";
+    content: "";
+    display: inline-block;
+    font-weight: normal;
+  }
+  #daydeal-products .ajax_add_to_cart_button span {
+    display: none;
+  }
+  #daydeal-products .ajax_add_to_cart_button.customize::before {
+    content: '\e024';
+  }
+}
+
+#daydeal-products .title_block {
+  padding: 0;
+}
+
+@media only screen and (max-width: 479px) {
+  #daydeal-products .title_block {
+    margin-bottom: 25px;
+  }
+}
+
+#daydeal-products .title_block:after {
+  display: none;
+}
+
+#daydeal-products .block_content {
+  margin-bottom: 0;
+}
+
+#daydeal-products .label-daydeal {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  display: inline-block;
+  padding: 5px 12px;
+  background: #FF0;
+}
+
+#daydeal-products .products > li {
+  margin-top: 0;
+}
+
+@media (min-width: 720px) {
+  #daydeal-products .products > li {
+    display: flex;
+  }
+}
+
+#daydeal-products .products .left-block {
+  background: white;
+}
+
+@media (min-width: 720px) {
+  #daydeal-products .products .left-block {
+    width: 47.5%;
+  }
+}
+
+#daydeal-products .products .left-block .product_img_link {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  position: relative;
+  display: block;
+  background: #f4f4f4;
+}
+
+#daydeal-products .products .left-block .product_img_link img {
+  -webkit-transition: 0.7s all ease;
+  -khtml-transition: 0.7s all ease;
+  -moz-transition: 0.7s all ease;
+  -ms-transition: 0.7s all ease;
+  -o-transition: 0.7s all ease;
+  transition: 0.7s all ease;
+}
+
+#daydeal-products .products .right-block {
+  padding: 10px 0;
+}
+
+@media (min-width: 720px) {
+  #daydeal-products .products .right-block {
+    width: 52.5%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-left: none;
+  }
+}
+
+@media (max-width: 479px) {
+  #daydeal-products .products .right-block {
+    border-top: none;
+  }
+}
+
+@media (min-width: 1800px) {
+  #daydeal-products .products .right-block {
+    padding: 38px;
+  }
+}
+
+#daydeal-products .products h5 {
+  margin: 0;
+}
+
+#daydeal-products .products .product-name {
+  color: #595959;
+}
+
+@media (min-width: 992px) {
+  #daydeal-products .products .product-name {
+    font-size: 16px;
+  }
+}
+
+#daydeal-products .products .product-name:hover {
+  color: #595959;
+}
+
+#daydeal-products .products .product-description {
+  display: none;
+  line-height: 1.5;
+  margin: 10px 0 0;
+}
+
+.small-items #daydeal-products .products .product-description {
+  display: none;
+}
+
+@media (min-width: 480px) {
+  #daydeal-products .products .product-description {
+    display: block;
+  }
+}
+
+@media (min-width: 1200px) {
+  #daydeal-products .products .product-description {
+    margin-top: 20px;
+  }
+}
+
+@media (min-width: 1200px) {
+  #daydeal-products .products .product-description {
+    font-size: 16px;
+  }
+}
+
+#daydeal-products .products .product-description + div {
+  margin-top: 20px;
+}
+
+@media (min-width: 1200px) {
+  #daydeal-products .products .product-description + div {
+    margin-top: 2.34vw;
+  }
+}
+
+#daydeal-products .products .hook-reviews {
+  margin-top: 6px;
+}
+
+@media (max-width: 767px) {
+  #daydeal-products .products .hook-reviews {
+    display: none;
+  }
+}
+
+#daydeal-products .products .comments_note .star_content {
+  display: inline-block;
+  vertical-align: top;
+}
+
+#daydeal-products .products .comments_note .nb-comments {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 12px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding-top: 3px;
+}
+
+#daydeal-products .products .daydeal-box {
+  position: absolute;
+  width: 100%;
+  top: 45px;
+  left: 5px;
+  display: block;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+@media (min-width: 480px) {
+  #daydeal-products .products .daydeal-box {
+    top: auto;
+    bottom: 10px;
+  }
+}
+
+@media (min-width: 480px) {
+  #daydeal-products .products .daydeal-box {
+    left: 0;
+    bottom: 10%;
+  }
+}
+
+@media (min-width: 1200px) {
+  #daydeal-products .products .daydeal-box {
+    bottom: 20px;
+  }
+}
+
+@media (min-width: 480px) {
+  #daydeal-products .products .daydeal-box > div {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 480px) {
+  #daydeal-products .products .daydeal-box > div > span {
+    border: 2px solid #e4e1e1;
+  }
+  #daydeal-products .products .daydeal-box > div > span:not(:last-child) {
+    border-right: none;
+  }
+}
+
+#daydeal-products .products .price-content {
+  margin-top: 10px;
+}
+
+@media (min-width: 1600px) {
+  #daydeal-products .products .price-content {
+    margin-top: 16px;
+  }
+}
+
+#daydeal-products .products .price, #daydeal-products .products .old-price, #daydeal-products .products .price-percent-reduction {
+  letter-spacing: 0;
+}
+
+@media (min-width: 992px) {
+  #daydeal-products .products .price, #daydeal-products .products .old-price, #daydeal-products .products .price-percent-reduction {
+    font-size: 24px;
+  }
+}
+
+@media (min-width: 1600px) {
+  #daydeal-products .products .price, #daydeal-products .products .old-price, #daydeal-products .products .price-percent-reduction {
+    font-size: 30px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  #daydeal-products .products .price, #daydeal-products .products .old-price, #daydeal-products .products .price-percent-reduction {
+    font-size: 18px;
+  }
+}
+
+#daydeal-products .products .old-price {
+  margin-left: 10px;
+}
+
+@media (min-width: 992px) {
+  #daydeal-products .products .old-price {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 1600px) {
+  #daydeal-products .products .old-price {
+    font-size: 20px;
+  }
+}
+
+#daydeal-products .products .price-percent-reduction {
+  margin-left: 5px;
+}
+
+#daydeal-products .products * + h5 {
+  margin-top: 13px;
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  #daydeal-products .products * + h5 {
+    margin-top: 7px;
+  }
+}
+
+@media (min-width: 1200px) {
+  #daydeal-products .bx-wrapper {
+    padding-top: 40px;
+  }
+}
+
+.small-items #daydeal-products .bx-wrapper .bx-controls-direction {
+  margin-top: 20px !important;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .small-items #daydeal-products .bx-wrapper .bx-controls-direction {
+    margin-top: 30px !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  .small-items #daydeal-products .bx-wrapper .bx-controls-direction {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 34vw;
+    margin: 0 auto;
+  }
+  .small-items #daydeal-products .bx-wrapper .bx-controls-direction::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 42%;
+    border-bottom: 2px solid #e4e1e1;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.small-items #daydeal-products .bx-wrapper .bx-controls-direction .bx-next, .small-items #daydeal-products .bx-wrapper .bx-controls-direction .bx-prev {
+  position: relative;
+  display: inline-block;
+  margin: 0 40px;
+}
+
+.small-items #daydeal-products .bx-wrapper .bx-controls-direction .bx-next::before, .small-items #daydeal-products .bx-wrapper .bx-controls-direction .bx-prev::before {
+  font-size: 30px;
+}
+
+@media only screen and (max-width: 479px) {
+  .small-items #daydeal-products .bx-wrapper .bx-controls-direction {
+    display: none;
+  }
+}
+
+.small-items #daydeal-products .bx-wrapper .bx-controls-direction .bx-next, .small-items #daydeal-products .bx-wrapper .bx-controls-direction .bx-prev {
+  top: 0;
+}
+
+#daydeal-products .bx-wrapper .bx-controls-direction .bx-next, #daydeal-products .bx-wrapper .bx-controls-direction .bx-prev {
+  top: -40px;
+  right: 0;
+  left: auto;
+  display: none;
+  transform: none;
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+@media (min-width: 480px) {
+  #daydeal-products .bx-wrapper .bx-controls-direction .bx-next, #daydeal-products .bx-wrapper .bx-controls-direction .bx-prev {
+    display: block;
+  }
+}
+
+#daydeal-products .bx-wrapper .bx-controls-direction .bx-prev {
+  right: 50px;
+}
+
+#daydeal-products .bx-wrapper .products {
+  margin: 0;
+}
+
+#daydeal-products .bx-wrapper .products > li {
+  padding: 0;
+}
+
+@media (max-width: 1199px) {
+  .two-columns #daydeal-products .title_block {
+    margin-bottom: 13px;
+  }
+}
+
+.bx-wrapper .two-columns #daydeal-products .products {
+  margin: 0;
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .two-columns #daydeal-products .products > li {
+    width: 100%;
+  }
+}
+
+.two-columns #daydeal-products .products .right-block {
+  padding: 1.2vw;
+}
+
+@media (min-width: 1800px) {
+  .two-columns #daydeal-products .products .right-block {
+    padding: 20px 38px 20px 28px;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1200px) {
+  .two-columns #daydeal-products .products .product-name {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1200px) {
+  .two-columns #daydeal-products .products .daydeal-box {
+    padding: 4px 10px;
+    margin-top: 8px;
+  }
+  .two-columns #daydeal-products .products .daydeal-box > div > span {
+    font-size: 10px;
+  }
+  .two-columns #daydeal-products .products .daydeal-box > div > span + span {
+    margin-left: 10px;
+  }
+  .two-columns #daydeal-products .products .daydeal-box > div > span > span {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1200px) {
+  .two-columns #daydeal-products .products .price-content {
+    margin-top: 5px;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1699px) {
+  .two-columns #daydeal-products .products .price, .two-columns #daydeal-products .products .old-price, .two-columns #daydeal-products .products .price-percent-reduction {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1200px) {
+  .two-columns #daydeal-products .products * + h5 {
+    margin-top: 7px;
+  }
+}
+
+.three-columns #daydeal-products .title_block {
+  margin-bottom: 0;
+}
+
+@media (min-width: 992px) {
+  .three-columns #daydeal-products .products > li {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1800px) {
+  .three-columns #daydeal-products .products .right-block {
+    padding: 38px;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1200px) {
+  .three-columns #daydeal-products .products .product-name {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .three-columns #daydeal-products .products .product-description {
+    display: none;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1200px) {
+  .three-columns #daydeal-products .products .daydeal-box {
+    padding: 4px 10px;
+    margin-top: 8px;
+  }
+  .three-columns #daydeal-products .products .daydeal-box > div > span {
+    font-size: 10px;
+  }
+  .three-columns #daydeal-products .products .daydeal-box > div > span + span {
+    margin-left: 10px;
+  }
+  .three-columns #daydeal-products .products .daydeal-box > div > span > span {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1200px) {
+  .three-columns #daydeal-products .products .price-content {
+    margin-top: 5px;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1699px) {
+  .three-columns #daydeal-products .products .price, .three-columns #daydeal-products .products .old-price, .three-columns #daydeal-products .products .price-percent-reduction {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1200px) {
+  .three-columns #daydeal-products .products * + h5 {
+    margin-top: 7px;
+  }
+}
+
+.daydeal-box-product {
+  border: 2px solid #f4d6d6;
+  padding: 7px 26px;
+}
+
+.daydeal-box-product.act {
+  display: none;
+}
+
+#product .daydeal-box {
+  width: 100%;
+  display: block;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+#product .daydeal-box > div {
+  display: flex;
+}
+
+#product .daydeal-box > div > span {
+  border: 2px solid #e4e1e1;
+}
+
+@media (max-width: 767px) {
+  #product .daydeal-box > div > span {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+@media only screen and (max-width: 479px) {
+  #product .daydeal-box > div > span {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+@media (max-width: 767px) {
+  #product .daydeal-box > div > span span {
+    font-size: 30px;
+  }
+}
+
+@media only screen and (max-width: 479px) {
+  #product .daydeal-box > div > span span {
+    font-size: 20px;
+  }
+}
+
+#product .daydeal-box > div > span:not(:last-child) {
+  border-right: none;
+}
