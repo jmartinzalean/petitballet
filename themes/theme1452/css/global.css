@@ -9019,8 +9019,8 @@ button.close {
 }
 
 .btn.icon-right span:after {
-  font-family: "FontAwesome";
   content: "";
+  font-family: "FontAwesome";
   display: inline-block;
   font-weight: normal;
   position: absolute;
@@ -9041,8 +9041,8 @@ button.close {
 }
 
 .btn.icon-left span:before {
-  font-family: "FontAwesome";
   content: "";
+  font-family: "FontAwesome";
   display: inline-block;
   font-weight: normal;
   position: absolute;
@@ -9139,7 +9139,7 @@ button.close {
   width: calc(100% + 4px);
   height: calc(100% + 4px);
   /*background-color: $dark-background;*/
-  background-color: #595959;
+  background-color: #a19e9e;
   -webkit-backface-visibility: hidden;
   transition: transform 0.4s cubic-bezier(0.12, 0.88, 0.04, 1.02), background 0.3s linear;
   transition-delay: .1s;
@@ -9857,7 +9857,8 @@ input[class*=btn-primary]:hover {
 }
 
 .fl-outicons-shopping-cart13:before {
-  content: "\e04f";
+  /*content: "\e04f";*/
+  content: url("../fonts/bag.png");
 }
 
 .fl-outicons-smartphone65:before {
@@ -12107,8 +12108,8 @@ header .nav nav {
   transform: translate(0, -50%);
   color: #dedede;
   transition: transform 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  font-family: "FontAwesome";
   content: "";
+  font-family: "FontAwesome";
   display: inline-block;
   font-weight: normal;
 }
@@ -12471,8 +12472,8 @@ a[href^='mailto']::before {
   left: -25px;
   color: CurrentColor;
   font-family: "FontAwesome";
-  font-family: "FontAwesome";
   content: "";
+  font-family: "FontAwesome";
   display: inline-block;
   font-weight: normal;
 }
@@ -12564,8 +12565,8 @@ a[href^='mailto']::before {
 }
 
 .alert.alert-success:before {
-  font-family: "FontAwesome";
   content: "";
+  font-family: "FontAwesome";
   display: inline-block;
   font-weight: normal;
   font-size: 21px;
@@ -12582,8 +12583,8 @@ a[href^='mailto']::before {
 }
 
 .alert.alert-danger:before {
-  font-family: "FontAwesome";
   content: "";
+  font-family: "FontAwesome";
   display: inline-block;
   font-weight: normal;
   float: left;
@@ -12879,8 +12880,8 @@ input[type="checkbox"] + .label label:before {
 
 input[type="checkbox"] + label:after,
 input[type="checkbox"] + .label label:after {
-  font-family: "FontAwesome";
   content: "";
+  font-family: "FontAwesome";
   display: inline-block;
   font-weight: normal;
   position: absolute;
@@ -13241,64 +13242,64 @@ body #fancybox-loading div, body .loader div {
 * @description  Used in footer, product page, compare
 */
 #social_block li.facebook a:before, #social_block li.btn-facebook:before, #social_block li.btn-login-facebook:before, #social_block button.facebook a:before, #social_block button.btn-facebook:before, #social_block button.btn-login-facebook:before, #social_block .form_content a.btn-default.facebook a:before, #social_block .form_content a.btn-default.btn-facebook:before, #social_block .form_content a.btn-default.btn-login-facebook:before, .socialsharing_product li.facebook a:before, .socialsharing_product li.btn-facebook:before, .socialsharing_product li.btn-login-facebook:before, .socialsharing_product button.facebook a:before, .socialsharing_product button.btn-facebook:before, .socialsharing_product button.btn-login-facebook:before, .socialsharing_product .form_content a.btn-default.facebook a:before, .socialsharing_product .form_content a.btn-default.btn-facebook:before, .socialsharing_product .form_content a.btn-default.btn-login-facebook:before, #header_login_form li.facebook a:before, #header_login_form li.btn-facebook:before, #header_login_form li.btn-login-facebook:before, #header_login_form button.facebook a:before, #header_login_form button.btn-facebook:before, #header_login_form button.btn-login-facebook:before, #header_login_form .form_content a.btn-default.facebook a:before, #header_login_form .form_content a.btn-default.btn-facebook:before, #header_login_form .form_content a.btn-default.btn-login-facebook:before {
-  font-family: "FontAwesome";
   content: "";
+  font-family: "FontAwesome";
   display: inline-block;
   font-weight: normal;
 }
 
 #social_block li.google-plus a:before, #social_block li.btn-google-plus:before, #social_block li.btn-login-google:before, #social_block button.google-plus a:before, #social_block button.btn-google-plus:before, #social_block button.btn-login-google:before, #social_block .form_content a.btn-default.google-plus a:before, #social_block .form_content a.btn-default.btn-google-plus:before, #social_block .form_content a.btn-default.btn-login-google:before, .socialsharing_product li.google-plus a:before, .socialsharing_product li.btn-google-plus:before, .socialsharing_product li.btn-login-google:before, .socialsharing_product button.google-plus a:before, .socialsharing_product button.btn-google-plus:before, .socialsharing_product button.btn-login-google:before, .socialsharing_product .form_content a.btn-default.google-plus a:before, .socialsharing_product .form_content a.btn-default.btn-google-plus:before, .socialsharing_product .form_content a.btn-default.btn-login-google:before, #header_login_form li.google-plus a:before, #header_login_form li.btn-google-plus:before, #header_login_form li.btn-login-google:before, #header_login_form button.google-plus a:before, #header_login_form button.btn-google-plus:before, #header_login_form button.btn-login-google:before, #header_login_form .form_content a.btn-default.google-plus a:before, #header_login_form .form_content a.btn-default.btn-google-plus:before, #header_login_form .form_content a.btn-default.btn-login-google:before {
-  font-family: "FontAwesome";
   content: "";
+  font-family: "FontAwesome";
   display: inline-block;
   font-weight: normal;
 }
 
 #social_block li.vk a:before, #social_block li.btn-vk:before, #social_block li.btn-login-vk:before, #social_block button.vk a:before, #social_block button.btn-vk:before, #social_block button.btn-login-vk:before, #social_block .form_content a.btn-default.vk a:before, #social_block .form_content a.btn-default.btn-vk:before, #social_block .form_content a.btn-default.btn-login-vk:before, .socialsharing_product li.vk a:before, .socialsharing_product li.btn-vk:before, .socialsharing_product li.btn-login-vk:before, .socialsharing_product button.vk a:before, .socialsharing_product button.btn-vk:before, .socialsharing_product button.btn-login-vk:before, .socialsharing_product .form_content a.btn-default.vk a:before, .socialsharing_product .form_content a.btn-default.btn-vk:before, .socialsharing_product .form_content a.btn-default.btn-login-vk:before, #header_login_form li.vk a:before, #header_login_form li.btn-vk:before, #header_login_form li.btn-login-vk:before, #header_login_form button.vk a:before, #header_login_form button.btn-vk:before, #header_login_form button.btn-login-vk:before, #header_login_form .form_content a.btn-default.vk a:before, #header_login_form .form_content a.btn-default.btn-vk:before, #header_login_form .form_content a.btn-default.btn-login-vk:before {
-  font-family: "FontAwesome";
   content: "";
+  font-family: "FontAwesome";
   display: inline-block;
   font-weight: normal;
 }
 
 #social_block li.twitter a:before, #social_block li.btn-twitter:before, #social_block button.twitter a:before, #social_block button.btn-twitter:before, #social_block .form_content a.btn-default.twitter a:before, #social_block .form_content a.btn-default.btn-twitter:before, .socialsharing_product li.twitter a:before, .socialsharing_product li.btn-twitter:before, .socialsharing_product button.twitter a:before, .socialsharing_product button.btn-twitter:before, .socialsharing_product .form_content a.btn-default.twitter a:before, .socialsharing_product .form_content a.btn-default.btn-twitter:before, #header_login_form li.twitter a:before, #header_login_form li.btn-twitter:before, #header_login_form button.twitter a:before, #header_login_form button.btn-twitter:before, #header_login_form .form_content a.btn-default.twitter a:before, #header_login_form .form_content a.btn-default.btn-twitter:before {
-  font-family: "FontAwesome";
   content: "";
+  font-family: "FontAwesome";
   display: inline-block;
   font-weight: normal;
 }
 
 #social_block li.rss a:before, #social_block li.btn-rss:before, #social_block button.rss a:before, #social_block button.btn-rss:before, #social_block .form_content a.btn-default.rss a:before, #social_block .form_content a.btn-default.btn-rss:before, .socialsharing_product li.rss a:before, .socialsharing_product li.btn-rss:before, .socialsharing_product button.rss a:before, .socialsharing_product button.btn-rss:before, .socialsharing_product .form_content a.btn-default.rss a:before, .socialsharing_product .form_content a.btn-default.btn-rss:before, #header_login_form li.rss a:before, #header_login_form li.btn-rss:before, #header_login_form button.rss a:before, #header_login_form button.btn-rss:before, #header_login_form .form_content a.btn-default.rss a:before, #header_login_form .form_content a.btn-default.btn-rss:before {
-  font-family: "FontAwesome";
   content: "";
+  font-family: "FontAwesome";
   display: inline-block;
   font-weight: normal;
 }
 
 #social_block li.youtube a:before, #social_block li.btn-youtube:before, #social_block button.youtube a:before, #social_block button.btn-youtube:before, #social_block .form_content a.btn-default.youtube a:before, #social_block .form_content a.btn-default.btn-youtube:before, .socialsharing_product li.youtube a:before, .socialsharing_product li.btn-youtube:before, .socialsharing_product button.youtube a:before, .socialsharing_product button.btn-youtube:before, .socialsharing_product .form_content a.btn-default.youtube a:before, .socialsharing_product .form_content a.btn-default.btn-youtube:before, #header_login_form li.youtube a:before, #header_login_form li.btn-youtube:before, #header_login_form button.youtube a:before, #header_login_form button.btn-youtube:before, #header_login_form .form_content a.btn-default.youtube a:before, #header_login_form .form_content a.btn-default.btn-youtube:before {
-  font-family: "FontAwesome";
   content: "";
+  font-family: "FontAwesome";
   display: inline-block;
   font-weight: normal;
 }
 
 #social_block li.pinterest a:before, #social_block li.btn-pinterest:before, #social_block button.pinterest a:before, #social_block button.btn-pinterest:before, #social_block .form_content a.btn-default.pinterest a:before, #social_block .form_content a.btn-default.btn-pinterest:before, .socialsharing_product li.pinterest a:before, .socialsharing_product li.btn-pinterest:before, .socialsharing_product button.pinterest a:before, .socialsharing_product button.btn-pinterest:before, .socialsharing_product .form_content a.btn-default.pinterest a:before, .socialsharing_product .form_content a.btn-default.btn-pinterest:before, #header_login_form li.pinterest a:before, #header_login_form li.btn-pinterest:before, #header_login_form button.pinterest a:before, #header_login_form button.btn-pinterest:before, #header_login_form .form_content a.btn-default.pinterest a:before, #header_login_form .form_content a.btn-default.btn-pinterest:before {
-  font-family: "FontAwesome";
   content: "";
+  font-family: "FontAwesome";
   display: inline-block;
   font-weight: normal;
 }
 
 #social_block li.vimeo a:before, #social_block li.btn-vimeo:before, #social_block button.vimeo a:before, #social_block button.btn-vimeo:before, #social_block .form_content a.btn-default.vimeo a:before, #social_block .form_content a.btn-default.btn-vimeo:before, .socialsharing_product li.vimeo a:before, .socialsharing_product li.btn-vimeo:before, .socialsharing_product button.vimeo a:before, .socialsharing_product button.btn-vimeo:before, .socialsharing_product .form_content a.btn-default.vimeo a:before, .socialsharing_product .form_content a.btn-default.btn-vimeo:before, #header_login_form li.vimeo a:before, #header_login_form li.btn-vimeo:before, #header_login_form button.vimeo a:before, #header_login_form button.btn-vimeo:before, #header_login_form .form_content a.btn-default.vimeo a:before, #header_login_form .form_content a.btn-default.btn-vimeo:before {
-  font-family: "FontAwesome";
   content: "";
+  font-family: "FontAwesome";
   display: inline-block;
   font-weight: normal;
 }
 
 #social_block li.instagram a:before, #social_block li.btn-instagram:before, #social_block button.instagram a:before, #social_block button.btn-instagram:before, #social_block .form_content a.btn-default.instagram a:before, #social_block .form_content a.btn-default.btn-instagram:before, .socialsharing_product li.instagram a:before, .socialsharing_product li.btn-instagram:before, .socialsharing_product button.instagram a:before, .socialsharing_product button.btn-instagram:before, .socialsharing_product .form_content a.btn-default.instagram a:before, .socialsharing_product .form_content a.btn-default.btn-instagram:before, #header_login_form li.instagram a:before, #header_login_form li.btn-instagram:before, #header_login_form button.instagram a:before, #header_login_form button.btn-instagram:before, #header_login_form .form_content a.btn-default.instagram a:before, #header_login_form .form_content a.btn-default.btn-instagram:before {
-  font-family: "FontAwesome";
   content: "";
+  font-family: "FontAwesome";
   display: inline-block;
   font-weight: normal;
 }
@@ -14550,8 +14551,8 @@ ul.step li.step_done em::after {
 
 ul.step li.step_done em:before {
   font-size: 20px;
-  font-family: "FontAwesome";
   content: "";
+  font-family: "FontAwesome";
   display: inline-block;
   font-weight: normal;
 }
@@ -16850,4 +16851,9 @@ span.closeButtonNormal {
 .bon-newsletter {
   background-color: transparent !important;
   color: #fff;
+}
+
+img.logo_popup {
+  width: auto;
+  margin: 0 auto 2vw auto;
 }

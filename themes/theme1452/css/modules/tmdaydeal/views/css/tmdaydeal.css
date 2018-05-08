@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /* -------------------------------------------------------------
   Sass CSS3 Mixins! The Cross-Browser CSS3 Sass Library
   By: Matthieu Aussaguel, http://www.mynameismatthieu.com, @matthieu_tweets
@@ -128,7 +127,7 @@
     opacity: 1;
     transform: none;
     font-family: "fl-outicons";
-    content: "";
+    content: url("../fonts/bag.png");
     display: inline-block;
     font-weight: normal;
   }

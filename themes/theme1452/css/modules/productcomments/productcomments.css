@@ -56,8 +56,8 @@
 }
 
 .star:after {
-  font-family: "FontAwesome";
   content: "";
+  font-family: "FontAwesome";
   display: inline-block;
   font-weight: normal;
   color: #595959;
@@ -65,8 +65,8 @@
 }
 
 .star.star_on:after {
-  font-family: "FontAwesome";
   content: "";
+  font-family: "FontAwesome";
   display: inline-block;
   font-weight: normal;
   color: #fbbc05;
@@ -78,8 +78,8 @@
 }
 
 .star.star.star_hover:after {
-  font-family: "FontAwesome";
   content: "";
+  font-family: "FontAwesome";
   display: inline-block;
   font-weight: normal;
   color: #ff514d;

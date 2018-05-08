@@ -140,8 +140,8 @@ div.selector span {
 }
 
 div.selector span:after {
-  font-family: "FontAwesome";
   content: "";
+  font-family: "FontAwesome";
   display: inline-block;
   font-weight: normal;
   position: absolute;

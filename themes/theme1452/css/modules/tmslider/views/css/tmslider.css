@@ -165,8 +165,8 @@
 }
 
 .slider-pro.sp-horizontal .sp-previous-arrow::before {
-  font-family: "FontAwesome";
   content: "";
+  font-family: "FontAwesome";
   display: inline-block;
   font-weight: normal;
 }
@@ -177,8 +177,8 @@
 }
 
 .slider-pro.sp-horizontal .sp-next-arrow::before {
-  font-family: "FontAwesome";
   content: "";
+  font-family: "FontAwesome";
   display: inline-block;
   font-weight: normal;
 }

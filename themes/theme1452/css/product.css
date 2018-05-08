@@ -465,7 +465,7 @@
     transform: none;
     border: none !important;
     font-family: "fl-outicons";
-    content: "";
+    content: url("../fonts/bag.png");
     display: inline-block;
     font-weight: normal;
   }
@@ -1654,7 +1654,7 @@ ul#text_fields {
   line-height: 1;
   transform: translateZ(0);
   font-family: "fl-outicons";
-  content: "";
+  content: url("../fonts/bag.png");
   display: inline-block;
   font-weight: normal;
 }

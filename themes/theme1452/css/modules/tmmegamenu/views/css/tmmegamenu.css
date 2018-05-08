@@ -210,8 +210,8 @@
   font-size: 16px;
   transition: all 0.3s ease-in-out;
   transform: translateY(-50%);
-  font-family: "FontAwesome";
   content: "";
+  font-family: "FontAwesome";
   display: inline-block;
   font-weight: normal;
 }
@@ -722,8 +722,8 @@
     line-height: 24px;
     will-change: transform, opacity;
     animation: iconAnimationOut 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) both;
-    font-family: "FontAwesome";
     content: "";
+    font-family: "FontAwesome";
     display: inline-block;
     font-weight: normal;
   }
@@ -796,8 +796,8 @@
   cursor: pointer;
   transition: all 0.3s ease-in-out;
   text-align: center;
-  font-family: "FontAwesome";
   content: "";
+  font-family: "FontAwesome";
   display: inline-block;
   font-weight: normal;
 }

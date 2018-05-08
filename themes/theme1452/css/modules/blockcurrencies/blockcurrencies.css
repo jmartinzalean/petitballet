@@ -63,8 +63,8 @@
 }
 
 #currencies-block-top div.current:after {
-  font-family: "FontAwesome";
   content: "";
+  font-family: "FontAwesome";
   display: inline-block;
   font-weight: normal;
   font-size: 12px;

@@ -386,7 +386,7 @@ ul.product_list .functional-buttons > div.compare a.checked:before {
     opacity: 1;
     transform: none;
     font-family: "fl-outicons";
-    content: "";
+    content: url("../fonts/bag.png");
     display: inline-block;
     font-weight: normal;
   }
@@ -951,7 +951,7 @@ ul.product_list.list > li .button-container > * {
     opacity: 1;
     transform: none;
     font-family: "fl-outicons";
-    content: "";
+    content: url("../fonts/bag.png");
     display: inline-block;
     font-weight: normal;
   }

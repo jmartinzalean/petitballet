@@ -357,8 +357,8 @@
   line-height: 50px;
   color: #595959;
   transition: all 0.3s ease-in-out;
-  font-family: "FontAwesome";
   content: "";
+  font-family: "FontAwesome";
   display: inline-block;
   font-weight: normal;
 }

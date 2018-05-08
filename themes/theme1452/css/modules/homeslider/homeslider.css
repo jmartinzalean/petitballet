@@ -175,22 +175,22 @@
 }
 
 #homepage-slider #homeslider .homeslider-container .homeslider-description .social li.facebook a:before, #homepage-slider #homeslider .homeslider-container .homeslider-description .social li.btn-facebook:before, #homepage-slider #homeslider .homeslider-container .homeslider-description .social li.btn-login-facebook:before {
-  font-family: "FontAwesome";
   content: "";
+  font-family: "FontAwesome";
   display: inline-block;
   font-weight: normal;
 }
 
 #homepage-slider #homeslider .homeslider-container .homeslider-description .social li.google-plus a:before, #homepage-slider #homeslider .homeslider-container .homeslider-description .social li.btn-google-plus:before, #homepage-slider #homeslider .homeslider-container .homeslider-description .social li.btn-login-google:before {
-  font-family: "FontAwesome";
   content: "";
+  font-family: "FontAwesome";
   display: inline-block;
   font-weight: normal;
 }
 
 #homepage-slider #homeslider .homeslider-container .homeslider-description .social li.twitter a:before, #homepage-slider #homeslider .homeslider-container .homeslider-description .social li.btn-twitter:before {
-  font-family: "FontAwesome";
   content: "";
+  font-family: "FontAwesome";
   display: inline-block;
   font-weight: normal;
 }
@@ -390,8 +390,8 @@
 }
 
 #homepage-slider .bx-wrapper .bx-controls-direction a:before {
-  font-family: "FontAwesome";
   content: "";
+  font-family: "FontAwesome";
   display: inline-block;
   font-weight: normal;
 }
@@ -402,8 +402,8 @@
 }
 
 #homepage-slider .bx-wrapper .bx-controls-direction a.bx-next:before {
-  font-family: "FontAwesome";
   content: "";
+  font-family: "FontAwesome";
   display: inline-block;
   font-weight: normal;
 }
