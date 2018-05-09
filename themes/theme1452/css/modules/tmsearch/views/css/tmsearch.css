@@ -173,6 +173,10 @@
   align-items: center;
 }
 
+#tmsearch .selector {
+  display: none;
+}
+
 @media (min-width: 480px) {
   #tmsearch {
     width: 68.75vw;
@@ -212,20 +216,20 @@
   position: relative;
   width: 100%;
   padding-right: 50px;
-  padding-left: 50px;
+  padding-left: 10px;
   border-radius: 0px;
   background: #fff;
 }
 
 @media (min-width: 992px) {
   #tmsearch #tmsearchbox {
-    padding-left: 190px;
+    /*padding-left: 190px;*/
   }
 }
 
 @media (max-width: 767px) {
   #tmsearch #tmsearchbox {
-    padding-left: 60px;
+    /*padding-left: 60px;*/
   }
 }
 

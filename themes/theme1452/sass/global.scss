@@ -4477,3 +4477,8 @@ img.logo_popup {
     width: auto;
     margin: 0 auto 2vw auto;
 }
+
+div#top-column {
+    position: relative;
+    z-index: 999999;
+}
