@@ -16864,6 +16864,14 @@ span.closeButtonNormal {
   cursor: pointer;
 }
 
+.bonnewsletter_form .clearfix .form-group {
+  text-align: left;
+}
+
+.bonnewsletter_form .clearfix .checkbox {
+  text-align: left;
+}
+
 .bon-newsletter .input-wrapper {
   overflow: hidden;
   display: inline-block;
@@ -16878,4 +16886,29 @@ span.closeButtonNormal {
 img.logo_popup {
   width: auto;
   margin: 0 auto 2vw auto;
+}
+
+div#top-column {
+  position: relative;
+  z-index: 999999;
+}
+
+#newsletter_block_left form input#newsletter-tmha, .innerbox-newsletter form input#newsletter-tmha {
+  z-index: 5;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+
+#newsletter_block_left form .checkbox label, .innerbox-newsletter form .checkbox label {
+  color: #dadada;
+}
+
+#newsletter_block_left form .checkbox label a, .innerbox-newsletter form .checkbox label a {
+  text-decoration: underline;
+  color: #dadada;
 }
