@@ -4372,6 +4372,32 @@ span.closeButtonNormal {
     #social_block {
         margin-top: 55px;
     }
+    div#languages-block-footer {
+        h4 {
+            font-size: 20px;
+            font-weight: normal;
+            text-align: left;
+            line-height: 20px;
+        }
+        ul.footer-block-languages {
+            li,
+            a {
+                color: $color-light;
+                font-size: 14px;
+                float: left
+            }
+            li.selected {
+                &::after {
+                    content: '\2F';
+                }
+            }
+            li {
+                &:last-child {
+                    margin-left: 5px;
+                }
+            }
+        }
+    }
 }
 
 // Otros

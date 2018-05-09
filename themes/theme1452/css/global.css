@@ -16776,6 +16776,28 @@ span.closeButtonNormal {
   margin-top: 55px;
 }
 
+.footer-container div#languages-block-footer h4 {
+  font-size: 20px;
+  font-weight: normal;
+  text-align: left;
+  line-height: 20px;
+}
+
+.footer-container div#languages-block-footer ul.footer-block-languages li,
+.footer-container div#languages-block-footer ul.footer-block-languages a {
+  color: #dedede;
+  font-size: 14px;
+  float: left;
+}
+
+.footer-container div#languages-block-footer ul.footer-block-languages li.selected::after {
+  content: '\2F';
+}
+
+.footer-container div#languages-block-footer ul.footer-block-languages li:last-child {
+  margin-left: 5px;
+}
+
 .it_UOTHMTTHNFYC .tab-content .bx-wrapper {
   margin: 0 auto !important;
 }
