@@ -96,7 +96,7 @@
         </li>
       {/if}
     </ul>
-    {$footer_text}
+    {*{$footer_text}*}
   </section>
   <!-- /Block CMS module footer -->
 {/if}
