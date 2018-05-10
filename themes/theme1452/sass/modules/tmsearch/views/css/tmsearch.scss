@@ -63,6 +63,10 @@
   opacity: 0;
   align-items: center;
 
+ .selector {
+     display: none;
+ }
+
   @media (min-width: $screen-xs-min) {
     width: 68.75vw;
   }
@@ -97,17 +101,17 @@
     position: relative;
     width: 100%;
     padding-right: 50px;
-    padding-left: 50px;
+    padding-left: 10px;
     border-radius: $border-radius-base;
     //background: $light-background;
     background: #fff;
 
     @media (min-width: $screen-md-min) {
-      padding-left: 190px;
+      /*padding-left: 190px;*/
     }
 
     @media (max-width: 767px) {
-      padding-left: 60px;
+      /*padding-left: 60px;*/
     }
     label {
       color: #333333;

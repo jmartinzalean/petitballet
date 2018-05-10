@@ -16,15 +16,23 @@ $font-icon-custom: 'fl-outicons';
 // ------- MAIN ICON MIXIN -------
 
 @mixin addIcon($content) {
+  @if $content == '\e04f' {
+      content: url("../fonts/bag.png");
+  }  @else {
+      content: $content;
+  }
   font-family: $font-icon;
-  content: $content;
   display: inline-block;
   font-weight: normal;
 }
 
 @mixin addIconCustom($content) {
   font-family: $font-icon-custom;
-  content: $content;
+    @if $content == '\e04f' {
+        content: url("../fonts/bag.png");
+    }  @else {
+        content: $content;
+    }
   display: inline-block;
   font-weight: normal;
 }

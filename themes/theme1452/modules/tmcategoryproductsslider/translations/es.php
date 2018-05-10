@@ -1,0 +1,36 @@
+<?php
+
+global $_MODULE;
+$_MODULE = array();
+$_MODULE['<{tmcategoryproductsslider}theme1452>tmcategoryproductsslider_e0ccfcf1df18565934771009f647fe88'] = 'No se pueden añadir/editar elementos de \"Todas Tiendas\"o contexto de \"Grupo de Tiendas\"';
+$_MODULE['<{tmcategoryproductsslider}theme1452>tmcategoryproductsslider_8cb5bce55ab3a5325dd4cc35a6b61864'] = 'Lista de bloques';
+$_MODULE['<{tmcategoryproductsslider}theme1452>tmcategoryproductsslider_ef61fb324d729c341ea8ab9901e23566'] = 'Añadir nuevo';
+$_MODULE['<{tmcategoryproductsslider}theme1452>tmcategoryproductsslider_b1764121274eac7781b7405fbe2e8469'] = 'Identificación pestaña';
+$_MODULE['<{tmcategoryproductsslider}theme1452>tmcategoryproductsslider_4c0fa9eb4830c8f752fa25ba0d20018f'] = 'Categoría del Bloque';
+$_MODULE['<{tmcategoryproductsslider}theme1452>tmcategoryproductsslider_ec53a8c4f07baed5d8825072c89799be'] = 'Estado';
+$_MODULE['<{tmcategoryproductsslider}theme1452>tmcategoryproductsslider_da4fef7e98e2b8ab7b623475754c7f98'] = 'Actualizar bloque';
+$_MODULE['<{tmcategoryproductsslider}theme1452>tmcategoryproductsslider_2ff8071bcd15a31f9a743f1b06d0d00f'] = 'Añadir bloque';
+$_MODULE['<{tmcategoryproductsslider}theme1452>tmcategoryproductsslider_00d23a76e43b46dae9ec7aa9dcbebb32'] = 'Activado';
+$_MODULE['<{tmcategoryproductsslider}theme1452>tmcategoryproductsslider_b9f5c797ebbf55adccdd8539a65a0241'] = 'Desactivado';
+$_MODULE['<{tmcategoryproductsslider}theme1452>tmcategoryproductsslider_03368e3c1eb4d2a9048775874301b19f'] = 'Seleccione una categoría';
+$_MODULE['<{tmcategoryproductsslider}theme1452>tmcategoryproductsslider_1b5388ba1717ebb3cb7ea612eda6ae5d'] = 'Usar el nombre en el front';
+$_MODULE['<{tmcategoryproductsslider}theme1452>tmcategoryproductsslider_9ceafcc230188888eaeaacc5477b5564'] = 'Seleccione los productos para mostrar';
+$_MODULE['<{tmcategoryproductsslider}theme1452>tmcategoryproductsslider_0255b332c28fe6ed4f34e7124a397a2d'] = 'Productos para mostrar:';
+$_MODULE['<{tmcategoryproductsslider}theme1452>tmcategoryproductsslider_92288eaed28f9ce24ca094f89f95f084'] = 'El número de productos para mostrar';
+$_MODULE['<{tmcategoryproductsslider}theme1452>tmcategoryproductsslider_c9cc8cce247e49bae79f15173ce97354'] = 'Guardar';
+$_MODULE['<{tmcategoryproductsslider}theme1452>tmcategoryproductsslider_2bc71af7c06aff4140c41d2b383829bb'] = 'Cancelar';
+$_MODULE['<{tmcategoryproductsslider}theme1452>tmcategoryproductsslider_8db9aedf6e11eb57c1f33ce1e730e4ef'] = 'No se puede guardar en la pestaña';
+$_MODULE['<{tmcategoryproductsslider}theme1452>tmcategoryproductsslider_b3513dc48f35fb950da0de059f6081bc'] = 'Bloque guardado';
+$_MODULE['<{tmcategoryproductsslider}theme1452>tmcategoryproductsslider_11a81073cad10bf07bf8693d82f20708'] = 'No se puede eliminar elemento';
+$_MODULE['<{tmcategoryproductsslider}theme1452>tmcategoryproductsslider_f6fefe344352f0815e6f53ad8f97ae76'] = 'Elemento ha sido eliminado';
+$_MODULE['<{tmcategoryproductsslider}theme1452>tmcategoryproductsslider_5f49e39b50b4f3679dc6c8a727066d12'] = 'El estatus del producto no puede ser actualizado';
+$_MODULE['<{tmcategoryproductsslider}theme1452>tmcategoryproductsslider_5da83f6eb94b0a6addd2670744479a1e'] = 'El estatus del producto ha sido actualizado';
+$_MODULE['<{tmcategoryproductsslider}theme1452>tmcategoryproductsslider_674296afa6d6acdac950ed43b3c02735'] = 'Incorrecto  valor del campo \'Número de productos para mostrar ';
+$_MODULE['<{tmcategoryproductsslider}theme1452>tmcategoryproductsslider_ae733d7b98b3ce5b92cbb534beaa3949'] = 'Formato incorrecto del nombre';
+$_MODULE['<{tmcategoryproductsslider}theme1452>tmcategoryproductsslider_6857042f031c093ec64102b71e33accc'] = 'Se borrarán todos los productos seleccionados';
+$_MODULE['<{tmcategoryproductsslider}theme1452>admintmcategoryproductsslider_e5363b0f5e10354c3d61c5348ed4911f'] = 'No hay productos para seleccionar';
+$_MODULE['<{tmcategoryproductsslider}theme1452>product_list_4c41e0bd957698b58100a5c687d757d9'] = 'Seleccionar todo';
+$_MODULE['<{tmcategoryproductsslider}theme1452>product_list_52e3ce2bc983012661c3c11fe8b0f8ce'] = 'Deseleccionar todo';
+$_MODULE['<{tmcategoryproductsslider}theme1452>product_list_ec211f7c20af43e742bf2570c3cb84f9'] = 'Añadir';
+$_MODULE['<{tmcategoryproductsslider}theme1452>form_ea6fc12147e71d57bdd78ca17ca734ce'] = 'Todos los productos';
+$_MODULE['<{tmcategoryproductsslider}theme1452>tmcategoryproducts-home_fedfc84ec71841fdcfd18b0529bbb315'] = 'No hay productos en esta categoría.';

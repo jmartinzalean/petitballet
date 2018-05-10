@@ -4202,13 +4202,16 @@ body #olark-wrapper {
         margin: 0 auto;
         display: block;
         width: 250px;
-        top: -1.6vw;
+        top: 0vw;
+    }
+    .stickUpTop.isStuck .logo_petit {
+        top: 1vw !important;
     }
 }
 @media (max-width: 1200px) {
     .stickUpTop.isStuck .logo_petit {
-        width: 120px !important;
-        top: 3px;
+        width: 180px !important;
+        top: 1vw !important;
     }
 }
 @media (max-width: 992px) {
@@ -4216,15 +4219,18 @@ body #olark-wrapper {
         width: 180px;
         right: 50%;
         left: -60%;
-        top: -1vw;
+        top: 1.2vw;
     }
 }
 @media (max-width: 767px) {
+    .stickUpTop.isStuck .logo_petit {
+        top: 2vw !important;
+    }
     .logo_petit {
         width: 180px;
         left: -90%;
         right: 30%;
-        top: 0;
+        top: 1.7vw;
         position: absolute;
     }
 }
@@ -4366,13 +4372,38 @@ span.closeButtonNormal {
     #social_block {
         margin-top: 55px;
     }
+    div#languages-block-footer {
+        h4 {
+            font-size: 20px;
+            font-weight: normal;
+            text-align: left;
+            line-height: 20px;
+        }
+        ul.footer-block-languages {
+            li,
+            a {
+                color: $color-light;
+                font-size: 14px;
+                float: left
+            }
+            li.selected {
+                &::after {
+                    content: '\2F';
+                }
+            }
+            li {
+                &:last-child {
+                    margin-left: 5px;
+                }
+            }
+        }
+    }
 }
 
+// Otros
 .it_UOTHMTTHNFYC .tab-content .bx-wrapper {
     margin: 0 auto !important;
 }
-
-
 
 .innerbox-newsletter .bonnewsletter_form .form-group .form-control {
     background-color: #f4d6d6 !important;
@@ -4431,8 +4462,52 @@ span.closeButtonNormal {
     cursor: pointer;
 }
 
+.bonnewsletter_form .clearfix .form-group {
+    text-align: left;
+}
+
+.bonnewsletter_form .clearfix .checkbox {
+    text-align: left;
+}
+
 .bon-newsletter .input-wrapper {
     overflow: hidden;
     display: inline-block;
     width: 90% !important;
+}
+
+.bon-newsletter {
+    background-color: transparent !important;
+    color: #fff;
+}
+
+img.logo_popup {
+    width: auto;
+    margin: 0 auto 2vw auto;
+}
+div#top-column {
+    position: relative;
+    z-index: 1000;
+}
+
+#newsletter_block_left, .innerbox-newsletter {
+    form {
+        input#newsletter-tmha {
+            z-index: 5;
+            top: 0;
+            left: 0;
+            display: block;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            cursor: pointer;
+        }
+        .checkbox label {
+            color: #dadada;
+            a {
+                text-decoration: underline;
+                color: #dadada;
+            }
+        }
+    }
 }

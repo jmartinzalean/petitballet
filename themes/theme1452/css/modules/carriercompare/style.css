@@ -1,1 +1,99 @@
-#compare_shipping .form-group{line-height:normal;margin-bottom:10px}#compare_shipping .form-group label{margin-bottom:6px}#compare_shipping .form-group .form-control{width:263px}#compare_shipping .form-group.last{margin-bottom:20px}#compare_shipping .form-group.last input{margin-bottom:3px}#compare_shipping .table{background:#dedede}#compare_shipping .table thead tr th{background:#dedede;padding:4px 10px 3px 10px;word-break:break-all}#compare_shipping .table tbody td{margin:0}#compare_shipping .table tbody td.carrier_action{width:54px;padding-left:0;padding-right:0;text-align:center}#compare_shipping .table tbody td.carrier_action input{margin:0}#availableCarriers .table{margin-bottom:20px}#compare_shipping ul#carriercompare_errors_list{color:red}#compare_shipping_form{padding-bottom:20px}#compare_shipping ul#carriercompare_errors_list li{margin-left:30px;text-decoration:none;list-style:none}#SE_AjaxDisplay{text-align:center;display:none}#SE_AjaxDisplay img{width:15px}.SE_SubmitRefreshCard button{float:left}.SE_SubmitRefreshCard button#carriercompare_submit{margin-right:10px;margin-bottom:10px}#carriercompare_errors{display:none}
+/* -------------------------------------------------------------
+  Sass CSS3 Mixins! The Cross-Browser CSS3 Sass Library
+  By: Matthieu Aussaguel, http://www.mynameismatthieu.com, @matthieu_tweets
+
+  List of CSS3 Sass Mixins File to be @imported and @included as you need
+
+  The purpose of this library is to facilitate the use of CSS3 on different browsers avoiding HARD TO READ and NEVER
+  ENDING css files
+
+  note: All CSS3 Properties are being supported by Safari 5
+  more info: http://www.findmebyip.com/litmus/#css3-properties
+
+------------------------------------------------------------- */
+/*$base-border-color: darken(saturate(adjust_hue($color-box, 139.99999999999983), 5.263157894736871%), 6.470588235294116%);*/
+#compare_shipping .form-group {
+  line-height: normal;
+  margin-bottom: 10px;
+}
+
+#compare_shipping .form-group label {
+  margin-bottom: 6px;
+}
+
+#compare_shipping .form-group .form-control {
+  width: 263px;
+}
+
+#compare_shipping .form-group.last {
+  margin-bottom: 20px;
+}
+
+#compare_shipping .form-group.last input {
+  margin-bottom: 3px;
+}
+
+#compare_shipping .table {
+  background: #dedede;
+}
+
+#compare_shipping .table thead tr th {
+  background: #dedede;
+  padding: 4px 10px 3px 10px;
+  word-break: break-all;
+}
+
+#compare_shipping .table tbody td {
+  margin: 0;
+}
+
+#compare_shipping .table tbody td.carrier_action {
+  width: 54px;
+  padding-left: 0;
+  padding-right: 0;
+  text-align: center;
+}
+
+#compare_shipping .table tbody td.carrier_action input {
+  margin: 0;
+}
+
+#availableCarriers .table {
+  margin-bottom: 20px;
+}
+
+#compare_shipping ul#carriercompare_errors_list {
+  color: red;
+}
+
+#compare_shipping_form {
+  padding-bottom: 20px;
+}
+
+#compare_shipping ul#carriercompare_errors_list li {
+  margin-left: 30px;
+  text-decoration: none;
+  list-style: none;
+}
+
+#SE_AjaxDisplay {
+  text-align: center;
+  display: none;
+}
+
+#SE_AjaxDisplay img {
+  width: 15px;
+}
+
+.SE_SubmitRefreshCard button {
+  float: left;
+}
+
+.SE_SubmitRefreshCard button#carriercompare_submit {
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+#carriercompare_errors {
+  display: none;
+}

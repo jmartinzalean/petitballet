@@ -12,6 +12,11 @@
         </button>
         <input type="hidden" name="action" value="0" />
       </div>
+        <div class="checkbox">
+            <input required type="checkbox" name="newsletter" id="newsletter-tmha" value="1">
+            <label>{l s='I accept the' mod='blocknewsletter'}
+                <a href="#">{l s='Terms and Conditions' mod='blocknewsletter'}</a></label>
+        </div>
     </form>
   </div>
   {hook h="displayBlockNewsletterBottom" from='blocknewsletter'}

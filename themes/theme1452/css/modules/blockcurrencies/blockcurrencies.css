@@ -1,1 +1,158 @@
-﻿#currencies-block-top{position:relative;text-transform:uppercase;font-size:16px;font-weight:700}#currencies-block-top span.firstWord{display:none}#currencies-block-top div.current{padding:5px 15px;position:relative;display:block;color:#595959;cursor:pointer;font-family:"Museo",sans-serif;font-weight:700}.bg-dark #currencies-block-top div.current{color:#dedede}@media (max-width: 550px){.mobile-stickup #currencies-block-top div.current{color:#dedede}}.nav-section #currencies-block-top div.current{font-weight:400}#currencies-block-top div.current span{margin-right:3px}#currencies-block-top div.current:after{font-family:"FontAwesome";content:"";display:inline-block;font-weight:normal;font-size:12px;line-height:18px;color:#595959;font-weight:normal;vertical-align:bottom;transition:all 0.3s ease-in-out;transform-origin:center}.bg-dark #currencies-block-top div.current:after{color:#dedede}#currencies-block-top div.current.active:after{transform:rotate(-180deg) translateZ(0)}#currencies-block-top ul{z-index:2;overflow:hidden;position:absolute;right:0;display:none;padding:10px;background:#fff;border-radius:0px;box-shadow:0 2px 30px rgba(12,12,12,0.06);top:calc(100% + 3px);font-weight:400}@media (min-width: 1600px){#currencies-block-top ul{min-width:60}}@media (min-width: 480px){#currencies-block-top ul{top:100%}}@media (min-width: 768px){#currencies-block-top ul{top:calc(100% + 30px)}.stickUpTop.isStuck #currencies-block-top ul{top:calc(100% + 20px)}}#currencies-block-top ul li{padding:5px}@media (min-width: 1200px){#currencies-block-top ul li{font-size:14px}}.nav-section #currencies-block-top ul{right:auto;left:0}.justify-end #currencies-block-top ul{left:auto}@media (min-width: 400px){.justify-end #currencies-block-top ul{right:15px}}@media (min-width: 1600px){.justify-end #currencies-block-top ul{left:0;right:auto}}#currencies-block-top ul li.selected,#currencies-block-top ul li.selected a,#currencies-block-top ul li a:hover,#currencies-block-top ul li a:focus{color:#595959}
+@charset "UTF-8";
+/* -------------------------------------------------------------
+  Sass CSS3 Mixins! The Cross-Browser CSS3 Sass Library
+  By: Matthieu Aussaguel, http://www.mynameismatthieu.com, @matthieu_tweets
+
+  List of CSS3 Sass Mixins File to be @imported and @included as you need
+
+  The purpose of this library is to facilitate the use of CSS3 on different browsers avoiding HARD TO READ and NEVER
+  ENDING css files
+
+  note: All CSS3 Properties are being supported by Safari 5
+  more info: http://www.findmebyip.com/litmus/#css3-properties
+
+------------------------------------------------------------- */
+/*$base-border-color: darken(saturate(adjust_hue($color-box, 139.99999999999983), 5.263157894736871%), 6.470588235294116%);*/
+/*
+* @package       topPosition
+* @description   to create the equal positions of all popups in header
+*
+*/
+/*
+* @package      iconActiveAnimation
+* @description  mixin for animation icons
+*
+*/
+#currencies-block-top {
+  position: relative;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+#currencies-block-top span.firstWord {
+  display: none;
+}
+
+#currencies-block-top div.current {
+  padding: 5px 15px;
+  position: relative;
+  display: block;
+  color: #595959;
+  cursor: pointer;
+  font-family: "Museo", sans-serif;
+  font-weight: 700;
+}
+
+.bg-dark #currencies-block-top div.current {
+  color: #dedede;
+}
+
+@media (max-width: 550px) {
+  .mobile-stickup #currencies-block-top div.current {
+    color: #dedede;
+  }
+}
+
+.nav-section #currencies-block-top div.current {
+  font-weight: 400;
+}
+
+#currencies-block-top div.current span {
+  margin-right: 3px;
+}
+
+#currencies-block-top div.current:after {
+  content: "";
+  font-family: "FontAwesome";
+  display: inline-block;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 18px;
+  color: #595959;
+  font-weight: normal;
+  vertical-align: bottom;
+  transition: all 0.3s ease-in-out;
+  transform-origin: center;
+}
+
+.bg-dark #currencies-block-top div.current:after {
+  color: #dedede;
+}
+
+#currencies-block-top div.current.active:after {
+  transform: rotate(-180deg) translateZ(0);
+}
+
+#currencies-block-top ul {
+  z-index: 2;
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  display: none;
+  /*padding: 20px 40px;*/
+  padding: 10px;
+  background: white;
+  border-radius: 0px;
+  box-shadow: 0 2px 30px rgba(12, 12, 12, 0.06);
+  top: calc(100% + 3px);
+  font-weight: 400;
+}
+
+@media (min-width: 1600px) {
+  #currencies-block-top ul {
+    min-width: 60;
+  }
+}
+
+@media (min-width: 480px) {
+  #currencies-block-top ul {
+    top: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  #currencies-block-top ul {
+    top: calc(100% + 30px);
+  }
+  .stickUpTop.isStuck #currencies-block-top ul {
+    top: calc(100% + 20px);
+  }
+}
+
+#currencies-block-top ul li {
+  padding: 5px;
+}
+
+@media (min-width: 1200px) {
+  #currencies-block-top ul li {
+    /*margin-bottom: 10px;*/
+    font-size: 14px;
+  }
+}
+
+.nav-section #currencies-block-top ul {
+  right: auto;
+  left: 0;
+}
+
+.justify-end #currencies-block-top ul {
+  left: auto;
+}
+
+@media (min-width: 400px) {
+  .justify-end #currencies-block-top ul {
+    right: 15px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .justify-end #currencies-block-top ul {
+    left: 0;
+    right: auto;
+  }
+}
+
+#currencies-block-top ul li.selected, #currencies-block-top ul li.selected a, #currencies-block-top ul li a:hover, #currencies-block-top ul li a:focus {
+  color: #595959;
+}

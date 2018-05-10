@@ -49,6 +49,11 @@
                             </div>
                             <p class="bon_newsletter_errors alert alert-danger"></p>
                             <p class="bon_newsletter_success alert alert-success"></p>
+                            <div class="checkbox">
+                                <input required type="checkbox" name="newsletter" id="newsletter-tmha" value="1">
+                                <label>{l s='I accept the' mod='blocknewsletter'}
+                                    <a href="#">{l s='Terms and Conditions' mod='blocknewsletter'}</a></label>
+                            </div>
                         </div>
                     </fieldset>
                 </form>

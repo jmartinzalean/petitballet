@@ -182,7 +182,7 @@ $btn-xl-size: $btn-lg-size * 1.1;
     width: calc(100% + 4px);
     height: calc(100% + 4px);
     /*background-color: $dark-background;*/
-    background-color: $color-base;
+    background-color: #a19e9e;
     -webkit-backface-visibility: hidden;
     transition: transform .4s cubic-bezier(.12, .88, .04, 1.02), background .3s linear;
     transition-delay: .1s;
