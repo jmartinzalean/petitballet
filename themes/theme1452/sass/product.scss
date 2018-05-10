@@ -1718,3 +1718,11 @@ div.uploader {
     }
   }
 }
+
+.product-info-line {
+    p#product_reference,
+    p#product_condition,
+    p#pQuantityAvailable {
+        display: none !important;
+    }
+}

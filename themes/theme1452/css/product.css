@@ -1881,3 +1881,9 @@ div.uploader span.filename {
   display: inline-block;
   font-weight: normal;
 }
+
+.product-info-line p#product_reference,
+.product-info-line p#product_condition,
+.product-info-line p#pQuantityAvailable {
+  display: none !important;
+}

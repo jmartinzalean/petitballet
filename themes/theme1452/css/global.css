@@ -16890,7 +16890,7 @@ img.logo_popup {
 
 div#top-column {
   position: relative;
-  z-index: 999999;
+  z-index: 1000;
 }
 
 #newsletter_block_left form input#newsletter-tmha, .innerbox-newsletter form input#newsletter-tmha {
