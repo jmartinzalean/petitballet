@@ -2,8 +2,8 @@
 {if isset($blockcart_top) && $blockcart_top}
 <div class="cartBox clearfix{if $PS_CATALOG_MODE} header_user_catalog{/if}">
 		{/if}
-		<div class="shopping_cart">
-				<a href="{$link->getPageLink($order_process, true)|escape:'html':'UTF-8'}" title="{l s='View my shopping cart' mod='blockcart'}" rel="nofollow" id="logo-cart-petit">
+		<div class="shopping_cart {if $cart_qties == 0}cart-msg{/if}">
+				<a href="{if $cart_qties == 0}#{else}{$link->getPageLink($order_process, true)|escape:'html':'UTF-8'}{/if}" rel="nofollow" id="logo-cart-petit">
 						<span class="shopping-cart-title">{l s='Cart' mod='blockcart'}</span>
 						<span class="ajax_cart_quantity{if $cart_qties == 0} unvisible{/if}">{$cart_qties}</span>
 						<span class="ajax_cart_product_txt{if $cart_qties != 1} unvisible{/if}">{l s='Product' mod='blockcart'}</span>
@@ -25,6 +25,10 @@
 								<span class="block_cart_collapse{if isset($colapseExpandStatus) && $colapseExpandStatus eq 'collapsed'} unvisible{/if}">&nbsp;</span>
 						{/if}
 				</a>
+                                <div class="msg">
+                                   {l s='View my shopping cart' mod='blockcart'}
+                                </div>
+                                                    <input type="hidden" value="{$link->getPageLink($order_process, true)|escape:'html':'UTF-8'}" id="hidden-link">
 				{if !$PS_CATALOG_MODE}
 						<div class="cart_block block">
 								<div class="block_content">
