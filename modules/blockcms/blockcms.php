@@ -870,6 +870,10 @@ class BlockCms extends Module
 				)
 			);
 		}
+                //foreach (BlockCMSModel::getCMSTitlesFooter() as $key => $value) {
+                  //  var_dump($value);
+                //}
+                //die()
                 //var_dump(BlockCMSModel::getCMSTitlesFooter());die();
 		return $this->display(__FILE__, 'blockcms.tpl', $this->getCacheId(BlockCMSModel::FOOTER));
 	}
