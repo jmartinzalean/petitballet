@@ -16957,3 +16957,20 @@ div#top-column {
   -webkit-box-shadow: 0 0 5px #aaa;
   box-shadow: 0 0 5px #aaa;
 }
+
+.shopping_cart .msg {
+  display: none;
+}
+
+.shopping_cart.cart-msg:active .msg {
+  display: block;
+  padding: 8px;
+  position: absolute;
+  right: 0;
+  z-index: 9999;
+  width: 13vw;
+  text-align: center;
+  background: #fff;
+  -webkit-box-shadow: 0 0 5px #aaa;
+  box-shadow: 0 0 5px #aaa;
+}
