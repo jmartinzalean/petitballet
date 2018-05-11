@@ -177,14 +177,14 @@
 					</div>
 					{if isset($newsletter) && $newsletter}
 						<div class="checkbox">
-							<input type="checkbox" name="newsletter" id="newsletter-tmha" value="1" {if isset($smarty.post.newsletter) AND $smarty.post.newsletter == 1} checked="checked"{/if} />
+							<input type="checkbox" name="newsletter" id="newsletter-tmha-login" value="1" {if isset($smarty.post.newsletter) AND $smarty.post.newsletter == 1} checked="checked"{/if} />
 							<label>{l s='Sign up for our newsletter!' mod='tmheaderaccount'}</label>
 							{if array_key_exists('newsletter', $field_required)}
 								<sup> *</sup>
 							{/if}
 						</div>
 					{/if}
-					{if isset($optin) && $optin}
+					{if !isset($optin) && !$optin}
 						<div class="checkbox">
 							<input type="checkbox" name="optin" id="optin-tmha" value="1" {if isset($smarty.post.optin) AND $smarty.post.optin == 1} checked="checked"{/if} />
 							<label>{l s='Receive special offers from our partners!' mod='tmheaderaccount'}</label>
