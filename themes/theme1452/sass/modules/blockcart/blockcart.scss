@@ -68,8 +68,8 @@
   @include title-display();
 
   > a:first-child {
-    @include hm-indent;
-    @include iconActiveAnimation;
+    /*@include hm-indent;
+    @include iconActiveAnimation;*/
 
     font-size: 13px;
     border: none;
@@ -139,7 +139,7 @@
       /*@extend %icon-sm;*/
       /*@include addIconCustom('\e04f');*/
         content: url('../../../fonts/bag.png');
-        margin-top: 4px;
+        /*margin-top: 4px;*/
         /*display: inline-block;*/
 
       @media (min-width: $screen-sm-min) {
@@ -154,12 +154,12 @@
     &.active {
       &::before {
         @media (min-width: $screen-md-min) {
-          transform: rotateY(180deg) scale(0.9);
+          /*transform: rotateY(180deg) scale(0.9);*/
         }
       }
     }
     &:hover, &:focus {
-      color: $primary-text-color;
+      /*color: $primary-text-color;*/
         &::before {
             content: url(../../../fonts/bag_h.png);
         }
