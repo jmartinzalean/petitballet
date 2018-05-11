@@ -38,7 +38,7 @@
 *
 * @description
 */
-.shopping_cart > a:first-child::before, #layer_cart .cross:before {
+#layer_cart .cross:before {
   font-size: 24px;
   line-height: 1;
 }
@@ -242,68 +242,10 @@
 }
 
 .shopping_cart > a:first-child {
-  padding: 5px 15px;
-  position: relative;
-  display: block;
-  color: #595959;
-  cursor: pointer;
-  font-family: "Museo", sans-serif;
-  font-weight: 700;
+  /*@include hm-indent;
+    @include iconActiveAnimation;*/
   font-size: 13px;
   border: none;
-}
-
-.bg-dark .shopping_cart > a:first-child {
-  color: #dedede;
-}
-
-@media (max-width: 550px) {
-  .mobile-stickup .shopping_cart > a:first-child {
-    color: #dedede;
-  }
-}
-
-.nav-section .shopping_cart > a:first-child {
-  font-weight: 400;
-}
-
-.shopping_cart > a:first-child::before {
-  will-change: transform, opacity;
-  animation: iconAnimationIn 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-}
-
-.shopping_cart > a:first-child::after {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 24px;
-  margin-top: -12px;
-  margin-left: -12px;
-  text-align: center;
-  font-size: 24px;
-  line-height: 24px;
-  will-change: transform, opacity;
-  animation: iconAnimationOut 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) both;
-  content: "";
-  font-family: "FontAwesome";
-  display: inline-block;
-  font-weight: normal;
-}
-
-.shopping_cart > a:first-child.active::before, .active .shopping_cart > a:first-child::before {
-  animation: iconAnimationOut 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) both;
-}
-
-.with-out-icon .shopping_cart > a:first-child.active::before, .with-out-icon .active .shopping_cart > a:first-child::before {
-  animation: iconAnimationIn 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-}
-
-.shopping_cart > a:first-child.active::after, .active .shopping_cart > a:first-child::after {
-  animation: iconAnimationIn 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) both;
-}
-
-.with-out-icon .shopping_cart > a:first-child.active::after, .with-out-icon .active .shopping_cart > a:first-child::after {
-  animation: iconAnimationOut 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) both;
 }
 
 .with-out-icon .shopping_cart > a:first-child {
@@ -371,12 +313,13 @@
 }
 
 .shopping_cart > a:first-child::before {
-  will-change: transform;
-  transition: all 0.3s ease-in-out;
+  /*will-change: transform;
+      transition: $base-transition;*/
+  /*@extend %icon-sm;*/
   /*@include addIconCustom('\e04f');*/
   content: url("../../../fonts/bag.png");
-  margin-top: 4px;
-  display: inline-block;
+  /*margin-top: 4px;*/
+  /*display: inline-block;*/
 }
 
 @media (min-width: 768px) and (min-width: 992px) {
@@ -387,12 +330,12 @@
 
 @media (min-width: 992px) {
   .shopping_cart > a:first-child.active::before {
-    transform: rotateY(180deg) scale(0.9);
+    /*transform: rotateY(180deg) scale(0.9);*/
   }
 }
 
 .shopping_cart > a:first-child:hover, .shopping_cart > a:first-child:focus {
-  color: #f4d6d6;
+  /*color: $primary-text-color;*/
 }
 
 .shopping_cart > a:first-child:hover::before, .shopping_cart > a:first-child:focus::before {

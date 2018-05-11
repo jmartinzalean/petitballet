@@ -16898,7 +16898,7 @@ div#top-column {
   top: 0;
   left: 0;
   display: block;
-  width: 100%;
+  width: 6.4vw;
   height: 100%;
   opacity: 0;
   cursor: pointer;
@@ -16911,4 +16911,40 @@ div#top-column {
 #newsletter_block_left form .checkbox label a, .innerbox-newsletter form .checkbox label a {
   text-decoration: underline;
   color: #dadada;
+}
+
+@media (max-width: 767px) {
+  .footer-container .footer-block {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+  }
+  .slider-pro .sp-buttons {
+    display: none;
+  }
+  .bon-newsletter img.logo_popup {
+    width: 80%;
+  }
+  .bon-newsletter .input-wrapper {
+    width: 79% !important;
+  }
+}
+
+@media (max-width: 490px) {
+  .bon-newsletter .innerbox-newsletter .bonnewsletter_form .form-group .btn::after {
+    width: 59px;
+    left: -5px;
+  }
+  .bon-newsletter .innerbox-newsletter .bonnewsletter_form .form-group .input-wrapper {
+    width: 65% !important;
+  }
+  .footer-container #newsletter_block_left .form-group .form-control {
+    margin-bottom: 0 !important;
+    max-width: 55vw;
+  }
+  .footer-container #newsletter_block_left .form-group .btn {
+    width: auto !important;
+  }
+  .footer-container #newsletter_block_left .form-group .btn::after {
+    width: 55px;
+  }
 }

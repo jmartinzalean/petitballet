@@ -4497,7 +4497,7 @@ div#top-column {
             top: 0;
             left: 0;
             display: block;
-            width: 100%;
+            width: 6.4vw;
             height: 100%;
             opacity: 0;
             cursor: pointer;
@@ -4507,6 +4507,64 @@ div#top-column {
             a {
                 text-decoration: underline;
                 color: #dadada;
+            }
+        }
+    }
+}
+
+// Responsive
+@media (max-width: 767px) {
+    .footer-container{
+        .footer-block {
+            margin-top: 0 !important;
+            margin-bottom: 0 !important;
+        }
+    }
+    .slider-pro {
+        .sp-buttons {
+            display: none;
+        }
+    }
+    .bon-newsletter {
+        img.logo_popup {
+            width: 80%;
+        }
+        .input-wrapper {
+            width: 79% !important;
+        }
+    }
+}
+@media (max-width: 490px) {
+    .bon-newsletter {
+        .innerbox-newsletter{
+            .bonnewsletter_form {
+                .form-group {
+                    .btn {
+                        &::after {
+                            width: 59px;
+                            left: -5px;
+                        }
+                    }
+                    .input-wrapper {
+                        width: 65% !important;
+                    }
+                }
+            }
+        }
+    }
+    .footer-container {
+        #newsletter_block_left {
+            .form-group {
+                .form-control {
+                    margin-bottom: 0 !important;
+                    max-width: 55vw;
+                }
+                .btn {
+                    width: auto !important;
+                    &::after {
+                        width: 55px;
+                    }
+                }
             }
         }
     }
