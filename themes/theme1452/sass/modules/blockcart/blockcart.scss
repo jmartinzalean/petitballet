@@ -133,14 +133,14 @@
     }
 
     &::before {
-      will-change: transform;
-      transition: $base-transition;
+      /*will-change: transform;
+      transition: $base-transition;*/
 
-      @extend %icon-sm;
+      /*@extend %icon-sm;*/
       /*@include addIconCustom('\e04f');*/
         content: url('../../../fonts/bag.png');
         margin-top: 4px;
-        display: inline-block;
+        /*display: inline-block;*/
 
       @media (min-width: $screen-sm-min) {
         .block-cart-secondary & {

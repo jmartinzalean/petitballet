@@ -38,7 +38,7 @@
 *
 * @description
 */
-.shopping_cart > a:first-child::before, #layer_cart .cross:before {
+#layer_cart .cross:before {
   font-size: 24px;
   line-height: 1;
 }
@@ -371,12 +371,13 @@
 }
 
 .shopping_cart > a:first-child::before {
-  will-change: transform;
-  transition: all 0.3s ease-in-out;
+  /*will-change: transform;
+      transition: $base-transition;*/
+  /*@extend %icon-sm;*/
   /*@include addIconCustom('\e04f');*/
   content: url("../../../fonts/bag.png");
   margin-top: 4px;
-  display: inline-block;
+  /*display: inline-block;*/
 }
 
 @media (min-width: 768px) and (min-width: 992px) {
