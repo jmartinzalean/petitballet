@@ -1,0 +1,199 @@
+24;Abonos de transportes
+25;Acciones
+26;Acero
+27;Alfombras
+28;Altavoces
+29;Aluminio
+30;Animales (vivos)
+31;Antigüedades
+32;Arcilla/Plastilina
+33;Artículos de cirugía
+34;Artículos de piel
+35;Artículos de plata
+36;Artículos de tocador
+37;Artículos deportivos
+38;Artículos médicos
+39;Atlas
+40;Automoción (componentes)
+41;Avión (componentes)
+42;Azulejos
+43;Bandeja
+44;Baterías
+45;Bebidas alcohólicas
+46;Billete de avión emitido
+47;Bolígrafos
+48;Bombillas
+49;Bonos, endorsados
+50;Botones
+51;Buscapersonas (beeper, Busca)
+52;Cabellos
+53;Calendarios
+54;Cámara
+55;Carpetas
+56;Cartas de navegación
+57;Cartuchos (tinta)
+58;Cartuchos de tóner
+59;Catálogo
+60;CD
+61;Certificados de nacimiento
+62;Cerveza 
+63;Cheques (viajes)
+64;Cheques personales
+65;Cinta de video
+66;Cintas de audio
+67;Cintas, ordenadores
+68;Cojinetes de bolas
+69;Comida (no perecederos)
+70;Comida (perecederos)
+71;Componentes navales
+72;Cosméticos
+73;Cultivos
+74;Diamantes
+75;Diapositivas
+76;Dinero
+77;Discos
+78;Diskettes
+79;Dispositivos de CD/CD-RW
+80;Dispositivos de Diskettes
+81;Dispositivos de DVD/DVD-RW
+82;Documentos
+83;DVD
+84;Efectos personales
+85;Elementos luminosos
+86;Equipaje (personal)
+87;Equipo de Laboratorio
+88;Equipo de música
+89;Equipos eléctricos
+90;Equipos sin cables
+91;Esmeraldas
+92;Etiquetas de papel
+93;Etiquetas de tela
+94;Eventos (tickets, entradas)
+95;Facturas
+96;Fertilizantes
+97;Flores cortadas
+98;Folletos
+99;Fotocopias
+100;Fotografías
+101;Gafas
+102;Hardware informático
+103;Herbicidas
+104;Herramientas
+105;Hierbas
+106;Hierro
+107;Hilos
+108;Impresoras
+109;Instrumentos musicales
+110;Ipod
+111;Jarrón
+112;Joyería
+113;Juguetes
+114;Lápices
+115;Lectores, escáner
+116;Lentes de contacto
+117;Libros
+118;Lino
+119;Líquidos
+120;Madera
+121;Manuales
+122;Manuscritos
+123;Mapas
+124;Maquinaria (componente)
+125;Maquinaria (eléctrica)
+126;Material de oficina
+127;Material odontológico
+128;Medicamentos (con receta)
+129;Medicamentos (sin receta)
+130;Mercería
+131;Metales (no preciosos)
+132;Metales (preciosos)
+133;Micro Film
+134;Microficha
+135;Minerales
+136;Moneda de curso legal
+137;Monitores
+138;Moqueta
+139;Muebles
+140;Muestra de tejido
+141;Música (Partituras)
+142;Negativos
+143;Neumáticos
+144;Obras de arte 
+145;Ordenadores (componentes)
+146;Ordenadores personales
+147;Oro
+148;Pasaportes
+149;Película (comercial)
+150;Película (sin revelar)
+151;Peluca
+152;Perfumes
+153;Perlas
+154;Piedras
+155;Piedras (preciosas)
+156;Pieles
+157;Pilas
+158;Pinturas
+159;Pinturas técnicas
+160;Plantas
+161;Plata
+162;Platino
+163;Platos
+164;Plumas de aves
+165;Potpourri
+166;Productos de grafito
+167;Productos ecológicos
+168;Productos minerales
+169;Programas informáticos
+170;Publicaciones periódicas
+171;Publicidad
+172;Radios, AM/FM
+173;Ratón, ordenador
+174;Rayos X
+175;Relojes
+176;Reproductores audiovisuales
+177;Reproductores de CD
+178;Reproductores de DVD
+179;Reproductores de mp3
+180;Reproductores de VCR
+181;Revistas
+182;Ropa interior
+183;Ropa usada
+184;Ropa y Textil
+185;Router Wi-fi
+186;Rubíes
+187;Satélites (componentes)
+188;Sellos 
+189;Semillas
+190;Software
+191;Souvenirs
+192;Suero
+193;Sustancias infecciosas
+194;Tabaco
+195;Talonario de cheques (blanco)
+196;Tarjetas de crédito
+197;Tarjetas de empresa
+198;Tarjetas de felicitación
+199;Tarjetas de identificación
+200;Tarjetas de teléfono
+201;Tarjetas electrónicas
+202;Teclados
+203;Tejidos y telas
+204;Teléfonos
+205;Teléfonos móviles
+206;Teléfonos satélites
+207;Televisores
+208;Tierra
+209;Tinta líquida
+210;Títulos al portador
+211;Títulos que no admiten portador
+212;Transparencias
+213;Utensilios de cocina
+214;Vajilla
+215;Vendaje
+216;Vestidos
+217;Videos
+218;Vino
+219;Visados
+220;Walkie Talkie
+221;Zafiros
+222;Zapatos

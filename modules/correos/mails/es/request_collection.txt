@@ -1,0 +1,14 @@
+Nº CLIENTE: {client_number}, Nº CONTRATO: {contract_number}
+**************************************************************************
+Datos de Recogida
+Teléfono: {collection_req_phone}/{collection_req_mobile_phone}
+Nombre: {collection_req_name}
+Calle: {collection_req_address}
+CP: {collection_req_postalcode}
+Población: {collection_req_city}
+Provincia: {collection_req_state}
+Número de Bulto(s): {collection_req_pieces}
+Fecha de recogida: {collection_req_date}
+Horario: {collection_req_time}
+Observaciones: {collection_req_comments}
+Código de envío: {shipping_codes}

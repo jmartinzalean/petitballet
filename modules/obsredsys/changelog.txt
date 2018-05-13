@@ -1,0 +1,226 @@
+*****************************************
+*              CHANGE LOG 
+*               OBSREDSYS 
+*           PRESTASHOP MODULE
+*****************************************
+
+v.3.6.7
+04/12/2018
+------
+- Added PrestaTrust address
+
+v.3.6.6
+02/01/2018
+------
+- Solved issue with currency ISO in Preestashop 1.7
+
+v.3.6.5
+01/25/2018
+------
+- Solved issue with delivery currency in payment controller
+
+v.3.6.4
+12/18/2017
+------
+- Deleted message with "Basic information" in order details and sending to customer
+
+v.3.6.3
+11/09/2017
+------
+- Solved issue when card country is empty
+
+v.3.6.2
+10/27/2017
+------
+- Added additional transaction information in order details module section (Terminal code, merchant code, transaction type)
+- Added M49 country table for card owner country Redsys identification
+
+v.3.6.1
+10/06/2017
+------
+- Solved issue with carriers list with carrier's modules
+
+v.3.6.0
+10/06/2017
+------
+- Added additional transaction information in order details module section (card type, customer country, secure payment info, customer language)
+
+v.3.5.5
+10/2/2017
+------
+- Solved issue with languages
+
+v.3.5.4
+09/27/2017
+------
+- Solved issue with hookDisplayPaymentEU with Prestashop 1.7.1.1
+
+v.3.5.3
+09/22/2017
+------
+- Solved issue with redirect result of the tpv with Prestashop 1.7
+
+v.3.5.2
+09/18/2017
+------
+- Solved issue with currency code on create tpv
+
+v.3.5.1
+08/10/2017
+------
+- Added compatibility with Prestashop 1.7.1.2
+- Solved issue in upgrade 3.5.0
+
+v.3.5.0
+06/12/2017
+------
+- Added currency filter for each TPV Redsys
+
+v.3.4.1
+06/06/2017
+------
+- Merged separated module versions for different Prestashop versions in one only version
+
+v.3.4.0
+05/29/2017
+------
+- Added carrier filter for each TPV Redsys
+- Added min amount and max amount for each TPV Redsys
+
+v.3.3.1
+05/16/2017
+-----
+- Enable SSL in IPN and RefundIPN URLs
+- Enable 'PaymentOption' for Prestashop 1.7
+
+v.3.3.0
+01/05/2017
+-----
+- Added compatibility with prestashop 1.7
+
+v.3.2.5
+10/19/2016
+-----
+- Solved SIS0019 issue caused by prices with low precision
+
+v.3.2.4
+08/01/2016
+-----
+- Solved issue in TPV customer groups creating new TPV configuration
+- Solved issue in TPV customer groups deleting a TPV configuration
+
+v.3.2.3
+07/08/2016
+------
+- Fixed problem with multistore when the store have more than 9 stores
+
+v.3.2.2
+06/20/2016
+------
+- Fixed problem with sql script in new installations of version 3.2.1
+
+v.3.2.1
+06/16/2016
+------
+- Fixed problem with the exchange when the customer pays with a different currency than the store
+
+v.3.2.0
+06/09/2016
+------
+- Added customer group filter for each TPV Redsys
+
+v.3.1.0
+05/25/2016
+------
+- Added customer name on 'Titular' field in Redsys transaction receipt
+- Added cart id on 'ProductDescription' in Redsys transaction receipt
+
+v.3.0.2
+03/07/2016
+------
+- Transaction id added in order's payment table
+
+v.3.0.1
+01/29/2016
+------
+- Fixed bug in environment (test/real) field in notification history list insert
+
+v.3.0.0
+11/10/2015
+------
+- Added: Multi-tpv support
+- Added: Multi-shop support
+- Added: Multi-currency support
+- Compatibility: Prestashop 1.4 compatibility discontinued
+- Compatibility: Compatibility with 'advancedeucompliance' module added 
+
+v.2.3.2
+12/04/2015
+-------
+- fix: Solved a 'random' SHA problem while doing refunds via webservice. Changed to work with 'form' style.
+- Compatibility: last Prestashop 1.4 compatible version
+
+v.2.3.1
+11/06/2015
+-------
+- fix: Solved a problem with "maxlength" limit while introducing merchant SHA256 key
+- fix: Solved a problem with Prestashop 1.4 not showing payment form
+- fix: Solved a problem with Prestashop 1.4 not validating orders
+
+v.2.3.0
+10/23/2015
+-------
+- added: Modified encription type from SHA-1 to SHA256
+
+v.2.2.3
+09/17/2015
+-------
+- fix: Added code to jump PrestaShop problems in currency conversion
+
+v.2.2.2
+07/03/2015
+-------
+- fix: OK/KO Return URL "&amp;" escape problems
+
+v.2.2.1
+05/04/2015
+-------
+- fix: Solved "'Ds_Merchant_Order' Número de pedido repetido" error message.
+
+v.2.2.0
+04/30/2015
+-------
+- added: Partial refund possibility
+
+v.2.1.3
+-------
+- fix: Added english language for iso code 'gb'
+
+v.2.1.2
+-------
+- fix: Solved problems with currency conversions
+
+v.2.1.1
+-------
+- minor-fix: Prestashop 1.4 - solved empty cart when payment error 
+
+v.2.1
+-------
+- fix: Solved problems with Prestashop 1.4
+
+v.2.0
+-------
+- added: Refund possibility
+
+v.1.6
+-------
+- added: Bank notifications history
+
+v.1.5
+-------
+- added: Payment methods selection
+
+v.1.4
+-------
+- added: Try again option in Error Payments cases
+
