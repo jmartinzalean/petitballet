@@ -16974,3 +16974,14 @@ div#top-column {
   -webkit-box-shadow: 0 0 5px #aaa;
   box-shadow: 0 0 5px #aaa;
 }
+
+input#newsletter-tmha-footer {
+  z-index: 5;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 6.4vw;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
