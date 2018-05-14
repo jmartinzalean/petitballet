@@ -12029,6 +12029,14 @@ header .nav nav {
   margin: 7px 0;
 }
 
+#index .price {
+  display: none !important;
+}
+
+#index .shopping_cart .price {
+  display: block !important;
+}
+
 /*
 * @section      Page Footer
 * @description  This section holds specific style redeclarations for some
@@ -12055,52 +12063,52 @@ header .nav nav {
   color: #dedede;
 }
 
-.footer-container .footer-block {
+.footer-container .footer-block, .footer-container .footer-block-petit {
   margin-top: 20px;
 }
 
 @media (min-width: 768px) {
-  .footer-container .footer-block {
+  .footer-container .footer-block, .footer-container .footer-block-petit {
     margin-top: 45px;
   }
 }
 
 @media (min-width: 1600px) {
-  .footer-container .footer-block {
+  .footer-container .footer-block, .footer-container .footer-block-petit {
     margin-top: 4.17vw;
   }
 }
 
-.footer-container .footer-block li, .footer-container .footer-block li a, .footer-container .footer-block li a[href*='tel'], .footer-container .footer-block li a[href*='mailto'] {
+.footer-container .footer-block li, .footer-container .footer-block li a, .footer-container .footer-block li a[href*='tel'], .footer-container .footer-block li a[href*='mailto'], .footer-container .footer-block-petit li, .footer-container .footer-block-petit li a, .footer-container .footer-block-petit li a[href*='tel'], .footer-container .footer-block-petit li a[href*='mailto'] {
   font-family: "Museo", sans-serif;
   letter-spacing: 0;
   font-size: 13px;
 }
 
 @media (min-width: 1600px) {
-  .footer-container .footer-block li, .footer-container .footer-block li a, .footer-container .footer-block li a[href*='tel'], .footer-container .footer-block li a[href*='mailto'] {
+  .footer-container .footer-block li, .footer-container .footer-block li a, .footer-container .footer-block li a[href*='tel'], .footer-container .footer-block li a[href*='mailto'], .footer-container .footer-block-petit li, .footer-container .footer-block-petit li a, .footer-container .footer-block-petit li a[href*='tel'], .footer-container .footer-block-petit li a[href*='mailto'] {
     font-size: 14px;
   }
 }
 
-.footer-container .footer-block li a {
+.footer-container .footer-block li a, .footer-container .footer-block-petit li a {
   position: relative;
   display: inline-block;
   color: #dedede;
   transition: all 0.3s ease-in-out;
 }
 
-.footer-container .footer-block li a:not([href*='tel']):not([href*='mailto']) {
+.footer-container .footer-block li a:not([href*='tel']):not([href*='mailto']), .footer-container .footer-block-petit li a:not([href*='tel']):not([href*='mailto']) {
   padding-left: 15px;
 }
 
 @media (min-width: 992px) {
-  .footer-container .footer-block li a:not([href*='tel']):not([href*='mailto']) {
+  .footer-container .footer-block li a:not([href*='tel']):not([href*='mailto']), .footer-container .footer-block-petit li a:not([href*='tel']):not([href*='mailto']) {
     padding-left: 25px;
   }
 }
 
-.footer-container .footer-block li a:not([href*='tel']):not([href*='mailto'])::before {
+.footer-container .footer-block li a:not([href*='tel']):not([href*='mailto'])::before, .footer-container .footer-block-petit li a:not([href*='tel']):not([href*='mailto'])::before {
   position: absolute;
   top: 50%;
   left: 0;
@@ -12114,20 +12122,20 @@ header .nav nav {
   font-weight: normal;
 }
 
-.footer-container .footer-block li a:not([href*='tel']):not([href*='mailto']):hover::before {
+.footer-container .footer-block li a:not([href*='tel']):not([href*='mailto']):hover::before, .footer-container .footer-block-petit li a:not([href*='tel']):not([href*='mailto']):hover::before {
   transform: translate(5px, -50%);
 }
 
-.footer-container .footer-block li a:hover {
+.footer-container .footer-block li a:hover, .footer-container .footer-block-petit li a:hover {
   color: #dedede;
 }
 
-.footer-container .footer-block li + li {
+.footer-container .footer-block li + li, .footer-container .footer-block-petit li + li {
   margin-top: 15px;
 }
 
 @media (min-width: 1600px) {
-  .footer-container .footer-block li + li {
+  .footer-container .footer-block li + li, .footer-container .footer-block-petit li + li {
     margin-top: 22px;
   }
 }
@@ -16691,6 +16699,12 @@ span.closeButtonNormal {
   padding: 10px;
 }
 
+.footer-container .footer-central-colum .module {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
 .footer-container #newsletter_block_left {
   margin-top: 55px !important;
   margin-bottom: 55px !important;
@@ -16755,19 +16769,19 @@ span.closeButtonNormal {
   height: 42px;
 }
 
-.footer-container .footer-block {
+.footer-container .footer-block, .footer-container .footer-block-petit {
   margin-top: 55px !important;
   margin-bottom: 55px !important;
 }
 
-.footer-container .footer-block h4, .footer-container .footer-block h4 a {
+.footer-container .footer-block h4, .footer-container .footer-block h4 a, .footer-container .footer-block-petit h4, .footer-container .footer-block-petit h4 a {
   font-size: 20px;
   font-weight: normal;
   text-align: left;
   line-height: 20px;
 }
 
-.footer-container .footer-block ul {
+.footer-container .footer-block ul, .footer-container .footer-block-petit ul {
   color: #dedede;
   margin-bottom: 15px !important;
 }
@@ -16914,7 +16928,10 @@ div#top-column {
 }
 
 @media (max-width: 767px) {
-  .footer-container .footer-block {
+  .footer-container .footer-central-colum .module {
+    display: block;
+  }
+  .footer-container .footer-block, .footer-container .footer-block-petit {
     margin-top: 0 !important;
     margin-bottom: 0 !important;
   }
