@@ -263,14 +263,12 @@ class BlockCMSModel extends ObjectModel
 			return array();
 
 		$cmsCategories = explode('|', $footerCms);
-                $root=0;
 		foreach ($cmsCategories as $cmsCategory)
 		{
 			$ids = explode('_', $cmsCategory);
 
 			if ($ids[0] == 1 && isset($ids[1]))
 			{
-                                $root=$cmsCategory;
 				$query = BlockCMSModel::getBlockName($ids[1]);
 				$content[$cmsCategory]['link'] = $context->link->getCMSCategoryLink((int)$ids[1], $query['link_rewrite']);
 				$content[$cmsCategory]['meta_title'] = $query['name'];
@@ -279,9 +277,9 @@ class BlockCMSModel extends ObjectModel
 			else if ($ids[0] == 0 && isset($ids[1]))
 			{
 				$query = BlockCMSModel::getCMSMetaTitle($ids[1]);
-				$content[$root]['subcategories'][$ids[1]]=array(
-                                    'links' => $context->link->getCMSLink((int)$ids[1], $query['link_rewrite']),
-                                    'metas' => $query['meta_title'],
+				$content[$cmsCategory]=array(
+                                    'link' => $context->link->getCMSLink((int)$ids[1], $query['link_rewrite']),
+                                    'meta_title' => $query['meta_title'],
                                     'iscategory' => 0
                                     );
 			}

@@ -41,26 +41,30 @@
   <!-- /Block CMS module -->
 {else}
   <!-- Block CMS module footer -->
+    {assign var="control" value=0}
     {foreach from=$cmslinks item=cmslinkscategory}
-        <section class="footer-block-petit">
-            {if $cmslinkscategory.iscategory == 1}
-                <h4 class="title_block">
-                    {$cmslinkscategory.meta_title|escape:'html':'UTF-8'}
-                </h4>
-                <ul class="toggle-footer">
-                    {$cmslinkscategory.subcategories|@var_dump}
-                    {foreach from=$cmslinkscategory.subcategories item=$cms}
-                        {$cms|@var_dump}
-                        <li class="item">
-                            <a href="{$cms.links|escape:'html':'UTF-8'}" title="{$cms.metas|escape:'html':'UTF-8'}">
-                                {$cms.metas}
-                            </a>
-                        </li>
-                    {/foreach}
-                </ul>                
+        {if $cmslinkscategory.iscategory == 1}
+            {if $control == 0}
+                {assign var="control" value=1}
+            {else}
+                </ul>
+            </section>
             {/if}
-        </section>
+            <section class="footer-block">
+            <h4 class="title_block">
+                {$cmslinkscategory.meta_title|escape:'html':'UTF-8'}
+            </h4>
+            <ul class="toggle-footer">
+        {/if}
+        {if $cmslinkscategory.iscategory == 0}
+            <li class="item">
+                <a href="{$cmslinkscategory.link|escape:'html':'UTF-8'}" title="{$cmslinkscategory.meta_title|escape:'html':'UTF-8'}">
+                    {$cmslinkscategory.meta_title}
+                </a>
+            </li>
+        {/if}
     {/foreach}
-
+                </ul>
+            </section>
   <!-- /Block CMS module footer -->
 {/if}
