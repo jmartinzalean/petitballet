@@ -58,6 +58,13 @@ table {
   border-spacing: 0;
 }
 
+#index .price{
+    display: none !important;
+}
+#index .shopping_cart .price{
+    display: block !important;
+}
+
 /* -------------------------------------------------------------
   Sass CSS3 Mixins! The Cross-Browser CSS3 Sass Library
   By: Matthieu Aussaguel, http://www.mynameismatthieu.com, @matthieu_tweets
@@ -16789,6 +16796,11 @@ span.closeButtonNormal {
   font-size: 14px;
   float: left;
 }
+.footer-container .footer-central-colum .module {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
 
 .footer-container div#languages-block-footer ul.footer-block-languages li.selected::after {
   content: '\2F';
@@ -16914,6 +16926,9 @@ div#top-column {
 }
 
 @media (max-width: 767px) {
+    .footer-container .footer-central-colum .module {
+        display: block;
+    }
   .footer-container .footer-block {
     margin-top: 0 !important;
     margin-bottom: 0 !important;
