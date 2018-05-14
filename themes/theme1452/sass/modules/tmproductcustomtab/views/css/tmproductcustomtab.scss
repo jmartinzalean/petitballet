@@ -30,7 +30,8 @@
     display: flex;
     padding: 8px;
     border: $main_border;
-    color: $dark-text-color;
+    /*color: $dark-text-color;*/
+    color: black;
     margin-bottom: 10px;
     table {
       table-layout: auto;
@@ -84,7 +85,8 @@
     table-layout: fixed;
     width: 100%;
     background: $base-box-bg;
-    color: $dark-text-color;
+    /*color: $dark-text-color;*/
+    color: black;
     @media (max-width: $screen-xs-max) {
       font-size: 14px;
     }

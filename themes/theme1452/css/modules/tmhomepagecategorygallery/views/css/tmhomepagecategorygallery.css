@@ -1,1 +1,315 @@
-.tmhomepagecategorygallery-block{position:relative;z-index:1;width:100%;clear:both}.tmhomepagecategorygallery-block #tmhomepagecategorygallery-nav{position:absolute;z-index:1;top:0;right:15px}.tmhomepagecategorygallery .item{display:flex;flex-wrap:wrap}@media (min-width: 768px){.tmhomepagecategorygallery .item{flex-wrap:nowrap}}.tmhomepagecategorygallery .item>a{position:relative;display:block;width:100%;height:75vw;overflow:hidden;background-repeat:no-repeat;background-position:top 50% right 50%;background-size:cover;backface-visibility:hidden}@media (min-width: 480px){.tmhomepagecategorygallery .item>a{height:50vw}}@media (min-width: 768px){.tmhomepagecategorygallery .item>a{width:50%;height:34vw}}.tmhomepagecategorygallery .item>a::before,.tmhomepagecategorygallery .item>a::after{content:'';transition:all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);pointer-events:none}.tmhomepagecategorygallery .item>a::after{content:'';position:absolute;top:0;left:0;width:100%;height:100%;border-top:2px solid #dedede;border-bottom:2px solid #dedede;opacity:0;transform:rotate3d(0, 0, 1, 45deg) scale3d(1, 0, 1);transform-origin:50% 50%}@media (min-width: 992px){.tmhomepagecategorygallery .item>a:hover::after{opacity:0.2;transform:rotate3d(0, 0, 1, 45deg) scale3d(1, 1, 1)}}@media (min-width: 768px){.tmhomepagecategorygallery .item:nth-of-type(even)>a{order:1}}.tmhomepagecategorygallery .item:nth-of-type(even) .tmhomepagecategorygallery-content{background-color:#121212;color:#dedede}.tmhomepagecategorygallery .item:nth-of-type(even) .tmhomepagecategorygallery-description{color:#dedede}div:not(.thumbnails)>.tmhomepagecategorygallery-block>.tmhomepagecategorygallery .item:nth-of-type(odd) .tmhomepagecategorygallery-button::before{border:2px solid #121212}@media (min-width: 768px){div:not(.thumbnails)>.tmhomepagecategorygallery-block>.tmhomepagecategorygallery .item:nth-of-type(odd) .tmhomepagecategorygallery-button:hover{color:#121212}div:not(.thumbnails)>.tmhomepagecategorygallery-block>.tmhomepagecategorygallery .item:nth-of-type(odd) .tmhomepagecategorygallery-button:active:focus,div:not(.thumbnails)>.tmhomepagecategorygallery-block>.tmhomepagecategorygallery .item:nth-of-type(odd) .tmhomepagecategorygallery-button:active,div:not(.thumbnails)>.tmhomepagecategorygallery-block>.tmhomepagecategorygallery .item:nth-of-type(odd) .tmhomepagecategorygallery-button:focus,.active>div:not(.thumbnails)>.tmhomepagecategorygallery-block>.tmhomepagecategorygallery .item:nth-of-type(odd) .tmhomepagecategorygallery-button,div:not(.thumbnails)>.tmhomepagecategorygallery-block>.tmhomepagecategorygallery .item:nth-of-type(odd) .tmhomepagecategorygallery-button.disabled,div:not(.thumbnails)>.tmhomepagecategorygallery-block>.tmhomepagecategorygallery .item:nth-of-type(odd) .tmhomepagecategorygallery-button.btn[disabled],.disabled>div:not(.thumbnails)>.tmhomepagecategorygallery-block>.tmhomepagecategorygallery .item:nth-of-type(odd) .tmhomepagecategorygallery-button{color:#121212}}@media only screen and (max-width: 767px){div:not(.thumbnails)>.tmhomepagecategorygallery-block>.tmhomepagecategorygallery .item:nth-of-type(odd) .tmhomepagecategorygallery-button:active:focus,div:not(.thumbnails)>.tmhomepagecategorygallery-block>.tmhomepagecategorygallery .item:nth-of-type(odd) .tmhomepagecategorygallery-button:active,div:not(.thumbnails)>.tmhomepagecategorygallery-block>.tmhomepagecategorygallery .item:nth-of-type(odd) .tmhomepagecategorygallery-button:focus,div:not(.thumbnails)>.tmhomepagecategorygallery-block>.tmhomepagecategorygallery .item:nth-of-type(odd) .tmhomepagecategorygallery-button.hover,div:not(.thumbnails)>.tmhomepagecategorygallery-block>.tmhomepagecategorygallery .item:nth-of-type(odd) .tmhomepagecategorygallery-button:hover{color:#121212}}.tmhomepagecategorygallery-content{z-index:1;display:flex;flex-direction:column;justify-content:center;align-items:center;width:100%;height:75vw;padding:0 5%;background-color:#f4f4f4;color:#121212;text-align:center}@media (min-width: 480px){.tmhomepagecategorygallery-content{height:50vw}}@media (min-width: 768px){.tmhomepagecategorygallery-content{width:50%;height:34vw}}.tmhomepagecategorygallery-name{font:700 24px/1.2069 "Poiret One",sans-serif;text-transform:uppercase}@media (min-width: 992px){.tmhomepagecategorygallery-name{font-size:3.02vw}}.tmhomepagecategorygallery-name+.tmhomepagecategorygallery-description{margin-top:10px}.tmhomepagecategorygallery-description{line-height:1.5;color:#626262}@media (min-width: 992px){.tmhomepagecategorygallery-description{max-width:46.88%;font-size:0.83vw}}@media (min-width: 992px) and (max-width: 1199px){.tmhomepagecategorygallery-description{font-size:16px}}.tmhomepagecategorygallery-description+.tmhomepagecategorygallery-button{margin-top:25px}.tmhomepagecategorygallery-button{min-width:200px}@media (min-width: 1200px){.tmhomepagecategorygallery-button{min-width:260px}}.tmhomepagecategorygallery-nav li{display:block;overflow:hidden;text-align:center;border-radius:50%;position:relative;margin-bottom:10px;width:16px;height:16px;outline:none;cursor:pointer;background-color:rgba(222,222,222,0.3);box-shadow:0 0 0 2px rgba(255,255,255,0);transition:box-shadow 0.3s ease}.tmhomepagecategorygallery-nav li a{position:absolute;top:0;left:0;width:100%;height:100%;outline:none;border-radius:50%;cursor:pointer;text-indent:-999px;background-color:rgba(18,18,18,0.7);transition:background-color 0.3s ease, transform 0.3s ease}.tmhomepagecategorygallery-nav li.active a,.tmhomepagecategorygallery-nav li:hover a,.tmhomepagecategorygallery-nav li:focus a{background-color:#121212}.tmhomepagecategorygallery-nav li.current-item{box-shadow:0 0 0 2px #121212}.tmhomepagecategorygallery-nav li.current-item a{transform:scale(0.4)}@media (min-width: 768px){.thumbnails .tmhomepagecategorygallery{display:flex}.thumbnails .tmhomepagecategorygallery li{position:relative;width:50%}.thumbnails .tmhomepagecategorygallery li:nth-of-type(even){margin-left:10px}.thumbnails .tmhomepagecategorygallery li:nth-of-type(odd){margin-right:10px}.thumbnails .tmhomepagecategorygallery .item>a{width:100%}}@media (min-width: 768px) and (min-width: 1600px){.thumbnails .tmhomepagecategorygallery .item>a{height:34.25vw}}@media (min-width: 1600px){.thumbnails .tmhomepagecategorygallery-content{height:34.25vw}}@media (min-width: 768px){.thumbnails .tmhomepagecategorygallery-content{position:absolute;top:0;left:0;align-items:flex-start;width:100%;background:transparent !important;color:#dedede}.thumbnails .tmhomepagecategorygallery-content::before{content:'';position:absolute;top:0;left:0;width:100%;height:100%;background-color:rgba(18,18,18,0.3)}.thumbnails .tmhomepagecategorygallery-content>*{position:relative}}@media (min-width: 1200px){.thumbnails .tmhomepagecategorygallery-content{padding:0 15%}}@media (min-width: 768px){.thumbnails .tmhomepagecategorygallery-description{max-width:55%;text-align:left;color:#dedede}}@media (min-width: 992px) and (max-width: 1199px){.thumbnails .tmhomepagecategorygallery-description{max-width:75%}}
+/* -------------------------------------------------------------
+  Sass CSS3 Mixins! The Cross-Browser CSS3 Sass Library
+  By: Matthieu Aussaguel, http://www.mynameismatthieu.com, @matthieu_tweets
+
+  List of CSS3 Sass Mixins File to be @imported and @included as you need
+
+  The purpose of this library is to facilitate the use of CSS3 on different browsers avoiding HARD TO READ and NEVER
+  ENDING css files
+
+  note: All CSS3 Properties are being supported by Safari 5
+  more info: http://www.findmebyip.com/litmus/#css3-properties
+
+------------------------------------------------------------- */
+/*$base-border-color: darken(saturate(adjust_hue($color-box, 139.99999999999983), 5.263157894736871%), 6.470588235294116%);*/
+.tmhomepagecategorygallery-block {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  clear: both;
+}
+
+.tmhomepagecategorygallery-block #tmhomepagecategorygallery-nav {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  right: 15px;
+}
+
+.tmhomepagecategorygallery .item {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media (min-width: 768px) {
+  .tmhomepagecategorygallery .item {
+    flex-wrap: nowrap;
+  }
+}
+
+.tmhomepagecategorygallery .item > a {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 75vw;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-position: top 50% right 50%;
+  background-size: cover;
+  backface-visibility: hidden;
+}
+
+@media (min-width: 480px) {
+  .tmhomepagecategorygallery .item > a {
+    height: 50vw;
+  }
+}
+
+@media (min-width: 768px) {
+  .tmhomepagecategorygallery .item > a {
+    width: 50%;
+    height: 34vw;
+  }
+}
+
+.tmhomepagecategorygallery .item > a::before, .tmhomepagecategorygallery .item > a::after {
+  content: '';
+  transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  pointer-events: none;
+}
+
+.tmhomepagecategorygallery .item > a::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-top: 2px solid #dedede;
+  border-bottom: 2px solid #dedede;
+  opacity: 0;
+  transform: rotate3d(0, 0, 1, 45deg) scale3d(1, 0, 1);
+  transform-origin: 50% 50%;
+}
+
+@media (min-width: 992px) {
+  .tmhomepagecategorygallery .item > a:hover::after {
+    opacity: 0.2;
+    transform: rotate3d(0, 0, 1, 45deg) scale3d(1, 1, 1);
+  }
+}
+
+@media (min-width: 768px) {
+  .tmhomepagecategorygallery .item:nth-of-type(even) > a {
+    order: 1;
+  }
+}
+
+.tmhomepagecategorygallery .item:nth-of-type(even) .tmhomepagecategorygallery-content {
+  background-color: #121212;
+  color: #dedede;
+}
+
+.tmhomepagecategorygallery .item:nth-of-type(even) .tmhomepagecategorygallery-description {
+  color: #dedede;
+}
+
+div:not(.thumbnails) > .tmhomepagecategorygallery-block > .tmhomepagecategorygallery .item:nth-of-type(odd) .tmhomepagecategorygallery-button::before {
+  border: 2px solid #121212;
+}
+
+@media (min-width: 768px) {
+  div:not(.thumbnails) > .tmhomepagecategorygallery-block > .tmhomepagecategorygallery .item:nth-of-type(odd) .tmhomepagecategorygallery-button:hover {
+    color: #595959;
+  }
+  div:not(.thumbnails) > .tmhomepagecategorygallery-block > .tmhomepagecategorygallery .item:nth-of-type(odd) .tmhomepagecategorygallery-button:active:focus, div:not(.thumbnails) > .tmhomepagecategorygallery-block > .tmhomepagecategorygallery .item:nth-of-type(odd) .tmhomepagecategorygallery-button:active, div:not(.thumbnails) > .tmhomepagecategorygallery-block > .tmhomepagecategorygallery .item:nth-of-type(odd) .tmhomepagecategorygallery-button:focus, .active > div:not(.thumbnails) > .tmhomepagecategorygallery-block > .tmhomepagecategorygallery .item:nth-of-type(odd) .tmhomepagecategorygallery-button, div:not(.thumbnails) > .tmhomepagecategorygallery-block > .tmhomepagecategorygallery .item:nth-of-type(odd) .tmhomepagecategorygallery-button.disabled, div:not(.thumbnails) > .tmhomepagecategorygallery-block > .tmhomepagecategorygallery .item:nth-of-type(odd) .tmhomepagecategorygallery-button.btn[disabled], .disabled > div:not(.thumbnails) > .tmhomepagecategorygallery-block > .tmhomepagecategorygallery .item:nth-of-type(odd) .tmhomepagecategorygallery-button {
+    color: #595959;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  div:not(.thumbnails) > .tmhomepagecategorygallery-block > .tmhomepagecategorygallery .item:nth-of-type(odd) .tmhomepagecategorygallery-button:active:focus, div:not(.thumbnails) > .tmhomepagecategorygallery-block > .tmhomepagecategorygallery .item:nth-of-type(odd) .tmhomepagecategorygallery-button:active, div:not(.thumbnails) > .tmhomepagecategorygallery-block > .tmhomepagecategorygallery .item:nth-of-type(odd) .tmhomepagecategorygallery-button:focus, div:not(.thumbnails) > .tmhomepagecategorygallery-block > .tmhomepagecategorygallery .item:nth-of-type(odd) .tmhomepagecategorygallery-button.hover, div:not(.thumbnails) > .tmhomepagecategorygallery-block > .tmhomepagecategorygallery .item:nth-of-type(odd) .tmhomepagecategorygallery-button:hover {
+    color: #595959;
+  }
+}
+
+.tmhomepagecategorygallery-content {
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 75vw;
+  padding: 0 5%;
+  background-color: #f4f4f4;
+  color: #595959;
+  text-align: center;
+}
+
+@media (min-width: 480px) {
+  .tmhomepagecategorygallery-content {
+    height: 50vw;
+  }
+}
+
+@media (min-width: 768px) {
+  .tmhomepagecategorygallery-content {
+    width: 50%;
+    height: 34vw;
+  }
+}
+
+.tmhomepagecategorygallery-name {
+  font: 700 24px/1.2069 "Museo", sans-serif;
+  text-transform: uppercase;
+}
+
+@media (min-width: 992px) {
+  .tmhomepagecategorygallery-name {
+    font-size: 3.02vw;
+  }
+}
+
+.tmhomepagecategorygallery-name + .tmhomepagecategorygallery-description {
+  margin-top: 10px;
+}
+
+.tmhomepagecategorygallery-description {
+  line-height: 1.5;
+  color: #626262;
+}
+
+@media (min-width: 992px) {
+  .tmhomepagecategorygallery-description {
+    max-width: 46.88%;
+    font-size: 0.83vw;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .tmhomepagecategorygallery-description {
+    font-size: 16px;
+  }
+}
+
+.tmhomepagecategorygallery-description + .tmhomepagecategorygallery-button {
+  margin-top: 25px;
+}
+
+.tmhomepagecategorygallery-button {
+  min-width: 200px;
+}
+
+@media (min-width: 1200px) {
+  .tmhomepagecategorygallery-button {
+    min-width: 260px;
+  }
+}
+
+.tmhomepagecategorygallery-nav li {
+  display: block;
+  overflow: hidden;
+  text-align: center;
+  border-radius: 50%;
+  position: relative;
+  margin-bottom: 10px;
+  width: 16px;
+  height: 16px;
+  outline: none;
+  cursor: pointer;
+  background-color: rgba(222, 222, 222, 0.3);
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0);
+  transition: box-shadow 0.3s ease;
+}
+
+.tmhomepagecategorygallery-nav li a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  outline: none;
+  border-radius: 50%;
+  cursor: pointer;
+  text-indent: -999px;
+  background-color: rgba(18, 18, 18, 0.7);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.tmhomepagecategorygallery-nav li.active a, .tmhomepagecategorygallery-nav li:hover a, .tmhomepagecategorygallery-nav li:focus a {
+  background-color: #121212;
+}
+
+.tmhomepagecategorygallery-nav li.current-item {
+  box-shadow: 0 0 0 2px #121212;
+}
+
+.tmhomepagecategorygallery-nav li.current-item a {
+  transform: scale(0.4);
+}
+
+@media (min-width: 768px) {
+  .thumbnails .tmhomepagecategorygallery {
+    display: flex;
+  }
+  .thumbnails .tmhomepagecategorygallery li {
+    position: relative;
+    width: 50%;
+  }
+  .thumbnails .tmhomepagecategorygallery li:nth-of-type(even) {
+    margin-left: 10px;
+  }
+  .thumbnails .tmhomepagecategorygallery li:nth-of-type(odd) {
+    margin-right: 10px;
+  }
+  .thumbnails .tmhomepagecategorygallery .item > a {
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) and (min-width: 1600px) {
+  .thumbnails .tmhomepagecategorygallery .item > a {
+    height: 34.25vw;
+  }
+}
+
+@media (min-width: 1600px) {
+  .thumbnails .tmhomepagecategorygallery-content {
+    height: 34.25vw;
+  }
+}
+
+@media (min-width: 768px) {
+  .thumbnails .tmhomepagecategorygallery-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    align-items: flex-start;
+    width: 100%;
+    background: transparent !important;
+    color: #dedede;
+  }
+  .thumbnails .tmhomepagecategorygallery-content::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(18, 18, 18, 0.3);
+  }
+  .thumbnails .tmhomepagecategorygallery-content > * {
+    position: relative;
+  }
+}
+
+@media (min-width: 1200px) {
+  .thumbnails .tmhomepagecategorygallery-content {
+    padding: 0 15%;
+  }
+}
+
+@media (min-width: 768px) {
+  .thumbnails .tmhomepagecategorygallery-description {
+    max-width: 55%;
+    text-align: left;
+    color: #dedede;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .thumbnails .tmhomepagecategorygallery-description {
+    max-width: 75%;
+  }
+}

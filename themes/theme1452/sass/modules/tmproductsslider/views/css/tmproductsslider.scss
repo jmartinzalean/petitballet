@@ -1,9 +1,10 @@
 @import "../../../../_theme_variables";
 
-#tm-products-slider {
+#tm-products-slider, #tm-products-slider-petit {
+    margin-bottom: 30px;
   width: 100%;
   clear: both;
-  font: normal 16px/29px 'Open Sans', sans-serif;
+  font: normal 16px/29px 'Museo', sans-serif;
 
   &.grid {
     margin-bottom: 0;
@@ -19,8 +20,22 @@
       }
     }
   }
-
-  #slider_container {
+  #slider_container-petit {
+        .slide-inner {
+            display: flex;
+            justify-content: flex-end;
+            .slide-info {
+                text-align: right;
+            }
+        }
+        .thumbnail-buttons {
+            right: auto;
+            left: 20px;
+            top: 0;
+            position: absolute;
+        }
+  }
+  #slider_container, #slider_container-petit {
     position: relative;
     margin: 0 auto;
     top: 0;
@@ -95,7 +110,7 @@
           padding: 0;
 
           @media (min-width: $screen-lg-min) {
-            opacity: 0;
+            opacity: 1;
           }
 
           &.animate {
@@ -117,7 +132,7 @@
           h3 {
             margin: 0;
             font: 700 36px/#{(70/58)} $font-custom;
-            text-transform: uppercase;
+            /*text-transform: uppercase;*/
             letter-spacing: 0.02em;
 
             @media (min-width: $screen-lg-min) {
@@ -127,7 +142,8 @@
             a {
               font-family: $font-custom;
               color: $dark-text-color;
-
+              font-weight: normal;
+              font-size: 60px;
               &:hover {
                 color: lighten($dark-text-color, 20%);
               }
@@ -159,11 +175,13 @@
           }
           .product-price {
             margin-top: 27px;
-            font: 700 26px/#{(40/36)} $font-custom;
+            font: normal 26px/#{(40/36)} $font-custom;
             color: $primary-text-color;
+            font-size: 45px;
+            color: #8b8a8e;
 
             @media (min-width: $screen-md-min) {
-              font-size: 30px;
+              font-size: 45px;
             }
 
             &.product-price-reduction {
@@ -283,7 +301,7 @@
         color: $dark-text-color;
         transition: $base-transition;
 
-        @include addIcon('\f177');
+        @include addIcon('\f104');
       }
 
       &:hover {
@@ -301,7 +319,7 @@
         right: 5%;
       }
       &:before {
-        content: "\f178";
+        content: "\f105";
       }
     }
     .pagers {
@@ -351,7 +369,7 @@
     .thumbnail-buttons {
       width: 100%;
       height: 250px;
-      position: relative;
+      position: absolute;
       margin-top: -35px;
       cursor: move;
 

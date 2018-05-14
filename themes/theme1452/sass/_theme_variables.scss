@@ -3,8 +3,8 @@
 
 // ------- FONTS -------
 
-$font-family: 'Poiret One', sans-serif;
-$font-custom: 'Poiret One', sans-serif;
+$font-family: 'Museo', sans-serif;
+$font-custom: 'Museo', sans-serif;
 $font: normal 13px/18px $font-family;
 $font-heading: 700 35px/#{(52/30)} $font-custom;
 $font-maxheading: bold 65px/#{(85/65)} $font-custom;
@@ -16,15 +16,23 @@ $font-icon-custom: 'fl-outicons';
 // ------- MAIN ICON MIXIN -------
 
 @mixin addIcon($content) {
+  @if $content == '\e04f' {
+      content: url("../fonts/bag.png");
+  }  @else {
+      content: $content;
+  }
   font-family: $font-icon;
-  content: $content;
   display: inline-block;
   font-weight: normal;
 }
 
 @mixin addIconCustom($content) {
   font-family: $font-icon-custom;
-  content: $content;
+    @if $content == '\e04f' {
+        content: url("../fonts/bag.png");
+    }  @else {
+        content: $content;
+    }
   display: inline-block;
   font-weight: normal;
 }
@@ -44,7 +52,8 @@ $color-white: #fff;
 
 // ------- BORDERS ---------
 
-$base-border-color: darken(saturate(adjust_hue($color-box, 139.99999999999983), 5.263157894736871%), 6.470588235294116%);
+/*$base-border-color: darken(saturate(adjust_hue($color-box, 139.99999999999983), 5.263157894736871%), 6.470588235294116%);*/
+$base-border-color: #e4e1e1;
 $table-border-color: $base-border-color;
 $main_border: 1px solid $base-border-color;
 $dark-border-color: $color-dark;
@@ -74,7 +83,7 @@ $secondary-background-3: #2d2d2d;
 $base-body-color: $color-base;
 $base-text-color: darken($color-base, 10);
 $light-text-color: $color-light;
-$dark-text-color: $color-dark;
+$dark-text-color: $color-base;
 $primary-text-color: $color-primary;
 $secondary-text-color: darken(saturate(adjust_hue($color-box, 0), 0%), 56.8627450980392%);
 

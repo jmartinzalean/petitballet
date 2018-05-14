@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+	<name>obsredsys</name>
+	<displayName><![CDATA[TPV Virtual Redsys]]></displayName>
+	<version><![CDATA[3.6.7]]></version>
+	<description><![CDATA[Acepte pagos con tarjeta de credito a trav&eacute;s de su TPV Virtual Redsys.]]></description>
+	<author><![CDATA[OBSolutions]]></author>
+	<tab><![CDATA[payments_gateways]]></tab>
+	<confirmUninstall><![CDATA[Esta seguro que desea borrar sus detalles]]></confirmUninstall>
+	<is_configurable>1</is_configurable>
+	<need_instance>1</need_instance>
+	<limited_countries></limited_countries>
+</module>

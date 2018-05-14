@@ -130,9 +130,9 @@
     content: '';
     position: absolute;
     top: 0;
-    left: 50%;
+    left: 54%;
     display: block;
-    width: 101vw;
+    width: 60%;
     height: 100%;
     background-color: $dark-background;
     transform: translateX(-50%);
@@ -421,9 +421,12 @@
     @include topPosition;
 
     @media only screen and (min-width: 600px) {
-      right: -15px;
-      width: 320px;
-
+        right: -15px;
+        width: 65px;
+        padding: 10px;
+        .module>div ul {
+            margin-bottom: 0 !important;
+        }
       .nav-section & {
         right: auto;
         left: 0;

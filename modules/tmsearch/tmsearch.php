@@ -64,7 +64,8 @@ class Tmsearch extends Module
             && $this->registerHook('header')
             && $this->registerHook('backOfficeHeader')
             && $this->registerHook('moduleRoutes')
-            && $this->registerHook('displayTop');
+            && $this->registerHook('displayTop')
+            && $this->registerHook('hookDisplayTopColumn');
     }
 
     public function uninstall()
@@ -623,6 +624,16 @@ class Tmsearch extends Module
 
     public function hookDisplayTop()
     {
+        return $this->display(__FILE__, 'tmbutton.tpl', Tools::getValue('search_query') ? null : $key);
+    }
+
+    public function hookDisplayNav()
+    {
+        return $this->hookDisplayTopColumn();
+    }
+    
+    public function hookDisplayTopColumn()
+    {
         $key = $this->getCacheId('tmsearch');
         if (Tools::getValue('search_query') || !$this->isCached('tmsearch.tpl', $key)) {
             $this->calculHookCommon();
@@ -635,11 +646,6 @@ class Tmsearch extends Module
         }
 
         return $this->display(__FILE__, 'tmsearch.tpl', Tools::getValue('search_query') ? null : $key);
-    }
-
-    public function hookDisplayNav()
-    {
-        return $this->hookDisplayTop();
     }
 
     private function calculHookCommon()

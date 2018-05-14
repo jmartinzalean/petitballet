@@ -1,1 +1,110 @@
-#order-opc{line-height:20px}#order-opc .box{padding-bottom:20px}#order-opc .cart_navigation{margin-bottom:53px}#order-opc .page-heading.step-num{position:relative;padding-left:45px;overflow:visible}#order-opc .page-heading.step-num span{font:bold 65px/1.30769 "Poiret One",sans-serif;color:#121212;position:absolute;left:0;top:-25px}#order-opc .columns-container .form-group{margin-bottom:2px}#order-opc .columns-container .form-group .form-control{max-width:271px}#order-opc .lost_password{display:inline-block;text-decoration:underline;margin:5px 0 14px}#order-opc .lost_password:hover{text-decoration:none}#order-opc .opc-button{padding:11px 0 0 0}#order-opc ul.bullet{line-height:22px;margin-bottom:5px}#order-opc .date-select{padding-bottom:10px}#order-opc .opc-add-save{border-top:1px solid #e4e1e1;margin-top:20px;padding-top:20px}#order-opc #message{margin-bottom:35px}#order-opc #opc_payment_methods{margin-bottom:30px}#order-opc #opc_payment_methods p.warning{color:#ff514d;font-weight:bold}#order-opc #opc_account{margin-bottom:30px}#order-opc .address_delivery.select{margin-bottom:15px}#order-opc #address_invoice_form.form-group{margin-bottom:30px}#new_account_form .id_state,#new_account_form .dni,#new_account_form .postcode{display:none}
+/* -------------------------------------------------------------
+  Sass CSS3 Mixins! The Cross-Browser CSS3 Sass Library
+  By: Matthieu Aussaguel, http://www.mynameismatthieu.com, @matthieu_tweets
+
+  List of CSS3 Sass Mixins File to be @imported and @included as you need
+
+  The purpose of this library is to facilitate the use of CSS3 on different browsers avoiding HARD TO READ and NEVER
+  ENDING css files
+
+  note: All CSS3 Properties are being supported by Safari 5
+  more info: http://www.findmebyip.com/litmus/#css3-properties
+
+------------------------------------------------------------- */
+/*$base-border-color: darken(saturate(adjust_hue($color-box, 139.99999999999983), 5.263157894736871%), 6.470588235294116%);*/
+/*
+* @subsection   One-Page Checkout Styles
+*/
+#order-opc {
+  line-height: 20px;
+}
+
+#order-opc .box {
+  padding-bottom: 20px;
+}
+
+#order-opc .cart_navigation {
+  margin-bottom: 53px;
+}
+
+#order-opc .page-heading.step-num {
+  position: relative;
+  padding-left: 45px;
+  overflow: visible;
+}
+
+#order-opc .page-heading.step-num span {
+  font: bold 65px/1.30769 "Museo", sans-serif;
+  color: #121212;
+  position: absolute;
+  left: 0;
+  top: -25px;
+}
+
+#order-opc .columns-container .form-group {
+  margin-bottom: 2px;
+}
+
+#order-opc .columns-container .form-group .form-control {
+  max-width: 271px;
+}
+
+#order-opc .lost_password {
+  display: inline-block;
+  text-decoration: underline;
+  margin: 5px 0 14px;
+}
+
+#order-opc .lost_password:hover {
+  text-decoration: none;
+}
+
+#order-opc .opc-button {
+  padding: 11px 0 0 0;
+}
+
+#order-opc ul.bullet {
+  line-height: 22px;
+  margin-bottom: 5px;
+}
+
+#order-opc .date-select {
+  padding-bottom: 10px;
+}
+
+#order-opc .opc-add-save {
+  border-top: 1px solid #e4e1e1;
+  margin-top: 20px;
+  padding-top: 20px;
+}
+
+#order-opc #message {
+  margin-bottom: 35px;
+}
+
+#order-opc #opc_payment_methods {
+  margin-bottom: 30px;
+}
+
+#order-opc #opc_payment_methods p.warning {
+  color: #ff514d;
+  font-weight: bold;
+}
+
+#order-opc #opc_account {
+  margin-bottom: 30px;
+}
+
+#order-opc .address_delivery.select {
+  margin-bottom: 15px;
+}
+
+#order-opc #address_invoice_form.form-group {
+  margin-bottom: 30px;
+}
+
+#new_account_form .id_state,
+#new_account_form .dni,
+#new_account_form .postcode {
+  display: none;
+}

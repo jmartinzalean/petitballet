@@ -425,12 +425,19 @@ ul.product_list.grid {
       display: flex;
       flex-direction: column;
       transition: all .3s 0.2s $custom-timing-function;
+      .btn-primary {
+          color: $color-light;
+          &:hover {
+              color: #fff;
+          }
+      }
 
       @media (min-width: $screen-lg-min) {
         opacity: 0;
         position: absolute;
         width: 62.50%;
         transform: translate3d(-50%, 20px, 0);
+        display: none;
       }
     }
 
@@ -833,6 +840,11 @@ ul.product_list.list {
 
       @media (min-width: $screen-lg-min) {
         margin-bottom: 15px;
+      }
+    }
+    .button-container {
+      .btn-primary {
+        color: $color-light;
       }
     }
 

@@ -1,1 +1,31 @@
-#mailalerts_block_account li.last_item{border-bottom:none;margin-bottom:0}#mailalerts_block_account li .products-block-image{float:left;margin-right:19px}#mailalerts_block_account li .remove{float:right}#mailalerts_block_account li .remove i{cursor:pointer}
+/* -------------------------------------------------------------
+  Sass CSS3 Mixins! The Cross-Browser CSS3 Sass Library
+  By: Matthieu Aussaguel, http://www.mynameismatthieu.com, @matthieu_tweets
+
+  List of CSS3 Sass Mixins File to be @imported and @included as you need
+
+  The purpose of this library is to facilitate the use of CSS3 on different browsers avoiding HARD TO READ and NEVER
+  ENDING css files
+
+  note: All CSS3 Properties are being supported by Safari 5
+  more info: http://www.findmebyip.com/litmus/#css3-properties
+
+------------------------------------------------------------- */
+/*$base-border-color: darken(saturate(adjust_hue($color-box, 139.99999999999983), 5.263157894736871%), 6.470588235294116%);*/
+#mailalerts_block_account li.last_item {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+#mailalerts_block_account li .products-block-image {
+  float: left;
+  margin-right: 19px;
+}
+
+#mailalerts_block_account li .remove {
+  float: right;
+}
+
+#mailalerts_block_account li .remove i {
+  cursor: pointer;
+}

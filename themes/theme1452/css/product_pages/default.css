@@ -1,1 +1,120 @@
-@media (min-width: 1600px){.product-information .tab-content-default{padding-right:50px}}.product-information .tab-content-default>div{display:block;padding:20px 0;animation:fadeIn 0.2s 0.2s ease both}.product-information h3{display:block;margin:0;padding:10px 0;border:none;background:#dedede;font:700 35px/1.73333 "Poiret One",sans-serif;font-size:18px}@media (min-width: 1200px){.product-information h3{font-size:25px}}@media (min-width: 768px) and (max-width: 991px), (min-width: 992px) and (max-width: 1199px), (min-width: 480px) and (max-width: 767px){.product-information h3{font-size:20px}}@media only screen and (max-width: 479px){.product-information h3{border-bottom:2px solid #f4f4f4}}@media (min-width: 1600px){.product-information h3{font-size:30px}}.product-information h3:first-child+div{display:block}.product-information h3.active{color:#f4d6d6}@media only screen and (max-width: 991px){.two-columns .product-information h3{border-bottom:2px solid #f4f4f4}}.three-columns .product-information h3{border-bottom:2px solid #f4f4f4}.primary_block{margin-bottom:10px}@media (min-width: 768px){.primary_block{margin-bottom:30px}}@media (min-width: 1200px){.primary_block{margin-bottom:50px}}@media (min-width: 1600px){.primary_block{margin-bottom:100px}}.reviews-block h3{cursor:default}@media (min-width: 992px){.table-data-sheet tr td:first-child,table.table-product-discounts tr td:first-child{width:50%}}@media (min-width: 768px){.table-data-sheet tr td:first-child .one-column,table.table-product-discounts tr td:first-child .one-column{width:50%}}
+/* -------------------------------------------------------------
+  Sass CSS3 Mixins! The Cross-Browser CSS3 Sass Library
+  By: Matthieu Aussaguel, http://www.mynameismatthieu.com, @matthieu_tweets
+
+  List of CSS3 Sass Mixins File to be @imported and @included as you need
+
+  The purpose of this library is to facilitate the use of CSS3 on different browsers avoiding HARD TO READ and NEVER
+  ENDING css files
+
+  note: All CSS3 Properties are being supported by Safari 5
+  more info: http://www.findmebyip.com/litmus/#css3-properties
+
+------------------------------------------------------------- */
+/*$base-border-color: darken(saturate(adjust_hue($color-box, 139.99999999999983), 5.263157894736871%), 6.470588235294116%);*/
+/*
+* @section      Page Product Styles
+*/
+@media (min-width: 1600px) {
+  .product-information .tab-content-default {
+    padding-right: 50px;
+  }
+}
+
+.product-information .tab-content-default > div {
+  display: block;
+  padding: 20px 0;
+  animation: fadeIn 0.2s 0.2s ease both;
+}
+
+.product-information h3 {
+  display: block;
+  margin: 0;
+  padding: 10px 0;
+  border: none;
+  /*background: $light-background;*/
+  font: 700 35px/1.73333 "Museo", sans-serif;
+  font-size: 18px;
+}
+
+@media (min-width: 1200px) {
+  .product-information h3 {
+    font-size: 25px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px), (min-width: 992px) and (max-width: 1199px), (min-width: 480px) and (max-width: 767px) {
+  .product-information h3 {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 479px) {
+  .product-information h3 {
+    border-bottom: 2px solid #f4f4f4;
+  }
+}
+
+@media (min-width: 1600px) {
+  .product-information h3 {
+    font-size: 30px;
+  }
+}
+
+.product-information h3:first-child + div {
+  display: block;
+}
+
+.product-information h3.active {
+  color: #f4d6d6;
+}
+
+@media only screen and (max-width: 991px) {
+  .two-columns .product-information h3 {
+    border-bottom: 2px solid #f4f4f4;
+  }
+}
+
+.three-columns .product-information h3 {
+  border-bottom: 2px solid #f4f4f4;
+}
+
+.primary_block {
+  margin-bottom: 10px;
+}
+
+@media (min-width: 768px) {
+  .primary_block {
+    margin-bottom: 30px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .primary_block {
+    margin-bottom: 50px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .primary_block {
+    margin-bottom: 100px;
+  }
+}
+
+.reviews-block h3 {
+  cursor: default;
+}
+
+@media (min-width: 992px) {
+  .table-data-sheet tr td:first-child,
+  table.table-product-discounts tr td:first-child {
+    width: 50%;
+  }
+}
+
+@media (min-width: 768px) {
+  .table-data-sheet tr td:first-child .one-column,
+  table.table-product-discounts tr td:first-child .one-column {
+    width: 50%;
+  }
+}

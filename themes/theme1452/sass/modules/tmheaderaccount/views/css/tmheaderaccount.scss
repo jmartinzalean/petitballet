@@ -18,7 +18,8 @@
     &.is-logged {
       a {
         &::before {
-          content: '\e030';
+          content: '\e060';
+          color: $color-primary;
         }
       }
     }
@@ -135,7 +136,7 @@
     color: $dark-text-color;
 
     @media (min-width: $screen-md-min) {
-      font-size: 30px;
+      font-size: 22px;
     }
   }
 

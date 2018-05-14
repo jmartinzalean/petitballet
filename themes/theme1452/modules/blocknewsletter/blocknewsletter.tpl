@@ -7,10 +7,16 @@
       <div class="form-group{if isset($msg) && $msg } {if $nw_error}form-error{else}form-ok{/if}{/if}" >
         <input class="inputNew form-control grey newsletter-input" id="newsletter-input" type="text" name="email" size="18" value="{if isset($msg) && $msg}{$msg}{elseif isset($value) && $value}{$value}{else}{l s='Enter your e-mail' mod='blocknewsletter'}{/if}" autocomplete="off" />
         <button type="submit" name="submitNewsletter" class="btn btn-primary btn-sm icon-right">
-          <span>{l s='Ok' mod='blocknewsletter'}</span>
+          {*<span>{l s='Ok' mod='blocknewsletter'}</span>*}
+          <span></span>
         </button>
         <input type="hidden" name="action" value="0" />
       </div>
+        <div class="checkbox">
+            <input required type="checkbox" name="newsletter" id="newsletter-tmha-footer" value="1">
+            <label>{l s='I accept the' mod='blocknewsletter'}
+                <a href="#">{l s='Terms and Conditions' mod='blocknewsletter'}</a></label>
+        </div>
     </form>
   </div>
   {hook h="displayBlockNewsletterBottom" from='blocknewsletter'}

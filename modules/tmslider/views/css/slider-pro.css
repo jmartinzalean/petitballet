@@ -372,7 +372,8 @@
 	position: relative;
 	width: 100%;
 	text-align: center;
-	padding-top: 10px;
+	/*padding-top: 10px;*/
+    top: -5vw;
 }
 
 .sp-rtl .sp-buttons {
@@ -386,9 +387,10 @@
 .sp-button {
 	width: 10px;
 	height: 10px;
-	border: 2px solid #000;
+	border: 2px solid #c4c4c4;
+    background-color: #c4c4c4;
 	border-radius: 50%;
-	margin: 4px;
+	margin: 10px;
 	display: inline-block;
 	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
@@ -397,7 +399,18 @@
 }
 
 .sp-selected-button {
-	background-color: #000;
+	background-color: transparent;
+    width: 20px;
+    height: 20px;
+    border: none;
+}
+.sp-selected-button::before {
+    color: #000;
+    font-size: 25px;
+    position: relative;
+    top: -5px;
+    content: '\25C9';
+    transition: all 0.3s ease-in-out;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {

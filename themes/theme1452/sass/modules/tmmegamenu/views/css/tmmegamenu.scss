@@ -40,7 +40,10 @@ $mega-menu-bg: $secondary-background;
     background-color: $base-box-bg;
     transition: $base-transition;
     animation: fadeInDown 0.5s ease;
-
+      .logo_petit {
+          width: 160px;
+          top: 3px;
+      }
     @media only screen and (max-width: 479px) {
       display: none !important;
     }
@@ -107,6 +110,7 @@ $mega-menu-bg: $secondary-background;
         letter-spacing: 0.06em;
         font: $menu-main-font;
         transition: $base-transition;
+        font-weight: normal;
 
         .bg-dark & {
           @media (min-width: $screen-md-min) {

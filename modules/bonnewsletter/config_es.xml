@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+	<name>bonnewsletter</name>
+	<displayName><![CDATA[Advanced Newsletter Popup]]></displayName>
+	<version><![CDATA[1.0.1]]></version>
+	<description><![CDATA[Display newsletter popup]]></description>
+	<author><![CDATA[Bonpresta]]></author>
+	<tab><![CDATA[front_office_features]]></tab>
+	<confirmUninstall><![CDATA[This module  Uninstall]]></confirmUninstall>
+	<is_configurable>1</is_configurable>
+	<need_instance>1</need_instance>
+	<limited_countries></limited_countries>
+</module>

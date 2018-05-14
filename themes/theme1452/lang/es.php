@@ -119,6 +119,7 @@ $_LANG['category-count_79ac892bd1769d83ef1c16dae9f4eddd'] = 'Hay 1 producto.';
 $_LANG['category-count_a9d48596a6537347711527bab8fcd152'] = 'Hay %d productos.';
 $_LANG['category-count_ff32f7dba36bcd6d0a4214cd80253c3a'] = 'No hay productos en esta categoría';
 $_LANG['category_2f4e54ec9bebe1122b5c23217e764828'] = 'Esta categoría no está disponible.';
+$_LANG['category_53077f22733977fb3d51313ca32d39a7'] = 'Esta categoría actualmente no tiene productos.';
 $_LANG['cms_0557fa923dcee4d0f86b1409f5c2167f'] = 'Atrás';
 $_LANG['cms_110a4b01beabd53b661a47d4b44bd7a8'] = 'Publicar';
 $_LANG['cms_24a26cffdfea04302a5bc20b9bce6626'] = 'Esta página CMS no es visible para sus clientes.';
