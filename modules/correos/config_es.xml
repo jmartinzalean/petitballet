@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+	<name>correos</name>
+	<displayName><![CDATA[Correos Oficial]]></displayName>
+	<version><![CDATA[4.2.3]]></version>
+	<description><![CDATA[M&oacute;dulo de Prestashop para integrar el servicio de Correos]]></description>
+	<author><![CDATA[Ydral]]></author>
+	<tab><![CDATA[shipping_logistics]]></tab>
+	<is_configurable>1</is_configurable>
+	<need_instance>0</need_instance>
+	<limited_countries></limited_countries>
+</module>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+        <module>
+            <name>mrwcarrier</name>
+            <displayName><![CDATA[MRW-Spain Official Module - mrwcarrier]]></displayName>
+            <version><![CDATA[4.6.3]]></version>
+            <description><![CDATA[M&oacute;dulo para integrar su tienda Prestashop con gesti&oacute;n de envios MRW-SAGEC]]></description>
+            <author><![CDATA[MRW IBERIA]]></author>
+            <tab><![CDATA[shipping_logistics]]></tab>
+	<confirmUninstall>Está seguro que desea desinstalar y eliminar los datos de conexión al webservice MRW?</confirmUninstall>
+            <is_configurable>1</is_configurable>
+            <need_instance>1</need_instance>
+	<limited_countries></limited_countries>
+        </module>

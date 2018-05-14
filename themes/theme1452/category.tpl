@@ -21,6 +21,8 @@
           {include file="./product-compare.tpl" paginationId='bottom'}
         </div>
       </div>
+    {else}
+        <p class="alert alert-warning">{l s='This category has no products'}</p>
     {/if}
   {elseif $category->id}
     <p class="alert alert-warning">{l s='This category is currently unavailable.'}</p>

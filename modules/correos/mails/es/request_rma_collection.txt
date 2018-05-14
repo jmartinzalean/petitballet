@@ -1,0 +1,15 @@
+Nº CLIENTE: {client_number}, Nº CONTRATO: {contract_number}
+**************************************************************************
+
+Datos de Recogida RMA
+Teléfono: {collection_phone}/{collection_mobile_phone}
+Nombre: {collection_clientname}
+Calle: {collection_address}
+CP: {collection_postalcode}
+Población: {collection_city}
+Provincia: {collection_state}
+Número de Bulto(s): {collection_pieces}
+Servicio: RMA
+Fecha de recogida: {collection_date}
+Horario: {collection_time}
+Observaciones: {collection_comments}

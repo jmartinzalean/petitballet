@@ -259,7 +259,6 @@ class BlockCMSModel extends ObjectModel
 	{
 		$context = Context::getContext();
 		$footerCms = Configuration::get('FOOTER_CMS');
-
 		if (empty($footerCms))
 			return array();
 
@@ -273,12 +272,16 @@ class BlockCMSModel extends ObjectModel
 				$query = BlockCMSModel::getBlockName($ids[1]);
 				$content[$cmsCategory]['link'] = $context->link->getCMSCategoryLink((int)$ids[1], $query['link_rewrite']);
 				$content[$cmsCategory]['meta_title'] = $query['name'];
+                                $content[$cmsCategory]['iscategory'] = 1;
 			}
 			else if ($ids[0] == 0 && isset($ids[1]))
 			{
 				$query = BlockCMSModel::getCMSMetaTitle($ids[1]);
-				$content[$cmsCategory]['link'] = $context->link->getCMSLink((int)$ids[1], $query['link_rewrite']);
-				$content[$cmsCategory]['meta_title'] = $query['meta_title'];
+				$content[$cmsCategory]=array(
+                                    'link' => $context->link->getCMSLink((int)$ids[1], $query['link_rewrite']),
+                                    'meta_title' => $query['meta_title'],
+                                    'iscategory' => 0
+                                    );
 			}
 		}
 
