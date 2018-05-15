@@ -624,6 +624,7 @@ class Tmsearch extends Module
 
     public function hookDisplayTop()
     {
+        $key=0;
         return $this->display(__FILE__, 'tmbutton.tpl', Tools::getValue('search_query') ? null : $key);
     }
 
