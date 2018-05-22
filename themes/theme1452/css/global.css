@@ -16804,8 +16804,9 @@ span.closeButtonNormal {
   float: left;
 }
 
-.footer-container div#languages-block-footer ul.footer-block-languages li.selected::after {
+.footer-container div#languages-block-footer ul.footer-block-languages li:not(:last-child)::after {
   content: '\2F';
+  margin-left: 5px;
 }
 
 .footer-container div#languages-block-footer ul.footer-block-languages li:last-child {

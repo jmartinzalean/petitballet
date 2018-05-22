@@ -19,8 +19,10 @@
   <body>
     <div class="container">
       <div id="maintenance">
+
         <div class="logo"><img src="{$logo_url}" {if $logo_image_width}width="{$logo_image_width}"{/if} {if $logo_image_height}height="{$logo_image_height}"{/if} alt="logo" /></div>
           {$HOOK_MAINTENANCE}
+            <div class="logo"><img src="{$img_dir}bg_maintenance.png"/></div>
           <div id="message">
             <h1 class="maintenance-heading">{l s='We\'ll be back soon.'}</h1>
             {l s='We are currently updating our shop and will be back really soon.'}

@@ -130,7 +130,7 @@ $_MODULE['<{tmheaderaccount}theme1452>tmheaderaccount-content_cc5d90569e1c8313c2
 $_MODULE['<{tmheaderaccount}theme1452>tmheaderaccount-content_eca60ae8611369fe28a02e2ab8c5d12e'] = 'Octubre';
 $_MODULE['<{tmheaderaccount}theme1452>tmheaderaccount-content_7e823b37564da492ca1629b4732289a8'] = 'Noviembre';
 $_MODULE['<{tmheaderaccount}theme1452>tmheaderaccount-content_82331503174acbae012b2004f6431fa5'] = 'Diciembre';
-$_MODULE['<{tmheaderaccount}theme1452>tmheaderaccount-content_93edfc7af9b6471b30030cf17646e36c'] = 'Suscribase a nuestro boletín de noticias!';
+$_MODULE['<{tmheaderaccount}theme1452>tmheaderaccount-content_93edfc7af9b6471b30030cf17646e36c'] = 'Suscribase a nuestra newsletter!';
 $_MODULE['<{tmheaderaccount}theme1452>tmheaderaccount-content_baca087296e01b5d69799dd53bcd7950'] = 'Reciba ofertas especiales de nuestros socios!';
 $_MODULE['<{tmheaderaccount}theme1452>tmheaderaccount-content_1011bae349c34405e0c47931fc7ef8ad'] = 'La información de su compañía';
 $_MODULE['<{tmheaderaccount}theme1452>tmheaderaccount-content_1c76cbfe21c6f44c1d1e59d54f3e4420'] = 'Compañía';

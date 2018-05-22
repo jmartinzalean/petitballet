@@ -9,4 +9,5 @@ $_MODULE['<{smartbloghomelatestnews}theme1452>smartbloghomelatestnews_21ee0d457c
 $_MODULE['<{smartbloghomelatestnews}theme1452>smartbloghomelatestnews_c54f9f209ed8fb4683e723daa4955377'] = 'Configuración General';
 $_MODULE['<{smartbloghomelatestnews}theme1452>smartbloghomelatestnews_ea2766a70e61de99505624aa16055d4f'] = 'Número de Publicaciones para Mostrar en Últimas Noticias';
 $_MODULE['<{smartbloghomelatestnews}theme1452>smartbloghomelatestnews_c9cc8cce247e49bae79f15173ce97354'] = 'Guardar';
+$_MODULE['<{smartbloghomelatestnews}theme1452>smartblog_latest_news_099afb04ddf259fff6a50c50d7eae060'] = 'Ultimas noticias';
 $_MODULE['<{smartbloghomelatestnews}theme1452>smartblog_latest_news_decbe415d8accca7c2c16d48a79ee934'] = 'Leer Más';

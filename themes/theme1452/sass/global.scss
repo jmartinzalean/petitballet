@@ -4403,9 +4403,12 @@ span.closeButtonNormal {
                 font-size: 14px;
                 float: left
             }
-            li.selected {
-                &::after {
-                    content: '\2F';
+            li {
+                &:not(:last-child) {
+                    &::after {
+                        content: '\2F';
+                        margin-left: 5px;
+                    }
                 }
             }
             li {
