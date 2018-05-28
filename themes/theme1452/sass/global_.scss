@@ -227,7 +227,7 @@ header {
 
   .footer-block, .footer-block-petit {
     margin-top: 20px;
-    text-decoration:underline;
+
     @media (min-width: $screen-sm-min) {
       margin-top: 45px;
     }
@@ -2389,10 +2389,11 @@ ul.step {
     &.step_done {
       em {
         font-size: 0;
-        background-color: $color-succes;
+        background-color: $color-primary;
 
         &::after {
-          border-color: $color-succes;
+          //border-color: $color-succes;
+          border-color: $color-primary;
         }
 
         &:before {
@@ -4402,9 +4403,12 @@ span.closeButtonNormal {
                 font-size: 14px;
                 float: left
             }
-            li.selected {
-                &::after {
-                    content: '\2F';
+            li {
+                &:not(:last-child) {
+                    &::after {
+                        content: '\2F';
+                        margin-left: 5px;
+                    }
                 }
             }
             li {
@@ -4602,21 +4606,37 @@ div#top-column {
 
 .shopping_cart {
     .msg {
-        display: none
+        display: block;
+        opacity: 0;
+        -webkit-transition: opacity 500ms ease-in-out;
+        -moz-transition: opacity 500ms ease-in-out;
+        -ms-transition: opacity 500ms ease-in-out;
+        -o-transition: opacity 500ms ease-in-out;
+        transition: opacity 1ms ease-in-out;
+        -webkit-transition-delay: 2s;
+        -moz-transition-delay: 2s;
+        -ms-transition-delay: 2s;
+        -o-transition-delay: 2s;
+        transition-delay: 2s;
+        padding: 8px;
+        position: absolute;
+        right: 0;
+        z-index: 9999;
+        width: 13vw;
+        text-align: center;
+        background: #fff;
+        -webkit-box-shadow: 0 0 5px #aaa;
+        box-shadow: 0 0 5px #aaa;
     }
     &.cart-msg {
         &:active {
             .msg {
-                display:block;
-                padding: 8px;
-                position: absolute;
-                right: 0;
-                z-index: 9999;
-                width: 13vw;
-                text-align: center;
-                background: #fff;
-                -webkit-box-shadow: 0 0 5px #aaa;
-                box-shadow: 0 0 5px #aaa;
+                display: block;
+                -webkit-transition: opacity 1ms ease-in-out;
+                -moz-transition: opacity 1ms ease-in-out;
+                -ms-transition: opacity 1ms ease-in-out;
+                -o-transition: opacity 1ms ease-in-out;
+                opacity: 1;
             }
         }
     }
@@ -4631,3 +4651,18 @@ input#newsletter-tmha-footer {
     opacity: 0;
     cursor: pointer;
 }
+
+// Steps
+ul.address {
+    .address_update {
+        .btn-success {
+            border-color: $color-primary;
+            background: $color-primary;
+            color: $color-base;
+            &:hover {
+                background: #fff;
+            }
+        }
+    }
+}
+
