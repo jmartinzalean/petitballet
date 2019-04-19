@@ -19,4 +19,4 @@ $_MODULE['<{tmrelatedproducts}theme1452>tmrelatedproducts_tab_ea4788705e6873b424
 $_MODULE['<{tmrelatedproducts}theme1452>tmrelatedproducts_tab_c9cc8cce247e49bae79f15173ce97354'] = 'Guardar';
 $_MODULE['<{tmrelatedproducts}theme1452>tmrelatedproducts_tab_9ea67be453eaccf020697b4654fc021a'] = 'Guardar y quedarse';
 $_MODULE['<{tmrelatedproducts}theme1452>tmrelatedproducts_38070661d5ad384d9c7d21895dc4e784'] = 'Productos relacionados';
-$_MODULE['<{tmrelatedproducts}theme1452>tmrelatedproducts_2d0f6b8300be19cf35e89e66f0677f95'] = 'Añadir al carrito';
+$_MODULE['<{tmrelatedproducts}theme1452>tmrelatedproducts_2d0f6b8300be19cf35e89e66f0677f95'] = 'Añadir a la cesta';

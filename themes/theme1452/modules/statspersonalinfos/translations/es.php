@@ -12,7 +12,7 @@ $_MODULE['<{statspersonalinfos}theme1452>statspersonalinfos_8044a3d0d61282c4c425
 $_MODULE['<{statspersonalinfos}theme1452>statspersonalinfos_05f074d112460c990203ff2f17a7d46d'] = 'Almacenar la información del cliente registrado te permite definir con precisión los perfiles de los clientes para que puedas adaptar tus ofertas especiales y promociones.';
 $_MODULE['<{statspersonalinfos}theme1452>statspersonalinfos_9dc739320e2523183e8b31f395e1e489'] = 'Puedes incrementar tus ventas mediante:';
 $_MODULE['<{statspersonalinfos}theme1452>statspersonalinfos_2f619981f1abd95da0907766cc409be9'] = 'El lanzamiento de campañas publicitarias dirigidas a clientes específicos.';
-$_MODULE['<{statspersonalinfos}theme1452>statspersonalinfos_428dc481e13dad2818d8088da7362dd2'] = 'Contactando con un grupo de clientes por correo electrónico o a través del boletín de noticias.';
+$_MODULE['<{statspersonalinfos}theme1452>statspersonalinfos_428dc481e13dad2818d8088da7362dd2'] = 'Contactando con un grupo de clientes por correo electrónico o a través de la newsletter.';
 $_MODULE['<{statspersonalinfos}theme1452>statspersonalinfos_12344d957b4aee1e2c322549ddc9741f'] = 'La distribución por género te permite determinar el porcentaje de hombres y mujeres existentes entre tus clientes.';
 $_MODULE['<{statspersonalinfos}theme1452>statspersonalinfos_998e4c5c80f27dec552e99dfed34889a'] = 'Exportar CSV';
 $_MODULE['<{statspersonalinfos}theme1452>statspersonalinfos_08a12630390dc8ddd4c9fdcd9060dce6'] = 'El rango de edades te permiten comprender mejor los datos demográficos objetivos.';

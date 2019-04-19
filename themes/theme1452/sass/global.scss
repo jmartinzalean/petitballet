@@ -194,7 +194,16 @@ header {
     }
   }
 }
-
+#index {
+    .price{
+        display: none !important;
+    }
+    .shopping_cart {
+        .price{
+            display: block !important;
+        }
+    }
+}
 /*
 * @section      Page Footer
 * @description  This section holds specific style redeclarations for some
@@ -216,7 +225,7 @@ header {
     }
   }
 
-  .footer-block {
+  .footer-block, .footer-block-petit {
     margin-top: 20px;
 
     @media (min-width: $screen-sm-min) {
@@ -2380,10 +2389,11 @@ ul.step {
     &.step_done {
       em {
         font-size: 0;
-        background-color: $color-succes;
+        background-color: $color-primary;
 
         &::after {
-          border-color: $color-succes;
+          //border-color: $color-succes;
+          border-color: $color-primary;
         }
 
         &:before {
@@ -4298,6 +4308,13 @@ span.closeButtonNormal {
 }
 // Footer
 .footer-container {
+    .footer-central-colum{
+        .module {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+    }
     #newsletter_block_left {
         margin-top: 55px !important;
         margin-bottom: 55px !important;
@@ -4355,7 +4372,7 @@ span.closeButtonNormal {
             }
         }
     }
-    .footer-block {
+    .footer-block, .footer-block-petit {
         margin-top: 55px !important;
         margin-bottom: 55px !important;
         h4, h4 a {
@@ -4386,9 +4403,12 @@ span.closeButtonNormal {
                 font-size: 14px;
                 float: left
             }
-            li.selected {
-                &::after {
-                    content: '\2F';
+            li {
+                &:not(:last-child) {
+                    &::after {
+                        content: '\2F';
+                        margin-left: 5px;
+                    }
                 }
             }
             li {
@@ -4515,7 +4535,12 @@ div#top-column {
 // Responsive
 @media (max-width: 767px) {
     .footer-container{
-        .footer-block {
+        .footer-central-colum {
+            .module {
+                display: block;
+            }
+        }
+        .footer-block, .footer-block-petit {
             margin-top: 0 !important;
             margin-bottom: 0 !important;
         }
@@ -4581,21 +4606,37 @@ div#top-column {
 
 .shopping_cart {
     .msg {
-        display: none
+        display: block;
+        opacity: 0;
+        -webkit-transition: opacity 500ms ease-in-out;
+        -moz-transition: opacity 500ms ease-in-out;
+        -ms-transition: opacity 500ms ease-in-out;
+        -o-transition: opacity 500ms ease-in-out;
+        transition: opacity 1ms ease-in-out;
+        -webkit-transition-delay: 2s;
+        -moz-transition-delay: 2s;
+        -ms-transition-delay: 2s;
+        -o-transition-delay: 2s;
+        transition-delay: 2s;
+        padding: 8px;
+        position: absolute;
+        right: 0;
+        z-index: 9999;
+        width: 13vw;
+        text-align: center;
+        background: #fff;
+        -webkit-box-shadow: 0 0 5px #aaa;
+        box-shadow: 0 0 5px #aaa;
     }
     &.cart-msg {
         &:active {
             .msg {
-                display:block;
-                padding: 8px;
-                position: absolute;
-                right: 0;
-                z-index: 9999;
-                width: 13vw;
-                text-align: center;
-                background: #fff;
-                -webkit-box-shadow: 0 0 5px #aaa;
-                box-shadow: 0 0 5px #aaa;
+                display: block;
+                -webkit-transition: opacity 1ms ease-in-out;
+                -moz-transition: opacity 1ms ease-in-out;
+                -ms-transition: opacity 1ms ease-in-out;
+                -o-transition: opacity 1ms ease-in-out;
+                opacity: 1;
             }
         }
     }
@@ -4609,4 +4650,22 @@ input#newsletter-tmha-footer {
     height: 100%;
     opacity: 0;
     cursor: pointer;
+}
+
+// Steps
+ul.address {
+    .address_update {
+        .btn-success {
+            border-color: $color-primary;
+            background: $color-primary;
+            color: $color-base;
+            &:hover {
+                background: #fff;
+            }
+        }
+    }
+}
+
+div.send_friend_form_content p.submit a.closefb:hover {
+    color: #ff514d;
 }

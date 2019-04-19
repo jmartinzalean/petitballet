@@ -123,3 +123,4 @@ $_MODULE['<{tmmegalayout}theme1452>styles_b4c30db236e2532035d4d5a35feb4cb9'] = '
 $_MODULE['<{tmmegalayout}theme1452>styles_51eb18d690b98f52f8dbeb6cf27263c7'] = 'por ejemplo: 0px 0px 0px 0px rgba(0,0,0,0.75)';
 $_MODULE['<{tmmegalayout}theme1452>styles_c9cc8cce247e49bae79f15173ce97354'] = 'Guardar';
 $_MODULE['<{tmmegalayout}theme1452>styles_1e0a05c5cbda014b3d84c5eaa7d0e143'] = 'Limpiar estílos';
+$_MODULE['<{tmmegalayout}theme1452>block_d51a7e53360073eda639c0cf6cbd498d'] = 'Productos de moda';

@@ -31,7 +31,7 @@ $_MODULE['<{dashactivity}theme1452>dashboard_zone_one_1c4407dd95b9ef941d30c28382
 $_MODULE['<{dashactivity}theme1452>dashboard_zone_one_a274f4d4670213a9045ce258c6c56b80'] = 'Notificaciones';
 $_MODULE['<{dashactivity}theme1452>dashboard_zone_one_a644e8cd597f2b92aa52861632c0363d'] = 'Nuevos mensajes';
 $_MODULE['<{dashactivity}theme1452>dashboard_zone_one_56d4e9a4c8e9f47549e8129393b3740f'] = 'Productos evaluados';
-$_MODULE['<{dashactivity}theme1452>dashboard_zone_one_e539ae01694149c9e12295fe564a376b'] = 'Clientes y Boletín';
+$_MODULE['<{dashactivity}theme1452>dashboard_zone_one_e539ae01694149c9e12295fe564a376b'] = 'Clientes y Newsletters';
 $_MODULE['<{dashactivity}theme1452>dashboard_zone_one_8471314b4a53476fbf2379d9a0f7ac28'] = 'Nuevos clientes';
 $_MODULE['<{dashactivity}theme1452>dashboard_zone_one_d833d1b3c98b980090f79ad42badcf9f'] = 'Nuevas suscripciones';
 $_MODULE['<{dashactivity}theme1452>dashboard_zone_one_e42bc03dcf18091455cb8a06ce1d56e9'] = 'Total de suscriptores';
